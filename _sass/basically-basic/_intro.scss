@@ -102,7 +102,10 @@
       }
   }
   .subheading-text {
-    background:url('/assets/images/logo-partners.png') no-repeat 50% 95%;
+    background:url('/assets/images/logo-partners.png') no-repeat 50% 95%; background-size:90%;
+    @media screen and (max-width:$medium){
+      background:url('/assets/images/logo-partners-mobile.png') no-repeat 50% 98%; background-size:90%;
+    }
     background-size:90%;
     .intro-title {
       padding:0 5vw;
