@@ -162,7 +162,14 @@
         }
         &:last-child ul li {border:none;}
       }
-  
+    }
+    @media screen and (max-width:$medium) {
+      .inner {flex-direction:column;}
+      .years {
+        display:flex; flex-direction:row; flex-flow:row-reverse; justify-content:space-between; width:100%;
+        li {align-self: center;}
+      }
+      .historyList {width:100%; padding:0;}
     }
   }
   
@@ -171,7 +178,7 @@
   h3 {text-align:center; color:$white; margin-bottom:3rem;}
   .inner {max-width:unset; padding:5vw; width:100vw;}
   &:before {
-      background: url('/assets/images/illustration-02.png') no-repeat;
+      background: url('/assets/images/illustration-02.jpeg') no-repeat;
       background-repeat: no-repeat;
       background-position: bottom right;
       background-size: cover;
@@ -180,15 +187,18 @@
       left: 0px;
       right: 0px;
       bottom: 0px;
+      min-height:100vh;
       z-index: -1;
       content: "";
-      transform: translateZ(-1px) scale(1);
-      -webkit-transform: translateZ(-1px) scale(1);
+      //transform: translateZ(-1px) scale(1);
+      //-webkit-transform: translateZ(-1px) scale(1);
   }
   ul {
     list-style:none; margin:0; padding:0; 
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); grid-gap: 2rem;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); grid-gap: 2rem;
     justify-content: space-between; 
+    @media screen and (max-width:$medium) {grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));}
+    @media screen and (min-width:$xlarge) {grid-template-columns: repeat(5, 1fr);}
     li {
       /*width:16vw; margin-bottom:3rem; min-width:280px;*/
       background:$white; position:relative; text-align:center;
@@ -211,10 +221,6 @@
         li {display:inline; } 
       }
     }
-    /*&:after {
-      content:'';
-      flex:auto;
-    }*/
   }
 }
 .contentBlock-light {
