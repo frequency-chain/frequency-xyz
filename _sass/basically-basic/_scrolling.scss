@@ -1,0 +1,40 @@
+.navMin {
+    #masthead {
+        background:rgba(255,255,255,.85);        
+        border-bottom: solid 1px $green; 
+        .inner {
+            background:none;
+            display:flex;  
+            .site-title {margin:0;}
+            .nav-pages {
+                pointer-events:all;
+                opacity:1; top:1rem; position:relative; /*width:unset;*/ margin:0; padding:0; top:0;
+                -webkit-transition: opacity 1s 0s ease, all 1.5s 0s ease;
+                -moz-transition: opacity 1s 0s ease, all 1.5s 0s ease;
+                -o-transition: opacity 1s 0s ease, all 1.5s 0s ease;
+                transition: opacity 1s 0s ease, all 1.5s 0s ease;
+                ul {margin:0;}    
+            }
+        }      
+    }
+    /*.parallax-wrapper .parallax::before {top:5rem;}*/
+    .section-siteNav {
+      opacity:0;
+      -webkit-transition: opacity .5s 0s ease, all .5s 0s ease;
+      -moz-transition: opacity .5s 0s ease, all .5s 0s ease;
+      -o-transition: opacity .5s 0s ease, all .5s 0s ease;
+      transition: opacity .5s 0s ease, all .5s 0s ease;
+    }
+    &.layout--how .sub-hero-wrapper .subheading-text  {opacity:1;}
+}
+/* snap to section */
+.scroll-3 { 
+    .snapToSection {    
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        section {
+        scroll-snap-align: center; height:100vh;
+        }
+    }
+}  

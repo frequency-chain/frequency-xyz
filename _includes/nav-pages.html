@@ -1,0 +1,7 @@
+<div class="nav-pages">
+    <ul>
+      <li {% if page.url == '/' %}class="active"{% endif %}><a href="/">Why?</a></li>
+      <li {% if page.url contains '/how' %}class="active"{% endif %}><a href="/how">How?</a></li>
+      <li {% if page.url contains '/about' %}class="active"{% endif %}><a href="/about">About</a></li>
+    </ul>
+  </div>

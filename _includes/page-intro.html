@@ -1,0 +1,56 @@
+{% if page.image %}
+<div class="static-title">
+  <h2 id="fixedTitle" class="intro-title no-scroll">{{ page.headline | markdownify | strip_html }}</h2>
+</div>
+<div class="parallax-wrapper">
+
+  <div class="parallax parallax-1"> 
+    {% assign intro_image = page.image.path | default: page.image | relative_url | escape %}
+    <div class="intro-image">
+       <img class="screen-reader-text" src="{{ intro_image }}" alt="{{page.hero_alt}}">
+    </div>
+    <div style="position:absolute; top:35vw; left:0; width:1px; height:1px;" id="scroll-marker-1"></div>
+  </div>
+</div>
+{% endif %}  
+
+  <div class="content-outer">
+    <div class="p-section-inner">
+      <div>
+         <div id="sub-hero-wrapper" class="sub-hero-wrapper scroll-marker"> 
+          {% if page.url == '/' %} 
+            <div style="position:absolute; top:-3rem; left:0; width:1px; height:1px;" id="scroll-marker-2"></div> 
+            <div style="position:absolute; bottom:10vh; left:0; width:1px; height:1px;" id="scroll-marker-3"></div>
+            <div class="section-siteNav">
+              {% include nav-pages.html %}
+            </div>
+          {% endif %}    
+           <video playsinline autoplay muted loop poster="gradient.jpg" id="bgvid">
+             <source src="/assets/videos/gradient_long.mp4" type="video/webm">
+           </video>
+           <div class="subheading-text">
+            <h2 class="intro-title no-scroll">{{ page.headline | markdownify | strip_html }}</h2>
+            <!--{% if page.subheadline %}-->
+             <p class="large" id="parallax-subheading">{{ page.subheadline | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>
+             <!--<p id="parallax-subheading">{{ page.subheadline | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>-->
+
+            <!--{% endif %}-->  
+            </div> 
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+ 

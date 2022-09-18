@@ -1,0 +1,332 @@
+/* ==========================================================================
+   Page intro
+   ========================================================================== */
+ 
+
+
+.layout--home, .layout--about, .layout--how {
+  .initial-content {
+    position:relative;
+  }
+  .intro-title {
+    color:$white;
+    align-self:center;
+    text-align:center;
+    position:fixed;
+    top:25vw;
+    margin:0px auto;
+    padding: 0 0 3rem;
+    z-index:0;
+    padding: 0 12vw 3rem;
+    pointer-events:none;
+  } 
+  /*transition effects only for larger devices*/
+  &.intro-scroll {
+    #fixedTitle {
+      opacity:0;
+      -webkit-transition: opacity 1s 0s ease, all 1s 0s ease;
+      -moz-transition: opacity 1s 0s ease, all 1s 0s ease;
+      -o-transition: opacity 1s 0s ease, all 1s 0s ease;
+      transition: opacity 1s 0s ease, all 1s 0s ease;
+    }
+    //@media screen and (min-width:$medium){
+      @media (orientation: landscape) {
+      .subheading-text {
+        opacity:1;
+        -webkit-transition: opacity 3s 0s ease, all 1s 0s ease;
+        -moz-transition: opacity 3s 0s ease, all 1s 0s ease;
+        -o-transition: opacity 3s 0s ease, all 1s 0s ease;
+        transition: opacity 3s 0s ease, all 1s 0s ease;
+      }
+      .sub-hero-wrapper .nav-pages {
+        opacity:1;
+        -webkit-transition: opacity 3s 0s ease, all 0s 0s ease;
+        -moz-transition: opacity 3s 0s ease, all 0s 0s ease;
+        -o-transition: opacity 3s 0s ease, all 0s 0s ease;
+        transition: opacity 3s 0s ease, all 0s 0s ease;
+      }  
+    } 
+  }
+  &.intro-unscrolled {
+    #fixedTitle {
+      opacity:1;
+      -webkit-transition: opacity 1s 0s ease, all 2s 0s ease;
+      -moz-transition: opacity 1s 0s ease, all 2s 0s ease;
+      -o-transition: opacity 1s 0s ease, all 2s 0s ease;
+      transition: opacity 1s 0s ease, all 2s 0s ease;
+    }
+   // @media screen and (min-width:$medium){
+      @media (orientation: landscape) {
+        .sub-hero-wrapper .nav-pages {
+        opacity:0;
+        -webkit-transition: opacity 1s 0s ease, all 2s 0s ease;
+        -moz-transition: opacity 1s 0s ease, all 2s 0s ease;
+        -o-transition: opacity 1s 0s ease, all 2s 0s ease;
+        transition: opacity 1s 0s ease, all 2s 0s ease;
+      }
+      .subheading-text {
+        opacity:0;
+        -webkit-transition: opacity 3s 0s ease, all 2s 0s ease;
+        -moz-transition: opacity 3s 0s ease, all 2s 0s ease;
+        -o-transition: opacity 3s 0s ease, all 2s 0s ease;
+        transition: opacity 3s 0s ease, all 2s 0s ease;
+      } 
+    } 
+  }  
+}
+  
+
+
+.layout--home {
+  .parallax-wrapper .parallax-1::before {
+    background-image: url(/assets/images/illustration-01.png);
+  }
+  #fixedTitle {padding:0 15vw;}
+  .subheading-text {
+    .intro-title {padding:0 10vw;}
+    h3 {padding:0 12vw;} 
+  }
+}
+.layout--how {
+  .subheading-text {
+    .intro-title {
+      padding:0 5vw;
+    }
+  }  
+}
+.layout--about {
+  #fixedTitle {padding:0 10vw;}
+  .parallax-wrapper .parallax-1 {
+    &::before {
+      background-image: url(/assets/images/illustration-02.png);
+      }
+  }
+  .subheading-text {
+    .intro-title {
+      padding:0 5vw;
+    }
+  }
+  @media screen and (min-width: $xlarge) {
+    #fixedTitle {padding:0 14vw;}
+    .subheading-text .intro-title {padding:0 10vw;}
+  }
+}
+
+ 
+.layout--about, .layout--how {  
+  .subheading-text {
+    @media screen and (min-width: $medium) {
+      h3, p {
+        columns: auto 2;
+        column-gap: 4vw;
+        text-align:left;
+        margin-top:4vw;
+      }
+    }
+  }
+}
+
+
+
+
+.parallax-wrapper {
+  &:before {
+    background: #222;
+    position: fixed;
+    top: 6rem;
+    bottom: 0;
+    width: 100%;
+    //height: 100vh;
+    z-index: -3;
+    content: "";
+  }
+  /*width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+  -webkit-perspective: 1px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  z-index:-3;*/
+    .parallax { 
+      width: 100vw;
+      height:64.25vw;
+      position: relative;
+      /*transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      perspective: 1px;
+      -webkit-perspective: 1px;*/
+        
+      &::before {
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size:100%;
+        position:fixed;
+        background-color:$charcoal;
+        opacity:.8;
+        top: 6rem;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: -2;
+        content: "";
+        /* transform: translateZ(-1px) scale(2);
+        -webkit-transform: translateZ(-1px) scale(2);*/
+      }
+    }  
+
+  div.content-outer {
+    width: 100%;
+    background-color: white;
+    perspective: 2px;
+    -webkit-perspective: 2px;
+  }
+
+  .intro-image {position:relative;} //todo: delete?
+
+ 
+}
+
+.sub-hero-wrapper {
+  position:relative; display:flex;
+  /*min-height:100vh;*/ width:100%;
+  video {
+    width:100%; height:100%;
+    object-fit: cover; position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    z-index: 0;
+  }
+  .subheading-text {
+    position:relative; padding:15vw 5vw; text-align: center;
+    color: $white; //line-height:1rem; 
+    //@media screen and (min-width:$medium){opacity:0; } 
+    @media (orientation: landscape) {opacity:0;}
+    
+    .intro-title {
+      position: unset; top: unset; left: unset; width: unset; margin-bottom:3rem;
+    }
+    p {
+      //@include fluid-type($min-vw, $max-vw, 16px, 38px);
+       line-height:normal; //line-height:2.5rem;
+    }
+  }      
+}
+
+
+  
+
+  
+
+
+
+/*.intro-image {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}*/
+
+/*.intro {
+  margin: 1rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+}*/
+
+.intro-image {
+  //display:flex;
+  //justify-content:center;
+  //align-content:center;
+  //background: url('$intro_image') no-repeat;
+  position: relative;
+  //margin-top: -3rem; /* compensate for intro top margin */
+
+/*
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    @if $intro-image-color-overlay == true {
+      //background-color: rgba($accent-color, 0.25);
+      background-color: rgba(0,0,0, 0.2);
+    };
+    content: '';
+  }
+*/
+  /*img {
+    width: 100%;
+  }*/
+
+}
+
+.intro-text {
+
+  /* remove space after last child element */
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*.intro-title {
+  @include fluid-type($min-vw, $max-vw, 20px, 80px);
+  margin-bottom: 1rem;
+  //color: tint($text-color, 25%);
+  line-height: 1;
+  position: absolute; left: 0; top: 50%; width: 100%; 
+  text-align: center;
+}
+*/
+.intro-subtitle {
+  @include fluid-type($min-vw, $max-vw, 14px, 28px);
+  font-style: italic;
+}
+
+
+
+.layout--home, .layout--about, .layout--how {
+
+  /*portrait styles - large and small screens */
+  @media (orientation: portrait) {
+    #fixedTitle {display:none;}
+    .sub-hero-wrapper {
+      min-height:60vh;
+      .nav-pages {display:flex; opacity:1;}
+    }
+    .intro-2 .intro-title {padding:0 5vw;}
+  }
+
+  /* portrait styles - small screens only */
+  @media screen and (max-width:$medium){
+    .intro-title {top:8rem;}
+    .parallax-wrapper {
+      &::before {top:4rem;}
+      &::before, .parallax, .parallax:before {
+        /*height:82vw;*/ min-height:unset;
+      }      
+      .parallax::before {
+        background: url('/assets/images/illustration-01-mobile.png') no-repeat;
+        background-size:100%;
+        top:4rem;
+      }
+    }
+    #fixedTitle {display:none;}
+    .sub-hero-wrapper {
+      .nav-pages {display:none;}
+      .subheading-text {
+        .intro-title {padding: 0 5vw;}
+      }
+    }
+    .intro-2 .intro-title {padding:0 5vw;}
+  }
+} 
+@media screen and (max-width:$medium){
+  .layout--how {
+    .subheading-text {
+      padding: 8rem 5vw; 
+    }
+  }
+}
+
