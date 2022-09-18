@@ -54,7 +54,7 @@
       display:flex; min-height:90vh; width:90vw;
       @media (orientation: portrait) {min-height:50vh;}
       .quoteWrapper {
-        color:$green; align-self:center; width:50%; margin-left:50%; 
+        color:$green; align-self:center; width:50%; 
         h3 {
             font-family:$second-font-family; text-align:unset; padding:0;
             @include fluid-type($min-vw, $max-vw, 17px, 46px);
@@ -67,12 +67,19 @@
     }
     &.rightQuote {
       .innerQ {justify-content:right; text-align:right;}
+      .quoteWrapper {margin-left:50%;}
     }
     &.leftQuote {
       .innerQ {justify-content:left; text-align:left;}
+      .quoteWrapper {margin-right:50%;}
     }
     &.braxton {
       background-image:url('/assets/images/photo-braxton.png');
+    }
+    &.harry {
+      background-image:url('/assets/images/photo-harry.jpg');
+      background-position:bottom right;
+      //background-size:auto 60%;
     }
     &.gavin {
       background-image:url('/assets/images/photo-gavin.png')

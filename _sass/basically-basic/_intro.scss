@@ -82,9 +82,10 @@
     background-image: url(/assets/images/illustration-01.png);
   }
   #fixedTitle {padding:0 15vw;}
-  .subheading-text {
+  .sub-hero-wrapper .subheading-text {
+    padding:15vw 0;
     .intro-title {padding:0 10vw;}
-    h3 {padding:0 12vw;} 
+    p {padding:0 10vw;} 
   }
 }
 .layout--how {
