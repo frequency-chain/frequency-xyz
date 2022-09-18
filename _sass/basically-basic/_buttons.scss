@@ -30,6 +30,12 @@
     margin-right: 0.5em;
   }
 
+  &.charcoal {
+    border: 1px solid $charcoal;
+    color:$charcoal;
+    //background-color:rgba(0,0,0,.2);
+  }
+
   /* block button fills width of parent container */
   &--block {
     display: block;

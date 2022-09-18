@@ -25,18 +25,24 @@
               {% include nav-pages.html %}
             </div>
           {% endif %}    
-           <video playsinline autoplay muted loop poster="gradient.jpg" id="bgvid">
+          <video playsinline autoplay muted loop poster="gradient.jpg" id="bgvid">
              <source src="/assets/videos/gradient_long.mp4" type="video/webm">
-           </video>
-           <div class="subheading-text">
+          </video>
+          <div class="subheading-text">
             <h2 class="intro-title no-scroll">{{ page.headline | markdownify  | remove: '<p>' | remove: '</p>'  }}</h2>
-            <!--{% if page.subheadline %}-->
-             <p class="large" id="parallax-subheading">{{ page.subheadline | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>
-             <!--<p id="parallax-subheading">{{ page.subheadline | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>-->
-
-            <!--{% endif %}-->  
-            </div> 
-          </div>
+            <div class="descWrapper">
+                <!--{% if page.subheadline %}-->
+                  <p class="large">{{ page.subheadline | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>
+                <!--{% endif %}--> 
+                <!--{% if page.subheadline2 %}-->
+                  <p class="large">{{ page.subheadline2 | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>
+                <!--{% endif %}--> 
+                <!--{% if page.subheadline3 %}-->
+                <p class="large">{{ page.subheadline2 | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>
+                <!--{% endif %}-->  
+            </div>
+          </div> 
+          <!--</div>-->
       </div>
     </div>
   </div>

@@ -95,20 +95,26 @@
   }  
 }
 .layout--about {
-  #fixedTitle {padding:0 10vw;}
+  #fixedTitle {padding:0 10vw; top:22vw;}
   .parallax-wrapper .parallax-1 {
     &::before {
-      background-image: url(/assets/images/illustration-02.png);
+      background-image: url('/assets/images/illustration-02.jpeg');
       }
   }
   .subheading-text {
+    background:url('/assets/images/logo-partners.png') no-repeat 50% 95%;
+    background-size:90%;
     .intro-title {
       padding:0 5vw;
     }
   }
+  @media screen and (max-width: $medium) {
+    #fixedTitle {padding:0;}
+    .subheading-text .intro-title {padding:0 !important;}
+  }
   @media screen and (min-width: $xlarge) {
-    #fixedTitle {padding:0 14vw;}
-    .subheading-text .intro-title {padding:0 10vw;}
+    //#fixedTitle {padding:0 14vw;}
+    .subheading-text .intro-title {padding:0 6vw;}
   }
 }
 
@@ -116,13 +122,17 @@
 .layout--about, .layout--how {  
   .subheading-text {
     @media screen and (min-width: $medium) {
-      h3, p {
+      .descWrapper {
         columns: auto 2;
         column-gap: 4vw;
         text-align:left;
         margin-top:4vw;
+        //vertical-align: top;
       }
     }
+    @media screen and (max-width: $medium) {
+      p {text-align:left;}
+    } 
   }
 }
 
@@ -192,13 +202,6 @@
     }
   }      
 }
-
-
-  
-
-  
-
-
 
 /*.intro-image {
   background-attachment: fixed;
@@ -309,4 +312,3 @@
     }
   }
 }
-

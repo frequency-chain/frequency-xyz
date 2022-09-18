@@ -133,8 +133,39 @@ let observer = new IntersectionObserver(entries => {
 observer.observe(document.querySelector("#scroll-marker-3"));
 }
 
+/* timeline scroll into view 
+var nav = document.querySelector('nav'),
+    main  = document.querySelector('main'),
+    scrollElementTo = (function () {
+      var timerId;
+      return function (scrollWithin, scrollTo, pixelsPerSecond) {
+        scrollWithin.scrollTop = scrollWithin.scrollTop || 0;
+        var pixelsPerTick = pixelsPerSecond / 100,
+          destY = scrollTo.offsetTop,
+          direction = scrollWithin.scrollTop < destY ? 1 : -1,
+          doTick = function () {
+            var distLeft = Math.abs(scrollWithin.scrollTop - destY),
+              moveBy = Math.min(pixelsPerTick, distLeft);
+            scrollWithin.scrollTop += moveBy * direction;
+            if (distLeft > 0) {
+              timerId = setTimeout(doTick, 10);
+            }
+          };
+        clearTimeout(timerId);
+        doTick();
+      };
+    }());
 
-
+nav.addEventListener('click', function(event) {
+  var linkID,
+    scrollTarget;
+  if (event.target.tagName.toUpperCase() === "A") {
+    linkID = event.target.dataset.goto.slice(1);
+    scrollTarget = main.querySelector('[data-id="' + linkID + '"]');
+    scrollElementTo(main, scrollTarget, 500);
+  }
+});
+*/
 
 // disable masthead and fixed elements from triggering document scroll // 
 
