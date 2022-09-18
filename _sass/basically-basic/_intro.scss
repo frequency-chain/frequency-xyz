@@ -99,7 +99,7 @@
   #fixedTitle {padding:0 10vw; top:22vw;}
   .parallax-wrapper .parallax-1 {
     &::before {
-      background-image: url('/assets/images/illustration-02.jpeg');
+      background-image: url('/assets/images/illustration-02.jpg');
       }
   }
   .subheading-text {
@@ -294,7 +294,6 @@
         /*height:82vw;*/ min-height:unset;
       }      
       .parallax::before {
-        background: url('/assets/images/illustration-01-mobile.png') no-repeat;
         background-size:100%;
         top:4rem;
       }
@@ -310,9 +309,23 @@
   }
 } 
 @media screen and (max-width:$medium){
+  .layout--home {
+    .parallax::before {
+      background-image: url('/assets/images/illustration-01-mobile.png');
+    }  
+  }
+}
+@media screen and (max-width:$medium){
   .layout--how {
     .subheading-text {
       padding: 8rem 5vw; 
     }
+  }
+}
+@media screen and (max-width:$medium){
+  .layout--about {
+    .parallax::before {
+      background-image: url('/assets/images/illustration-02-mobile.png');
+    }  
   }
 }
