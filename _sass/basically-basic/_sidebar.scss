@@ -30,7 +30,7 @@
     text-align: left;
     padding: 0;
     margin: 0 0 2.5rem; 
-    justify-content:space-between;
+    justify-content:space-evenly;
     li {margin-left:0; max-width:2rem;} 
   }
    .nav-pages {
@@ -148,13 +148,14 @@
 
 
 .sidebar-toggle-wrapper {
-  @media screen and (min-width:$medium){
-    display:none;
+  @media screen and (max-width:$medium){
+    display:flex;
   }
+  display:none;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  //display: -webkit-box;
+  //display: -ms-flexbox;
+  //display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;

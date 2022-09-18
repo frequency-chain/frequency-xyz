@@ -22,7 +22,7 @@
         }  
         p {
         //@include fluid-type($min-vw, $max-vw, 16px, 30px);
-        margin-bottom:0; text-align:center;
+        margin-bottom:0; //text-align:center;
         }
     }
 }
@@ -49,8 +49,10 @@
   .quoteSection {
     background-repeat:no-repeat; background-position:bottom left; background-size:contain; background-color:$charcoal;
     width:100%; min-height:90vh;  
+    @media (orientation: portrait) {min-height:50vh;}
     .innerQ {
       display:flex; min-height:90vh;
+      @media (orientation: portrait) {min-height:50vh;}
       .quoteWrapper {
         color:$green; align-self:center; width:50%; 
         h3 {
@@ -77,6 +79,7 @@
     }
     &.withIntro {
         background-size:auto 50%; display: flex; flex-direction: column; 
+        @media (orientation: portrait) {background-size:contain;}
         .quoteIntro {
             padding-bottom:3rem;
             h3, p {color:$white; padding:0;}
@@ -165,6 +168,6 @@
   
   .contentBlock-light {
     background:$white;
-    text-align:center;
+    //text-align:center;
   }
   

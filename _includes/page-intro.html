@@ -1,6 +1,6 @@
 {% if page.image %}
 <div class="static-title">
-  <h2 id="fixedTitle" class="intro-title no-scroll">{{ page.headline | markdownify | strip_html }}</h2>
+  <h2 id="fixedTitle" class="intro-title no-scroll">{{ page.headline | markdownify  | remove: '<p>' | remove: '</p>' }}</h2>
 </div>
 <div class="parallax-wrapper">
 
@@ -29,7 +29,7 @@
              <source src="/assets/videos/gradient_long.mp4" type="video/webm">
            </video>
            <div class="subheading-text">
-            <h2 class="intro-title no-scroll">{{ page.headline | markdownify | strip_html }}</h2>
+            <h2 class="intro-title no-scroll">{{ page.headline | markdownify  | remove: '<p>' | remove: '</p>'  }}</h2>
             <!--{% if page.subheadline %}-->
              <p class="large" id="parallax-subheading">{{ page.subheadline | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>
              <!--<p id="parallax-subheading">{{ page.subheadline | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>-->

@@ -1,7 +1,8 @@
 .navMin {
     #masthead {
-        background:rgba(255,255,255,.85);        
         border-bottom: solid 1px $green; 
+        background:rgba(255,255,255,.85);  
+        @media screen and (max-width:$medium) {background:#ffffff;}            
         .inner {
             background:none;
             display:flex;  

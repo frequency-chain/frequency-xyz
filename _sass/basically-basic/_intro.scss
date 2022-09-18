@@ -3,7 +3,6 @@
    ========================================================================== */
  
 
-
 .layout--home, .layout--about, .layout--how {
   .initial-content {
     position:relative;
@@ -20,6 +19,7 @@
     padding: 0 12vw 3rem;
     pointer-events:none;
   } 
+  #fixedTitle {width:100%;}
   /*transition effects only for larger devices*/
   &.intro-scroll {
     #fixedTitle {
@@ -126,9 +126,6 @@
   }
 }
 
-
-
-
 .parallax-wrapper {
   &:before {
     background: #222;
@@ -140,24 +137,10 @@
     z-index: -3;
     content: "";
   }
-  /*width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 1px;
-  -webkit-perspective: 1px;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  z-index:-3;*/
     .parallax { 
       width: 100vw;
       height:64.25vw;
-      position: relative;
-      /*transform-style: preserve-3d;
-      -webkit-transform-style: preserve-3d;
-      perspective: 1px;
-      -webkit-perspective: 1px;*/
-        
+      position: relative;       
       &::before {
         background-repeat: no-repeat;
         background-position: top left;
@@ -171,8 +154,6 @@
         bottom: 0px;
         z-index: -2;
         content: "";
-        /* transform: translateZ(-1px) scale(2);
-        -webkit-transform: translateZ(-1px) scale(2);*/
       }
     }  
 
@@ -184,7 +165,6 @@
   }
 
   .intro-image {position:relative;} //todo: delete?
-
  
 }
 
@@ -319,7 +299,7 @@
         .intro-title {padding: 0 5vw;}
       }
     }
-    .intro-2 .intro-title {padding:0 5vw;}
+    .intro-2 .intro-title {padding:0 5vw 3rem;}
   }
 } 
 @media screen and (max-width:$medium){
