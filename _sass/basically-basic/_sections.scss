@@ -228,6 +228,7 @@
 }
 .contentBlock-light {
   background:$white;
+  h2, h3, h4, h5, p {text-align:left; padding:0;}
   //text-align:center;
 }
   

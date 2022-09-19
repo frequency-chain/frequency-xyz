@@ -91,7 +91,10 @@
   .sub-hero-wrapper .subheading-text {
     padding:15vw 0;
     .intro-title {padding:0 10vw;}
-    p {padding:0 10vw;} 
+    p {padding:0 15vw;}
+    @media screen and (max-width:$small) {
+      p {padding:0 5vw;}
+    } 
   }
 }
 .layout--how {
@@ -102,7 +105,7 @@
   }  
 }
 .layout--about {
-  #fixedTitle {padding:0 10vw; top:22vw;}
+  #fixedTitle {padding:0 5vw; top:22vw;}
   .parallax-wrapper .parallax-1 {
     &::before {
       background-image: url('/assets/images/illustration-02.jpg');
@@ -114,9 +117,7 @@
       background:url('/assets/images/logo-partners-mobile.png') no-repeat 50% 95%; background-size:90vw;
     }
     background-size:90%;
-    .intro-title {
-      padding:0 5vw;
-    }
+    .intro-title {padding:0;}
   }
   @media screen and (max-width: $medium) {
     #fixedTitle {padding:0;}
@@ -127,25 +128,22 @@
     
   }
   @media screen and (min-width: $xlarge) {
-    //#fixedTitle {padding:0 14vw;}
+    #fixedTitle {padding:0 11vw;}
     .subheading-text .intro-title {padding:0 6vw;}
+  }
+  @media screen and (min-width: $xxlarge) {
+    #fixedTitle {padding:0 13vw;}
+    .subheading-text .intro-title {padding:0 8vw;}
   }
 }
 
  
 .layout--about, .layout--how {  
   .subheading-text {
-    @media screen and (min-width: $small) {
-      .descWrapper {
-        columns: auto 2;
-        column-gap: 4vw;
-        text-align:left;
-        margin-top:4vw;
-      }
+    @media screen and (min-width: 850px) {
+      .descWrapper {columns: auto 2; column-gap: 4vw; text-align:left; margin-top:4vw;}
     }
-    @media screen and (max-width: $medium) {
-      p {text-align:left;}
-    } 
+    @media screen and (max-width: $medium) {p {text-align:left;}} 
   }
 }
 
