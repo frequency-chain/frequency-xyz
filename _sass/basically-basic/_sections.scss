@@ -52,7 +52,7 @@
     @media (orientation: portrait) {min-height:50vh;}
     .innerQ {
       display:flex; min-height:90vh; width:90vw;
-      @media (orientation: portrait) {min-height:50vh;}
+      @media (orientation: portrait) {min-height:unset;}
       .quoteWrapper {
         color:$green; align-self:center; width:60%; 
         h3 {
@@ -91,11 +91,30 @@
         .quoteIntro {
             padding-bottom:3rem;
             h3, p {color:$white; padding:0;}
+            h3 {
+              position:relative; padding:0 0 0 33%; text-align:left; 
+              &:before {
+                content:'';
+                background: url('/assets/images/logo-dsnp.png') no-repeat;
+                position: absolute;
+                background-position:center;
+                left: 0;
+                top: .35rem;;
+                width: 25%;
+                height: auto;
+                background-size: 80%;
+                display: block;
+                border:1px solid #fff;
+                padding:3rem 0;
+                @media screen and (max-width:$medium){padding:2.5rem 0;}
+                @media screen and (max-width:$small) {padding:2rem 0;}
+              }
+            }
         }
     }
   }
    
-  .partner {
+  .collab {
     color:$charcoal;
     h3 {
       position:relative; padding:0 35% 0 0; text-align:left; 
@@ -104,13 +123,17 @@
         background: url('/assets/images/logo-polkadot.png') no-repeat;
         position: absolute;
         right: 0;
-        top: 0;
+        top: -.4rem;
         width: 30%;
         height: 100%;
         min-height: 100px;
         min-width: 150px;
         background-size: 100%;
         display: block;
+      }
+      @media screen and (max-width:$small) {
+        padding: 5rem 0 0 0;
+        &:before {right:unset; left:0;}
       }
     }
     ul {
@@ -186,7 +209,7 @@
   h3 {text-align:center; color:$white; margin-bottom:3rem;}
   .inner {max-width:unset; padding:5vw; width:100vw;}
   &:before {
-      background: url('/assets/images/illustration-02.jpeg') no-repeat;
+      background-image: url('/assets/images/illustration-02.jpg'); 
       background-repeat: no-repeat;
       background-position: bottom right;
       background-size: cover;
@@ -198,8 +221,9 @@
       min-height:100vh;
       z-index: -1;
       content: "";
-      //transform: translateZ(-1px) scale(1);
-      //-webkit-transform: translateZ(-1px) scale(1);
+      @media screen and (max-width:$medium){
+        background-image: url('/assets/images/illustration-02-mobile.jpg');
+      }
   }
   ul {
     list-style:none; margin:0; padding:0; 
