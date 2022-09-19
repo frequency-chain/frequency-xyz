@@ -1,0 +1,37 @@
+/* legal */
+.layout--cookies {
+  #main {
+    padding-top:6rem;
+    .inner {
+      display:flex; flex: 1; align-items: center; padding:2rem; max-width:$xlarge; 
+      .subheading {margin-top:-1.75rem;}
+      h1, h2, h3, h4, h5 {text-align:left; padding:0; margin-bottom:2rem;}  
+    }
+  }
+} 
+.legalIntro {background:#f0f0f0; padding:1rem 0; color:#fff; background: url('/assets/images/bg_gradient2.jpg') no-repeat; background-size:cover;}
+.legalHeader {background:$blue; color:#fff; padding-top:2rem; padding-bottom:2rem;}
+.legalHeader .inner {justify-content:left; }
+.legalHeader .legalTOC {margin-bottom:0;}
+.legalList p {margin-bottom:1.5rem;}
+.legalTOC li, .legalOL li {margin-bottom:.2rem;}
+.legalOL {list-style:none; padding:0;}
+.legalOL ul {list-style-position:outside; margin-right:3rem;}
+.legalOL > li {border-top:1px solid $green; padding-top:1.7em; padding-bottom:1rem;}
+.legalOL > li:first-child {border-top:none;}
+
+.legalOL ul li {padding-right:1.5rem;}
+.legalTOC.listColumns {column-count:3; column-gap: 5rem; margin-bottom:0;}
+.legalTOC.listColumns li {list-style-position:outside; margin-left:2rem;}
+.legalList.legalTOC a {color:$green; border:none;}
+.legalList.legalTOC a:hover {color:#fff; border:none;}
+.legalTOC a {color:$blue; border:none; text-decoration:none;}
+.legalTOC a:hover {color:$green; border:none;}
+@media (max-width:900px) {
+    .legalTOC.listColumns {column-count:2;}
+    /*.legalTOC.listColumns li:nth-child(3n+1), .legalTOC.listColumns li  {width:50%;}*/
+}
+@media (max-width:650px) {
+    .legalTOC.listColumns {column-count:unset;}
+    .legalTOC.listColumns li {width:100%;}
+}

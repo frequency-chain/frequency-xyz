@@ -8,13 +8,15 @@ $small: 600px !default;
 $medium: 768px !default;
 $large: 1190px !default;
 $xlarge: 1365px !default;
+$xxlarge: 1526px !default;
+
 
 
 
 /* Fluid type */
 $base-font-size: 16px !default;
 $min-vw: $xsmall !default;
-$max-vw: $xlarge !default;
+$max-vw: $xxlarge !default;
 $min-font-size: 14px !default;
 $max-font-size: 18px !default;
 
@@ -38,8 +40,8 @@ $h3-max: $modular-scale-2 * $modular-scale-2 * $base-font-size !default;
 $h4-min: $modular-scale-1 * $base-font-size !default;
 $h4-max: $modular-scale-2 * $base-font-size !default;
 /* Heading 5 */
-$h5-min: $base-font-size !default;
-$h5-max: $base-font-size !default;
+$h5-min: $modular-scale-1 * $modular-scale-1 * $base-font-size !default;
+$h5-max: $modular-scale-2 * $modular-scale-2 * $base-font-size !default;
 /* Heading 6 */
 $h6-min: ($base-font-size / $modular-scale-1) !default;
 $h6-max: ($base-font-size / $modular-scale-2) !default;
@@ -50,7 +52,7 @@ $base-font-family-bold: "FFRealText-Medium", sans-serif !default;
 $second-font-family:"SangBleu-Versailles-Reg-WebXL", serif !default;
 
 /* Other font families */ 
-$headline-font-family: $base-font-family-bold !default;
+$headline-font-family: $base-font-family !default;
 $monospace-font-family: Menlo, Consolas, Monaco, "Courier New", Courier,
   monospace !default;  
 

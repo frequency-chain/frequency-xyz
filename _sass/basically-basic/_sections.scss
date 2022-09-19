@@ -32,7 +32,7 @@
             z-index: -1; opacity:.8;
         }
         .sub-intro-text {display:flex; flex-direction:column;}
-        .intro-title {position:relative; left: unset; right: unset; top: unset; margin-left: unset; margin:0px auto;} 
+        .intro-title {position:relative; left: unset; right: unset; top: unset; margin-left: unset; margin:0px auto; text-shadow: 5px 2px 30px $blue;} 
         .btn {margin:0px auto;}
     }
 } 

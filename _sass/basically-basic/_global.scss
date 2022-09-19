@@ -3,19 +3,29 @@
    ========================================================================== */
 
 h2 {
-  @include fluid-type($min-vw, $max-vw, 26px, 80px);
+  @include fluid-type($min-vw, $max-vw, 30px, 80px);
+  //@include fluid-type($min-vw, $max-vw, 30px, 60px);
   margin-bottom:3rem; 
+  //@media screen and (min-width:xxlarge) {font-size:80px; line-height:auto;}
 }
 h3 {
-  @include fluid-type($min-vw, $max-vw, 22px, 50px);
+  @include fluid-type($min-vw, $max-vw, 24px, 50px);
+  //@include fluid-type($min-vw, $max-vw, 22px, 42px);
   margin-bottom:2.5rem;
 }
-h4, p.large {
-  @include fluid-type($min-vw, $max-vw, 18px, 30px);
+h4 {
+  @include fluid-type($min-vw, $max-vw, 18px, 40px);
+  //@include fluid-type($min-vw, $max-vw, 18px, 30px);
+  margin-bottom:2rem;
+}
+p.large {
+  @include fluid-type($min-vw, $max-vw, 16px, 30px);
+  //@include fluid-type($min-vw, $max-vw, 16px, 26px);
   margin-bottom:2rem;
 }
 p {
   @include fluid-type($min-vw, $max-vw, 14px, 26px);
+  //@include fluid-type($min-vw, $max-vw, 14px, 22px);
 }   
 
 section {

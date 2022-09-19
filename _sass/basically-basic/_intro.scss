@@ -19,7 +19,7 @@
     padding: 0 12vw 3rem;
     pointer-events:none;
   } 
-  #fixedTitle {width:100%;}
+  #fixedTitle {width:100%; text-shadow: 5px 2px 30px $blue;}
   /*transition effects only for larger devices*/
   &.intro-scroll {
     #fixedTitle {
@@ -109,9 +109,9 @@
       }
   }
   .subheading-text {
-    background:url('/assets/images/logo-partners.png') no-repeat 50% 95%; background-size:90%;
+    background:url('/assets/images/logo-partners.png') no-repeat 50% 95%; background-size:90vw;
     @media screen and (max-width:$medium){
-      background:url('/assets/images/logo-partners-mobile.png') no-repeat 50% 95%; background-size:90%;
+      background:url('/assets/images/logo-partners-mobile.png') no-repeat 50% 95%; background-size:90vw;
     }
     background-size:90%;
     .intro-title {
@@ -121,7 +121,7 @@
   @media screen and (max-width: $medium) {
     #fixedTitle {padding:0;}
     .sub-hero-wrapper .subheading-text {
-      padding-bottom:25vw;
+      padding-bottom:15rem;
       .intro-title {padding:0 !important;}
     }
     

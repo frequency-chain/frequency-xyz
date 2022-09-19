@@ -25,7 +25,7 @@
               {% include nav-pages.html %}
             </div>
           {% endif %}    
-          <video playsinline autoplay muted loop poster="/assets/images/bg_gradient.png" id="bgvid">
+          <video poster="/assets/images/bg_gradient.png" autoplay loop muted playsinline id="bgvid">
              <source src="/assets/videos/gradient_long.mp4" type="video/webm">
           </video>
           <div class="subheading-text">
@@ -38,7 +38,7 @@
                   <p class="large">{{ page.subheadline2 | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>
                 <!--{% endif %}--> 
                 <!--{% if page.subheadline3 %}-->
-                <p class="large">{{ page.subheadline2 | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>
+                <p class="large">{{ page.subheadline3 | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>
                 <!--{% endif %}-->  
             </div>
           </div> 
