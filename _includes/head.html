@@ -46,4 +46,23 @@
   <meta name="application-name" content="Frequency.xyz">
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="theme-color" content="#ffffff">
+  <!-- Klaro - make sure the config gets loaded before Klaro -->
+  <script defer type="text/javascript" src="assets/javascripts/klaro-config.js"></script>
+  <script defer type="text/javascript" src="assets/javascripts/klaro.js"></script>
+  <!-- Matomo -->
+  <script  type="text/plain"
+          data-type="application/javascript"
+          data-name="matomo">
+      var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+      var u="https://dsnp.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '2']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='//cdn.matomo.cloud/dsnp.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+  </script>
 </head>

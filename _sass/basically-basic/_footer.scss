@@ -4,38 +4,55 @@
 
 .site-footer {
   color: $white;
-  font-size: 80%;
   background:$text-color;
-  padding:4vw;
   margin:0;
   z-index:100;
   position: sticky;
-
-  .inner {
-    padding: 0 0.5rem;
-
-    @include breakpoint($small) {
-      padding-right: 1rem;
-      padding-left: 1rem;
+  .inner {position:relative;}
+  ul {
+    display:flex; justify-content:space-between; list-style:none; margin:0; padding:0; width:100%; flex-wrap:wrap; 
+     li {
+      width:30%;
+      ul {
+        flex-direction:column;
+        li {text-align:left; width:100% !important; margin-bottom:.75rem;}
+        p {margin-bottom:0;}
+      }
+      &.social {
+        ul {
+          flex-direction:row; width:80%; margin-left:20%; /*max-width:200px;*/ text-align:right; /*margin-bottom:1.5rem;*/ justify-content:flex-end;
+        }
+        .copyright {
+          text-align:right; font-size:100%; position:absolute; bottom:5vw; right:5vw;
+          p {margin:0;}
+        }
+      }
+      
+      //&:last-child ul {
+        //flex-direction:row; width:80%; margin-left:20%; /*max-width:200px;*/ text-align:right; /*margin-bottom:1.5rem;*/ justify-content:flex-end;
+      //}
+      /*@media screen and (min-width:$large) {
+        &:nth-child(1){width:20%;}
+        &:nth-child(2){width:55%}
+        &:nth-child(3){width:25%}
+      }*/
+      /*@media screen and (min-width:$medium) {*/
+        &:nth-child(1){width:20%;}
+        &:nth-child(2){width:40%}
+        &:nth-child(3){width:40%}
+      /*}*/
+      @media screen and (max-width:$small) {
+        &:nth-child(1){width:35%; order: 1;}
+        &:nth-child(2){width:35%; order: 3;}
+        &:nth-child(3){width:65%; order: 2;}
+      }
     }
-
-    @include breakpoint($medium) {
-      padding-right: 2rem;
-      padding-left: 2rem;
-    }
-
-    @include breakpoint($large) {
-      padding-right: 3rem;
-      padding-left: 3rem;
-    }
-
-    @include breakpoint($xlarge) {
-      padding-right: 4rem;
-      padding-left: 4rem;
-    }
+   
+    /*}*/
+    a {
+      text-decoration:none; font-family:$base-font-family-bold;
+      &:hover {color:$white;}
+    }    
   }
 }
 
-.copyright {
-  text-align:right;
-}

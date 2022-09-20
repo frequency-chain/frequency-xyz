@@ -35,6 +35,7 @@
         .intro-title {position:relative; left: unset; right: unset; top: unset; margin-left: unset; margin:0px auto; text-shadow: 5px 2px 30px $blue;} 
         .btn {margin:0px auto;}
     }
+    @media screen and (min-width:$large) {min-height:60vh;}
 } 
 
   
@@ -132,7 +133,7 @@
   .timeline {
     background: url('/assets/images/bg_gradient.png') no-repeat;
     background-size:cover;
-    height:100vh; width:100vw;
+    height:100vh; width:100vw; position:relative;
     @media (orientation: portrait) {height:60vh;}
     .inner {
       padding:5vw; max-width:unset;
@@ -154,32 +155,56 @@
       }
     }
     .historyList {
+      padding:0; margin-top:5vw; z-index:1;
+      h3 { color:$white; font-family:$second-font-family; text-decoration:none; text-align:left; padding-left:0; margin-bottom:1rem;}
       scroll-behavior: smooth;
       @media screen and (prefers-reduced-motion: reduce) { scroll-behavior: auto; } 
-      list-style-type:none; width:80%; height:70vh; overflow-y:scroll;
-      @media (orientation: portrait) {height:50vh;}
+      list-style-type:none; /*width:80%;*/ height:50vh; overflow-y:scroll;
+      @media (orientation: portrait) {height:30vh;}
       li {
-        color:$white; margin-bottom:2vw;
+        color:$white; margin-bottom:2vw; 
         ul {
           list-style:disc; margin-bottom:5vw; width:90%; 
           li {
             margin-bottom:1rem;
             //@include fluid-type($min-vw, $max-vw, 18px, 40px);
             p {margin-bottom:0;}
-            &:last-child {margin-bottom:0; padding-bottom:5vw; border-bottom:1px solid $green;}
+            &:last-child {margin-bottom:0; padding-bottom:4vw; border-bottom:1px solid $green;}
           }
         }
         &:last-child ul li {border:none;}
       }
+      /* ===== Scrollbar CSS ===== */
+      /* Firefox */
+    
+      scrollbar-width: auto; scrollbar-color: #29fd47 #ffffff;
+       /* Chrome, Edge, and Safari */
+       &::-webkit-scrollbar {
+        width: 8px; z-index:1000; position:fixed;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #ffffff;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #29fd47;
+        border-radius: $border-radius;
+        border: 1px solid #ffffff;
+      }
     }
-    @media screen and (max-width:$medium) {
+    /*@media screen and (max-width:$medium) {
       .inner {flex-direction:column;}
       .years {
         display:flex; flex-direction:row; flex-flow:row-reverse; justify-content:space-between; width:100%;
         li {align-self: center;}
       }
       .historyList {width:100%; padding:0;}
-    }
+    }*/  
+    &::after {
+      content:''; background: url('/assets/images/lines-1.png') no-repeat; background-size:100%;
+      position:absolute; bottom:0; right:0; width:100%; height:100%; z-index:0; background-position:bottom;
+    }      
   }
   
 .team {
@@ -236,21 +261,21 @@
   list-style:none; margin:1.5rem 0 3rem 0;  /*border: 1px solid #29FD47;*/ border-radius: $border-radius;
   display: grid; grid-template-columns: 44vw 44vw; grid-template-rows: 1fr; /*grid-gap: 2vw;*/ padding:2vw; background-size: cover;
   li {
-    border: 1px solid #29FD47; border-radius:$border-radius; border: 5px solid #29FD47; border-right: 3px; border-left: 3px;
+    border-radius:$border-radius; border: 2px solid #29FD47; 
     &.heading {
       border:transparent; padding:1.5rem 0 .4rem 1.75rem; background:none !important; 
-      h5 { 
-        margin-bottom:.5rem; font-family:$second-font-family; 
+      h3 { 
+        margin-bottom:1rem; font-family:$second-font-family; color:$green; text-align:center;
       }
     }
-    &:nth-child(1) h5 {color:#999;}
-    &:nth-child(2) h5 {color: $text-color !important; }
-    &:nth-child(3) {border-radius: 1.5rem 0 0 0;}
-    &:nth-child(4) {border-radius: 0 1.5rem 0 0;}
-    &:nth-child(5) {border-radius: 0 0 0 1.5rem;}
-    &:nth-child(6) {border-radius: 0 0 1.5rem 0;}
-    &:nth-child(odd) {background:#f1f1f1; color:#aaa;}
-    &:nth-child(even) {background: #F9F9FF; color: #4473ec;}
+    //&:nth-child(1) h5 {color:#999;}
+    &:nth-child(1) {grid-column-start: span 2; }
+    &:nth-child(2) {border-radius: 1.5rem 0 0 0;}
+    &:nth-child(3) {border-radius: 0 1.5rem 0 0;}
+    &:nth-child(4) {border-radius: 0 0 0 1.5rem;}
+    &:nth-child(5) {border-radius: 0 0 1.5rem 0;}
+    &:nth-child(odd) {background: #F9F9FF; color: #4473ec;}
+    &:nth-child(even) {background:#f1f1f1; color:#aaa;}
 
     div {
       padding:1.75rem;

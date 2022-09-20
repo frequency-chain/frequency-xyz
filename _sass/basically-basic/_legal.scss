@@ -1,15 +1,15 @@
 /* legal */
-.layout--cookies {
+.layout--cookies, .layout--privacy {
   #main {
     padding-top:6rem;
     .inner {
-      display:flex; flex: 1; align-items: center; padding:2rem; max-width:$xlarge; 
+      display:flex; flex: 1; align-items: center; padding:5vw;  
       .subheading {margin-top:-1.75rem;}
       h1, h2, h3, h4, h5 {text-align:left; padding:0; margin-bottom:2rem;}  
     }
   }
 } 
-.legalIntro {background:#f0f0f0; padding:1rem 0; color:#fff; background: url('/assets/images/bg_gradient2.jpg') no-repeat; background-size:cover;}
+.legalIntro {background:#f0f0f0; padding:1rem 0; color:$text-color;}
 .legalHeader {background:$blue; color:#fff; padding-top:2rem; padding-bottom:2rem;}
 .legalHeader .inner {justify-content:left; }
 .legalHeader .legalTOC {margin-bottom:0;}

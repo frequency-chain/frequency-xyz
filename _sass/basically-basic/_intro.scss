@@ -88,13 +88,20 @@
     background-image: url(/assets/images/illustration-01.png);
   }
   #fixedTitle {padding:0 15vw;}
-  .sub-hero-wrapper .subheading-text {
-    padding:15vw 0;
-    .intro-title {padding:0 10vw;}
-    p {padding:0 15vw;}
-    @media screen and (max-width:$small) {
-      p {padding:0 5vw;}
-    } 
+  .sub-hero-wrapper {
+    .subheading-text {
+      padding:15vw 0;
+      .intro-title {padding:0 10vw;}
+      p {padding:0 15vw;}
+      @media screen and (max-width:$small) {
+        p {padding:0 5vw;}
+      } 
+    }
+    &:after {
+      content:''; background:url('/assets/images/lines-3.png') no-repeat;
+      background-position:bottom right; position:absolute;
+      width:100%; height:100%; background-size:100%; z-index:0;
+    }
   }
 }
 .layout--how {
@@ -190,7 +197,7 @@
     z-index: 0;
   }
   .subheading-text {
-    position:relative; padding:15vw 5vw; text-align: center;
+    position:relative; padding:15vw 5vw; text-align: center; z-index:1;
     color: $white; //line-height:1rem; 
     //@media screen and (min-width:$medium){opacity:0; } 
     @media (orientation: landscape) {opacity:0;}

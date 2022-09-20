@@ -1,5 +1,6 @@
 ---
 layout: about
+title: About
 hero_alt: "Colorful artwork of tropical plants and animals at night"
 image: assets/images/illustration-02-mobile.jpg
 headline: "Built on years of development, backed by organizations seeking far&#8209;reaching change."

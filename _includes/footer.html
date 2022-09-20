@@ -1,3 +1,4 @@
+{% comment %}
 <footer id="footer" class="site-footer">
   <div class="inner">
     <div class="copyright">
@@ -7,5 +8,33 @@
         <p>&copy; {{ site.time | date: '%Y' }} Unfinished Labs</p>
       {% endif %}
     </div>
+  </div>
+</footer>
+{% endcomment %}
+
+
+<footer class="site-footer">
+  <div class="inner">
+    <ul>
+      <li>
+        <ul>
+          <li><p><a href="/">Why?</a></p></li>
+          <li><p><a href="/how">How?</a></p></li>
+          <li><p><a href="/about">About</a></p></li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li><p><a href="https://github.com/LibertyDSNP/meta/blob/main/CODE_OF_CONDUCT.md" target="_blank">Code of Conduct</a></p></li>
+          <li><p><a href="privacy.html">Privacy</a></p></li>
+          <li><p><a href="cookies.html">Cookies</a></p></li>
+        </ul>
+      </li>
+      <li class="social">
+        {% include nav-social.html %}
+        <ul><li class="copyright">&copy; {{ site.time | date: '%Y' }} Unfinished Labs</li></ul>
+      </li>
+      
+    </ul>
   </div>
 </footer>
