@@ -21,6 +21,8 @@
       &.social {
         ul {
           flex-direction:row; width:80%; margin-left:20%; /*max-width:200px;*/ text-align:right; /*margin-bottom:1.5rem;*/ justify-content:flex-end;
+          //li:hover .icon {fill:$white !important;}
+          //li:hover img {background-color:$white;}
         }
         .copyright {
           text-align:right; font-size:100%; position:absolute; bottom:5vw; right:5vw;
@@ -51,8 +53,20 @@
     /*}*/
     a {
       text-decoration:none; font-family:$base-font-family-bold;
-      &:hover {color:$white;}
+      &:hover {color:$white !important;}
     }    
+  }
+  .nav-pages {
+    position:relative; opacity:1 !important; top:unset;
+    li {
+      padding:0; background:none; margin-left:0;
+      a {
+        color:$green;
+
+      }
+      &.active a {color:$white;}
+
+    }
   }
 }
 

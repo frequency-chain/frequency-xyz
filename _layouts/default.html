@@ -7,14 +7,11 @@
 -->
 <html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no-js">
   {% include head.html %}
-
   <!--<body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}{% if page.url == '/' %}navMax{% endif %} {% if page.url != '/' %}navMin{% endif %}">-->
   <body class="layout--{{ page.layout | default: layout.layout }} {% if page.url != '/' %}navMin{% endif %}">
     {% comment %}
       {% include skip-links.html %}
     {% endcomment %}
-
-    
     <div class="sidebar-toggle-wrapper">
       {% if site.search %}
         <button class="search-toggle" type="button">
@@ -24,7 +21,6 @@
           </svg>
         </button>
       {% endif %}
-
       <button class="toggle navicon-button larr" type="button">
         <span class="toggle-inner">
           <span class="sidebar-toggle-label visually-hidden">{{ site.data.theme.t.menu | default: 'Menu' }}</span>
@@ -32,31 +28,21 @@
         </span>
       </button>
     </div>
-
     <div id="sidebar" class="sidebar">
       <div class="inner">
         {% include nav-social.html %}
         {% include nav-pages.html %}
       </div>
     </div>
-
     {% include masthead.html %}
-
-    
     <div class="canvas">
       <div class="wrapper">
-
         <div class="initial-content">
           {{ content }}
+          {% include footer.html %}
         </div>
-
       </div>
-
     </div>
-    {% include footer.html %}
-
     {% include scripts.html %}
-
   </body>
-
 </html>

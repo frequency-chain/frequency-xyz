@@ -3,20 +3,32 @@
 .klaro .cookie-modal .cm-modal, .klaro .cookie-notice  { background-color:#fff !important; border:1px solid #00FF47 !important; border-radius:10px !important;}   
 .klaro .cookie-modal .cm-modal {color:#000 !important;}
 .klaro .cookie-notice { 
-    bottom:0 !important; right:0 !important; max-width:400px !important;
+    bottom:0 !important; right:0 !important; //max-width:36vw !important;
+    @media screen and (min-width:$large)  {max-width:31vw !important;}
+    @media screen and (min-width:960px) and (max-width:$large) {max-width:37vw !important;}
+    @media screen and (min-width:$medium) and (max-width:960px){max-width:45vw !important;}
+    @media screen and (min-width:$small) and (max-width:$medium){max-width:55vw !important;}
+
     //@media screen and (min-width:$medium) {max-width:40vw !important;}
     //@media screen and (min-width:$large) {max-width:40vw !important;}
 }
-.klaro .cookie-notice p {
-    color:$text-color !important; 
-    @include fluid-type($min-vw, $max-vw, 14px, 20px);
-}
-.klaro .cn-ok {display:flex !important; justify-content:space-around !important;}
-.klaro .cookie-notice a, .klaro .cookie-modal a {color:$green !important; vertical-align:top !important;}
-.klaro .cookie-modal .cm-btn.cm-btn-success, .klaro .cookie-notice .cm-btn.cm-btn-success {background: #00AA3E; border: 1px solid #00AA3E;}
-.klaro .cookie-modal .cm-btn, .klaro .cookie-notice .cm-btn { text-transform:none !important; width:48% !important; line-height:initial; margin-right:0 !important; }
-.klaro .cookie-notice .cm-btn.cm-btn-success, 
-.klaro .cookie-modal .cm-btn.cm-btn-success {background:#4B64FF !important; color:#00FF47 !important; border: 1px solid white;}
+.klaro {
+    .cn-ok {display:flex !important; justify-content:space-around !important;}
+    .cookie-notice {
+        .cn-body p {margin-bottom:.15rem !important;}
+        p { color:$text-color !important;  @include fluid-type($min-vw, $max-vw, 13px, 16px); }
+    
+    }
+    .cookie-notice, .cookie-modal {
+        a {color:$green !important; vertical-align:top !important;}
+        .cm-btn.cm-btn-success {
+            background: #00AA3E; border: 1px solid #00AA3E;
+            background:#4B64FF !important; color:#00FF47 !important; border: 1px solid white;
+        }
+        .cm-btn { text-transform:none !important; width:48% !important; line-height:initial; margin-right:0 !important; }
+    }
+} 
+
 .klaro .cookie-notice .cm-btn.cm-btn-success:hover, 
 .klaro .cookie-modal .cm-btn.cm-btn-success:hover,
 .klaro .cookie-modal .cm-btn.cm-btn-success.cm-btn-info.cm-btn-accept:hover {background:#00FF47 !important; color:#4B64FF !important; border:1px solid $green !important;}
@@ -28,6 +40,7 @@
 .klaro .cookie-notice ul, .klaro .cookie-notice li {color:$blue !important;}
 .klaro .cookie-modal .cm-app-input:checked+.cm-app-label .slider {background:#4B64FF !important;}
 .klaro .cookie-modal .cm-modal .cm-header, .klaro .cookie-modal .cm-modal .cm-footer {border-color:#eee !important;}
+
 
 @media (max-width:500px) {
     .klaro .cookie-modal .cm-btn {width:11.7rem !important; }

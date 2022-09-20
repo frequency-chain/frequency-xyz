@@ -95,6 +95,11 @@
           @media screen and (max-width:$medium){padding:2.5rem 0;}
           @media screen and (max-width:$small) {padding:2rem 0;}
         }
+        @media screen and (max-width:$small) {
+          padding:0 33% 0 0;
+          &:before {left:unset; right:0;}
+        }
+        @media screen and (max-width:$xsmall) {padding:0 31% 0 0;}
       }
     }
   }
@@ -130,15 +135,13 @@
 }
 
 
-  .timeline {
-    background: url('/assets/images/bg_gradient.png') no-repeat;
-    background-size:cover;
-    height:100vh; width:100vw; position:relative;
-    @media (orientation: portrait) {height:60vh;}
-    .inner {
-      padding:5vw; max-width:unset;
-      display:flex; justify-content:space-between;
-    }
+.timeline {
+  background: url('/assets/images/bg_gradient.png') no-repeat; background-size:cover;
+  position:relative;
+  width:100vw; 
+  height:80vh; @media (orientation: portrait) {height:60vh;}
+  .inner {
+    display:flex; justify-content:space-between; padding:5vw; max-width:unset; 
     .years {
       display:flex; flex-direction:row; flex-direction:column;
       list-style:none; width:20%; padding:0;
@@ -147,20 +150,15 @@
         display:flex; justify-content:left; align-content:flex-start;
         .year {
           color:$white; font-family:$second-font-family; text-decoration:none;
-          @include fluid-type($min-vw, $max-vw, 20px, 30px);
-        } 
-        &.active .year {
-          @include fluid-type($min-vw, $max-vw, 40px, 72px);
-        }
+          @include fluid-type($min-vw, $max-vw, 20px, 30px);} 
+        &.active .year { @include fluid-type($min-vw, $max-vw, 40px, 72px);}
       }
     }
     .historyList {
-      padding:0; margin-top:5vw; z-index:1;
+      padding:0; margin-top:5vw; z-index:1;list-style-type:none; overflow-y:scroll;
+       /*width:80%;*/  height:70vh; @media (orientation: portrait) {height:40vh;}  
+      scroll-behavior: smooth; @media screen and (prefers-reduced-motion: reduce) { scroll-behavior: auto; } 
       h3 { color:$white; font-family:$second-font-family; text-decoration:none; text-align:left; padding-left:0; margin-bottom:1rem;}
-      scroll-behavior: smooth;
-      @media screen and (prefers-reduced-motion: reduce) { scroll-behavior: auto; } 
-      list-style-type:none; /*width:80%;*/ height:50vh; overflow-y:scroll;
-      @media (orientation: portrait) {height:30vh;}
       li {
         color:$white; margin-bottom:2vw; 
         ul {
@@ -201,11 +199,12 @@
       }
       .historyList {width:100%; padding:0;}
     }*/  
-    &::after {
+    /*&::after {
       content:''; background: url('/assets/images/lines-1.png') no-repeat; background-size:100%;
       position:absolute; bottom:0; right:0; width:100%; height:100%; z-index:0; background-position:bottom;
-    }      
+    } */     
   }
+}  
   
 .team {
   position: relative; min-height:100vh; display:flex; flex-direction:column; 
@@ -263,19 +262,19 @@
   li {
     border-radius:$border-radius; border: 2px solid #29FD47; 
     &.heading {
-      border:transparent; padding:1.5rem 0 .4rem 1.75rem; background:none !important; 
+      border:transparent; padding:1.5rem 1.75rem .4rem;  background:none !important; 
       h3 { 
-        margin-bottom:1rem; font-family:$second-font-family; color:$green; text-align:center;
+        margin:0 0 1rem; color:$green; text-align:center;
       }
     }
     //&:nth-child(1) h5 {color:#999;}
     &:nth-child(1) {grid-column-start: span 2; }
     &:nth-child(2) {border-radius: 1.5rem 0 0 0;}
-    &:nth-child(3) {border-radius: 0 1.5rem 0 0;}
+    &:nth-child(3) {border-radius: 0 1.5rem 0 0; }
     &:nth-child(4) {border-radius: 0 0 0 1.5rem;}
     &:nth-child(5) {border-radius: 0 0 1.5rem 0;}
-    &:nth-child(odd) {background: #F9F9FF; color: #4473ec;}
-    &:nth-child(even) {background:#f1f1f1; color:#aaa;}
+    &:nth-child(odd) {background: #F9F9FF; color: #4473ec; border-left:none; }
+    &:nth-child(even) {background:#f1f1f1; color:#aaa; border-right:none; }
 
     div {
       padding:1.75rem;
