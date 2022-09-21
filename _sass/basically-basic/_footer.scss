@@ -44,9 +44,6 @@
       &:nth-child(2){width:40%}
       &:nth-child(3){width:40%}
       @media screen and (max-width:475px) {
-        //&:nth-child(1){width:35%; order: 1;}
-        //&:nth-child(2){width:35%; order: 3;}
-        //&:nth-child(3){width:65%; order: 2;}
         &:nth-child(1){
           width:100%; order: 1;
           .nav-pages ul {
@@ -61,7 +58,7 @@
         &:nth-child(2){
           width:100%; order: 2;
           ul {
-            flex-direction:row; /*border-bottom:.5px solid $green;*/ margin-bottom:.5rem; justify-content:space-around; padding-bottom:.5rem;
+            flex-direction:row; justify-content:space-around; padding-bottom:.5rem;
             li {
               width:auto !important; margin-right:1.5rem; 
               &:last-child {margin-right:0;}
@@ -73,7 +70,7 @@
         &:nth-child(3){
           width:100%; order: 3; 
           &.social ul {
-            justify-content:space-around; margin:1.25rem 0; width:100%; padding-bottom:0; 
+            justify-content:space-around; margin:1.25rem 0 3rem;; width:100%; padding-bottom:0; 
             li {
               margin:0  1.75rem 0 0 ; padding-bottom:.25rem;
               a {font-family:$base-font-family !important;}
