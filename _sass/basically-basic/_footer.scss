@@ -3,70 +3,87 @@
    ========================================================================== */
 
 .site-footer {
-  color: $white;
-  background:$text-color;
-  margin:0;
-  z-index:100;
-  position: sticky;
+  color: $white; background:$text-color; margin:0; z-index:100; position: sticky;
   .inner {position:relative;}
   ul {
     display:flex; justify-content:space-between; list-style:none; margin:0; padding:0; width:100%; flex-wrap:wrap; 
-     li {
+     > li {
       width:30%;
-      ul {
-        flex-direction:column;
-        li {text-align:left; width:100% !important; margin-bottom:.75rem;}
-        p {margin-bottom:0;}
-      }
-      &.social {
         ul {
-          flex-direction:row; width:80%; margin-left:20%; /*max-width:200px;*/ text-align:right; /*margin-bottom:1.5rem;*/ justify-content:flex-end;
-          //li:hover .icon {fill:$white !important;}
-          //li:hover img {background-color:$white;}
+          flex-direction:column;
+          li {
+            text-align:left; width:100% !important; margin-bottom:.75rem;
+            p {margin-bottom:0; 
+            a {
+              text-decoration:none; font-family:$base-font-family-bold !important;
+              &:hover {color:$white !important;}
+              }
+            }
+          }
         }
-        .copyright {
-          text-align:right; font-size:100%; position:absolute; bottom:5vw; right:5vw;
-          p {margin:0;}
+        &.social {
+          ul {
+            flex-direction:row; width:90%; margin-left:10%; text-align:right; justify-content:flex-end;
+            //li:hover .icon {fill:$white !important;}
+            //li:hover img {background-color:$white;}
+          }
+          .copyright {
+            text-align:right; font-size:100%; position:absolute; bottom:5vw; right:5vw;
+            p {margin:0;}
+          }
+      }
+      .nav-pages {
+        position:relative; opacity:1 !important; top:unset;
+        li {
+          padding:0; background:none; margin-left:0;
+          a {color:$green; font-family:$base-font-family-bold !important;}
+          &.active a {color:$white;}
         }
       }
-      
-      //&:last-child ul {
-        //flex-direction:row; width:80%; margin-left:20%; /*max-width:200px;*/ text-align:right; /*margin-bottom:1.5rem;*/ justify-content:flex-end;
-      //}
-      /*@media screen and (min-width:$large) {
-        &:nth-child(1){width:20%;}
-        &:nth-child(2){width:55%}
-        &:nth-child(3){width:25%}
-      }*/
-      /*@media screen and (min-width:$medium) {*/
-        &:nth-child(1){width:20%;}
-        &:nth-child(2){width:40%}
-        &:nth-child(3){width:40%}
-      /*}*/
-      @media screen and (max-width:$small) {
-        &:nth-child(1){width:35%; order: 1;}
-        &:nth-child(2){width:35%; order: 3;}
-        &:nth-child(3){width:65%; order: 2;}
-      }
-    }
-   
-    /*}*/
-    a {
-      text-decoration:none; font-family:$base-font-family-bold;
-      &:hover {color:$white !important;}
-    }    
-  }
-  .nav-pages {
-    position:relative; opacity:1 !important; top:unset;
-    li {
-      padding:0; background:none; margin-left:0;
-      a {
-        color:$green;
+      &:nth-child(1){width:20%;}
+      &:nth-child(2){width:40%}
+      &:nth-child(3){width:40%}
+      @media screen and (max-width:475px) {
+        //&:nth-child(1){width:35%; order: 1;}
+        //&:nth-child(2){width:35%; order: 3;}
+        //&:nth-child(3){width:65%; order: 2;}
+        &:nth-child(1){
+          width:100%; order: 1;
+          .nav-pages ul {
+            flex-direction:row; border-bottom:.5px solid $green; margin:.5rem 0 1rem; padding-bottom:.5rem; justify-content:space-around;
+            li {
+              width:auto !important; margin-right:1.5rem;
+              a {font-family:$base-font-family !important;}
+            }
+          }
+          
+        }
+        &:nth-child(2){
+          width:100%; order: 2;
+          ul {
+            flex-direction:row; /*border-bottom:.5px solid $green;*/ margin-bottom:.5rem; justify-content:space-around; padding-bottom:.5rem;
+            li {
+              width:auto !important; margin-right:1.5rem; 
+              &:last-child {margin-right:0;}
+              a {font-family:$base-font-family !important;}
+            }
+          }
+
+        }
+        &:nth-child(3){
+          width:100%; order: 3; 
+          &.social ul {
+            justify-content:space-around; margin:1.25rem 0; width:100%; padding-bottom:0; 
+            li {
+              margin:0  1.75rem 0 0 ; padding-bottom:.25rem;
+              a {font-family:$base-font-family !important;}
+            }
+          }
+          .copyright {text-align:center; right:unset; }
+        }
 
       }
-      &.active a {color:$white;}
-
-    }
-  }
-}
-
+    } 
+    @media screen and (max-width:475px) {padding-bottom:5vw;}    
+  }     
+} 

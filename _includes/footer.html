@@ -17,25 +17,19 @@
   <div class="inner">
     <ul>
       <li>
-        <ul><!--
-          <li><p><a href="/">Why?</a></p></li>
-          <li><p><a href="/how">How?</a></p></li>
-          <li><p><a href="/about">About</a></p></li>-->
           {% include nav-pages.html %}
-        </ul>
       </li>
       <li>
         <ul>
-          <li><p><a href="https://github.com/LibertyDSNP/meta/blob/main/CODE_OF_CONDUCT.md" target="_blank">Code of Conduct</a></p></li>
           <li><p><a href="/privacy">Privacy</a></p></li>
           <li><p><a href="/cookies">Cookies</a></p></li>
+          <li><p><a href="https://github.com/LibertyDSNP/meta/blob/main/CODE_OF_CONDUCT.md" target="_blank">Code of Conduct</a></p></li>
         </ul>
       </li>
       <li class="social">
         {% include nav-social.html %}
         <ul><li class="copyright">&copy; {{ site.time | date: '%Y' }} Unfinished Labs</li></ul>
-      </li>
-      
+      </li>     
     </ul>
   </div>
 </footer>
