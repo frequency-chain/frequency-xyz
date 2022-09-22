@@ -44,15 +44,30 @@
       &:nth-child(1){width:20%;}
       &:nth-child(2){width:40%}
       &:nth-child(3){width:40%}
+
+      @media screen and (max-width:585px) {
+        &.social ul {
+          margin:0; width:100%;
+          li {
+            margin-left:1rem;
+            &:nth-child(2):after {content: "\A"; }
+          }
+        }    
+      }
       @media screen and (max-width:480px) {
-        &:nth-child(1){width:25%;}
-        &:nth-child(2){width:43%}
-        &:nth-child(3){width:27%}
+        &:nth-child(1){width:20%;}
+        &:nth-child(2){width:40%}
+        &:nth-child(3){width:32%}
         .copyright p {text-align:left; margin:0.75rem 0 0 !important;}
         &.social ul {
           width:auto; margin-left:0; max-width:94px;
           li {
-            &:nth-child(odd) {margin-left:0;}
+            margin:0 0 1rem 1.55rem;
+            &:nth-child(2):after {content: "\A"; }
+            &:nth-child(1){order:(1); margin-left:0}
+            &:nth-child(2){order:(3); margin-left:0}
+            &:nth-child(3){order:(2);}
+            &:nth-child(4){order:(4);}
           }
         }
       }

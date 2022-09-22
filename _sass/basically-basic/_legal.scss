@@ -16,11 +16,11 @@
 .legalList p {margin-bottom:1.5rem;}
 .legalTOC li, .legalOL li {margin-bottom:.2rem;}
 .legalOL {list-style:none; padding:0;}
-.legalOL ul {list-style-position:outside; margin-right:3rem;}
+.legalOL ul {list-style-position:outside; margin-right:1rem; margin-bottom: 1.5rem;}
 .legalOL > li {border-top:1px solid $green; padding-top:1.7em; padding-bottom:1rem;}
 .legalOL > li:first-child {border-top:none;}
 
-.legalOL ul li {padding-right:1.5rem;}
+//.legalOL ul li {padding-right:1.5rem;}
 .legalTOC.listColumns {column-count:3; column-gap: 5rem; margin-bottom:0;}
 .legalTOC.listColumns li {list-style-position:outside; margin-left:2rem;}
 .legalList.legalTOC a {color:$green; border:none;}

@@ -1,0 +1,5 @@
+<a href="https://www.medium.com/{{ include.username }}" target="_blank">
+    <span class="icon icon--medium">{% include icon-medium.svg %}</span>
+    <span class="labe screen-reader-text">{{ include.label | default: include.username }}</span>
+  </a>
+  

@@ -24,12 +24,14 @@
     width:100%; min-height:40vh;
     &::before {background: #222; position:absolute; top: 0; bottom: 0; width: 100%; height: 100%; z-index: -2; content: "";}
     .inner {
+      padding:10vw 5vw;
         &::before {
             content: "";
-            background: url(/assets/images/illustration-01.jpg); @media screen and (max-width:$small) {background: url(/assets/images/illustration-01-mobile.jpg);}
+            background-image: url(/assets/images/illustration-01.jpg); 
             background-repeat: no-repeat; background-position: right bottom; background-size: 150%;
             position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px;
             z-index: -1; opacity:.8;
+            @media screen and (max-width:$small) {background-image: url(/assets/images/illustration-01-mobile.jpg);}
         }
         .sub-intro-text {display:flex; flex-direction:column;}
         .intro-title {position:relative; left: unset; right: unset; top: unset; margin-left: unset; margin:0px auto; text-shadow: 5px 2px 30px $blue;} 
@@ -262,9 +264,10 @@
   li {
     border-radius:$border-radius; border: 2px solid #29FD47; 
     &.heading {
-      border:transparent; padding:1.5rem 1.75rem .4rem;  background:none !important; 
+      border:transparent; padding:1.5rem 1.75rem 0.4rem;  background:none !important; 
       h3 { 
         margin:0 0 1rem; color:$green; text-align:center;
+        span {white-space:nowrap;}
       }
     }
     //&:nth-child(1) h5 {color:#999;}
@@ -292,7 +295,7 @@
   }
   @media screen and (max-width:$xsmall) {
     li { 
-      &.heading {padding-left:.75rem;}
+      &.heading {padding-left:0;}
       div {padding:.75rem;}
       h5 {font-size:15px;}
       div h5 {min-height:45px;}
