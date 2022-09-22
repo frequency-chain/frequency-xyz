@@ -26,7 +26,7 @@
     .inner {
         &::before {
             content: "";
-            background: url(/assets/images/illustration-01.png);
+            background: url(/assets/images/illustration-01.jpg); @media screen and (max-width:$small) {background: url(/assets/images/illustration-01-mobile.jpg);}
             background-repeat: no-repeat; background-position: right bottom; background-size: 150%;
             position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px;
             z-index: -1; opacity:.8;
@@ -42,7 +42,7 @@
 .quoteSection {
   background-repeat:no-repeat; background-position:bottom left; background-size:contain; background-color:$charcoal;
   width:100%; min-height:90vh;  
-  @media (orientation: portrait) {min-height:50vh;}
+  @media (orientation: portrait) {min-height: 65vw;}
   .inner {display:flex; flex-direction:column; justify-content:center;}
   .innerQ {
     display:flex; min-height:90vh; width:90vw;
@@ -68,7 +68,7 @@
     .quoteWrapper {margin-right:40%;}
   }
   &.braxton {
-    background-image:url('/assets/images/photo-braxton.png');
+    background-image:url('/assets/images/photo-braxton.jpg');
   }
   &.harry {
     background-image:url('/assets/images/photo-harry.jpg');

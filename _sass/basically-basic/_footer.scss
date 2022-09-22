@@ -3,34 +3,35 @@
    ========================================================================== */
 
 .site-footer {
-  color: $white; background:$text-color; margin:0; z-index:100; position: sticky;
-  .inner {position:relative;}
+  color: $white; background:$text-color; margin:0; z-index:100; position: sticky; 
+  .inner {position:relative; padding:2rem 5vw 1.25rem;}
   ul {
     display:flex; justify-content:space-between; list-style:none; margin:0; padding:0; width:100%; flex-wrap:wrap; 
      > li {
       width:30%;
-        ul {
-          flex-direction:column;
-          li {
-            text-align:left; width:100% !important; margin-bottom:.75rem;
-            p {margin-bottom:0; 
-            a {
-              text-decoration:none; font-family:$base-font-family-bold !important;
-              &:hover {color:$white !important;}
-              }
+      ul {
+        flex-direction:column;
+        li {
+          text-align:left; width:100% !important; margin-bottom:.75rem;
+          p {margin-bottom:0; 
+          a {
+            text-decoration:none; font-family:$base-font-family-bold !important;  
+            &:hover {color:$white !important;}
             }
           }
         }
-        &.social {
-          ul {
-            flex-direction:row; width:90%; margin-left:10%; text-align:right; justify-content:flex-end;
-            //li:hover .icon {fill:$white !important;}
-            //li:hover img {background-color:$white;}
-          }
-          .copyright {
-            text-align:right; font-size:100%; position:absolute; bottom:5vw; right:5vw;
-            p {margin:0;}
-          }
+      }
+      a, .nav-pages ul li a, p {@include fluid-type($min-vw, $max-vw, 14px, 20px);}
+      &.social {
+        ul {
+          flex-direction:row; width:90%; margin-left:10%; text-align:right; justify-content:flex-end;
+          //li:hover .icon {fill:$white !important;}
+          //li:hover img {background-color:$white;}
+        }
+        .copyright {
+          text-align:right; position:absolute; bottom:2rem; right:5vw; width:90%;
+          p {margin:0;}
+        }
       }
       .nav-pages {
         position:relative; opacity:1 !important; top:unset;
@@ -43,44 +44,20 @@
       &:nth-child(1){width:20%;}
       &:nth-child(2){width:40%}
       &:nth-child(3){width:40%}
-      @media screen and (max-width:475px) {
-        &:nth-child(1){
-          width:100%; order: 1;
-          .nav-pages ul {
-            flex-direction:row; border-bottom:.5px solid $green; margin:.5rem 0 1rem; padding-bottom:.5rem; justify-content:space-around;
-            li {
-              width:auto !important; margin-right:1.5rem;
-              a {font-family:$base-font-family !important;}
-            }
+      @media screen and (max-width:480px) {
+        &:nth-child(1){width:25%;}
+        &:nth-child(2){width:43%}
+        &:nth-child(3){width:27%}
+        .copyright p {text-align:left; margin:0.75rem 0 0 !important;}
+        &.social ul {
+          width:auto; margin-left:0; max-width:94px;
+          li {
+            &:nth-child(odd) {margin-left:0;}
           }
-          
         }
-        &:nth-child(2){
-          width:100%; order: 2;
-          ul {
-            flex-direction:row; justify-content:space-around; padding-bottom:.5rem;
-            li {
-              width:auto !important; margin-right:1.5rem; 
-              &:last-child {margin-right:0;}
-              a {font-family:$base-font-family !important;}
-            }
-          }
-
-        }
-        &:nth-child(3){
-          width:100%; order: 3; 
-          &.social ul {
-            justify-content:space-around; margin:1.25rem 0 3rem;; width:100%; padding-bottom:0; 
-            li {
-              margin:0  1.75rem 0 0 ; padding-bottom:.25rem;
-              a {font-family:$base-font-family !important;}
-            }
-          }
-          .copyright {text-align:center; right:unset; }
-        }
-
       }
     } 
-    @media screen and (max-width:475px) {padding-bottom:5vw;}    
-  }     
+    @media screen and (max-width:480px) {padding-bottom:1.5rem;}    
+  }   
 } 
+
