@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .nav-pages {
-  position:absolute; z-index:1; width:100%; top:6vw; display:flex; justify-content:center; 
+  position:absolute; z-index:2; width:100%; top:6vw; display:flex; justify-content:center; 
   @media screen and (min-width:$medium){opacity:0;}
   ul {
     list-style: none; display:flex; padding:0;
