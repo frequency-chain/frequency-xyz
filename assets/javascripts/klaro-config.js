@@ -65,6 +65,11 @@ var klaroConfig = {
                 'Accept All',
             acceptSelected:
                 'Accept Selected',    
+            privacyPolicy: {
+                name: "",
+                text: "",
+            },
+
             matomo: {
                 description:
                     "Privacy focused site analytics with no cross site tracking",
