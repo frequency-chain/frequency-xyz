@@ -3,7 +3,7 @@
    ========================================================================== */
  
 
-.layout--home, .layout--about, .layout--how {
+.layout--home, .layout--social-web, .layout--how {
   .initial-content {
     position:relative;
   }
@@ -79,6 +79,9 @@
       .descWrapper p {text-align: center;}
     }
   }  
+  @media screen and (max-width:$xsmall) {
+    .descWrapper p {text-align: left !important;}
+  }
 }
   
 
@@ -87,14 +90,22 @@
   .parallax-wrapper .parallax-1::before {
     background-image: url('/assets/images/illustration-01.jpg');
   }
-  #fixedTitle {padding:0 15vw;}
+  #fixedTitle {padding:0 5vw;}
   .sub-hero-wrapper {
     .subheading-text {
-      padding:15vw 0;
+      padding:15vw 0vw;
       .intro-title {padding:0 10vw;}
-      p {padding:0 15vw;}
+      p {padding:0 10vw;}
+      @media screen and (min-width:$xxlarge) {
+        padding:15vw 5vw;
+      } 
       @media screen and (max-width:$small) {
-        p {padding:0 5vw;}
+        padding:15vw 3vw;
+        p {padding:0 3vw;}
+      } 
+      @media screen and (max-width:$xsmall) {
+        padding:15vw 5vw;
+        p {padding:0;}
       } 
     }
     &:after {
@@ -103,40 +114,60 @@
       width:100%; height:100%; background-size:100%; z-index:0;
     }
   }
+  //.intro-2 .intro-title {padding:0 !important;}
+  /*@media screen and (min-width:$xlarge) {
+    #fixedTitle {padding:0 14vw;}
+  }
+  @media screen and (min-width:$xxlarge) {
+    #fixedTitle {padding:0 17vw;}
+  }*/
 }
 .layout--how {
-  .subheading-text {
+  .sub-hero-wrapper .subheading-text {
+    padding:15vw 5vw 10vw;;
     .intro-title {
       padding:0 5vw;
     }
+    @media screen and (min-width: $medium) {
+      h3 {padding-bottom:1rem; line-height:4rem;}
+      h2 {padding-bottom:2rem;}
+    }
+    @media screen and (max-width: $medium) {
+      h3 {line-height:3rem;}
+    }
   }  
 }
-.layout--about {
-  #fixedTitle {padding:0 5vw; top:22vw;}
+
+.layout--social-web {
   .parallax-wrapper .parallax-1 {
     &::before {
       background-image: url('/assets/images/illustration-02.jpg');
       }
   }
-  .subheading-text {
-    background:url('/assets/images/logo-partners.png') no-repeat 50% 95%; background-size:90vw;
-    @media screen and (max-width:$medium){
-      background:url('/assets/images/logo-partners-mobile.png') no-repeat 50% 95%; background-size:90vw;
+  .sub-hero-wrapper .subheading-text {
+    .intro-title {margin-bottom:0;}
+    h4 {padding:0 8vw;}
+    @media screen and (max-width: $small) {
+      h4 {font-size:22px; line-height:33px;}
     }
-    background-size:90%;
-    .intro-title {padding:0;}
   }
+  
+
   @media screen and (max-width: $medium) {
     #fixedTitle {padding:0;}
     .sub-hero-wrapper .subheading-text {
-      padding-bottom:15rem;
-      .intro-title {padding:0 !important;}
+      //padding-bottom:15rem;
+      .intro-title {padding:0 !important; margin-bottom:2rem;}
+      h4 {padding:0}
     }
     
   }
   @media screen and (min-width: $xlarge) {
     #fixedTitle {padding:0 11vw;}
-    .subheading-text .intro-title {padding:0 6vw;}
+    .sub-hero-wrapper .subheading-text {
+      .intro-title {padding:3rem 6vw;}
+    h4 {padding:0 10vw;}
+    }
   }
   @media screen and (min-width: $xxlarge) {
     #fixedTitle {padding:0 13vw;}
@@ -145,17 +176,20 @@
 }
 
  
-.layout--about, .layout--how {  
-  .subheading-text {
+.layout--social-web, .layout--how {  
+  .sub-hero-wrapper .subheading-text {
     @media screen and (min-width: 850px) {
       .descWrapper {columns: auto 2; column-gap: 4vw; text-align:left; margin-top:4vw;}
     }
-    @media screen and (max-width: $medium) {p {text-align:left;}} 
+    @media screen and (max-width: $medium) {
+      .descWrapper p {text-align:left;}
+    } 
   }
 }
 
 .parallax-wrapper {
-    height: 63vw;
+    //height: 63vw;
+    height: 62.25vw;
     top:6rem;
   &:before {
     background: #222;
@@ -176,19 +210,11 @@
         position:fixed;top: 6rem; left: 0px; right: 0px; bottom: 0px; z-index: -2;
       }
     }  
-
-  /*div.content-outer {
-    width: 100%;
-    background-color: white;
-    perspective: 2px;
-    -webkit-perspective: 2px;
-  }*/
-
 }
 
 .sub-hero-wrapper {
   position:relative; display:flex;
-  /*min-height:100vh;*/ width:100%;
+  width:100%;
   video {
     width:100%; height:100%;
     object-fit: cover; position: absolute;
@@ -196,43 +222,41 @@
     z-index: 0;
   }
   .subheading-text {
-    position:relative; padding:15vw 5vw; text-align: center; z-index:1;
-    color: $white; //line-height:1rem; 
-    //@media screen and (min-width:$medium){opacity:0; } 
+    position:relative; /*padding:15vw 5vw;*/ padding:10vw 5vw; text-align: center; z-index:1;
+    color: $white; 
     @media (orientation: landscape) {opacity:0;}
     
     .intro-title {
       position: unset; top: unset; left: unset; width: unset; margin-bottom:3rem;
     }
-    p {
-      //@include fluid-type($min-vw, $max-vw, 16px, 38px);
-       line-height:normal; //line-height:2.5rem;
-    }
+    //p { line-height:normal; }
   }      
 }
 
 
-.layout--home, .layout--about, .layout--how {
+.layout--home, .layout--social-web, .layout--how {
 
   /*portrait styles - large and small screens */
   @media (orientation: portrait) {
-    #fixedTitle {display:none;}
+    //#fixedTitle {display:none;}
     .sub-hero-wrapper {
       min-height:60vh;
       .nav-pages {display:flex; opacity:1;}
     }
-    .intro-2 .intro-title {padding:0 5vw 3rem;}
+    .intro-2 .intro-title {
+      padding:0 5vw 3rem;
+    }
   }
 
   /* portrait styles - small screens only */
-  @media screen and (max-width:$medium){
-    .intro-title {top:8rem;}
+  @media screen and (max-width:$medium) and (orientation:portrait) {
+    //.intro-title {top:6rem;}
     .parallax-wrapper {
       &::before {top:4rem;}
       &::before, .parallax, .parallax:before {min-height:unset;}      
       .parallax::before {background-size:100%; top:4rem;}
     }
-    #fixedTitle {display:none;}
+    //#fixedTitle {display:none;}
     .sub-hero-wrapper {
       .nav-pages {display:none;}
       .subheading-text {
@@ -256,9 +280,28 @@
   }
 }
 @media screen and (max-width:$medium){
-  .layout--about {
+  .layout--social-web {
     .parallax-wrapper .parallax::before {
       background-image: url('/assets/images/illustration-02-mobile.jpg');
     }  
   }
+}
+@media (min-aspect-ratio: 17/9) {
+  .parallax-wrapper {
+    height: 62vw;
+    top:unset;
+    position:relative;
+    &:before {
+      position: absolute; 
+      .parallax { 
+        width: 100vw; height:64.25vw;
+        position: relative;       
+        &::before {
+          position:relative;
+        }
+      }
+    }
+  }
+  .layout--home .parallax-wrapper .parallax-1::before, .layout--social-web .parallax-wrapper .parallax-1::before {position:absolute;}
+  #fixedTitle {position:absolute; top:20vw}
 }

@@ -3,30 +3,50 @@
    ========================================================================== */
 
 h2 {
-  @include fluid-type($min-vw, $max-vw, 30px, 80px);
-  //@include fluid-type($min-vw, $max-vw, 30px, 60px);
-  margin-bottom:3rem; 
-  //@media screen and (min-width:xxlarge) {font-size:80px; line-height:auto;}
+  @include fluid-type($min-vw, $max-vw, 26px, 76px);
+  margin-bottom:2.75rem; 
 }
 h3 {
   @include fluid-type($min-vw, $max-vw, 20px, 50px);
-  //@include fluid-type($min-vw, $max-vw, 22px, 42px);
   margin-bottom:2.5rem;
 }
 h4 {
-  @include fluid-type($min-vw, $max-vw, 18px, 40px);
-  //@include fluid-type($min-vw, $max-vw, 18px, 30px);
+  @include fluid-type($min-vw, $max-vw, 18px, 44px);
+  margin-bottom:2rem;
+}
+h5 {
+  @include fluid-type($min-vw, $max-vw, 16px, 38px);
   margin-bottom:2rem;
 }
 p.large {
   @include fluid-type($min-vw, $max-vw, 18px, 30px);
-  //@include fluid-type($min-vw, $max-vw, 16px, 26px);
   margin-bottom:2rem;
 }
 p {
   @include fluid-type($min-vw, $max-vw, 16px, 26px);
-  //@include fluid-type($min-vw, $max-vw, 14px, 22px);
-}   
+}  
+
+@media screen and (max-width:$xsmall){
+  h2 {
+    @include fluid-type($min-vw, $max-vw, 22px, 26px);
+  }
+  h3 {
+    @include fluid-type($min-vw, $max-vw, 17px, 20px);
+  }
+  h4 {
+    @include fluid-type($min-vw, $max-vw, 15px, 18px);
+  }
+  h5 {
+    @include fluid-type($min-vw, $max-vw, 13px, 16px);
+  }
+  p.large {
+    @include fluid-type($min-vw, $max-vw, 15px, 18px);
+  }
+  p {
+    @include fluid-type($min-vw, $max-vw, 13px, 16px);
+  }  
+
+}
 
 section {
   display:flex; justify-content:center; align-content:center;
@@ -40,7 +60,7 @@ section {
   .inner {
     background:#fff; display:flex; justify-content:space-between; align-items: center;
     margin:0px auto; padding:1.5rem 5vw; height:6rem;
-    .nav-pages { top:unset; width:40%; pointer-events:none;}
+    .nav-pages { top:unset; width:45%; pointer-events:none;}
     .title-wrapper {
       width:30%;
       .site-title {margin:0; text-align:left;}
@@ -70,27 +90,5 @@ section {
 
 
 
-#main {
-  z-index:1;
-  /*&.scrolled {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    section {
-      scroll-snap-align: top; height:95vh;
-    }
-  }*/  
-}
-
-
-
-/*.canvas {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  section {
-    scroll-snap-align: center; height:100vh;
-  }
-}*/
-
+#main {z-index:1;}
 

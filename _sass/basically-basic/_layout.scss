@@ -13,7 +13,7 @@
         padding:.4rem 1rem; 
       }
       a {
-        color:$text-color; text-decoration:none; /*font-weight:600; font-size:1.5rem;*/
+        color:$text-color; text-decoration:none; 
         @include fluid-type($min-vw, $max-vw, 16px, 24px);
       }
       &.active a {color:$green; pointer-events: none;}
@@ -25,21 +25,19 @@
 
 .canvas {
   position: relative; width: 100%;
-  /*overflow: hidden; height:100%;*/
 }
 
 .wrapper {
   position: relative;
   width: 100%; height: 100%; min-height: 100vh;
-  //transform: translateX(0);
-  //transition: $global-transition;
   background-color: $background-color;
   z-index: 100;
   -webkit-backface-visibility: hidden; backface-visibility: hidden;
 }
 
 .inner {
-   padding:5vw; margin:0px auto;
+   padding:10vw 5vw; margin:0px auto;
+   p:last-child {margin-bottom:0;} 
 }
 
 main {

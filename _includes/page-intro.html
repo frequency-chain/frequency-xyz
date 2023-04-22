@@ -29,19 +29,30 @@
              <source src="/assets/videos/gradient_long.mp4" type="video/webm">
           </video>
           <div class="subheading-text">
-            <h2 class="intro-title no-scroll">{{ page.headline | markdownify  | remove: '<p>' | remove: '</p>'  }}</h2>
+            <!--{% if page.headline2 %}-->
+            <h2 class="intro-title no-scroll">{{ page.headline2 | markdownify  | remove: '<p>' | remove: '</p>'  }}</h2>
+            <!--{% endif %}--> 
+            <!--{% if page.headline3 %}-->
+            <h3 class="intro-title no-scroll">{{ page.headline3 | markdownify  | remove: '<p>' | remove: '</p>'  }}</h3>
+            <!--{% endif %}-->
+            <!--{% if page.headline4 %}-->
+            <h4>{{ page.headline4 | markdownify  | remove: '<p>' | remove: '</p>'  }}</h4>
+            <!--{% endif %}--> 
             <div class="descWrapper">
                 <!--{% if page.subheadline %}-->
-                  <p class="large">{{ page.subheadline | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>
+                <p class="large">{{ page.subheadline | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>
                 <!--{% endif %}--> 
                 <!--{% if page.subheadline2 %}-->
-                  <p class="large">{{ page.subheadline2 | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>
+                <p class="large">{{ page.subheadline2 | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>
                 <!--{% endif %}--> 
                 <!--{% if page.subheadline3 %}-->
                 <p class="large">{{ page.subheadline3 | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>
                 <!--{% endif %}-->  
                 <!--{% if page.subheadline4 %}-->
                 <p class="large">{{ page.subheadline4 | default: page.subheadline | default: site.subheadline | markdownify | strip_html }}</p>
+                <!--{% endif %}-->  
+                <!--{% if page.subheadline-columns %}-->
+                {{ page.subheadline-columns | default: page.subheadline | default: site.subheadline | markdownify }}
                 <!--{% endif %}-->  
             </div>
           </div> 

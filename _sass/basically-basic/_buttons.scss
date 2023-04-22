@@ -8,7 +8,6 @@
   border: 0;
   border-radius: $border-radius;
   border: 1px solid $white;
-  //background-color: $accent-color;
   background-color:rgba(255,255,255,.2);
   color: #fff;
   font-weight: bold;
@@ -36,6 +35,8 @@
     //background-color:rgba(0,0,0,.2);
   }
 
+  
+
   /* block button fills width of parent container */
   &--block {
     display: block;
@@ -45,4 +46,9 @@
       margin-top: 1rem;
     }
   }
+
+  @media screen and (max-width: $small) {
+    padding:.5rem 1rem; font-size:1rem;
+ } 
+
 }
