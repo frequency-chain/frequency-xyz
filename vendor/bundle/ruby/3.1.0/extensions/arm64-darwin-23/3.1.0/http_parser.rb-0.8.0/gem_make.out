@@ -1,0 +1,20 @@
+current directory: /Users/claireolmstead/Desktop/Amplica/frequency-xyz/vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+/Users/claireolmstead/.rbenv/versions/3.1.2/bin/ruby -I /Users/claireolmstead/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231128-65600-9n4q4x.rb extconf.rb
+creating Makefile
+
+current directory: /Users/claireolmstead/Desktop/Amplica/frequency-xyz/vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= clean
+
+current directory: /Users/claireolmstead/Desktop/Amplica/frequency-xyz/vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\=
+compiling ruby_http_parser.c
+ruby_http_parser.c:365:17: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'long' [-Wsign-compare]
+    if (nparsed < len)
+        ~~~~~~~ ^ ~~~
+1 warning generated.
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+
+current directory: /Users/claireolmstead/Desktop/Amplica/frequency-xyz/vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20231128-65600-v2inx0
