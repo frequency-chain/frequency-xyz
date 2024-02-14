@@ -1,12 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  /* Typeography */
+  .title-75 {
+    @apply text-75;
+  }
+  .title-100 {
+    @apply text-100;
+  }
+  .subtitle {
+    @apply text-xl font-semibold;
+  }
+
+  /* Layout */
+  .freq-container {
+    @apply w-full sm:px-[16px] md:px-[40px] lg:px-[80px];
+  }
+}
+
 @layer base {
   body {
-    color: black;
+    @apply text-base text-black;
   }
 
   button {

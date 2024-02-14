@@ -4,8 +4,9 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     fontFamily: {
+      // TODO: cange title to Newake when we get the licence.
+      title: ['Poppins', 'sans-serif'],
       sans: ['Poppins', 'sans-serif'],
-      data: ['Space Mono', 'sans-serif'],
     },
     colors: {
       transparent: 'transparent',
@@ -13,42 +14,35 @@ export default {
       white: '#ffffff',
       black: '#000000',
       disabled: '#BCBAC0',
-      'bg-black': '#232326',
-      'bg-black-active': '#363639',
-      blue: '#459ABA',
-      'blue-light': '#69B9CD',
-      green: '#6EE9D1',
-      'green-success': '#7CFA4D',
-      divider: '#504D4D',
-      overlay: 'rgba(57, 52, 52, 0.75)',
-      error: '#E70F0F',
+      cream: '#FEFAF3',
+      navy: '#19455E',
+      yellow: '#FFD747',
+      teal: '#4BA0A5',
+      purple: '#2B2F6E',
+      orange: '#F87C48',
+      indigo: '#5E69FF',
     },
     width: {
-      modal: '420px',
-      'single-block': '550px',
-      dashboard: '1010px',
+      page: '1010px',
       full: '100%',
     },
     extend: {
-      borderRadius: {
-        'rounded-3xl': '20px',
-        'rounded-md': '5px',
-      },
-      boxShadow: {
-        md: '0px 4px 7px rgba(0,0,0,.25)',
-        'blue-border': '8px 0 0 #69B9CD',
-      },
-      backgroundImage: {
-        topRight: 'url(/assets/top-right-bars.png)',
-      },
       fontSize: {
-        xs: '10px',
-        sm: '12px',
-        base: '14px',
+        xs: '14px',
+        sm: '16px',
+        base: '18px',
         lg: '20px',
         xl: '25px',
         '2xl': '30px',
+        75: '75px',
+        100: '100px',
+        200: '200px',
       },
+    },
+    screens: {
+      sm: '0px',
+      md: '900px',
+      lg: '1300px',
     },
   },
 };
