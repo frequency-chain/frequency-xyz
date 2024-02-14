@@ -23,7 +23,7 @@ export default {
       indigo: '#5E69FF',
     },
     width: {
-      page: '1010px',
+      page: '1300px',
       full: '100%',
     },
     extend: {
