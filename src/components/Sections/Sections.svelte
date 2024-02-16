@@ -16,7 +16,7 @@
 <!-- For Desktop -->
 <div
   id="scroll-container"
-  class="h-[500px] w-page flex-nowrap overflow-hidden sm:hidden md:hidden lg:flex short:hidden"
+  class="h-[500px] flex-nowrap overflow-hidden sm:hidden md:hidden lg:flex short:hidden"
   on:wheel={handleWheel}
 >
   <slot />

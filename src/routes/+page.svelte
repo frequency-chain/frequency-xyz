@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { MAX_PAGE_WIDTH } from '$lib/consts';
+
   import SectionNavigation from '../components/Sections/SectionNavigation.svelte';
   import Sections from '../components/Sections/Sections.svelte';
   import Section1 from '../components/Sections/Section1.svelte';
@@ -17,8 +19,9 @@
     // TODO: Fix bug when resizing the window.
     const scrollContainer = document.getElementById('scroll-container');
     const spaceBetween = section - prevSection;
+    const scrollWidth = window.innerWidth > MAX_PAGE_WIDTH ? MAX_PAGE_WIDTH : window.innerWidth;
     scrollContainer?.scrollBy({
-      left: window.innerWidth * spaceBetween,
+      left: scrollWidth * spaceBetween,
       behavior: 'smooth',
     });
     prevSection = section;
@@ -51,7 +54,7 @@
   }
 </script>
 
-<div class="relative">
+<div class="relative lg:max-w-[100vw] xl:max-w-page">
   <Sections bind:scrollPosition isLastSection={section === SECTION_COUNT}>
     <Section1 />
     <Section2 />

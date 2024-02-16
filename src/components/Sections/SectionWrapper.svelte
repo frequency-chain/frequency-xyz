@@ -3,6 +3,6 @@
   export let classes = '';
 </script>
 
-<div {id} class={`w-[100vw] min-w-[100vw] ${classes}`}>
+<div {id} class={`w-[100vw] min-w-full ${classes}`}>
   <slot />
 </div>

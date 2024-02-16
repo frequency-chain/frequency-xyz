@@ -1,11 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 
+import { MAX_PAGE_WIDTH } from './src/lib/consts';
+
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     fontFamily: {
       // TODO: cange title to Newake when we get the licence.
-      title: ['Poppins', 'sans-serif'],
+      title: ['Newake', 'sans-serif'],
       sans: ['Poppins', 'sans-serif'],
     },
     colors: {
@@ -23,11 +25,15 @@ export default {
       indigo: '#5E69FF',
     },
     width: {
-      page: '1600px',
+      page: `${MAX_PAGE_WIDTH}px`,
       full: '100%',
     },
     maxWidth: {
-      page: '1600px',
+      page: `${MAX_PAGE_WIDTH}px`,
+      full: '100%',
+    },
+    minWidth: {
+      page: `${MAX_PAGE_WIDTH}px`,
       full: '100%',
     },
     extend: {
@@ -47,6 +53,7 @@ export default {
       sm: '0px',
       md: '900px',
       lg: '1300px',
+      xl: `${MAX_PAGE_WIDTH}px`,
       short: { raw: '(max-height: 700px)' },
     },
   },

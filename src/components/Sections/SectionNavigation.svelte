@@ -2,7 +2,7 @@
   export let section: number;
 </script>
 
-<div class="freq-container absolute right-0 w-[50vw] justify-between pl-0 pt-[32px] sm:hidden md:hidden lg:flex">
+<div class="freq-container absolute right-0 w-[50%] justify-between pl-0 pt-[32px] sm:hidden md:hidden lg:flex">
   {#each { length: 5 } as _, i}
     <button
       on:click={() => (section = i + 1)}
