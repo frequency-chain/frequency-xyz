@@ -7,7 +7,7 @@
   let isNavOpen = false;
 </script>
 
-<div class="freq-container fixed top-0 flex items-center justify-between pt-[12px]">
+<div class="freq-container fixed top-0 z-50 flex items-center justify-between bg-cream pt-[12px]">
   <img src={Logo} alt="Logo" class="mr-3 sm:w-[140px] md:w-[180px] lg:w-[210px]" />
 
   <!-- For Desktop -->

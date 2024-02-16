@@ -4,7 +4,7 @@
 </script>
 
 <div>
-  <div class="max-w-page mt-[27px] min-h-[calc(100vh-50px)] w-[100vw]">
+  <div class="max-w-page my-[30px] min-h-[calc(100vh-145px)] w-[100vw]">
     <Header />
     <slot />
   </div>

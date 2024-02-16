@@ -43,6 +43,7 @@ export default {
       sm: '0px',
       md: '900px',
       lg: '1300px',
+      short: { raw: '(max-height: 700px)' },
     },
   },
 };
