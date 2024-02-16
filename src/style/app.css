@@ -43,7 +43,7 @@
 
 @layer base {
   body {
-    @apply mt-[67px] flex flex-col items-center scroll-smooth bg-cream text-base text-black;
+    @apply flex flex-col items-center bg-cream text-base text-black;
   }
 
   button {
