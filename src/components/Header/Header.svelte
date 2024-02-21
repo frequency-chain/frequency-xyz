@@ -18,7 +18,7 @@
   }
 </script>
 
-<div id="header" class="freq-container flex max-w-page items-center justify-between sm:pt-[10px] lg:pt-[30px]">
+<div id="header" class="freq-container z-50 flex max-w-page items-center justify-between sm:pt-[10px] lg:pt-[30px]">
   <svg
     class={`mr-3 sm:w-[140px] md:w-[180px] lg:w-[210px]`}
     width="216"

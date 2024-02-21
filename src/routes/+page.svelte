@@ -26,7 +26,7 @@
 </script>
 
 <div class="relative lg:max-w-[100vw] xl:max-w-page">
-  <div class="absolute top-0 w-full"><Header {logoHex} {navColor} /></div>
+  <div class="absolute top-0 z-50 w-full"><Header {logoHex} {navColor} /></div>
   <Sections bind:section sectionCount={5}>
     <Section1 />
     <Section2 />
