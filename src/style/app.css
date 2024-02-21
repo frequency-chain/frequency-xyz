@@ -3,9 +3,9 @@
   font-family: 'Newake';
   src: url('Newake-Font-Regular.eot');
   src:
-    url('Newake-Font-Regular.woff') format('woff'),
-    url('Newake-Font-Regular.otf') format('opentype'),
-    url('Newake-Font-Regular.svg#filename') format('svg');
+    url('../style/indieground-newakefont-web/Newake-Font-Regular.woff') format('woff'),
+    url('../style/indieground-newakefont-web/Newake-Font-Regular.otf') format('opentype'),
+    url('../style/indieground-newakefont-web/Newake-Font-Regular.svg#filename') format('svg');
 }
 
 @tailwind base;
@@ -15,10 +15,10 @@
 @layer components {
   /* Typeography */
   .title-75 {
-    @apply font-title font-bold leading-none tracking-tight sm:text-[40px] md:text-[55px] lg:text-75;
+    @apply font-title font-bold leading-[0.8] tracking-wide sm:text-[40px] md:text-[55px] lg:text-75;
   }
   .title-100 {
-    @apply font-title font-bold leading-none tracking-tight sm:text-[55px] md:text-75 lg:text-100;
+    @apply font-title font-bold leading-[0.8] tracking-wide sm:text-[55px] md:text-75 lg:text-100;
   }
   .subtitle {
     @apply font-semibold sm:text-lg md:text-lg lg:text-xl;
