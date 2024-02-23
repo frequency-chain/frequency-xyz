@@ -7,7 +7,9 @@
   <div class="h-[100vh] w-[100vw] overflow-x-hidden">
     <div class="min-h-[calc(100vh-100px)]">
       <slot />
-      <JoinSocials />
+      <div class="freq-container mt-[150px]">
+        <JoinSocials />
+      </div>
     </div>
     <Footer />
   </div>

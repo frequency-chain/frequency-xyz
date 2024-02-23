@@ -7,14 +7,18 @@
   export let logoHex: string = '';
   export let navColor: string = '';
 
-  let isNavOpen = false;
+  $: isNavOpen = false;
 
   $: textColor = `text-${navColor}`;
 
   $: innerWidth = window.innerWidth;
 
   $: {
-    window.addEventListener('resize', () => (innerWidth = window.innerWidth));
+    window.addEventListener('resize', () => {
+      innerWidth = window.innerWidth;
+      let hasMobileNav = innerWidth <= 900;
+      if (!hasMobileNav) isNavOpen = false;
+    });
   }
 </script>
 
