@@ -114,7 +114,7 @@
 <div
   bind:this={scrollContainer}
   id="scroll-container"
-  class="z-0 flex-nowrap overflow-hidden sm:hidden md:hidden lg:flex short:hidden"
+  class="z-0 h-[600px] flex-nowrap overflow-hidden sm:hidden md:hidden lg:flex short:hidden"
   on:wheel={handleWheel}
 >
   <slot />

@@ -3,8 +3,8 @@
   import JoinSocials from '../components/JoinSocials.svelte';
 </script>
 
-<div class="max-w-page shadow-xl">
-  <div class="w-[100vw] overflow-x-hidden">
+<div class="max-w-page overflow-x-hidden shadow-xl">
+  <div class="h-[100vh] w-[100vw] overflow-x-hidden">
     <div class="min-h-[calc(100vh-100px)]">
       <slot />
       <JoinSocials />

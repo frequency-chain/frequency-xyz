@@ -23,6 +23,7 @@ export default {
       purple: '#2B2F6E',
       orange: '#F87C48',
       indigo: '#5E69FF',
+      darkIndigo: '#445BC3',
     },
     width: {
       page: `${MAX_PAGE_WIDTH}px`,

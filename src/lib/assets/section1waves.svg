@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1498 612">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #5e69ff;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+
+      .cls-2 {
+        stroke: #4ba0a5;
+      }
+
+      .cls-3 {
+        stroke: #19455e;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-2" d="m400,605c-100,0-100-64-200-64S100,605,0,605"/>
+      <path class="cls-2" d="m900,605c-125,0-125-200-250-200-125,0-125,200-250,200"/>
+      <path class="cls-2" d="m1498,605c-150,0-150-480-300-480s-150,480-300,480"/>
+    </g>
+    <g>
+      <path class="cls-1" d="m400,606c-100,0-100-96-200-96S100,606,0,606"/>
+      <path class="cls-1" d="m900,606c-125,0-125-300-250-300s-125,300-250,300"/>
+      <path class="cls-1" d="m1498,606c-150,0-150-600-300-600s-150,600-300,600"/>
+    </g>
+    <g>
+      <path class="cls-3" d="m400,605c-100,0-100-32-200-32S100,605,0,605"/>
+      <path class="cls-3" d="m900,605c-125,0-125-100-250-100s-125,100-250,100"/>
+      <path class="cls-3" d="m1498,605c-150,0-150-360-300-360s-150,360-300,360"/>
+    </g>
+  </g>
+</svg>
