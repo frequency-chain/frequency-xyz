@@ -3,13 +3,14 @@
   import NavItems from './NavItems.svelte';
 
   export let isOpen: boolean;
+  export let section: number;
 </script>
 
 <div
   class={`z-1 fixed right-0 top-0 z-10 w-[100vw] flex-col justify-between gap-6 overflow-scroll bg-navy px-[12%] font-title transition-[height] duration-[1s] sm:flex md:hidden lg:hidden ${isOpen ? 'h-[100vh]' : 'h-0'}`}
 >
   <nav class="mt-[60px] flex flex-col gap-4 text-xl uppercase text-cream">
-    <NavItems textColor="cream" />
+    <NavItems textColor="cream" bind:section isDesktop={false} />
   </nav>
 
   <div class="pb-[40px] font-sans text-cream">

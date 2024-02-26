@@ -10,7 +10,11 @@
     <h3 class="font-title text-xl">Meet the Founders</h3>
   </SlideIn>
   <div class="flex gap-6">
-    <FounderProfile imgSrc={BraxtonHeadshot} name="Braxton Woodham" />
-    <FounderProfile imgSrc={HarryHeadshot} name="Harry Evans" />
+    <FounderProfile
+      imgSrc={BraxtonHeadshot}
+      name="Braxton Woodham"
+      linkedinUrl="https://www.linkedin.com/in/braxton-woodham-a1498b"
+    />
+    <FounderProfile imgSrc={HarryHeadshot} name="Harry Evans" linkedinUrl="https://www.linkedin.com/in/harry-evans-" />
   </div>
 </section>

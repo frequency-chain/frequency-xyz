@@ -1,9 +1,13 @@
 <script lang="ts">
   export let textColor: string;
+  export let section: number;
+  export let isDesktop: boolean = true;
 </script>
 
-<a class={`underline-on-hover after:bg-${textColor}`} href="/#">About.</a>
-<a class={`underline-on-hover after:bg-${textColor}`} href="/#">Our Technology.</a>
+{#if isDesktop}
+  <a class={`underline-on-hover after:bg-${textColor}`} href="/#" on:click={() => (section = 1)}>About.</a>
+{/if}
+<!-- <a class={`underline-on-hover after:bg-${textColor}`} href="/#">Our Technology.</a> -->
 <a
   class={`underline-on-hover after:bg-${textColor}`}
   href="https://docs.frequency.xyz/"

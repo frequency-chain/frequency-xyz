@@ -6,6 +6,7 @@
 
   export let logoHex: string = '';
   export let navColor: string = '';
+  export let section: number;
 
   $: isNavOpen = false;
 
@@ -42,10 +43,10 @@
 
   <!-- For Desktop -->
   <div class={`transition-color duration-1000 ${innerWidth <= MAX_MOBILE_WIDTH ? 'text-navy' : textColor}`}>
-    <HeaderNav textColor={navColor} />
+    <HeaderNav textColor={navColor} bind:section />
   </div>
 
   <!-- For Mobile -->
   <OpenCloseIcon onClick={() => (isNavOpen = !isNavOpen)} isOpen={isNavOpen} classes={'md:hidden lg:hidden'} />
-  <HeaderNavMobile isOpen={isNavOpen} />
+  <HeaderNavMobile isOpen={isNavOpen} bind:section />
 </div>
