@@ -8,7 +8,7 @@
 
 <style>
   .wave {
-    background: url(/src/lib/assets/Section5Waves.svg) no-repeat bottom;
+    background: url(/src/lib/assets/section5waves.svg) no-repeat bottom;
     width: 30%;
     height: 100%;
     margin-right: 70%;

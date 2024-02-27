@@ -2,6 +2,6 @@
 
 <style>
   .wave {
-    background-image: url(/src/lib/assets/Section3Waves.svg);
+    background-image: url(/src/lib/assets/section3waves.svg);
   }
 </style>
