@@ -22,10 +22,10 @@
     </SplitSection>
     <SplitSection isLeft={false} classes="lg:border-b-[5px] lg:border-yellow bg-teal">
       <div class="text-cream sm:mb-[80px] sm:max-w-[800px] sm:pr-[65px] sm:pt-6 md:pr-[50px] lg:mr-0 lg:max-w-[450px]">
-        Take Your Content And Relationships With You. Your followers and friends are yours to keep, with complete
-        control in your hands. Frequency ensures that you can seamlessly bring your content and connections along to any
-        exciting new experience within the Frequency Network. If you love experimenting, you can post to multiple
-        experiences at once using your Frequency identity, which links you to the entire network of Frequency apps.
+        Your followers and friends are yours to keep, with complete control in your hands. Frequency ensures that you
+        can seamlessly bring your content and connections along to any exciting new experience within the Frequency
+        Network. If you love experimenting, you can post to multiple experiences at once using your Frequency identity,
+        which links you to the entire network of Frequency apps.
       </div>
     </SplitSection>
   </section>

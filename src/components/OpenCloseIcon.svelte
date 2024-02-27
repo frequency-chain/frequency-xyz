@@ -4,8 +4,13 @@
   export let classes: string = '';
 </script>
 
-<button on:click|preventDefault={onClick} class={`z-50 ${classes}`}>
-  <svg class="h-[40px] w-[40px]">
+<button
+  aria-label="Open main navigation"
+  aria-controls="mobile-navigation"
+  on:click|preventDefault={onClick}
+  class={`z-50 ${classes}`}
+>
+  <svg class="h-[40px] w-[40px]" role="none">
     <line
       x1="0"
       y1="50%"

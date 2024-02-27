@@ -5,14 +5,16 @@
 </script>
 
 {#if isDesktop}
-  <a class={`underline-on-hover after:bg-${textColor}`} href="/#" on:click={() => (section = 1)}>About.</a>
+  <a class={`underline-on-hover after:bg-${textColor}`} href="/" on:click|preventDefault={() => (section = 1)}>About.</a
+  >
 {/if}
 <!-- <a class={`underline-on-hover after:bg-${textColor}`} href="/#">Our Technology.</a> -->
 <a
   class={`underline-on-hover after:bg-${textColor}`}
   href="https://docs.frequency.xyz/"
   target="_blank"
-  rel="noreferrer">Dev Docs.</a
+  rel="noreferrer"
+  role="">Dev Docs.</a
 >
 <a
   class={`underline-on-hover after:bg-${textColor}`}

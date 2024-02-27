@@ -21,6 +21,9 @@
     [5, { logo: cream, nav: 'cream' }],
   ]);
 
+  // Section navigation titles for Aria
+  const sectionTitles = ['Introduction', 'Control', 'Portability', 'Vote', 'Technology'];
+
   $: logoHex = logoMap.get(section)?.logo;
   $: navColor = logoMap.get(section)?.nav;
 </script>
@@ -34,5 +37,5 @@
     <Section4 />
     <Section5 />
   </Sections>
-  <SectionNavigation bind:section />
+  <SectionNavigation bind:section {sectionTitles} />
 </div>
