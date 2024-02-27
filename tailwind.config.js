@@ -58,4 +58,5 @@ export default {
       short: { raw: '(max-height: 700px)' },
     },
   },
+  safelist: ['after:bg-navy', 'after:bg-cream'],
 };
