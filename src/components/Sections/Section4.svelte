@@ -6,7 +6,10 @@
   import SectionWrapper from './SectionWrapper.svelte';
 </script>
 
-<SectionWrapper id="section4" classes="text-right flex lg:px-0 sm:pb-[140px] lg:pb-0 justify-end">
+<SectionWrapper
+  id="section4"
+  classes="text-right flex lg:px-0 sm:pb-[140px] lg:pb-0 justify-end vertical-lg:min-h-[450px]"
+>
   <div class="sm:freq-container md:freq-container body relative h-full">
     <section
       class="sm:flex-end paragraph-spacing-right flex text-navy sm:flex-col sm:items-end sm:gap-6 lg:flex-row-reverse lg:items-start lg:justify-end lg:gap-12"

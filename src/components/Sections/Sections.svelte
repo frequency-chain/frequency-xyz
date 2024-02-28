@@ -107,14 +107,14 @@
 </script>
 
 <!-- For Mobile and Short -->
-<div class="sm:block md:block lg:hidden short:block">
+<div class="vertical:block horizontal:hidden">
   <slot />
 </div>
 <!-- For Desktop -->
 <div
   bind:this={scrollContainer}
   id="scroll-container"
-  class="z-0 h-[600px] flex-nowrap overflow-hidden sm:hidden md:hidden lg:flex short:hidden"
+  class="z-0 h-[600px] flex-nowrap overflow-hidden vertical:hidden horizontal:flex"
   on:wheel={handleWheel}
 >
   <slot />

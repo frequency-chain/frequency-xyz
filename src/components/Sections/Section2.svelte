@@ -7,7 +7,7 @@
   import SectionContent from '../SectionContent.svelte';
 </script>
 
-<SectionWrapper id="section2" classes="text-cream bg-navy sm:pb-[40px] lg:pb-0">
+<SectionWrapper id="section2" classes="text-cream bg-navy sm:pb-[40px] lg:pb-0 vertical-lg:min-h-[550px]">
   <!-- Mobile section number -->
   <SectionNumber classes="lg:hidden bottom-4" isLeft={true}>.02</SectionNumber>
 

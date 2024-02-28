@@ -1,5 +1,5 @@
 <div
-  class={`wave absolute bottom-0 right-0 h-full bg-bottom bg-no-repeat sm:ml-[0px] sm:w-full md:ml-[25%] md:w-[75%]`}
+  class={`wave absolute bottom-0 right-0 -z-[1] h-full bg-bottom bg-no-repeat sm:ml-[0px] sm:w-full md:ml-[25%] md:w-[75%]`}
 ></div>
 
 <style>

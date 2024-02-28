@@ -7,7 +7,7 @@
 
 <SectionWrapper
   id="section1"
-  classes="flex sm:flex-col-reverse md:flex-col-reverse lg:flex-row sm:justify-center md:justify-center lg:px-0"
+  classes="flex sm:flex-col-reverse md:flex-col-reverse lg:flex-row sm:justify-center md:justify-center lg:px-0 vertical-lg:min-h-[450px]"
 >
   <div
     class="relative sm:-mb-[5px] sm:h-full sm:min-h-[175px] sm:w-full md:h-[175px] lg:mb-0 lg:h-full lg:min-h-[250px] lg:w-[40%]"
@@ -15,7 +15,7 @@
     <Section1Wave />
   </div>
 
-  <div class="border-navy sm:border-0 sm:px-[16px] md:px-[40px] lg:w-[60%] lg:border-b-[5px] lg:px-0">
+  <div class="border-navy sm:border-0 sm:px-[16px] md:px-[40px] lg:w-[60%] lg:px-0 horizontal:border-b-[5px]">
     <section class="paragraph-spacing-left flex h-full max-w-[800px] flex-col gap-6">
       <SlideIn>
         <h2 class="title-75 text-teal">Build at a higher Frequency</h2>

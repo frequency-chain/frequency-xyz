@@ -7,7 +7,10 @@
   import SectionWrapper from './SectionWrapper.svelte';
 </script>
 
-<SectionWrapper id="section5" classes="relative bg-indigo flex sm:flex-col lg:flex-row sm:pt-[50px] lg:pt-0">
+<SectionWrapper
+  id="section5"
+  classes="relative bg-indigo flex sm:flex-col lg:flex-row sm:pt-[50px] lg:pt-0 vertical-lg:min-h-[450px]"
+>
   <!-- Image -->
   <div class="absolute bottom-0 left-0 flex h-full w-full sm:hidden lg:block">
     <Section5Wave />

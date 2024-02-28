@@ -9,7 +9,7 @@
 
 <SectionWrapper
   id="section3"
-  classes="z-0 flex sm:justify-center md:justify-center overflow-hidden sm:pt-[40px] text-cream"
+  classes="z-0 flex sm:justify-center md:justify-center overflow-hidden sm:pt-[40px] text-cream vertical-lg:min-h-[450px]"
 >
   <div class="absolute bottom-0 left-0 h-full w-[50%] sm:hidden lg:block">
     <Section3Wave />
