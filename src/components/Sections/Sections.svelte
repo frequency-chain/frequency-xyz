@@ -12,11 +12,13 @@
   export let section: number;
   export let sectionCount: number;
 
-  let scrollContainer: Element;
+  let scrollContainer: HTMLElement;
 
-  $: {
-    triggerScroll(section, 'smooth');
-  }
+  // Trigger allows us to manually trigger the windowInnerWidth update by flipping the boolean
+  let trigger: boolean = true;
+  $: windowInnerWidth = (trigger || true) && Math.min(MAX_PAGE_WIDTH, window.innerWidth);
+
+  $: left = -1 * windowInnerWidth * (section - 1);
 
   const scrollTopIntoView = () => {
     if (!scrollContainer) return;
@@ -24,17 +26,9 @@
     // and adjust for the header
     const headerHeight = document.getElementById('header')?.getBoundingClientRect()?.height || 0;
     const distanceToTop = scrollContainer.getBoundingClientRect()?.top || 0;
-    if (distanceToTop < headerHeight) {
-      window.scrollTo({ top: headerHeight });
+    if (-1 * distanceToTop > headerHeight) {
+      scrollContainer.scrollIntoView();
     }
-  };
-
-  const triggerScroll = (toSection: number, behavior: 'instant' | 'smooth') => {
-    const scrollWidth = window.innerWidth > MAX_PAGE_WIDTH ? MAX_PAGE_WIDTH : window.innerWidth;
-    scrollContainer?.scrollTo({
-      left: scrollWidth * (toSection - 1),
-      behavior,
-    });
   };
 
   // Time the prior wheel event took place
@@ -81,27 +75,25 @@
         scrollTopIntoView();
       }
       lastChange = wheelTime;
-      triggerScroll(section, 'smooth');
     }
     // Upkeep
     lastWheel = wheelTime;
     lastScrollDown = scrolledDown;
   };
 
-  const setSectionScroll = () => {
-    triggerScroll(section, 'instant');
+  const updateWindowWidth = async () => {
+    // Don't animate
+    scrollContainer.style.setProperty('transition-property', 'none');
+    // Trigger the size adjustment
+    trigger = !trigger;
+    // Allow the browser to complete the change, then re-enable the animation
+    setTimeout(() => scrollContainer.style.removeProperty('transition-property'), 1);
   };
 
   onMount(() => {
-    // Update to the correct position if the browser reloads it, but that can take time, so the setTimeout is needed
-    setTimeout((): void => {
-      if (scrollContainer.scrollLeft > 0) {
-        triggerScroll(section, 'instant');
-      }
-    }, 10);
-    window.addEventListener('resize', setSectionScroll);
+    window.addEventListener('resize', updateWindowWidth);
     return () => {
-      window.removeEventListener('resize', setSectionScroll);
+      window.removeEventListener('resize', updateWindowWidth);
     };
   });
 </script>
@@ -114,7 +106,8 @@
 <div
   bind:this={scrollContainer}
   id="scroll-container"
-  class="z-0 h-[600px] flex-nowrap overflow-hidden vertical:hidden horizontal:flex"
+  style:transform={`translate(${left}px)`}
+  class={`relative z-0 h-[600px] flex-nowrap transition-transform duration-500 ease-in-out vertical:hidden horizontal:flex`}
   on:wheel={handleWheel}
 >
   <slot />
