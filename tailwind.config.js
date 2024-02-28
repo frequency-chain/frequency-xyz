@@ -6,7 +6,6 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     fontFamily: {
-      // TODO: cange title to Newake when we get the licence.
       title: ['Newake', 'sans-serif'],
       sans: ['Poppins', 'sans-serif'],
     },

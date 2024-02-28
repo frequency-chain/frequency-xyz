@@ -4,7 +4,7 @@
 </script>
 
 <div
-  class={`${isLeft ? 'left-0 pr-7 lg:justify-end' : 'right-0 pl-7 lg:justify-start'} sm:freq-container md:freq-container top-0 flex h-full sm:relative sm:justify-center sm:pt-6 lg:absolute lg:w-[50%] lg:pt-[150px] ${classes}`}
+  class={`${isLeft ? 'left-0 justify-end lg:pr-7' : 'right-0 justify-start lg:pl-7'} sm:freq-container md:freq-container top-0 flex sm:relative sm:pt-6 lg:absolute lg:w-[50%] lg:pt-[150px] ${classes}`}
 >
   <slot />
 </div>

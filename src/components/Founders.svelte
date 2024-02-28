@@ -7,7 +7,7 @@
 
 <section class="flex flex-col gap-6 text-cream sm:-mb-[100px] lg:mb-[80px]">
   <SlideIn>
-    <h3 class="font-title text-xl">Meet the Founders</h3>
+    <h3 class="font-title text-xl tracking-wide">Meet the Founders</h3>
   </SlideIn>
   <div class="flex gap-6">
     <FounderProfile
