@@ -11,20 +11,29 @@
   id="section3"
   classes="z-0 flex sm:justify-center md:justify-center overflow-hidden sm:pt-[40px] text-cream vertical-lg:min-h-[450px]"
 >
+  <!-- Desktop Wave -->
   <div class="absolute bottom-0 left-0 h-full w-[50%] sm:hidden lg:block">
     <Section3Wave />
   </div>
 
   <!-- Text Content -->
-  <section class="flex h-full flex-1 justify-center sm:flex-col lg:flex-row">
-    <SplitSection isLeft={true} classes="sm:pb-6 lg:pb-0">
+  <section class="flex h-full flex-1 justify-center sm:flex-col sm:pt-[100px] lg:flex-row">
+    <SplitSection isLeft={true} classes="relative sm:pb-[100px] lg:pb-0">
       <SlideIn>
-        <h2 class="title-75 max-w-[800px] text-right text-navy">Take Your Content & Relationships With You</h2>
+        <h2 class="title-75 text-right text-navy sm:max-w-[200px] md:max-w-[400px] lg:max-w-[540px]">
+          Take Your Content & Relationships With You
+        </h2>
       </SlideIn>
+      <div class="z-10 sm:block lg:hidden">
+        <Section3Wave />
+        <span
+          class="absolute -bottom-16 right-0 border-yellow sm:w-[calc(100%-510px)] sm:border-b-[5px] md:w-[calc(100%-600px)] md:border-b-[6px]"
+        />
+      </div>
     </SplitSection>
     <SplitSection
       isLeft={false}
-      classes={`lg:border-b-[5px] h-full lg:border-yellow bg-teal lg:mr-0 transition-[height] duration-[2s] sm:pb-[80px]`}
+      classes={`lg:border-b-[5px] h-full lg:border-yellow bg-teal lg:mr-0 transition-[height] sm:pt-[100px] duration-[2s] sm:pb-[80px]`}
     >
       <SectionParagraph classes="sm:pr-[100px] md:pr-[140px] lg:px-0">
         Take Your Content And Relationships With You. Your followers and friends are yours to keep, with complete

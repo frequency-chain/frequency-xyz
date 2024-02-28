@@ -9,9 +9,9 @@
 
 <SectionWrapper id="section2" classes="text-cream bg-navy sm:pb-[40px] lg:pb-0 vertical-lg:min-h-[550px]">
   <!-- Mobile section number -->
-  <SectionNumber classes="lg:hidden bottom-4" isLeft={true}>.02</SectionNumber>
+  <SectionNumber classes="lg:hidden bottom-4 z-50" isLeft={true}>.02</SectionNumber>
 
-  <SectionContent classes="flex gap-6 sm:flex-col sm:items-end lg:flex-row lg:items-start justify-center">
+  <SectionContent classes="z-50 flex gap-6 sm:flex-col sm:items-end lg:flex-row lg:items-start justify-center">
     <div class="flex gap-4 text-right sm:items-end lg:items-start">
       <!-- Desktop section number -->
       <SectionNumber
@@ -30,10 +30,10 @@
   </SectionContent>
 
   <!-- Section Image -->
-  <div class="absolute bottom-0 left-0 h-[300px] w-[100%] sm:hidden lg:block">
+  <div class="absolute bottom-0 left-0 h-[300px] w-[100%]">
     <Section2Wave />
     <span
-      class="absolute bottom-0 right-0 border-indigo sm:w-[0px] md:w-[50%] md:border-b-4 lg:w-[20%] lg:border-b-8"
+      class="absolute right-0 sm:w-[0px] md:-bottom-[7px] md:w-[40%] md:border-b-[7px] md:border-rose lg:bottom-0 lg:w-[21%] lg:border-b-[8px] lg:border-indigo"
     />
   </div>
 </SectionWrapper>

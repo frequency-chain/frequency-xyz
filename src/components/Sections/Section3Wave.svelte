@@ -1,18 +1,3 @@
-<div class={`wave absolute bottom-0 left-0 h-full w-full bg-bottom bg-no-repeat`} />
-
-<style>
-  @keyframes slide {
-    from {
-      margin-right: -300px;
-    }
-    to {
-      margin-right: 0px;
-    }
-  }
-
-  .wave {
-    animation: slide 2s ease-in-out infinite alternate;
-    background-image: url(/src/lib/assets/section3waves.svg);
-    background-repeat: repeat-x;
-  }
-</style>
+<div
+  class={`absolute left-0 h-full w-full bg-left-bottom bg-no-repeat sm:-bottom-16 sm:bg-[url(/src/lib/assets/section3mobile.svg)] lg:bottom-0 lg:bg-[url(/src/lib/assets/section3waves.svg)]`}
+/>
