@@ -28,7 +28,7 @@
   class={`freq-container z-50 flex max-w-page items-center justify-between sm:pt-[10px] lg:pt-[30px] ${isNavOpen ? 'fixed' : ''}`}
 >
   <svg
-    class="mr-3 sm:w-[140px] md:w-[180px] lg:w-[210px]"
+    class="mr-3 sm:w-[180px] md:w-[180px] lg:w-[210px]"
     width="216"
     height="32"
     viewBox="0 0 216 32"

@@ -19,6 +19,7 @@ export default {
       navy: '#19455E',
       yellow: '#FFD747',
       teal: '#4BA0A5',
+      tealBright: '#00B6AF',
       purple: '#2B2F6E',
       orange: '#F87C48',
       indigo: '#5E69FF',

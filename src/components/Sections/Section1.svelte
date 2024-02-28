@@ -15,8 +15,8 @@
     <Section1Wave />
   </div>
 
-  <div class="border-navy sm:border-0 sm:px-[16px] md:px-[40px] lg:w-[60%] lg:px-0 horizontal:border-b-[10px]">
-    <section class="paragraph-spacing-left flex h-full max-w-[800px] flex-col gap-6">
+  <div class="border-navy sm:border-0 sm:px-[30px] md:px-[40px] lg:w-[60%] lg:px-0 horizontal:border-b-[10px]">
+    <section class="paragraph-spacing-left flex h-full max-w-[680px] flex-col gap-6 lg:pl-6 lg:pr-0">
       <SlideIn>
         <h2 class="title-75 text-teal">Build at a higher Frequency</h2>
       </SlideIn>
@@ -32,5 +32,5 @@
     </section>
   </div>
 
-  <SectionNumber classes="text-teal z-10 lg:bottom-2 sm:right-1">.01</SectionNumber>
+  <SectionNumber classes="sm:text-teal sm:right-0 sm:bottom-[140px] md:bottom-0 z-10 lg:bottom-3">.01</SectionNumber>
 </SectionWrapper>

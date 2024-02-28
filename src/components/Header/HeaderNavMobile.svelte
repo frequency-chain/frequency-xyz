@@ -10,7 +10,7 @@
   class={`z-1 fixed right-0 top-0 z-10 w-[100vw] flex-col justify-between gap-6 overflow-scroll bg-navy px-[12%] font-title transition-[height] duration-[1s] sm:flex md:hidden lg:hidden ${isOpen ? 'h-[100vh]' : 'h-0'}`}
   aria-expanded={isOpen}
 >
-  <nav id="mobile-navigation" aria-label="Main" class="mt-[60px] flex flex-col gap-4 text-xl uppercase text-cream">
+  <nav id="mobile-navigation" aria-label="Main" class="mt-[60px] flex flex-col gap-4 text-2xl uppercase text-cream">
     <NavItems textColor="cream" bind:section isDesktop={false} />
   </nav>
 

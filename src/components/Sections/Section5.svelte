@@ -32,10 +32,10 @@
         Networking Protocol (DSNP), an open-source solution that establishes a shared social graph independent of
         specific applications or centralized platforms.
       </SectionParagraph>
-      <!-- <button
+      <button
         class="max-w-[200px] border-2 border-cream px-10 py-3 text-xs font-semibold text-cream transition-colors duration-500 hover:bg-cream hover:bg-opacity-30"
         >Learn More</button
-      > -->
+      >
       <SectionNumber classes="text-cream sm:hidden lg:block mr-[70px] bottom-4 right-0">.05</SectionNumber>
     </section>
 

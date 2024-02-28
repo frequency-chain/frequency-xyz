@@ -1,6 +1,6 @@
 <script lang="ts">
-  export let imgSrc: string;
   export let label: string;
+  export let imgSrc: string;
   export let onClick: () => void;
 </script>
 
