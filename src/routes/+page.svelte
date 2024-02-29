@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from '$app/stores';
   import SectionNavigation from '../components/Sections/SectionNavigation.svelte';
   import Sections from '../components/Sections/Sections.svelte';
   import Section1 from '../components/Sections/Section1.svelte';
@@ -26,7 +27,29 @@
 
   $: logoHex = logoMap.get(section)?.logo;
   $: navColor = logoMap.get(section)?.nav;
+  $: baseUrl = $page.url.protocol + '//' + $page.url.host;
 </script>
+
+<svelte:head>
+  <meta property="og:title" content="Frequency" />
+  <meta property="og:url" content={$page.url.toString()} />
+  <meta
+    property="og:description"
+    content="Frequency fuels the Social Web, putting control & data privacy in your hands."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content={`${baseUrl}/og-preview.png`} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image" content={`${baseUrl}/og-square.png`} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="1200" />
+  <meta property="og:image" content={`${baseUrl}/og-thumb.png`} />
+  <meta property="og:image:width" content="200" />
+  <meta property="og:image:height" content="200" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content={`${baseUrl}/og-twitter.png`} />
+</svelte:head>
 
 <div class="relative lg:max-w-[100vw] xl:max-w-page">
   <div class="absolute top-0 z-50 w-full"><Header {logoHex} {navColor} bind:section /></div>
