@@ -9,6 +9,31 @@
     <link rel="manifest" href="%sveltekit.assets%/manifest.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     %sveltekit.head%
+
+    <!-- Klaro - make sure the config gets loaded before Klaro -->
+    <script defer type="text/javascript" src="klaro-config.js"></script>
+    <script defer type="text/javascript" src="klaro.js"></script>
+    <!-- Matomo -->
+    <script>
+      var _paq = (window._paq = window._paq || []);
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['requireCookieConsent']);
+      _paq.push(['requireConsent']);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+        var u = 'https://dsnp.matomo.cloud/';
+        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+        _paq.push(['setSiteId', '2']);
+        var d = document,
+          g = d.createElement('script'),
+          s = d.getElementsByTagName('script')[0];
+        g.async = true;
+        g.src = 'https://cdn.matomo.cloud/dsnp.matomo.cloud/matomo.js';
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
   </head>
 
   <body data-sveltekit-preload-data="hover">
