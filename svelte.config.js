@@ -15,7 +15,7 @@ const config = {
       pages: 'build',
       assets: 'build',
       fallback: '404.html', // dependent on host platform, see GitHub pages doc, maybe?
-      precompress: false,
+      precompress: true,
       strict: true,
     }),
     paths: {
