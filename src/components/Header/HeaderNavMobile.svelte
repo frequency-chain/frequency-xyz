@@ -14,7 +14,7 @@
     <NavItems textColor="cream" bind:section isDesktop={false} />
   </nav>
 
-  <div class="pb-[40px] font-sans text-cream">
+  <div class="z-50 pb-[40px] font-sans text-cream">
     <JoinSocials />
   </div>
 
