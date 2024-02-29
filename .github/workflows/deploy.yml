@@ -41,8 +41,8 @@ jobs:
 
       - name: Build
         env:
-          # Change to '' once we deploy to a root domain
-          BASE_PATH: '/frequency-xyz'
+          # Deploying to a root domain
+          BASE_PATH: ''
         run: |
           npm run build
           touch build/.nojekyll
