@@ -15,13 +15,13 @@
       class="sm:flex-end flex text-navy sm:flex-col sm:items-end sm:gap-6 lg:flex-row-reverse lg:items-start lg:justify-end lg:gap-12"
     >
       <SlideIn>
-        <h2 class="title-75 sm:max-w-[500px] lg:max-w-[500px] lg:text-left">Publicly Vote for Your Preferred Apps</h2>
+        <h2 class="title-75 sm:max-w-[500px] lg:max-w-[500px] lg:text-left">Support Your Preferred Apps</h2>
       </SlideIn>
 
       <SectionParagraph classes="paragraph-spacing-right lg:pl-0">
-        Frequency will soon introduce a unique feature that enables you to vote for the apps and services on the
-        Frequency network that you love. This feature will also permit you to publicly alter your choices, to endorse
-        and, if needed, reconsider your support for apps and services, promoting ethical behavior and accountability.
+        Frequency is set to unveil a distinctive feature that allows you to endorse the apps and services within the
+        Frequency network that you love. This feature will also enable you to publicly alter your choices, and, if
+        necessary, reevaluate your endorsement of apps and services, encouraging ethical conduct and responsibility.
       </SectionParagraph>
     </section>
   </div>
