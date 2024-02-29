@@ -6,7 +6,7 @@
 <div
   role="navigation"
   aria-label="Page Sections"
-  class="freq-container absolute right-0 w-[50%] justify-between pl-0 pt-[32px] sm:hidden md:hidden lg:flex"
+  class="freq-container absolute right-0 w-[50%] justify-between pl-0 pt-[32px] sm:hidden md:hidden lg:flex vertical-lg:hidden"
 >
   {#each sectionTitles as title, i}
     <button

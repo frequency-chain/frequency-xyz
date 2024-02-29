@@ -8,7 +8,7 @@
 
 <SectionWrapper
   id="section4"
-  classes="text-right flex lg:px-0 sm:pb-[140px] lg:pb-0 justify-end vertical-lg:min-h-[450px]"
+  classes="text-right flex lg:px-0 sm:pb-[140px] lg:pb-0 justify-end vertical-lg:min-h-[600px]"
 >
   <div class="sm:freq-container md:freq-container body relative h-full">
     <section
