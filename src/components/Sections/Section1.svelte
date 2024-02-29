@@ -29,7 +29,9 @@
 
   <SectionNumber classes="sm:text-teal sm:right-0 sm:bottom-[140px] z-10 lg:bottom-4">.01</SectionNumber>
 
-  <div class="w-full sm:-mb-[9px] sm:h-[190px] md:-mb-[10px] md:h-[220px] lg:mb-0 lg:h-full">
+  <div
+    class="bottom-0 left-0 w-full sm:-mb-[9px] sm:block sm:h-[190px] md:-mb-[10px] md:h-[220px] lg:absolute lg:mb-0 lg:h-full"
+  >
     <Section1Wave />
   </div>
 </SectionWrapper>
