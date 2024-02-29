@@ -5,25 +5,20 @@
   import SectionNumber from '../SectionNumber.svelte';
 </script>
 
-<SectionWrapper
-  id="section1"
-  classes="flex sm:flex-col-reverse md:flex-col-reverse lg:flex-row sm:justify-center md:justify-center lg:px-0 vertical-lg:min-h-[450px]"
->
-  <div
-    class="relative sm:-mb-[8px] sm:h-full sm:min-h-[175px] sm:w-full md:-mb-[10px] md:h-[220px] lg:mb-0 lg:h-full lg:min-h-[250px] lg:w-[40%]"
-  >
-    <Section1Wave />
-  </div>
-
-  <div class="border-navy sm:border-0 sm:px-[30px] md:px-[40px] lg:w-[60%] lg:px-0 horizontal:border-b-[10px]">
-    <section class="paragraph-spacing-left flex h-full max-w-[680px] flex-col gap-6 lg:pl-6 lg:pr-0">
+<SectionWrapper id="section1" classes="lg:px-0 vertical-lg:min-h-[450px]">
+  <div class="flex sm:justify-start sm:px-[30px] md:px-[40px] lg:justify-end lg:px-0">
+    <section class="flex h-full w-full flex-col gap-6 lg:w-[60%] lg:pl-6">
       <SlideIn>
-        <h2 class="title-75 text-teal">Build at a higher Frequency</h2>
+        <h2 class="title-75 paragraph-spacing-left text-teal sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px]">
+          Build at a higher Frequency
+        </h2>
       </SlideIn>
       <SlideIn>
-        <p class="subtitle">Frequency Empowers the Social Web, Putting Control and Data Privacy in Your Hands</p>
+        <p class="subtitle paragraph-spacing-left sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px]">
+          Frequency Empowers the Social Web, Putting Control and Data Privacy in Your Hands
+        </p>
       </SlideIn>
-      <p class="body">
+      <p class="body paragraph-spacing-left sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px]">
         Frequency contributes to the mission of creating a better web and world. It empowers individuals to ensure the
         portability of their content and safeguard their privacy. The protocol enables ownership of digital identity and
         control over online presence. In a world where technology can have both positive and negative effects,
@@ -32,5 +27,9 @@
     </section>
   </div>
 
-  <SectionNumber classes="sm:text-teal sm:right-0 sm:bottom-[140px] md:bottom-0 z-10 lg:bottom-3">.01</SectionNumber>
+  <SectionNumber classes="sm:text-teal sm:right-0 sm:bottom-[140px] z-10 lg:bottom-4">.01</SectionNumber>
+
+  <div class="w-full sm:-mb-[9px] sm:h-[190px] md:-mb-[10px] md:h-[220px] lg:mb-0 lg:h-full">
+    <Section1Wave />
+  </div>
 </SectionWrapper>

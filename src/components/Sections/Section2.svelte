@@ -24,7 +24,7 @@
     </div>
 
     <SectionParagraph
-      classes="text-left paragraph-spacing-right lg:pl-0 sm:pb-[100px] lg:pb-0 md:max-w-[615px] sm:max-w-auto lg:max-w-auto"
+      classes="text-left paragraph-spacing-right lg:pl-0 sm:pb-[100px] lg:pb-0 sm:max-w-[515px] lg:max-w-auto"
     >
       With Frequency, you will have a choice in how your favorite applications and websites utilize your data. Obtain
       control over your privacy and how your data is shared.
