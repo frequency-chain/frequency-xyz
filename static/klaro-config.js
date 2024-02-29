@@ -110,7 +110,6 @@ var klaroConfig = {
         'piwik_ignore',
       ],
       callback: function (consent, _service) {
-        console.log('here we are');
         if (_paq !== 'undefined') {
           if (consent == true) {
             _paq.push(['setConsentGiven']);
