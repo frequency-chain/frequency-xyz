@@ -5,8 +5,10 @@
   import SectionNumber from '../SectionNumber.svelte';
 </script>
 
-<SectionWrapper id="section1" classes="lg:px-0 vertical-lg:min-h-[450px]">
-  <div class="flex sm:justify-start sm:px-[30px] md:px-[40px] lg:justify-end lg:px-0">
+<SectionWrapper id="section1" classes="lg:px-0">
+  <div
+    class="flex sm:justify-start sm:px-[30px] md:px-[40px] lg:justify-end lg:px-0 vertical-lg:justify-start vertical-lg:px-[30px]"
+  >
     <section class="flex h-full w-full flex-col gap-6 lg:w-[60%] lg:pl-6">
       <SlideIn>
         <h2 class="title-75 paragraph-spacing-left text-teal sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px]">
@@ -27,10 +29,10 @@
     </section>
   </div>
 
-  <SectionNumber classes="sm:text-teal sm:right-0 sm:bottom-[140px] z-10 lg:bottom-4">.01</SectionNumber>
+  <SectionNumber classes="text-teal sm:right-0 sm:bottom-[140px] z-10 lg:bottom-4">.01</SectionNumber>
 
   <div
-    class="bottom-0 left-0 w-full sm:-mb-[9px] sm:block sm:h-[190px] md:-mb-[10px] md:h-[220px] lg:absolute lg:mb-0 lg:h-full"
+    class="bottom-0 left-0 w-full sm:-mb-[9px] sm:block sm:h-[190px] md:-mb-[10px] md:h-[220px] lg:absolute lg:mb-0 lg:h-full vertical-lg:relative vertical-lg:-mb-[10px] vertical-lg:block"
   >
     <Section1Wave />
   </div>
