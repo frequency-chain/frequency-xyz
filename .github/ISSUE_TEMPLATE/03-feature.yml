@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-issue-forms.json
+name: New Feature
+description: New feature, page, etc...
+title: '[Feature]: '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Design link/screenshots
+
+        ## Details
+
+  - type: textarea
+    attributes:
+      label: Content approvals already received
+      value: |
+        Remember that content changes requires approval.
+        - [ ] Approved HE (Required for technical wording)
+        - [ ] Approved CM
+        - [ ] Approved UO
