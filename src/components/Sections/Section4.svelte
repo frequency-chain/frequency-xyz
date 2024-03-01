@@ -19,9 +19,9 @@
       </SlideIn>
 
       <SectionParagraph classes="paragraph-spacing-right lg:pl-0">
-        Frequency is set to unveil a distinctive feature that allows you to endorse the apps and services within the
-        Frequency network that you love. This feature will also enable you to publicly alter your choices, and, if
-        necessary, reevaluate your endorsement of apps and services, encouraging ethical conduct and responsibility.
+        Frequency is set to unveil a distinctive feature that allows you to express support for the apps and services
+        within the Frequency network that you love. This feature will also enable you to publicly alter your choices,
+        and, if necessary, reevaluate your support of apps and services, encouraging ethical conduct and responsibility.
       </SectionParagraph>
     </section>
   </div>
