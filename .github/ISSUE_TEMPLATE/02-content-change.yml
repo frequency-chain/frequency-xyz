@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-issue-forms.json
+name: Content Update
+description: Content change request
+title: '[Content]: '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        - Where is the content that will change?
+        - What is the new content?
+  - type: textarea
+    attributes:
+      label: Content Source
+      value: |
+        Who wrote the new content?
+  - type: textarea
+    attributes:
+      label: Approvals already received
+      value: |
+        Remember that changes along the way trigger re-approval.
+        - [ ] Approved HE (Required for technical wording)
+        - [ ] Approved CM
+        - [ ] Approved UO
