@@ -2,7 +2,7 @@
   import { page } from '$app/stores';
 
   $: {
-    if($page.status === 404){
+    if ($page.status === 404) {
       window.location.href = '/';
     }
   }
