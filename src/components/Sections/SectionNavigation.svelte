@@ -12,7 +12,7 @@
     <button
       aria-label={`Section ${i}: ${title}`}
       on:click={() => (section = i + 1)}
-      class={`text-lg transition-opacity duration-700	 ${section === i + 1 ? 'opacity-100' : 'opacity-25'}`}
+      class={`text-lg transition-opacity duration-700 ${section === i + 1 ? 'opacity-100' : 'opacity-25'}`}
       >.0{i + 1}</button
     >
   {/each}
