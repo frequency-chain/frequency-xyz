@@ -16,6 +16,7 @@
 
   // Trigger allows us to manually trigger the windowInnerWidth update by flipping the boolean
   let trigger: boolean = true;
+  // eslint-disable-next-line no-constant-binary-expression
   $: windowInnerWidth = (trigger || true) && Math.min(MAX_PAGE_WIDTH, window.innerWidth);
 
   $: left = -1 * windowInnerWidth * (section - 1);
