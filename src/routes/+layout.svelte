@@ -1,6 +1,8 @@
 <script>
   import Footer from '../components/Footer.svelte';
   import JoinSocials from '../components/JoinSocials.svelte';
+  import GetNotified from '../components/GetNotified.svelte';
+  import SideTag from '../components/SideTag.svelte';
 </script>
 
 <div class="max-w-page overflow-x-hidden shadow-xl">
@@ -12,5 +14,8 @@
       </div>
     </div>
     <Footer />
+    <SideTag triggerText="Get Notified">
+      <GetNotified />
+    </SideTag>
   </div>
 </div>
