@@ -1,0 +1,18 @@
+service: xyz-form-cors-proxy
+
+frameworkVersion: '4'
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+
+functions:
+  hello:
+    handler: handler.handler
+    events:
+      - http:
+        method: post
+        cors:
+          origin: 'https://*.frequency.xyz'
+          headers:
+            - Content-Type

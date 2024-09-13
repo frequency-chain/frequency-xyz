@@ -1,6 +1,9 @@
 import http from 'http';
 import { handler } from './index.mjs';
 import url from 'url';
+import process from 'node:process';
+
+const allowedOrigin = process.env.PROXY_ALLOWED_ORIGIN || '*';
 
 // Function to parse the HTTP request body
 const getRequestBody = (req) => {
@@ -21,9 +24,9 @@ const getRequestBody = (req) => {
 // Start the HTTP server
 const server = http.createServer(async (req, res) => {
   // Set CORS headers
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173'); // Use "*" to allow all origins
-  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS'); // Allow POST and OPTIONS methods
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); // Allow certain headers
+  res.setHeader('Access-Control-Allow-Origin', allowedOrigin);
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
   // Handle OPTIONS request for CORS preflight
   if (req.method === 'OPTIONS') {

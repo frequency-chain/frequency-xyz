@@ -9,12 +9,16 @@ This is used by the contact form.
 - Supports `POST` requests to a single `PROXY_TARGET_URL`
 - Adds CORS headers for cross-origin requests
 
+## Serverless.yaml
+
+See [./serverless.yaml] to use [serverless.com config](https://www.serverless.com/)
+
 ## Environment Variables
 
 These are the environment variables used by the handler.
 
 - `PROXY_TARGET_URL`: Where the proxy will redirect the requests to
-- `PROXY_ALLOWED_ORIGIN`: (Default `'*'`) The `Access-Control-Allow-Origin` string.
+- `PROXY_ALLOWED_ORIGIN`: (Default `'*'`) The `Access-Control-Allow-Origin` string for the local server.
 
 ## Setup
 
