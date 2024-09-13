@@ -39,10 +39,12 @@
 
 {#if isPopupOpen}
   <div
+    role="none"
+    on:click|preventDefault={closePopup}
     class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
     transition:fade={{ duration: 200 }}
   >
-    <div class="relative max-h-screen max-w-[600px] overflow-y-auto shadow-xl">
+    <div role="none" on:click|stopPropagation class="relative max-h-screen max-w-[600px] overflow-y-auto shadow-xl">
       <slot />
       <div class="absolute right-2 top-0 z-50 p-3">
         <OpenCloseIcon onClick={closePopup} isOpen={true} />
