@@ -23,20 +23,21 @@ These are the environment variables used by the handler.
 To run the CORS proxy locally:
 
 1. Run the proxy locally:
-    ```bash
-    PROXY_TARGET_URL="https://example.com/submit-form" npm run start
-    ```
 
-    - Replace `https://example.com/submit-form` with the target URL.
+   ```bash
+   PROXY_TARGET_URL="https://example.com/submit-form" npm run start
+   ```
+
+   - Replace `https://example.com/submit-form` with the target URL.
 
 2. Use the following `curl` example to test a `POST` request from your terminal:
 
-    ```bash
-    curl -X POST "http://localhost:3000/" \
-        -d "param1=value1&param2=value2"
-    ```
+   ```bash
+   curl -X POST "http://localhost:3000/" \
+       -d "param1=value1&param2=value2"
+   ```
 
-    - Replace `param1=value1&param2=value2` with your actual form data.
+   - Replace `param1=value1&param2=value2` with your actual form data.
 
 ### 2. Using with an HTML Form and JavaScript Fetch
 
@@ -52,26 +53,26 @@ You can use this proxy to submit a form using JavaScript `fetch`. Here’s an ex
 </form>
 
 <script>
-document.getElementById('exampleForm').addEventListener('submit', async (e) => {
-  e.preventDefault();  // Prevent the default form submission
+  document.getElementById('exampleForm').addEventListener('submit', async (e) => {
+    e.preventDefault(); // Prevent the default form submission
 
-  const formData = new FormData(e.target);
-  const params = new URLSearchParams(formData).toString();
+    const formData = new FormData(e.target);
+    const params = new URLSearchParams(formData).toString();
 
-  try {
-    const response = await fetch('https://localhost:3000', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: params,
-    });
+    try {
+      const response = await fetch('https://localhost:3000', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: params,
+      });
 
-    const result = await response.json();
-    console.log(result);  // Handle the response
-  } catch (error) {
-    console.error('Error:', error);
-  }
-});
+      const result = await response.json();
+      console.log(result); // Handle the response
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  });
 </script>
 ```
