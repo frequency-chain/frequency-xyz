@@ -25,6 +25,8 @@ export default {
       indigo: '#5E69FF',
       darkIndigo: '#445BC3',
       rose: '#A06B87',
+      red: '#EB5757',
+      gray: '#C8CDD0',
     },
     width: {
       page: `${MAX_PAGE_WIDTH}px`,
@@ -62,5 +64,5 @@ export default {
       horizontal: { raw: '(min-height: 700px) and (min-width: 1300px)' },
     },
   },
-  safelist: ['after:bg-navy', 'after:bg-cream'],
+  safelist: ['after:bg-navy', 'after:bg-cream', 'invalid:border-red'],
 };

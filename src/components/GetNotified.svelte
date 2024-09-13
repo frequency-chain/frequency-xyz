@@ -1,52 +1,150 @@
-<div class="rounded-lg bg-white p-6 shadow-lg">
-  <h2 class="mb-4 text-2xl font-semibold">Interested in Frequency's ecosystem?</h2>
-  <p class="text-gray-600 mb-4">Get notified when more developer tools are available.</p>
+<script lang="ts">
+  import DiscordLogoWhite from '../lib/assets/DiscordLogo-White.svg';
 
-  <form>
-    <div class="mb-4">
-      <label class="text-gray-700 mb-2 block text-sm font-medium" for="firstName"> First Name * </label>
-      <input
-        type="text"
-        id="firstName"
-        class="border-gray-300 focus:ring-teal-500 focus:border-teal-500 block w-full rounded-md border p-2"
-        placeholder="John"
-      />
-    </div>
-    <div class="mb-4">
-      <label class="text-gray-700 mb-2 block text-sm font-medium" for="lastName"> Last Name * </label>
-      <input
-        type="text"
-        id="lastName"
-        class="border-gray-300 focus:ring-teal-500 focus:border-teal-500 block w-full rounded-md border p-2"
-        placeholder="Doe"
-      />
-    </div>
-    <div class="mb-4">
-      <label class="text-gray-700 mb-2 block text-sm font-medium" for="email"> Email * </label>
-      <input
-        type="email"
-        id="email"
-        class="border-gray-300 focus:ring-teal-500 focus:border-teal-500 block w-full rounded-md border p-2"
-        placeholder="Enter your email"
-      />
-    </div>
-    <div class="mb-4">
-      <label class="inline-flex items-center">
-        <input type="checkbox" class="form-checkbox text-teal-500" />
-        <span class="text-gray-700 ml-2">Are you a developer interested in building something on Frequency?</span>
-      </label>
-    </div>
-    <button type="submit" class="bg-teal-500 hover:bg-teal-600 w-full rounded-md px-4 py-2 text-white">
-      Get Notified
-    </button>
-  </form>
+  const fieldMapping = {
+    surname: 'entry.2099239263',
+    familyName: 'entry.69819808',
+    email: 'entry.769464705',
+    developerInterest: 'entry.1903353368',
+  };
 
-  <div class="mt-4 text-center">
-    <a href="https://discord.com/invite/JchmHX5afV" target="_blank" class="text-teal-500 hover:underline">
-      Join our Discord
+  const postUrl = 'http://localhost:3000';
+
+  let surname = '';
+  let familyName = '';
+  let email = '';
+  let isDeveloper = false;
+
+  let formSuccess = false;
+  let hasSubmittedFormAtLeastOnce = false;
+  let validInputClasses =
+    'border-gray focus:border-tealBright focus:ring-tealBright focus:ring-1 focus:outline-none block w-full rounded-md border px-2 py-3';
+  // Make sure to include these in the tailwind.config.js safelist
+  let invalidInputClasses = 'invalid:border-red  ' + validInputClasses;
+
+  async function submit(e: SubmitEvent) {
+    const form = e.target as HTMLFormElement;
+
+    //Only start showing invalids if the form is invalid at least once
+    hasSubmittedFormAtLeastOnce = true;
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    const formData = new URLSearchParams();
+    formData.append(fieldMapping.surname, surname);
+    formData.append(fieldMapping.familyName, familyName);
+    formData.append(fieldMapping.email, email);
+    formData.append(fieldMapping.developerInterest, isDeveloper ? 'Developer' : '');
+
+    try {
+      const response = await fetch(postUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formData.toString(),
+      });
+
+      if (response.ok) {
+        formSuccess = true;
+      } else {
+        throw new Error('Unknown form submission error');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Form submission failed due to network error.');
+    }
+  }
+
+  $: inputClasses = hasSubmittedFormAtLeastOnce ? invalidInputClasses : validInputClasses;
+</script>
+
+<div class="rounded-lg bg-cream">
+  <div class="rounded-t-lg bg-navy">
+    <div class="top-lines rounded-t-lg">
+      <div class="top-lines-fade rounded-t-lg">
+        <div class="top-gradient rounded-t-lg px-4 pb-[50px] pt-[70px] text-white">
+          <h2 class="title-50 mx-2 mb-4 text-center leading-[1.1]">Interested in Frequency's ecosystem?</h2>
+          <p class="title-16 text-center">Get notified when more developer tools are available.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="px-8 py-4">
+    {#if !formSuccess}
+      <form on:submit|preventDefault={submit} novalidate>
+        <div class="mb-4">
+          <label class="mb-2 block text-xs font-semibold" for="surname">Surname <span class="text-red">*</span></label>
+          <input required type="text" id="surname" bind:value={surname} class={inputClasses} placeholder="John" />
+        </div>
+        <div class="mb-4">
+          <label class="mb-2 block text-xs font-semibold" for="familyName"
+            >Family Name <span class="text-red">*</span></label
+          >
+          <input required type="text" id="familyName" bind:value={familyName} class={inputClasses} placeholder="Doe" />
+        </div>
+        <div class="mb-4">
+          <label class="mb-2 block text-xs font-semibold" for="email">Email <span class="text-red">*</span></label>
+          <input
+            required
+            type="email"
+            id="email"
+            bind:value={email}
+            class={inputClasses}
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="mb-4">
+          <label class="inline-flex items-center">
+            <input type="checkbox" bind:checked={isDeveloper} class="form-checkbox text-white accent-tealBright" />
+            <span class="ml-2 text-xs font-semibold"
+              >Are you a developer interested in building something on Frequency?</span
+            >
+          </label>
+        </div>
+        <div class="m-5">
+          <button
+            type="submit"
+            class="radius w-full rounded-full bg-teal py-4 font-medium text-white shadow-lg transition duration-300 ease-in-out hover:shadow-none"
+          >
+            Get Notified
+          </button>
+        </div>
+      </form>
+    {:else}
+      <div class="px-8 py-12">
+        <h2 class="title-75 mb-10 text-center">Thank You!</h2>
+        <p class="mb-10 text-center">
+          As soon as the tools become available, we'll let you know so you can check out the official documentation and
+          start experimenting!
+        </p>
+      </div>
+    {/if}
+
+    <a class="m-2 flex p-4" href="https://discord.com/invite/JchmHX5afV">
+      <div class="h-[70px] w-[70px] flex-shrink-0 rounded-lg bg-black p-2 hover:bg-teal">
+        <img class="w-[70px]" src={DiscordLogoWhite} alt="" />
+      </div>
+      <div class="px-4">
+        <h3 class="mb-1 font-semibold leading-none">Join our Discord</h3>
+        <p class="text-sm">Become a part of shaping the future of the digital landscape with Frequency.</p>
+      </div>
     </a>
-    <p class="text-gray-500 mt-1 text-sm">
-      Become a part of shaping the future of the digital landscape with Frequency.
-    </p>
   </div>
 </div>
+
+<style>
+  .top-gradient {
+    background: radial-gradient(circle at calc(100% - 60px) 0px, #365e73 0%, transparent 30%);
+  }
+  .top-lines {
+    background: linear-gradient(90deg, #365e73 1px, transparent 1px),
+      linear-gradient(180deg, #365e73 1px, transparent 1px);
+    background-size: 60px 60px;
+    background-position: 15px 10px;
+  }
+  .top-lines-fade {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #19455e 90%);
+  }
+</style>

@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
   import { fade } from 'svelte/transition';
+  import { onMount } from 'svelte';
   import OpenCloseIcon from './OpenCloseIcon.svelte';
 
   export let triggerText = 'Open Popup';
@@ -12,11 +13,24 @@
   function closePopup() {
     isPopupOpen = false;
   }
+
+  function handleKeydown(event: { key?: string }) {
+    if (event?.key === 'Escape' && isPopupOpen) {
+      closePopup();
+    }
+  }
+
+  onMount(() => {
+    window.addEventListener('keydown', handleKeydown);
+    return () => {
+      window.removeEventListener('keydown', handleKeydown);
+    };
+  });
 </script>
 
 <div class="fixed right-0 top-1/4 z-50 flex transform">
   <button
-    class="origin-top-left -translate-y-1/2 translate-x-full rotate-90 cursor-pointer rounded-b-lg bg-teal px-4 py-2 text-white shadow-lg transition-shadow duration-300 hover:shadow-sm"
+    class="origin-top-left -translate-y-1/2 translate-x-full rotate-90 cursor-pointer rounded-b-lg bg-teal px-4 py-2 text-white shadow-md shadow-navy transition-shadow duration-300 hover:shadow"
     on:click={togglePopup}
   >
     {triggerText}
@@ -28,8 +42,10 @@
     class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
     transition:fade={{ duration: 200 }}
   >
-    <div class="max-w-md mx-4 w-full rounded-lg bg-white p-6 shadow-xl">
-      <OpenCloseIcon onClick={() => (isPopupOpen = !isPopupOpen)} isOpen={true} />
+    <div class="relative max-h-screen max-w-[600px] overflow-y-auto shadow-xl">
+      <div class="absolute right-2 p-3">
+        <OpenCloseIcon onClick={closePopup} isOpen={true} />
+      </div>
       <slot />
     </div>
   </div>

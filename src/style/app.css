@@ -14,6 +14,12 @@
 
 @layer components {
   /* Typeography */
+  .title-16 {
+    @apply font-title leading-[1] tracking-wider sm:text-[16px] md:text-[16px] lg:text-[16px];
+  }
+  .title-50 {
+    @apply font-title leading-[1] tracking-wider sm:text-[40px] md:text-[44px] lg:text-[44px];
+  }
   .title-75 {
     @apply font-title leading-[1] tracking-wide sm:text-[40px] md:text-[55px] lg:text-75;
   }
