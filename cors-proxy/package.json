@@ -1,0 +1,11 @@
+{
+  "name": "cors-proxy",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A simple CORS proxy for serverless environments.",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {}
+}
