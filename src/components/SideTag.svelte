@@ -41,14 +41,21 @@
   <div
     role="none"
     on:click|preventDefault={closePopup}
-    class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+    class="mobile-bar-padding fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
     transition:fade={{ duration: 200 }}
   >
     <div role="none" on:click|stopPropagation class="relative max-h-screen max-w-[600px] overflow-y-auto shadow-xl">
       <slot />
-      <div class="absolute right-2 top-0 z-50 p-3">
+      <div class="absolute right-2 top-0 z-50 px-3 pb-2 pt-4">
         <OpenCloseIcon onClick={closePopup} isOpen={true} />
       </div>
     </div>
   </div>
 {/if}
+
+<style>
+  .mobile-bar-padding {
+    padding-top: env(safe-area-inset-top, 0);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+</style>
