@@ -4,16 +4,16 @@
   import Wave from './Wave.svelte';
 
   const fieldMapping = {
-    surname: 'entry.447550433',
-    familyName: 'entry.239030615',
+    firstName: 'entry.447550433',
+    lastName: 'entry.239030615',
     email: 'entry.626493750',
     developerInterest: 'entry.334295884',
   };
 
   const postUrl = 'http://localhost:3000';
 
-  let surname = '';
-  let familyName = '';
+  let firstName = '';
+  let lastName = '';
   let email = '';
   let isDeveloper = false;
 
@@ -36,8 +36,8 @@
     }
 
     const formData = new URLSearchParams();
-    formData.append(fieldMapping.surname, surname);
-    formData.append(fieldMapping.familyName, familyName);
+    formData.append(fieldMapping.firstName, firstName);
+    formData.append(fieldMapping.lastName, lastName);
     formData.append(fieldMapping.email, email);
     if (isDeveloper) formData.append(fieldMapping.developerInterest, 'Developer');
 
@@ -83,14 +83,16 @@
     {#if !formSuccess}
       <form on:submit|preventDefault={submit} novalidate>
         <div class="mb-4">
-          <label class="mb-2 block text-xs font-semibold" for="surname">Surname <span class="text-red">*</span></label>
-          <input required type="text" id="surname" bind:value={surname} class={inputClasses} placeholder="John" />
+          <label class="mb-2 block text-xs font-semibold" for="firstName"
+            >First Name <span class="text-red">*</span></label
+          >
+          <input required type="text" id="firstName" bind:value={firstName} class={inputClasses} placeholder="John" />
         </div>
         <div class="mb-4">
-          <label class="mb-2 block text-xs font-semibold" for="familyName"
-            >Family Name <span class="text-red">*</span></label
+          <label class="mb-2 block text-xs font-semibold" for="lastName"
+            >Last Name <span class="text-red">*</span></label
           >
-          <input required type="text" id="familyName" bind:value={familyName} class={inputClasses} placeholder="Doe" />
+          <input required type="text" id="lastName" bind:value={lastName} class={inputClasses} placeholder="Doe" />
         </div>
         <div class="mb-4">
           <label class="mb-2 block text-xs font-semibold" for="email">Email <span class="text-red">*</span></label>
