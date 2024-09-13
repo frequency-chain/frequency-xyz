@@ -14,7 +14,7 @@
       </div>
     </div>
     <Footer />
-    <SideTag triggerText="Get Notified">
+    <SideTag triggerText="Get notified">
       <GetNotified />
     </SideTag>
   </div>

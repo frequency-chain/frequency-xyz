@@ -96,8 +96,12 @@
           />
         </div>
         <div class="mb-4">
-          <label class="inline-flex items-center">
-            <input type="checkbox" bind:checked={isDeveloper} class="form-checkbox text-white accent-tealBright" />
+          <label class="inline-flex items-center hover:cursor-pointer">
+            <input
+              type="checkbox"
+              bind:checked={isDeveloper}
+              class="form-checkbox text-white accent-tealBright hover:cursor-pointer"
+            />
             <span class="ml-2 text-xs font-semibold"
               >Are you a developer interested in building something on Frequency?</span
             >
