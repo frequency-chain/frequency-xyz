@@ -16,18 +16,20 @@
       located at https://claimfrequency.xyz.
     </p>
     <ol>
-      <li><a href="#notice_regarding_use_of_the_blockchain">NOTICE REGARDING USE OF THE BLOCKCHAIN</a></li>
-      <li><a href="#updates_to_this_privacy_notice">UPDATES TO THIS PRIVACY NOTICE</a></li>
-      <li><a href="#personal_information_we_collect">PERSONAL INFORMATION WE COLLECT</a></li>
-      <li><a href="#how_we_use_personal_information">HOW WE USE PERSONAL INFORMATION</a></li>
-      <li><a href="#how_we_disclose_personal_information">HOW WE DISCLOSE PERSONAL INFORMATION</a></li>
-      <li><a href="#your_privacy_choices_and_rights">YOUR PRIVACY CHOICES AND RIGHTS</a></li>
-      <li><a href="#international_transfers_of_personal">INTERNATIONAL TRANSFERS OF PERSONAL INFORMATI</a>ON</li>
-      <li><a href="#retention_of_personal_information">RETENTION OF PERSONAL INFORMATION</a></li>
-      <li><a href="#supplemental_notice_for_eu_gdpr">SUPPLEMENTAL NOTICE FOR EU GDPR</a></li>
-      <li><a href="#childrens_information">CHILDREN’S INFORMATION</a></li>
-      <li><a href="#third_party_websites_applications">THIRD-PARTY WEBSITES/APPLICATIONS</a></li>
-      <li><a href="#contact_us">CONTACT US</a></li>
+      <li><a href="/privacy/#notice_regarding_use_of_the_blockchain">NOTICE REGARDING USE OF THE BLOCKCHAIN</a></li>
+      <li><a href="/privacy/#updates_to_this_privacy_notice">UPDATES TO THIS PRIVACY NOTICE</a></li>
+      <li><a href="/privacy/#personal_information_we_collect">PERSONAL INFORMATION WE COLLECT</a></li>
+      <li><a href="/privacy/#how_we_use_personal_information">HOW WE USE PERSONAL INFORMATION</a></li>
+      <li><a href="/privacy/#how_we_disclose_personal_information">HOW WE DISCLOSE PERSONAL INFORMATION</a></li>
+      <li><a href="/privacy/#your_privacy_choices_and_rights">YOUR PRIVACY CHOICES AND RIGHTS</a></li>
+      <li>
+        <a href="/privacy/#international_transfers_of_personal">INTERNATIONAL TRANSFERS OF PERSONAL INFORMATI</a>ON
+      </li>
+      <li><a href="/privacy/#retention_of_personal_information">RETENTION OF PERSONAL INFORMATION</a></li>
+      <li><a href="/privacy/#supplemental_notice_for_eu_gdpr">SUPPLEMENTAL NOTICE FOR EU GDPR</a></li>
+      <li><a href="/privacy/#childrens_information">CHILDREN’S INFORMATION</a></li>
+      <li><a href="/privacy/#third_party_websites_applications">THIRD-PARTY WEBSITES/APPLICATIONS</a></li>
+      <li><a href="/privacy/#contact_us">CONTACT US</a></li>
     </ol>
     <h4 id="notice_regarding_use_of_the_blockchain">1. NOTICE REGARDING USE OF THE BLOCKCHAIN</h4>
     <p>
@@ -109,8 +111,8 @@
         have been opened, acted on, or forwarded.
         <p>
           <em
-            >See “<a href="#rights">Your Privacy Choices and Rights</a>” below to understand your choices regarding
-            these Technologies.</em
+            >See “<a href="/privacy/#rights">Your Privacy Choices and Rights</a>” below to understand your choices
+            regarding these Technologies.</em
           >
         </p>
       </li>
@@ -177,7 +179,7 @@
     </p>
     <p>
       If you have any questions about our marketing practices, you may contact us at any time as set forth in “<a
-        href="#contact_us">Contact Us</a
+        href="/privacy/#contact_us">Contact Us</a
       >” below.
     </p>
     <h5>D. With Your Consent</h5>
@@ -370,10 +372,10 @@
     </p>
     <p>
       If you are a parent or guardian and believe your child has uploaded personal information to our site without your
-      consent, you may contact us as described in “<a href="#contact_us">Contact Us</a>” below. If we become aware that
-      a child has provided us with personal information in violation of applicable law, we will delete any personal
-      information we have collected, unless we have a legal obligation to keep it, and terminate the child’s account, if
-      applicable.
+      consent, you may contact us as described in “<a href="/privacy/#contact_us">Contact Us</a>” below. If we become
+      aware that a child has provided us with personal information in violation of applicable law, we will delete any
+      personal information we have collected, unless we have a legal obligation to keep it, and terminate the child’s
+      account, if applicable.
     </p>
     <h4 id="third_party_websites_applications">11. THIRD-PARTY WEBSITES/APPLICATIONS</h4>
     <p>
