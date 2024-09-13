@@ -1,7 +1,7 @@
 <script>
   import Footer from '../components/Footer.svelte';
   import JoinSocials from '../components/JoinSocials.svelte';
-  import GetNotified from '../components/GetNotified.svelte';
+  import GetNotified from '../components/GetNotified/GetNotified.svelte';
   import SideTag from '../components/SideTag.svelte';
 </script>
 

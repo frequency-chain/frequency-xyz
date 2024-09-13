@@ -43,10 +43,10 @@
     transition:fade={{ duration: 200 }}
   >
     <div class="relative max-h-screen max-w-[600px] overflow-y-auto shadow-xl">
-      <div class="absolute right-2 p-3">
+      <slot />
+      <div class="absolute right-2 top-0 z-50 p-3">
         <OpenCloseIcon onClick={closePopup} isOpen={true} />
       </div>
-      <slot />
     </div>
   </div>
 {/if}

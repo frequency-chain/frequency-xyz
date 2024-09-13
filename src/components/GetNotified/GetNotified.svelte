@@ -1,11 +1,13 @@
 <script lang="ts">
-  import DiscordLogoWhite from '../lib/assets/DiscordLogo-White.svg';
+  import DiscordLogoWhite from '../../lib/assets/DiscordLogo-White.svg';
+  import Stars from './Stars.svelte';
+  import Wave from './Wave.svelte';
 
   const fieldMapping = {
-    surname: 'entry.2099239263',
-    familyName: 'entry.69819808',
-    email: 'entry.769464705',
-    developerInterest: 'entry.1903353368',
+    surname: 'entry.447550433',
+    familyName: 'entry.239030615',
+    email: 'entry.626493750',
+    developerInterest: 'entry.334295884',
   };
 
   const postUrl = 'http://localhost:3000';
@@ -37,7 +39,7 @@
     formData.append(fieldMapping.surname, surname);
     formData.append(fieldMapping.familyName, familyName);
     formData.append(fieldMapping.email, email);
-    formData.append(fieldMapping.developerInterest, isDeveloper ? 'Developer' : '');
+    if (isDeveloper) formData.append(fieldMapping.developerInterest, 'Developer');
 
     try {
       const response = await fetch(postUrl, {
@@ -60,13 +62,19 @@
   $: inputClasses = hasSubmittedFormAtLeastOnce ? invalidInputClasses : validInputClasses;
 </script>
 
-<div class="rounded-lg bg-cream">
-  <div class="rounded-t-lg bg-navy">
-    <div class="top-lines rounded-t-lg">
-      <div class="top-lines-fade rounded-t-lg">
-        <div class="top-gradient rounded-t-lg px-4 pb-[50px] pt-[70px] text-white">
+<div class="rounded-3xl bg-cream">
+  <div class="relative overflow-hidden rounded-t-3xl bg-navy">
+    <div class="top-lines rounded-t-3xl">
+      <div class="top-lines-fade rounded-t-3xl">
+        <div id="notified-stars" class="absolute w-[80%] overflow-hidden">
+          <div class="svg-100 w-[600px]"><Stars /></div>
+        </div>
+        <div id="notified-wave" class="absolute bottom-0 w-[100%]">
+          <div class="svg-100 w-[100%]"><Wave /></div>
+        </div>
+        <div class="top-gradient relative z-10 rounded-t-3xl px-4 pb-[50px] pt-[70px] text-white">
           <h2 class="title-50 mx-2 mb-4 text-center leading-[1.1]">Interested in Frequency's ecosystem?</h2>
-          <p class="title-16 text-center">Get notified when more developer tools are available.</p>
+          <p class="title-16 z-50 text-center">Get notified when more developer tools are available.</p>
         </div>
       </div>
     </div>
@@ -118,11 +126,7 @@
       </form>
     {:else}
       <div class="px-8 py-12">
-        <h2 class="title-75 mb-10 text-center">Thank You!</h2>
-        <p class="mb-10 text-center">
-          As soon as the tools become available, we'll let you know so you can check out the official documentation and
-          start experimenting!
-        </p>
+        <h2 class="title-75 text-center">Thank You!</h2>
       </div>
     {/if}
 
@@ -143,8 +147,8 @@
     background: radial-gradient(circle at calc(100% - 60px) 0px, #365e73 0%, transparent 30%);
   }
   .top-lines {
-    background: linear-gradient(90deg, #365e73 1px, transparent 1px),
-      linear-gradient(180deg, #365e73 1px, transparent 1px);
+    background: linear-gradient(90deg, rgba(54, 94, 115, 40%) 1px, transparent 1px),
+      linear-gradient(180deg, rgba(54, 94, 115, 40%) 1px, transparent 1px);
     background-size: 60px 60px;
     background-position: 15px 10px;
   }

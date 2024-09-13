@@ -46,6 +46,10 @@
     @apply sm:pr-[100px] md:pr-[140px] lg:pl-0 lg:pr-[140px];
   }
 
+  .svg-100 > svg {
+    @apply w-full;
+  }
+
   /* Underline on hover animation */
   .underline-on-hover {
     @apply relative block cursor-pointer overflow-hidden px-0 py-1;
