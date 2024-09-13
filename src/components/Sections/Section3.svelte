@@ -20,7 +20,7 @@
   <section class="flex h-full flex-1 justify-center sm:flex-col sm:pt-[40px] lg:flex-row vertical-lg:flex-col">
     <SplitSection isLeft={true} classes="relative sm:pb-[100px] lg:pb-0">
       <SlideIn>
-        <h2 class="title-75 text-right text-navy sm:max-w-[300px] md:max-w-[400px] lg:max-w-[540px]">
+        <h2 class="title-75 text-right text-navy sm:max-w-[300px] sm:pr-5 md:max-w-[400px] lg:max-w-[540px]">
           Take Your Content & Relationships With You
         </h2>
       </SlideIn>

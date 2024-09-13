@@ -39,7 +39,7 @@
   }
 
   .paragraph-spacing-right {
-    @apply sm:pl-[90px] md:pl-[140px] lg:pl-[140px] lg:pr-0;
+    @apply sm:pl-[70px] md:pl-[140px] lg:pl-[140px] lg:pr-0;
   }
 
   .paragraph-spacing-left {
