@@ -28,7 +28,7 @@
   });
 </script>
 
-<div class="fixed right-0 top-1/4 z-50 flex transform print:hidden">
+<div class="fixed right-0 top-1/4 z-50 flex hidden transform print:hidden">
   <button
     class="origin-top-left -translate-y-1/2 translate-x-full rotate-90 cursor-pointer rounded-b-lg bg-teal px-4 py-2 text-white shadow-md shadow-navy transition-shadow duration-300 hover:shadow"
     on:click={togglePopup}
