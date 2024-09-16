@@ -10,7 +10,7 @@
     developerInterest: 'entry.334295884',
   };
 
-  const postUrl = 'https://hucfge2uhkm7xlj2nozyhbwt2a0gqotq.lambda-url.sa-east-1.on.aws';
+  const postUrl = 'https://7otsoqfsv4cgqxe6xvc2vyjo6e0sozeg.lambda-url.sa-east-1.on.aws';
 
   let firstName = '';
   let lastName = '';

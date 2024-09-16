@@ -7,12 +7,12 @@ provider:
   runtime: nodejs20.x
 
 functions:
-  hello:
-    handler: handler.handler
+  proxy:
+    handler: index.handler
     events:
       - http:
         method: post
         cors:
-          origin: 'https://*.frequency.xyz'
+          origin: 'https://www.frequency.xyz'
           headers:
             - Content-Type
