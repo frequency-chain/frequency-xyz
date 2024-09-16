@@ -44,7 +44,7 @@
     class="mobile-bar-padding fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
     transition:fade={{ duration: 200 }}
   >
-    <div role="none" on:click|stopPropagation class="relative max-h-screen max-w-[600px] overflow-y-auto">
+    <div role="none" on:click|stopPropagation class="relative max-h-full max-w-[600px] overflow-y-auto">
       <slot />
       <div class="absolute right-2 top-0 z-50 px-3 pb-2 pt-4">
         <OpenCloseIcon onClick={closePopup} isOpen={true} />
@@ -55,7 +55,9 @@
 
 <style>
   .mobile-bar-padding {
-    padding-top: env(safe-area-inset-top, 0);
-    padding-bottom: env(safe-area-inset-bottom, 0);
+    padding-top: max(env(safe-area-inset-top, 10px), 10px);
+    padding-bottom: max(env(safe-area-inset-bottom, 10px), 10px);
+    padding-left: max(env(safe-area-inset-left, 10px), 10px);
+    padding-right: max(env(safe-area-inset-right, 10px), 10px);
   }
 </style>

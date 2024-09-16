@@ -62,7 +62,7 @@
   $: inputClasses = hasSubmittedFormAtLeastOnce ? invalidInputClasses : validInputClasses;
 </script>
 
-<div class="rounded-3xl bg-cream">
+<div class="flex flex-col items-start rounded-3xl bg-cream">
   <div class="relative overflow-hidden rounded-t-3xl bg-navy">
     <div class="top-lines rounded-t-3xl">
       <div class="top-lines-fade rounded-t-3xl">
