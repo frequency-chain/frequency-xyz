@@ -11,8 +11,8 @@ functions:
     handler: index.handler
     events:
       - http:
-        method: post
-        cors:
-          origin: 'https://www.frequency.xyz'
-          headers:
-            - Content-Type
+          method: post
+          cors:
+            origin: 'https://www.frequency.xyz'
+            headers:
+              - Content-Type
