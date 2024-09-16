@@ -3,9 +3,11 @@ import process from 'node:process';
 export const handler = async (event) => {
   const targetUrl = process.env.PROXY_TARGET_URL;
 
+  const body = event?.isBase64Encoded ? atob(event.body) : event.body;
+
   const response = await fetch(targetUrl, {
     method: 'POST',
-    body: event.body,
+    body,
     headers: {
       'Content-type': 'application/x-www-form-urlencoded',
     },
@@ -29,6 +31,7 @@ export const handler = async (event) => {
     statusCode: response.status,
     message: response.message,
     headers: response.headers,
+    targetUrl,
   });
 
   return {

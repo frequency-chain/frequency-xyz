@@ -2,6 +2,7 @@ import http from 'http';
 import { handler } from './index.mjs';
 import url from 'url';
 import process from 'node:process';
+import { Buffer } from 'node:buffer';
 
 const allowedOrigin = process.env.PROXY_ALLOWED_ORIGIN || '*';
 
@@ -43,7 +44,8 @@ const server = http.createServer(async (req, res) => {
     const lambdaEvent = {
       httpMethod: req.method,
       queryStringParameters: parsedUrl.query,
-      body: body,
+      body: Buffer.from(body).toString('base64'),
+      isBase64Encoded: true,
     };
 
     // Call the handler (same code used in AWS Lambda)
