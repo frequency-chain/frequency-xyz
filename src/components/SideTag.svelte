@@ -56,7 +56,7 @@
 <style>
   .mobile-bar-padding {
     padding-top: max(env(safe-area-inset-top, 10px), 10px);
-    padding-bottom: max(env(safe-area-inset-bottom, 10px), 10px);
+    padding-bottom: max(env(safe-area-inset-bottom, 0), 0);
     padding-left: max(env(safe-area-inset-left, 10px), 10px);
     padding-right: max(env(safe-area-inset-right, 10px), 10px);
   }
