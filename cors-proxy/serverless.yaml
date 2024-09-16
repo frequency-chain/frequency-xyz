@@ -7,7 +7,7 @@ provider:
   runtime: nodejs20.x
 
 functions:
-  proxy:
+  cors-proxy:
     handler: index.handler
     events:
       - http:
