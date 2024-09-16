@@ -11,6 +11,7 @@ functions:
     handler: index.handler
     events:
       - http:
+          path: '/'
           method: post
           cors:
             origin: 'https://www.frequency.xyz'
