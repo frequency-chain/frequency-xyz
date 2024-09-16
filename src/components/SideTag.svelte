@@ -44,7 +44,7 @@
     class="mobile-bar-padding fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
     transition:fade={{ duration: 200 }}
   >
-    <div role="none" on:click|stopPropagation class="relative max-h-screen max-w-[600px] overflow-y-auto shadow-xl">
+    <div role="none" on:click|stopPropagation class="relative max-h-screen max-w-[600px] overflow-y-auto">
       <slot />
       <div class="absolute right-2 top-0 z-50 px-3 pb-2 pt-4">
         <OpenCloseIcon onClick={closePopup} isOpen={true} />
