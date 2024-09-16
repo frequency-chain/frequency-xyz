@@ -10,7 +10,7 @@
     developerInterest: 'entry.334295884',
   };
 
-  const postUrl = 'http://localhost:3000';
+  const postUrl = 'https://form-proxy.frequency.xyz';
 
   let firstName = '';
   let lastName = '';
