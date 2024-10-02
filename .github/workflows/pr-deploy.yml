@@ -64,7 +64,7 @@ jobs:
             const sha = context.sha;
             const deploymentUrl = `https://www.frequency.xyz/_pr/${prNumber}/`;
             const commitUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/commit/${sha}`;
-            const body = `🚀 Preview deployment for this PR is ready!\n\nPreview URL: [${deploymentUrl}](${deploymentUrl})\nCommit: [${sha.substr(0, 7)}](${commitUrl})`;
+            const body = `🚀 Preview deployment for this PR is going up! Remember you might need to hard refresh to get the new content.\n\nPreview URL: [${deploymentUrl}](${deploymentUrl})\nCommit: [${sha.substr(0, 7)}](${commitUrl})`;
 
             const comments = await github.rest.issues.listComments({
               owner: context.repo.owner,
