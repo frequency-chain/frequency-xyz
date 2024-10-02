@@ -40,7 +40,7 @@ jobs:
       - name: Build
         env:
           # Deploying to a root domain
-          BASE_PATH: _pr/${{ github.event.pull_request.number }}
+          BASE_PATH: /_pr/${{ github.event.pull_request.number }}
         run: |
           npm run build
           touch build/.nojekyll
