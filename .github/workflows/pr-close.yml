@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: Remove PR Deploy Preview
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: 'deploy-pages'
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Remove PR preview
+        run: |
+          PR_NUMBER=${{ github.event.pull_request.number }}
+          if [ -d "_pr/$PR_NUMBER" ]; then
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            git rm -rf "_pr/$PR_NUMBER"
+            git commit -m "Remove PR preview for #$PR_NUMBER"
+            git push
+          else
+            echo "Preview folder for PR #$PR_NUMBER does not exist. Skipping cleanup."
+          fi
+
+      - name: Update Job Summary
+        run: |
+          echo "## Cleanup Summary" >> $GITHUB_STEP_SUMMARY
+          echo "🧹 Removed preview for PR #${{ github.event.pull_request.number }}" >> $GITHUB_STEP_SUMMARY
