@@ -1,6 +1,7 @@
 <!-- Mobile -->
 <div
-  class={`absolute bottom-0 w-full bg-[url(/src/lib/assets/section1waves.svg)] bg-no-repeat sm:right-[10%] sm:h-[180px] sm:bg-right-bottom md:h-[200px] lg:hidden vertical-lg:relative vertical-lg:block`}></div>
+  class={`absolute bottom-0 w-full bg-[url(/src/lib/assets/section1waves.svg)] bg-no-repeat sm:right-[10%] sm:h-[180px] sm:bg-right-bottom md:h-[200px] lg:hidden vertical-lg:relative vertical-lg:block`}
+></div>
 
 <!-- Desktop -->
 <div
