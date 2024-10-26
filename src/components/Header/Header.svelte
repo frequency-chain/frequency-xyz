@@ -27,7 +27,7 @@
   id="header"
   class={`freq-container z-50 flex max-w-page items-center justify-between sm:pt-[10px] lg:pt-[30px] ${isNavOpen ? 'fixed' : ''}`}
 >
-  <a href="/">
+  <a href="/" aria-label="Home">
     <svg
       class="mr-3 sm:w-[180px] md:w-[180px] lg:w-[210px]"
       width="216"

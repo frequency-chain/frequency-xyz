@@ -21,6 +21,6 @@
   <div class="absolute bottom-0 right-0 h-[200px] w-full overflow-hidden">
     <div
       class="absolute -bottom-1 z-[-1] h-[200px] w-full overflow-hidden bg-[url('/src/lib/assets/mobileNav.svg')] bg-right-bottom bg-no-repeat"
-    />
+    ></div>
   </div>
 </div>

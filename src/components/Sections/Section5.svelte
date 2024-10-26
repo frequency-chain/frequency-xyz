@@ -14,7 +14,7 @@
   <!-- Image -->
   <div class="absolute bottom-0 left-0 flex h-full w-full overflow-hidden sm:hidden lg:block vertical-lg:hidden">
     <Section5Wave />
-    <span class="absolute bottom-0 right-0 w-full border-b-4 border-darkIndigo" />
+    <span class="absolute bottom-0 right-0 w-full border-b-4 border-darkIndigo"></span>
   </div>
 
   <!-- Content -->
