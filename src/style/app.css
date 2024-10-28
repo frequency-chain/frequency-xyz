@@ -21,16 +21,16 @@
     @apply font-title leading-[1] tracking-wider sm:text-[40px] md:text-[44px] lg:text-[44px];
   }
   .title-75 {
-    @apply font-title leading-[1] tracking-wide sm:text-[40px] md:text-[55px] lg:text-75;
+    @apply font-title leading-[1] tracking-wide sm:text-[40px] md:text-[55px] lg:text-[75px];
   }
   .title-100 {
-    @apply font-title leading-[1] tracking-wide sm:text-[55px] md:text-75 lg:text-100;
+    @apply font-title leading-[1] tracking-wide sm:text-[55px] md:text-[75px] lg:text-[100px];
   }
   .subtitle {
     @apply font-semibold sm:text-lg md:text-lg lg:text-xl;
   }
   .body {
-    @apply sm:text-xs md:text-sm lg:text-base;
+    @apply sm:text-xs md:text-sm lg:text-normal;
   }
 
   /* Layout */
@@ -97,6 +97,6 @@
   }
 
   ::placeholder {
-    @apply text-disabled !important;
+    @apply text-gray2 !important;
   }
 }
