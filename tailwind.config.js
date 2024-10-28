@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import frequencyConfig from "@frequency-chain/style-guide/tailwind.config";
+import frequencyConfig from '@frequency-chain/style-guide/tailwind.config';
 
 import { MAX_PAGE_WIDTH } from './src/lib/consts';
 
@@ -9,6 +9,10 @@ export default {
     fontFamily: {
       title: ['Newake', 'sans-serif'],
       sans: ['Poppins', 'sans-serif'],
+    },
+    colors: {
+      darkIndigo: '#445BC3',
+      tealBright: '#00B6AF',
     },
     width: {
       page: `${MAX_PAGE_WIDTH}px`,
@@ -34,5 +38,5 @@ export default {
     },
   },
   safelist: ['after:bg-navy', 'after:bg-cream', 'invalid:border-red'],
-  presets: [frequencyConfig]
+  presets: [frequencyConfig],
 };

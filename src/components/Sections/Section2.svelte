@@ -15,7 +15,7 @@
     <div class="flex gap-4 text-right sm:items-end lg:items-start">
       <!-- Desktop section number -->
       <SectionNumber
-        classes="md:text-100 lg:block lg:font-normal relative lg:bottom-auto lg:right-auto lg:top-[16px] sm:hidden"
+        classes="md:text-[100px] lg:block lg:font-normal relative lg:bottom-auto lg:right-auto lg:top-[16px] sm:hidden"
         >.02</SectionNumber
       >
       <SlideIn>

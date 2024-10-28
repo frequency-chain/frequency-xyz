@@ -25,8 +25,9 @@
       </SectionParagraph>
     </section>
   </div>
-  <SectionNumber isLeft={true} classes="text-yellow sm:bottom-[100px] md:bottom-[120px] lg:text-200 lg:-right-[80px]"
-    >.04</SectionNumber
+  <SectionNumber
+    isLeft={true}
+    classes="text-yellow sm:bottom-[100px] md:bottom-[120px] lg:text-[200px] lg:-right-[80px]">.04</SectionNumber
   >
 
   <div class="absolute bottom-0 left-0 flex h-full w-full">

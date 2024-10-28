@@ -4,7 +4,7 @@
   @keyframes wave {
     0%,
     100% {
-      margin-left: 20;
+      margin-left: 20px;
     }
     50% {
       margin-left: -20px;
