@@ -12,14 +12,14 @@
 
   $: section = 1;
 
-  const indigo = '#5E69FF';
+  const brightBlue = '#5E69FF';
   const cream = '#FEFAF3';
 
   const logoMap = new Map([
-    [1, { logo: indigo, nav: 'navy' }],
+    [1, { logo: brightBlue, nav: 'navy' }],
     [2, { logo: cream, nav: 'cream' }],
-    [3, { logo: indigo, nav: 'cream' }],
-    [4, { logo: indigo, nav: 'navy' }],
+    [3, { logo: brightBlue, nav: 'cream' }],
+    [4, { logo: brightBlue, nav: 'navy' }],
     [5, { logo: cream, nav: 'cream' }],
   ]);
 

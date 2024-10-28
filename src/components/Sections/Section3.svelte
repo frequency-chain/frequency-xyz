@@ -9,7 +9,7 @@
 
 <SectionWrapper
   id="section3"
-  classes="z-0 flex sm:justify-center md:justify-center overflow-hidden sm:pt-[40px]  vertical-lg:pt-0 text-cream"
+  classes="z-0 flex sm:justify-center md:justify-center overflow-hidden sm:pt-[40px]  vertical-lg:pt-0 text-white"
 >
   <!-- Desktop Wave -->
   <div class="absolute bottom-0 left-0 h-full w-[50%] sm:hidden lg:block vertical-lg:hidden">
@@ -40,5 +40,5 @@
       </SectionParagraph>
     </SplitSection>
   </section>
-  <SectionNumber classes="sm:bottom-4 lg:-bottom-[20px] lg:text-200 lg:-right-[80px]">.03</SectionNumber>
+  <SectionNumber classes="sm:bottom-4 lg:-bottom-[20px] lg:text-[200px] lg:-right-[80px]">.03</SectionNumber>
 </SectionWrapper>
