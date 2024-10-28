@@ -1,6 +1,4 @@
 import '../style/app.css';
-import * as styles from '@frequency-chain/style-guide';
-console.log(styles);
 // since there's no server side data here, we can prerender
 export const prerender = true;
 export const ssr = false;
