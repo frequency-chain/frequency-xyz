@@ -1,6 +1,6 @@
 <script lang="ts">
   import Header from '../../components/Header/Header.svelte';
-  import Footer from '../../components/Footer.svelte';
+  import { Footer } from '@frequency-chain/style-guide';
 
   const logoHex = '#5E69FF';
   const navColor = 'navy';
