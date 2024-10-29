@@ -16,7 +16,7 @@
 <!-- <a class={`underline-on-hover after:bg-${textColor}`} href="/#">Our Technology.</a> -->
 <a
   class={`underline-on-hover after:bg-${textColor}`}
-  href="https://docs.frequency.xyz/"
+  href="http://localhost:3000/"
   target="_blank"
   rel="noreferrer"
   role="">Dev Docs.</a
