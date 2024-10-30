@@ -1,5 +1,5 @@
 <script>
-  import Footer from '../../components/Footer.svelte';
+  import { Footer } from '@frequency-chain/style-guide';
   import GetNotified from '../../components/GetNotified/GetNotified.svelte';
   import SideTag from '../../components/SideTag.svelte';
 </script>

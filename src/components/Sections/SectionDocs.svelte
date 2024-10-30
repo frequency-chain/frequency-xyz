@@ -16,7 +16,7 @@
         </h2>
       </SlideIn>
       <SlideIn>
-        <p class="subtitle paragraph-spacing-left sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px] text-orange">
+        <p class="title-50 paragraph-spacing-left text-orange sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px]">
           Better with You
         </p>
       </SlideIn>

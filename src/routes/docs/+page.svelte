@@ -1,5 +1,4 @@
 <script lang="ts">
-  import JoinSocials from '../../components/JoinSocials.svelte';
   import SectionDocs from '../../components/Sections/SectionDocs.svelte';
   import SectionNavigation from '../../components/Sections/SectionNavigation.svelte';
   import Sections from '../../components/Sections/Sections.svelte';
@@ -32,8 +31,5 @@
       <SectionDocs />
     </Sections>
     <SectionNavigation bind:section {sectionTitles} />
-  </div>
-  <div class="freq-container mt-[150px]">
-    <JoinSocials />
   </div>
 </div>
