@@ -21,7 +21,7 @@
 
   $: logoHex = logoMap.get(section)?.logo;
   $: navColor = logoMap.get(section)?.nav;
-  $: baseUrl = $page.url.protocol + '//' + $page.url.host;
+  // $: baseUrl = $page.url.protocol + '//' + $page.url.host;
 </script>
 
 <div class="min-h-[calc(100vh-100px)]">
