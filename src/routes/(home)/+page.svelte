@@ -10,6 +10,7 @@
   import Section5 from '../../components/Sections/Section5.svelte';
   import Header from '../../components/Header/Header.svelte';
 
+  $: textColor = `text-${navColor}`;
   $: section = 1;
 
   const brightBlue = '#5E69FF';
@@ -54,7 +55,7 @@
 
 <div class="min-h-[calc(100vh-100px)]">
   <div class="relative lg:max-w-[100vw] xl:max-w-page">
-    <div class="absolute top-0 z-50 w-full"><Header {logoHex} {navColor} bind:section /></div>
+    <div class="absolute top-0 z-50 w-full"><Header {logoHex} {navColor} bind:section/></div>
     <Sections bind:section sectionCount={5}>
       <Section1 />
       <Section2 />
