@@ -1,15 +1,8 @@
-<script lang="ts">
-  import Header from '../../components/Header/Header.svelte';
+<script>
   import Footer from '../../components/Footer.svelte';
-
-  const logoHex = '#5E69FF';
-  const navColor = 'navy';
 </script>
 
-<div class="relative lg:max-w-[100vw] xl:max-w-page">
-  <Header {logoHex} {navColor} />
-  <div class="mt-4 p-3">
-    <slot />
-  </div>
+<div class="h-[100vh] w-[100vw] overflow-x-hidden">
+  <slot />
   <Footer />
 </div>
