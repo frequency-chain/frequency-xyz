@@ -1,9 +1,8 @@
 <script lang="ts">
   import SectionWrapper from './SectionWrapper.svelte';
   import SlideIn from '../SlideIn.svelte';
-  import Section1Wave from './Section1Wave.svelte';
-  import SectionNumber from '../SectionNumber.svelte';
-</script>
+  import SectionDefaultWave from './SectionDefaultWave.svelte';
+  </script>
 
 <SectionWrapper id="section1" classes="lg:px-0">
   <div
@@ -31,11 +30,7 @@
       </p>
     </section>
   </div>
-
-  <SectionNumber classes="text-teal sm:right-0 sm:bottom-[140px] z-10 lg:bottom-4">.01</SectionNumber>
-  <div
-    class="bottom-0 left-0 w-full sm:-mb-[9px] sm:block sm:h-[190px] md:-mb-[10px] md:h-[220px] lg:absolute lg:mb-0 lg:h-full vertical-lg:relative vertical-lg:-mb-[10px] vertical-lg:block"
-  >
-    <Section1Wave />
+  <div>
+    <SectionDefaultWave />
   </div>
 </SectionWrapper>
