@@ -11,7 +11,7 @@
   const cream = '#FEFAF3';
 
   const logoMap = new Map([
-    [1, { logo: brightBlue, nav: 'navy' }],
+    [1, { logo: cream, nav: 'navy' }],
     [2, { logo: cream, nav: 'cream' }],
     [3, { logo: brightBlue, nav: 'cream' }],
     [4, { logo: brightBlue, nav: 'navy' }],

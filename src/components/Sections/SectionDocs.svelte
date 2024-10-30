@@ -11,12 +11,12 @@
   >
     <section class="flex h-full w-full flex-col gap-6 lg:w-[60%] lg:pl-6">
       <SlideIn>
-        <h2 class="title-75 paragraph-spacing-left text-teal sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px]">
+        <h2 class="title-75 paragraph-spacing-left text-navy sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px]">
           Build with Frequency
         </h2>
       </SlideIn>
       <SlideIn>
-        <p class="subtitle paragraph-spacing-left sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px]">
+        <p class="subtitle paragraph-spacing-left sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px] text-orange">
           Better with You
         </p>
       </SlideIn>
