@@ -1,16 +1,38 @@
 <script lang="ts">
-  import { page } from '$app/stores';
-  const baseUrl = $page.url.protocol + '//' + $page.url.host;
+  import JoinSocials from '../../components/JoinSocials.svelte';
+  import SectionDocs from '../../components/Sections/SectionDocs.svelte';
+  import SectionNavigation from '../../components/Sections/SectionNavigation.svelte';
+  import Sections from '../../components/Sections/Sections.svelte';
+  import Header from '../../components/Header/Header.svelte';
 
-  // Placeholder colors or styles if required
-  const topImageBg = '#FFFFFF'; // Background for the top section image block
+  $: section = 1;
+
+  const brightBlue = '#5E69FF';
+  const cream = '#FEFAF3';
+
+  const logoMap = new Map([
+    [1, { logo: brightBlue, nav: 'navy' }],
+    [2, { logo: cream, nav: 'cream' }],
+    [3, { logo: brightBlue, nav: 'cream' }],
+    [4, { logo: brightBlue, nav: 'navy' }],
+    [5, { logo: cream, nav: 'cream' }],
+  ]);
+
+  // Section navigation titles for Aria
+  const sectionTitles = ['Introduction'];
 </script>
 
-<svelte:head>
-  <meta property="og:title" content="Frequency Developer Portal" />
-  <meta property="og:description" content="Build with Frequency. Your gateway to developer tools and resources." />
-  <meta property="og:image" content={`${baseUrl}/dev-portal-og.png`} />
-</svelte:head>
+<div class="min-h-[calc(100vh-100px)]">
+  <div class="relative lg:max-w-[100vw] xl:max-w-page">
+    <Sections bind:section sectionCount={1}>
+      <SectionDocs />
+    </Sections>
+    <SectionNavigation bind:section {sectionTitles} />
+  </div>
+  <div class="freq-container mt-[150px]">
+    <JoinSocials />
+  </div>
+</div>
 
 <style>
 </style>
