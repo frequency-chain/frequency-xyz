@@ -1,0 +1,1 @@
+import{f as S,g as h,u as k,q,S as T}from"./runtime.CAtEipWX.js";function t(r,f){return r===f||(r==null?void 0:r[T])===f}function A(r={},f,a,c){return S(()=>{var i,s;return h(()=>{i=s,s=[],k(()=>{r!==a(...s)&&(f(r,...s),i&&t(a(...i),r)&&f(null,...i))})}),()=>{q(()=>{s&&t(a(...s),r)&&f(null,...s)})}}),r}export{A as b};
