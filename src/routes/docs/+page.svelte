@@ -2,7 +2,6 @@
   import SectionDocs from '../../components/Sections/SectionDocs.svelte';
   import SectionNavigation from '../../components/Sections/SectionNavigation.svelte';
   import Sections from '../../components/Sections/Sections.svelte';
-  import { page } from '$app/stores';
   import Header from '../../components/Header/Header.svelte';
   $: section = 1;
   const sectionTitles = ['Introduction'];
