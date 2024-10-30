@@ -2,7 +2,7 @@
   import SectionWrapper from './SectionWrapper.svelte';
   import SlideIn from '../SlideIn.svelte';
   import SectionDefaultWave from './SectionDefaultWave.svelte';
-  </script>
+</script>
 
 <SectionWrapper id="section1" classes="lg:px-0">
   <div
