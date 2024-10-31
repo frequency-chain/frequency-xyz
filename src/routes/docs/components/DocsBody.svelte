@@ -23,8 +23,8 @@
       Internet.
     </p>
     <p class="body paragraph-spacing-left sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px]">
-      If this is your first visit, the DSNP whitepape is a good place to start. Where you go after depends on your
-      goals: the nagivation panel gives some useful entry points.
+      If this is your first visit, the DSNP whitepaper is a good place to start. Where you go after depends on your
+      goals: the navigation panel gives some useful entry points.
     </p>
   </section>
 </div>
