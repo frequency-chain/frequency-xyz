@@ -20,9 +20,7 @@
   // $: baseUrl = $page.url.protocol + '//' + $page.url.host;
 </script>
 
-<div class="min-h-[calc(100vh-100px)]">
-  <div class="absolute top-0 z-50 w-full"><Header {logoHex} {navColor} bind:section /></div>
-  <div class={`relative w-[100vw] min-w-full sm:pt-[80px] lg:pt-[140px] vertical-lg:w-[100%]`}>
-    <DocsBody />
-  </div>
+<div class="absolute top-0 z-50 w-full"><Header {logoHex} {navColor} bind:section /></div>
+<div class={`relative w-[100vw] min-w-full sm:pt-[80px] lg:pt-[140px] vertical-lg:w-[100%]`}>
+  <DocsBody />
 </div>
