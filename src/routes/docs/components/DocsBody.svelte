@@ -17,12 +17,12 @@
         Better with You
       </p>
     </SlideIn>
-    <p class="body paragraph-spacing-left sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px]">
+    <p class="body paragraph-spacing-left">
       Everything here is open source. Our development roadmap is focussed on our mission of reclaiming the social graph
       for the common good and is guided by our principles. Infrastructure for the Next Generation Decentralized Social
       Internet.
     </p>
-    <p class="body paragraph-spacing-left sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px]">
+    <p class="body paragraph-spacing-left">
       If this is your first visit, the DSNP whitepape is a good place to start. Where you go after depends on your
       goals: the nagivation panel gives some useful entry points.
     </p>
