@@ -4,7 +4,7 @@
 </script>
 
 <div
-  class="flex sm:justify-start sm:px-[50px] md:px-[50px] lg:justify-end lg:px-0 vertical-lg:justify-start vertical-lg:px-[30px]"
+  class="flex sm:justify-start sm:px-[30px] md:px-[50px] lg:justify-end lg:px-0 vertical-lg:justify-start vertical-lg:px-[30px]"
 >
   <section class="flex h-full w-full flex-col gap-6 lg:w-[60%] lg:pl-6">
     <SlideIn>
