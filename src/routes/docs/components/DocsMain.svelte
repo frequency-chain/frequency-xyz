@@ -4,7 +4,7 @@
 
 <div class="flex justify-center px-4 sm:px-6 lg:px-8">
   <section class="flex w-full max-w-6xl flex-col gap-6 lg:flex-row lg:justify-center">
-    <div class="hidden lg:block lg:w-1/2">
+    <div class="hidden lg:block lg:w-1/3">
       <Placeholder />
     </div>
     <div class="flex flex-col gap-6 lg:w-2/3">

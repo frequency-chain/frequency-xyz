@@ -1,5 +1,5 @@
 <script lang="ts">
-  import DocsBody from './components/DocsBody.svelte';
+  import DocsMain from './components/DocsMain.svelte';
 </script>
 
-<DocsBody />
+<DocsMain />
