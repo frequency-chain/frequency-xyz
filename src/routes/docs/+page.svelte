@@ -1,10 +1,7 @@
 <script lang="ts">
-  import SectionDocs from '../../components/Sections/SectionDocs.svelte';
-  import SectionNavigation from '../../components/Sections/SectionNavigation.svelte';
-  import Sections from '../../components/Sections/Sections.svelte';
+  import DocsBody from './components/DocsBody.svelte';
   import Header from '../../components/Header/Header.svelte';
   $: section = 1;
-  const sectionTitles = ['Introduction'];
   const brightBlue = '#5E69FF';
   const cream = '#FEFAF3';
 
@@ -26,9 +23,8 @@
 <div class="min-h-[calc(100vh-100px)]">
   <div class="relative lg:max-w-[100vw] xl:max-w-page">
     <div class="absolute top-0 z-50 w-full"><Header {logoHex} {navColor} bind:section /></div>
-    <Sections bind:section sectionCount={1}>
-      <SectionDocs />
-    </Sections>
-    <SectionNavigation bind:section {sectionTitles} />
+    <div class={`relative w-[100vw] min-w-full sm:pt-[80px] lg:pt-[140px] vertical-lg:w-[100%]`}>
+      <DocsBody />
+    </div>
   </div>
 </div>
