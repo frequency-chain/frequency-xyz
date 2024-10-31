@@ -1,3 +1,12 @@
+<!-- Mobile -->
 <div
-  class={`lg:sm-[url(/src/lib/assets/placeholder-portal.svg)] absolute left-0 h-full bg-left-bottom bg-no-repeat sm:-bottom-16 sm:max-h-[100px] sm:w-[10%] sm:bg-[url(/src/lib/assets/section3mobile.svg)] md:max-h-full md:w-full lg:bottom-0 lg:max-w-full`}
+  class={`absolute bottom-0 w-full bg-[url(/src/lib/assets/placeholder-portal.svg)] bg-no-repeat sm:h-[180px] sm:bg-right-bottom md:h-[270px] lg:hidden vertical-lg:relative vertical-lg:block`}
+></div>
+
+<!-- Desktop -->
+<div
+  class="relative z-10 h-full w-full bg-[url(/src/lib/assets/placeholder-portal.svg)] bg-right-bottom bg-no-repeat sm:hidden lg:block vertical-lg:hidden"
+></div>
+<div
+  class="relative z-0 -mt-[350px] h-[400px] w-full bg-[url(/src/lib/assets/placeholder-portal.svg)] bg-left-top bg-no-repeat sm:hidden lg:block vertical-lg:hidden"
 ></div>
