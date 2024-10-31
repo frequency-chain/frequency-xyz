@@ -18,7 +18,7 @@
       </p>
     </SlideIn>
     <p class="body paragraph-spacing-left sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px]">
-      Everything here is open source. Our development roadmap is focussed on our mission of reclaiming the social graph
+      Everything here is open source. Our development roadmap is focused on our mission of reclaiming the social graph
       for the common good and is guided by our principles. Infrastructure for the Next Generation Decentralized Social
       Internet.
     </p>
