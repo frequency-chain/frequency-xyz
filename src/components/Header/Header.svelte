@@ -1,30 +1,11 @@
 <script lang="ts">
   import { Header } from '@frequency-chain/style-guide';
-  import { onMount } from 'svelte';
 
   export let logoHex: string = '';
   export let navColor: string = '';
   export let section: number;
 
-  const MOBILE_NAV_THRESHOLD = 900;
-
-  $: isNavOpen = false;
   $: textColor = `text-${navColor}`;
-
-  let innerWidth = window.innerWidth;
-
-  onMount(() => {
-    const handleResize = () => {
-      innerWidth = window.innerWidth;
-      let hasMobileNav = innerWidth <= MOBILE_NAV_THRESHOLD;
-      if (!hasMobileNav) isNavOpen = false;
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  });
 
   const menuItems = [
     { label: 'About', href: '/' },
