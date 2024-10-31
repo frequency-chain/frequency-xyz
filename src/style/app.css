@@ -26,9 +26,6 @@
   .title-100 {
     @apply font-title leading-[1] tracking-wide sm:text-[55px] md:text-[75px] lg:text-[100px];
   }
-  .title-101 {
-    @apply font-title leading-[1] tracking-wide sm:text-[40px] md:text-[55px] lg:text-[75px];
-  }
   .subtitle {
     @apply font-semibold sm:text-lg md:text-lg lg:text-xl;
   }
