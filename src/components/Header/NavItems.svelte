@@ -3,7 +3,7 @@
   export let textColor: string;
   export let section: number;
   export let isDesktop: boolean = true;
-
+  import { base } from '$app/paths';
   let isOnHomePage = $page.url.pathname === '/';
 </script>
 
@@ -14,13 +14,7 @@
   >
 {/if}
 <!-- <a class={`underline-on-hover after:bg-${textColor}`} href="/#">Our Technology.</a> -->
-<a
-  class={`underline-on-hover after:bg-${textColor}`}
-  href="https://docs.frequency.xyz/"
-  target="_blank"
-  rel="noreferrer"
-  role="">Dev Docs.</a
->
+<a class={`underline-on-hover after:bg-${textColor}`} href="{base}/docs" rel="noreferrer" role="">Dev Docs.</a>
 <a
   class={`underline-on-hover after:bg-${textColor}`}
   href="https://medium.com/one-frequency"
