@@ -9,7 +9,7 @@
 
   const menuItems = [
     { label: 'About', href: '/' },
-    { label: 'Dev Docs', href: '/docs', isExternal: true },
+    { label: 'Dev Docs', href: '/docs', isExternal: false },
     { label: 'Newsroom', href: 'https://medium.com/one-frequency', isExternal: true },
     { label: 'Contact', href: 'mailto:info@frequency.xyz' },
   ];
