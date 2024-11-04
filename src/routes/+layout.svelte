@@ -3,7 +3,7 @@
   import { Footer } from '@frequency-chain/style-guide';
 </script>
 
-<div class="relative lg:max-w-[100vw] xl:max-w-page">
+<div class="relative flex-col">
   <Header />
   <div class="mt-4 p-3">
     <slot />

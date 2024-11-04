@@ -13,6 +13,6 @@
   ];
 </script>
 
-<div class="md:freq-container absolute top-0 z-50 w-full max-w-page md:pt-[30px]">
+<div class="sticky top-0 z-50 bg-white md:pt-[30px]">
   <Header logoType="primary" {logoHex} class={textColor} {menuItems} />
 </div>

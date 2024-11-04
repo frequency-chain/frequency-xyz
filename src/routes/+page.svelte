@@ -7,9 +7,11 @@
   import Contact from '../components/Sections/Contact.svelte';
 </script>
 
-<Mission />
-<About />
-<Users />
-<Developers />
-<Partners />
-<Contact />
+<div class="flex-col">
+  <Mission />
+  <About />
+  <Users />
+  <Developers />
+  <Partners />
+  <Contact />
+</div>

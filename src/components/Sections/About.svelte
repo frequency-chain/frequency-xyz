@@ -5,7 +5,7 @@
   import SectionContent from '../SectionContent.svelte';
 </script>
 
-<SectionWrapper id="about" classes="text-cream bg-navy sm:pb-[40px] lg:pb-0 vertical-lg:min-h-[550px]">
+<SectionWrapper id="about" classes="text-cream bg-navy sm:pb-[40px] lg:pb-0">
   <SectionContent classes="flex gap-12 sm:flex-col sm:items-end lg:flex-row lg:items-start justify-center">
     <div class="flex gap-4 text-right sm:items-end lg:items-start">
       <SlideIn>
