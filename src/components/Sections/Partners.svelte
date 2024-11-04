@@ -1,22 +1,14 @@
 <script lang="ts">
   import Founders from '../Founders.svelte';
-  import SectionNumber from '../SectionNumber.svelte';
   import SectionParagraph from '../SectionParagraph.svelte';
   import SlideIn from '../SlideIn.svelte';
-  import Section5Wave from './Section5Wave.svelte';
   import SectionWrapper from './SectionWrapper.svelte';
 </script>
 
 <SectionWrapper
-  id="section5"
+  id="partners"
   classes="relative bg-brightBlue flex sm:flex-col vertical-lg:flex-col lg:flex-row sm:pt-[50px] vertical-lg:pt-[50px] lg:pt-0"
 >
-  <!-- Image -->
-  <div class="absolute bottom-0 left-0 flex h-full w-full overflow-hidden sm:hidden lg:block vertical-lg:hidden">
-    <Section5Wave />
-    <span class="absolute bottom-0 right-0 w-full border-b-4 border-darkIndigo"></span>
-  </div>
-
   <!-- Content -->
   <div
     class="freq-container right-0 top-0 flex h-full sm:w-full sm:flex-col sm:gap-12 lg:absolute lg:w-[70%] lg:flex-row lg:items-end lg:justify-around lg:gap-0 lg:px-6 vertical-lg:relative vertical-lg:w-full vertical-lg:flex-col vertical-lg:items-start"
@@ -36,12 +28,8 @@
           >Learn More</button
         ></a
       >
-      <SectionNumber classes="text-white sm:hidden lg:block mr-[70px] bottom-4 right-0 vertical-lg:hidden"
-        >.05</SectionNumber
-      >
     </section>
 
     <Founders />
   </div>
-  <SectionNumber classes="text-white bottom-4 lg:hidden vertical-lg:block">.05</SectionNumber>
 </SectionWrapper>

@@ -1,11 +1,9 @@
 <script lang="ts">
   import SectionWrapper from './SectionWrapper.svelte';
   import SlideIn from '../SlideIn.svelte';
-  import Section1Wave from './Section1Wave.svelte';
-  import SectionNumber from '../SectionNumber.svelte';
 </script>
 
-<SectionWrapper id="section1" classes="lg:px-0">
+<SectionWrapper id="mission" classes="lg:px-0">
   <div
     class="flex sm:justify-start sm:px-[30px] md:px-[40px] lg:justify-end lg:px-0 vertical-lg:justify-start vertical-lg:px-[30px]"
   >
@@ -27,13 +25,5 @@
         Frequency's focus is on what truly matters: people.
       </p>
     </section>
-  </div>
-
-  <SectionNumber classes="text-teal sm:right-0 sm:bottom-[140px] z-10 lg:bottom-4">.01</SectionNumber>
-
-  <div
-    class="bottom-0 left-0 w-full sm:-mb-[9px] sm:block sm:h-[190px] md:-mb-[10px] md:h-[220px] lg:absolute lg:mb-0 lg:h-full vertical-lg:relative vertical-lg:-mb-[10px] vertical-lg:block"
-  >
-    <Section1Wave />
   </div>
 </SectionWrapper>

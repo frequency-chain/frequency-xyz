@@ -1,21 +1,14 @@
 <script lang="ts">
-  import SectionNumber from '../SectionNumber.svelte';
   import SectionParagraph from '../SectionParagraph.svelte';
   import SlideIn from '../SlideIn.svelte';
-  import Section3Wave from './Section3Wave.svelte';
   import SectionWrapper from './SectionWrapper.svelte';
   import SplitSection from './SplitSection.svelte';
 </script>
 
 <SectionWrapper
-  id="section3"
+  id="users"
   classes="z-0 flex sm:justify-center md:justify-center overflow-hidden sm:pt-[40px]  vertical-lg:pt-0 text-white"
 >
-  <!-- Desktop Wave -->
-  <div class="absolute bottom-0 left-0 h-full w-[50%] sm:hidden lg:block vertical-lg:hidden">
-    <Section3Wave />
-  </div>
-
   <!-- Text Content -->
   <section class="flex h-full flex-1 justify-center sm:flex-col sm:pt-[40px] lg:flex-row vertical-lg:flex-col">
     <SplitSection isLeft={true} classes="relative sm:pb-[100px] lg:pb-0">
@@ -24,9 +17,6 @@
           Take Your Content & Relationships With You
         </h2>
       </SlideIn>
-      <div class="z-10 sm:block md:block lg:hidden">
-        <Section3Wave />
-      </div>
     </SplitSection>
     <SplitSection
       isLeft={false}
@@ -40,5 +30,4 @@
       </SectionParagraph>
     </SplitSection>
   </section>
-  <SectionNumber classes="sm:bottom-4 lg:-bottom-[20px] lg:text-[200px] lg:-right-[80px]">.03</SectionNumber>
 </SectionWrapper>
