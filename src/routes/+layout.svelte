@@ -3,10 +3,8 @@
   import { Footer } from '@frequency-chain/style-guide';
 </script>
 
-<div class="relative flex-col">
+<div class="freq-container flex-col">
   <Header />
-  <div class="mt-4 p-3">
-    <slot />
-  </div>
+  <slot />
   <Footer />
 </div>
