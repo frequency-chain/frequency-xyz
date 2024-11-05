@@ -15,7 +15,7 @@
     <div>
       <SectionParagraph classes="">
         On most social media platforms, you get a stark choice: accept the platform as is, or leave the platform, your
-        friends and your relationships behind.  Frequency changes all of this by offering users, control, community, and
+        friends and your relationships behind. Frequency changes all of this by offering users, control, community, and
         ownership over their online experience.
       </SectionParagraph>
     </div>
