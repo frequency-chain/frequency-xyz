@@ -3,18 +3,21 @@
   import SlideIn from '../SlideIn.svelte';
 </script>
 
-<SectionWrapper id="mission" classes="lg:px-0">
-  <section class="flex w-full flex-col gap-6 lg:w-[60%] lg:pl-6">
+<SectionWrapper id="mission" classes="">
+  <section class="freq-container">
     <SlideIn>
-      <h2 class="title-75 paragraph-spacing-left text-teal sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px]">
-        Frequency’s Mission
-      </h2>
+      <h2 class="title-75">Frequency’s Mission</h2>
     </SlideIn>
     <SlideIn>
-      <p class="subtitle paragraph-spacing-left sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px]">
+      <p class="">
         Frequency’s Mission is to provide critical infrastructure to help people take back control over their digital
         lives by:
       </p>
     </SlideIn>
   </section>
+  <div class="bg-navy">
+    <div class="freq-container">
+      <h2>Your Network</h2>
+    </div>
+  </div>
 </SectionWrapper>

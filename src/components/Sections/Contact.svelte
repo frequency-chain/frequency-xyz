@@ -1,18 +1,13 @@
 <script lang="ts">
   import SectionWrapper from './SectionWrapper.svelte';
-  import SlideIn from '../SlideIn.svelte';
   import SectionParagraph from '../SectionParagraph.svelte';
   import SectionContent from '../SectionContent.svelte';
   import GetNotified from '../GetNotified/GetNotified.svelte';
 </script>
 
-<SectionWrapper id="about" classes="text-cream bg-navy sm:pb-[40px] lg:pb-0">
-  <SectionContent classes="flex gap-12 sm:flex-col sm:items-end lg:flex-row lg:items-start justify-center">
-    <SectionParagraph
-      classes="text-left paragraph-spacing-right lg:pl-0 sm:pb-[100px] lg:pb-0 sm:pr-5  sm:max-w-[515px] lg:max-w-auto"
-    >
-      Image
-    </SectionParagraph>
+<SectionWrapper id="about" classes="text-white bg-navy">
+  <SectionContent classes="freq-container">
+    <SectionParagraph classes="">Image</SectionParagraph>
 
     <GetNotified />
   </SectionContent>

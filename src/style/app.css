@@ -35,7 +35,7 @@
 
   /* Layout */
   .freq-container {
-    @apply w-full sm:px-[30px] md:px-[40px] lg:max-w-[100vw] lg:px-[80px] xl:max-w-page;
+    @apply mx-auto w-full sm:px-[30px] md:px-[40px] lg:max-w-[100vw] lg:px-[80px] xl:max-w-page;
   }
 
   .paragraph-spacing-right {

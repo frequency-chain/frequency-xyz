@@ -8,7 +8,7 @@
   import Contact from '../components/Sections/Contact.svelte';
 </script>
 
-<div class="flex-col">
+<div class="flex w-full flex-col items-center">
   <Top />
   <Mission />
   <About />
