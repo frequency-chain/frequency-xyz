@@ -32,7 +32,7 @@
 <div
   id={`explore_${sectionNumber}`}
   onclick={toggle}
-  class="justify-left border-grayBorder m:w-min-[112px] m:pr-3 flex flex-col border-l-[1.5px] border-opacity-25 pl-3 sm:items-end lg:min-w-[112px] lg:items-start lg:pr-3"
+  class="justify-left m:w-min-[112px] m:pr-3 flex flex-col border-l-[1.5px] border-grayBorder border-opacity-25 pl-3 sm:items-end lg:min-w-[112px] lg:items-start lg:pr-3"
 >
   <div class="flex text-left sm:items-end lg:items-start">
     <span class="-mt-[9px] text-clip text-nowrap font-title text-h3 font-normal text-white"
