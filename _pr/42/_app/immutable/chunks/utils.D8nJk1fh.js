@@ -1,0 +1,1 @@
+import{D as b,x as e}from"./runtime.Cq8ZWjRo.js";function c(n,r,s){if(n==null)return r(void 0),s&&s(void 0),b;const u=e(()=>n.subscribe(r,s));return u.unsubscribe?()=>u.unsubscribe():u}export{c as s};
