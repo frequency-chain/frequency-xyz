@@ -32,14 +32,12 @@
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
         id={`explore_${sectionNumber}`}
-        onclick={toggle}
-        class={`transition-all cursor-pointer justify-left w-min-[150px] m:pr-3 flex flex-col border-l-[1.5px] border-grayBorder border-opacity-25 pl-3 sm:items-end lg:items-start lg:pr-3 ${state === 'open' ? 'w-f320' : 'w-[150px]'}`}`
+        on:click={toggle}
+        class={`transition-all cursor-pointer w-min-[150px] m:pr-3 flex flex-col border-l-[1.5px] border-grayBorder border-opacity-25 pl-3 lg:pr-3 ${state === 'open' ? 'w-f320' : 'w-[132px]'}`}`
 >
-  <div class="flex text-left sm:items-end lg:items-start">
     <span class="-mt-[9px] text-clip text-nowrap font-title text-h3 font-normal text-white"
       >.{parseInt(sectionNumber, 10).toString().padStart(2, '0')}</span
     >
-  </div>
   {#if iconSrc}
     <div id={`explore_${sectionNumber}_icon`} class="pt-[6px]">
       <img src={iconSrc as string} alt="" class="h-[65px] w-[65px]" />
@@ -51,17 +49,15 @@
     </span>
   </div>
 
+  <div class={`transition-all ${state === 'open' ? 'block' : 'hidden'}`}>
     <div
       id={`explore_${sectionNumber}_content`}
-      class={`transition-all paragraph-spacing-right lg:max-w-auto m:max-w-[280px] m:pb-0 overflow-hidden pt-4 text-left font-sans text-sm text-white sm:max-w-[515px] sm:pb-[100px] sm:pr-5 lg:max-w-[280px] lg:pb-0 lg:pl-0 ${state === 'open' ? 'opacity-100' : 'opacity-0'}`}
+      class={`lg:max-w-auto m:max-w-[280px] max-h-f224 overflow-hidden pt-4 sm text-white sm:max-w-[515px] sm:pr-f8 lg:max-w-[280px] pb-f12 lg:pl-0`}
     >
       {@render children()}
     </div>
-    <div id={`explore_${sectionNumber}_button`} class="m:pt-4 lg:pt-4">
-        <Button size="xs" type="primary">
-          <a href={url} target="_blank">
+        <Button id={`explore_${sectionNumber}_button`} size="xs" type="primary" href={url} target="_blank">
             <span class=" text-xs text-black">Learn</span> <img src={Vector} width="12px" height="12px" alt="" />
-          </a>
         </Button>
-    </div>
+  </div>
 </div>

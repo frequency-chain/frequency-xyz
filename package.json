@@ -45,6 +45,6 @@
   },
   "type": "module",
   "dependencies": {
-    "@frequency-chain/style-guide": "^0.1.11"
+    "@frequency-chain/style-guide": "^0.1.12"
   }
 }
