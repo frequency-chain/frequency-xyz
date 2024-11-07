@@ -22,14 +22,18 @@
       dispatch('toggled', { index: sectionNumber, state });
     }
   }
+
+  function clickhandler() {
+    console.log("here");
+  }
 </script>
 
 <!-- svelte-ignore a11y_click_events_have_key_events -->
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
-  id={`explore_${sectionNumber}`}
-  onclick={toggle}
-  class="justify-left m:w-min-[112px] m:pr-3 flex flex-col border-l-[1.5px] border-grayBorder border-opacity-25 pl-3 sm:items-end lg:min-w-[112px] lg:items-start lg:pr-3"
+        id={`explore_${sectionNumber}`}
+        onclick={toggle}
+        class={`transition-all cursor-pointer justify-left w-min-[150px] m:pr-3 flex flex-col border-l-[1.5px] border-grayBorder border-opacity-25 pl-3 sm:items-end lg:items-start lg:pr-3 ${state === 'open' ? 'w-f320' : 'w-[150px]'}`}`
 >
   <div class="flex text-left sm:items-end lg:items-start">
     <span class="-mt-[9px] text-clip text-nowrap font-title text-h3 font-normal text-white"
@@ -42,24 +46,22 @@
     </div>
   {/if}
   <div id={`explore_${sectionNumber}_label`} class="pt-6">
-    <span class="text-clip text-nowrap font-title text-h6 font-normal text-white">
+    <span class="text-clip text-wrap font-title text-h6 font-normal text-white">
       {@render sectionLabel()}
     </span>
   </div>
 
-  {#if state === 'open'}
     <div
       id={`explore_${sectionNumber}_content`}
-      class=" paragraph-spacing-right lg:max-w-auto m:max-w-[280px] m:pb-0 overflow-hidden pt-4 text-left font-sans text-sm text-white sm:max-w-[515px] sm:pb-[100px] sm:pr-5 lg:max-w-[280px] lg:pb-0 lg:pl-0"
+      class={`transition-all paragraph-spacing-right lg:max-w-auto m:max-w-[280px] m:pb-0 overflow-hidden pt-4 text-left font-sans text-sm text-white sm:max-w-[515px] sm:pb-[100px] sm:pr-5 lg:max-w-[280px] lg:pb-0 lg:pl-0 ${state === 'open' ? 'opacity-100' : 'opacity-0'}`}
     >
       {@render children()}
     </div>
     <div id={`explore_${sectionNumber}_button`} class="m:pt-4 lg:pt-4">
-      <a href={url} target="_blank"
-        ><Button size="xs" type="primary"
-          ><span class=" text-xs text-black">Learn</span> <img src={Vector} width="12px" height="12px" alt="" /></Button
-        ></a
-      >
+        <Button size="xs" type="primary">
+          <a href={url} target="_blank">
+            <span class=" text-xs text-black">Learn</span> <img src={Vector} width="12px" height="12px" alt="" />
+          </a>
+        </Button>
     </div>
-  {/if}
 </div>
