@@ -4,4 +4,4 @@
 </script>
 
 <DocsMain />
-<Explore classes="mt-4" />
+<Explore />

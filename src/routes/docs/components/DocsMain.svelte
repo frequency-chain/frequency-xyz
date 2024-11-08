@@ -2,7 +2,7 @@
   import Placeholder from './Placeholder.svelte';
 </script>
 
-<section class="mt-40 flex">
+<section class="freq-container mt-40 flex">
   <div class="hidden lg:block lg:w-1/3">
     <Placeholder />
   </div>

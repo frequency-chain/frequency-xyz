@@ -20,9 +20,12 @@
 
 <div
   id="explore_section"
-  class="relative mt-f96 flex w-[100vw] min-w-full flex-row bg-navy sm:px-f64 sm:py-f80 lg:px-f128 lg:py-f96 vertical-lg:min-h-[550-px] vertical-lg:w-[100%]"
+  class="mt-f96 flex w-full max-w-screen-xl flex-row bg-navy sm:px-f64 sm:py-f80 lg:px-f128 lg:py-f96 vertical-lg:min-h-[550-px] vertical-lg:w-[100%]"
 >
-  <div id="explore_description" class="relative flex flex-row bg-navy pr-f12 text-teal vertical-lg:min-h-[550px]">
+  <div
+    id="explore_description"
+    class="freq-container relative flex flex-row bg-navy pr-f12 text-teal vertical-lg:min-h-[550px]"
+  >
     <div class="flex flex-col gap-f32">
       <span class="h1 mt-f8 text-clip text-wrap font-title font-normal">Explore &amp; Build</span>
 
