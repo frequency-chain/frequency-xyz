@@ -14,7 +14,7 @@
     "format": "prettier --write .",
     "test:integration": "playwright test",
     "test:unit": "vitest",
-    "fix-package-lock": "rm package-lock.json && rm -rf node_modules && npm i"
+    "fix-package-lock": "rm -f package-lock.json && rm -rf node_modules && npm i"
   },
   "devDependencies": {
     "@playwright/test": "^1.48.2",
@@ -47,6 +47,6 @@
   },
   "type": "module",
   "dependencies": {
-    "@frequency-chain/style-guide": "^0.1.12"
+    "@frequency-chain/style-guide": "^0.1.13"
   }
 }
