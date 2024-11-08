@@ -14,3 +14,13 @@ test('index page has a popout', async ({ page }) => {
 
   expect(page.getByText("Interested in Frequency's ecosystem?")).toBeDefined();
 });
+
+test('routes sanity check', async ({ page }) => {
+  for (const route of [
+    { path: 'docs', title: 'Developer Docs' },
+    { path: 'developers', title: 'Developers' },
+  ]) {
+    await page.goto(route.path);
+    expect(page.getByText(route.title), { message: `${route.path} failed` }).toBeDefined();
+  }
+});
