@@ -5,12 +5,18 @@
   import SsoIcon from '../../../lib/assets/icon-sso.svg';
   import CoreIcon from '../../../lib/assets/icon-core.svg';
 
-  let sections: ('open' | 'closed')[] = ['open', 'open', 'closed', 'closed', 'closed'];
+  let sectionOpenStates: boolean[] = [
+    true /* dummy so we don't need to adjust 1-based index */,
+    true,
+    false,
+    false,
+    false,
+  ];
 
-  function handleToggled(event: CustomEvent<{ index: string; state: 'open' | 'closed' }>) {
-    const { index, state } = event.detail;
-    const newState = state === 'open' ? 'closed' : 'open';
-    sections.forEach((_state, objIndex, array) => {
+  function handleToggled(event: CustomEvent<{ index: string; isOpen: boolean }>) {
+    const { index, isOpen: state } = event.detail;
+    const newState = !state;
+    sectionOpenStates.forEach((_state, objIndex, array) => {
       if (objIndex.toString() !== index) {
         array[objIndex] = newState;
       }
@@ -46,12 +52,13 @@
     </div>
   </div>
 
+  <!-- min width selected based on description section + 1 open accordion + 3 closed accordions -->
   <div class="flex flex-row lg:min-w-[716px]">
     <HAccordion
       sectionNumber="1"
       iconSrc={ProviderIcon}
       on:toggled={handleToggled}
-      bind:state={sections[1]}
+      bind:isOpen={sectionOpenStates[1]}
       url="https://docs.frequency.xyz/Guides/BecomeAProvider.html"
     >
       {#snippet sectionLabel()}Quick Start/<br />Become a Provider{/snippet}
@@ -64,7 +71,7 @@
       sectionNumber="2"
       iconSrc={GatewayIcon}
       on:toggled={handleToggled}
-      bind:state={sections[2]}
+      bind:isOpen={sectionOpenStates[2]}
       url="https://docs.frequency.xyz/Guides/Gateway.html"
     >
       {#snippet sectionLabel()}Frequency<br />Gateway{/snippet}
@@ -76,7 +83,7 @@
       sectionNumber="3"
       iconSrc={SsoIcon}
       on:toggled={handleToggled}
-      bind:state={sections[3]}
+      bind:isOpen={sectionOpenStates[3]}
       url="https://docs.frequency.xyz/Guides/SSO.html"
     >
       {#snippet sectionLabel()}Add Single<br />Sign-on to<br />your App{/snippet}
@@ -89,7 +96,7 @@
       sectionNumber="4"
       iconSrc={CoreIcon}
       on:toggled={handleToggled}
-      bind:state={sections[4]}
+      bind:isOpen={sectionOpenStates[4]}
       url="https://docs.frequency.xyz/"
     >
       {#snippet sectionLabel()}Frequency<br />Core{/snippet}

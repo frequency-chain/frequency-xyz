@@ -6,7 +6,7 @@
   const dispatch = createEventDispatcher();
 
   interface HAccordionProps {
-    state: 'open' | 'closed';
+    isOpen: boolean;
     sectionNumber: string;
     sectionLabel: Snippet;
     iconSrc: string;
@@ -14,12 +14,12 @@
     children: Snippet;
   }
 
-  let { state = $bindable('closed'), sectionNumber, sectionLabel, iconSrc, children, url }: HAccordionProps = $props();
+  let { isOpen = $bindable(false), sectionNumber, sectionLabel, iconSrc, children, url }: HAccordionProps = $props();
 
   function toggle() {
-    if (state === 'closed') {
-      state = 'open';
-      dispatch('toggled', { index: sectionNumber, state });
+    if (!isOpen) {
+      isOpen = true;
+      dispatch('toggled', { index: sectionNumber, isOpen });
     }
   }
 </script>
@@ -29,7 +29,7 @@
 <div
   id={`explore_${sectionNumber}`}
   onclick={toggle}
-  class={`w-min-[150px] m:pr-3 flex cursor-pointer flex-col border-l-[1.5px] border-grayBorder border-opacity-25 pl-3 transition-all lg:pr-3 ${state === 'open' ? 'w-f320' : 'w-[132px]'}`}
+  class={`w-min-[150px] m:pr-3 flex cursor-pointer flex-col border-l-[1.5px] border-grayBorder border-opacity-25 pl-3 transition-all lg:pr-3 ${isOpen ? 'w-f320' : 'w-[132px]'}`}
 >
   <span class="-mt-[9px] text-clip text-nowrap font-title text-h3 font-normal text-white"
     >.{parseInt(sectionNumber, 10).toString().padStart(2, '0')}</span
@@ -45,7 +45,7 @@
     </span>
   </div>
 
-  <div class={`transition-all ${state === 'open' ? 'block' : 'hidden'}`}>
+  <div class={`transition-all ${isOpen ? 'block' : 'hidden'}`}>
     <div
       id={`explore_${sectionNumber}_content`}
       class={`lg:max-w-auto m:max-w-[280px] sm max-h-f224 overflow-hidden pb-f12 pt-4 text-white sm:max-w-[515px] sm:pr-f8 lg:max-w-[280px] lg:pl-0`}
