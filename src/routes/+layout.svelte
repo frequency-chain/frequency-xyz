@@ -6,7 +6,7 @@
 <div class="freq-container">
   <Header />
 </div>
-<slot />
-<div class="freq-container">
-  <Footer />
+<div class="max-w-screen-xl">
+  <slot />
 </div>
+<Footer type="dark" class="w-full border-grayBorder border-opacity-25 bg-navy vertical-lg:w-[100%]" />
