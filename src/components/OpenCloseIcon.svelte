@@ -16,7 +16,7 @@
       y1="50%"
       x2="100%"
       y2="50%"
-      class={`origin-left translate-y-[20%] stroke-[10%] transition-all duration-[0.3s] ${isOpen ? 'stroke-cream translate-x-[8px] translate-y-[35%] -rotate-45' : 'stroke-indigo rotate-0'}`}
+      class={`origin-left translate-y-[20%] stroke-[10%] transition-all duration-[0.3s] ${isOpen ? 'stroke-white translate-x-[8px] translate-y-[35%] -rotate-45' : 'stroke-indigo rotate-0'}`}
     />
     <line
       x1="0"

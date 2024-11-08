@@ -29,7 +29,7 @@
     <div class="flex flex-col gap-f32">
       <span class="h1 mt-f8 text-clip text-wrap font-title font-normal">Explore &amp; Build</span>
 
-      <div class="sm text-white sm:max-w-[515px] sm:pb-[100px] lg:pb-[200px]">
+      <div class="text-sm text-white sm:max-w-[515px] sm:pb-[100px] lg:pb-[200px]">
         Frequency offers simple blockchain integration for your applications&mdash;bridging the gap between your app and
         the decentralized web. Frequency Gateway offers a suite of tools and services that make it easy to connect your
         applications to the Frequency blockchain. This allows your development team to focus on building outstanding
