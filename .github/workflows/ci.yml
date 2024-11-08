@@ -19,6 +19,7 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
+        # If this fails, run 'npm run fix-package-lock' and commit the result
         run: npm ci
 
       - name: Lint
@@ -38,6 +39,7 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
+        # If this fails, run 'npm run fix-package-lock' and commit the result
         run: npm ci
 
       - name: Build
@@ -66,6 +68,7 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
+        # If this fails, run 'npm run fix-package-lock' and commit the result
         run: npm ci
 
       - name: Unit Tests
@@ -88,6 +91,7 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
+        # If this fails, run 'npm run fix-package-lock' and commit the result
         run: npm ci
 
       - name: Install Playwright Browsers

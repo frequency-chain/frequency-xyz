@@ -1,3 +1,1 @@
-<div class="freq-container">
-  <slot />
-</div>
+<slot />
