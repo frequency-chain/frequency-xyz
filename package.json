@@ -10,9 +10,11 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check . && eslint .",
+    "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
     "test:integration": "playwright test",
-    "test:unit": "vitest"
+    "test:unit": "vitest",
+    "fix-package-lock": "rm package-lock.json && rm -rf node_modules && npm i"
   },
   "devDependencies": {
     "@playwright/test": "^1.48.2",
@@ -45,6 +47,6 @@
   },
   "type": "module",
   "dependencies": {
-    "@frequency-chain/style-guide": "^0.1.11"
+    "@frequency-chain/style-guide": "^0.1.12"
   }
 }

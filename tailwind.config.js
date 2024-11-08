@@ -14,6 +14,7 @@ export default {
       colors: {
         darkIndigo: '#445BC3',
         tealBright: '#00B6AF',
+        grayBorder: '#E5E7E7',
       },
       width: {
         page: `${MAX_PAGE_WIDTH}px`,

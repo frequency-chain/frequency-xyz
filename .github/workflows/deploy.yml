@@ -42,6 +42,7 @@ jobs:
           cache: npm
 
       - name: Install dependencies
+        # If this fails, run 'npm run fix-package-lock' and commit the result
         run: npm ci
 
       - name: Build
