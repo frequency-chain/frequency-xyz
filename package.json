@@ -13,7 +13,8 @@
     "lint:fix": "prettier --write . && eslint --fix .",
     "format": "prettier --write .",
     "test:integration": "playwright test",
-    "test:unit": "vitest"
+    "test:unit": "vitest",
+    "fix-package-lock": "rm package-lock.json && rm -rf node_modules && npm i"
   },
   "devDependencies": {
     "@playwright/test": "^1.48.2",
