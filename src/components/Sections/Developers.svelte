@@ -11,6 +11,7 @@
     </SlideIn>
 
     <SectionParagraph classes="">Getting started building on Frequency is simple and easy.</SectionParagraph>
+    <SectionParagraph classes="">I'm not sure what else I should be putting in here.</SectionParagraph>
 
     <a href="/docs"> Developer Portal </a>
   </section>
