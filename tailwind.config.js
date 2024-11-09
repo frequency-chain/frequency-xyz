@@ -31,6 +31,10 @@ export default {
         page: `${MAX_PAGE_WIDTH}px`,
         full: '100%',
       },
+      spacing: {
+        f56: '56px',
+        f400: '400px',
+      }
     },
   },
   safelist: ['after:bg-navy', 'after:bg-cream', 'invalid:border-red'],

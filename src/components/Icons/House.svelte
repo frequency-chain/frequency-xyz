@@ -1,3 +1,7 @@
+<script lang="ts">
+
+</script>
+
 <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_4296_2252)">
 <rect width="62" height="62" fill="#14313F"/>
@@ -17,7 +21,7 @@
 </defs>
 </svg>
 
-<svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg" class={$$restProps} >
 <g clip-path="url(#clip0_4241_9358)">
 <path d="M62 62H0V0H62V62ZM1.89313 60.1069H60.1069V1.89313H1.89313V60.1069Z" fill="#18465E"/>
 <path d="M43.7981 49.8606H17.7676V23.8301H43.7981V49.8606ZM19.6607 47.9675H41.905V25.7232H19.6607V47.9675Z" fill="#18465E"/>
