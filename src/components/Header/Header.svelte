@@ -7,7 +7,7 @@
     { label: 'Mission', href: base + '/#mission', viewportHighlightId: 'mission' },
     { label: 'About', href: base + '/#about', viewportHighlightId: 'about' },
     { label: 'Users', href: base + '/#users', viewportHighlightId: 'users' },
-    { label: 'Developers', href: base + '#developers', viewportHighlightId: 'developers' },
+    { label: 'Developers', href: base + '/#developers', viewportHighlightId: 'developers' },
     { label: 'Contact', href: base + '/#contact', viewportHighlightId: 'contact' },
     { label: 'Developer Portal', href: base + '/docs', isButton: true, isActive: $page.url.pathname === '/docs/' },
   ];
