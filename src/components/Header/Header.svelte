@@ -12,6 +12,6 @@
   ];
 </script>
 
-<div class="sticky top-0 z-50 w-full bg-white">
+<div class="sticky top-0 z-50 mb-4 w-full bg-white">
   <Header {menuItems} />
 </div>
