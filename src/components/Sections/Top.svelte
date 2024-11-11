@@ -4,7 +4,7 @@
   import SectionContent from '../SectionContent.svelte';
 </script>
 
-<SectionWrapper id="about" classes="">
+<SectionWrapper classes="">
   <div class="freq-container">
     <SectionContent classes="">
       <div class="">

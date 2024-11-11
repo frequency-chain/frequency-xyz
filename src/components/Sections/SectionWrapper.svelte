@@ -3,6 +3,6 @@
   export let classes = '';
 </script>
 
-<div {id} class={`w-full ${classes}`}>
+<div {id} class={`scroll-target w-full ${classes}`}>
   <slot />
 </div>
