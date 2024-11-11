@@ -4,7 +4,7 @@
 </script>
 
 <Header />
-<div class="max-w-screen-xl">
+<div class="w-full max-w-screen-xl">
   <slot />
 </div>
 <Footer type="dark" class="w-full border-grayBorder border-opacity-25 bg-navy vertical-lg:w-[100%]" />
