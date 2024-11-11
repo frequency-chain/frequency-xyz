@@ -7,4 +7,6 @@
 <div class="w-full">
   <slot />
 </div>
-<Footer type="dark" class="w-full border-grayBorder border-opacity-25 bg-navy vertical-lg:w-[100%]" />
+<div class="w-full bg-navy px-[5%] lg:px-[20%]">
+  <Footer type="dark" class="w-full border-grayBorder border-opacity-25 vertical-lg:w-[100%]" />
+</div>
