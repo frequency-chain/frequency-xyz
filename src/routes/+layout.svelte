@@ -3,9 +3,7 @@
   import { Footer } from '@frequency-chain/style-guide';
 </script>
 
-<div class="freq-container">
-  <Header />
-</div>
+<Header />
 <div class="max-w-screen-xl">
   <slot />
 </div>
