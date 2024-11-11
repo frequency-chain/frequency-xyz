@@ -9,7 +9,12 @@
     { label: 'Users', href: base + '/#users', viewportHighlightId: 'users' },
     { label: 'Developers', href: base + '/#developers', viewportHighlightId: 'developers' },
     { label: 'Contact', href: base + '/#contact', viewportHighlightId: 'contact' },
-    { label: 'Developer Portal', href: base + '/docs', isButton: true, isActive: $page.url.pathname === '/docs/' },
+    {
+      label: 'Developer Portal',
+      href: base + '/docs',
+      isButton: true,
+      isActive: $page.url.pathname === `${base}/docs/`,
+    },
   ];
 </script>
 
