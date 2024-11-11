@@ -19,5 +19,5 @@
 </script>
 
 <div class="sticky top-0 z-50 mb-4 w-full bg-white">
-  <Header {menuItems} />
+  <Header highlightMarginTop="-90px" {menuItems} />
 </div>
