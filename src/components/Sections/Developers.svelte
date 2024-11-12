@@ -35,7 +35,7 @@
     <DeveloperStepsTablet />
     <DeveloperSteps />
   </div>
-  <section class="my-f56 flex justify-center">
+  <section class="my-f56 flex justify-center px-[36px]">
     <Button size="lg" class="h6 p-f16 lg:hidden">
       {DeveloperStepsText.button.title}
     </Button>

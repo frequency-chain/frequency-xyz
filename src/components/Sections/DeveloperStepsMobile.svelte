@@ -17,7 +17,6 @@
 <!-- Developer Steps -->
 <div class="sm:block md:hidden lg:hidden">
   <section class={sectionClasses}>
-    `
     <!-- STEP ONE -->
     <div class="{stepClasses} justify-self-start" id="step-1">
       <CircleOne width={circleWidth} />
