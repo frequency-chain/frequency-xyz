@@ -33,7 +33,6 @@ export default {
       },
       spacing: {
         f56: '56px',
-        f400: '400px',
       }
     },
   },
