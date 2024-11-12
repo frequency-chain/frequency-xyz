@@ -46,6 +46,7 @@ export default tseslint.config(
       'linebreak-style': ['error', 'unix'],
       semi: 'warn',
       '@typescript-eslint/ban-ts-comment': 'off',
+      'svelte/no-at-html-tags': 'off',
     },
   },
   {
