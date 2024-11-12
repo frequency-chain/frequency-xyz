@@ -4,7 +4,7 @@ export const MAX_MOBILE_WIDTH: number = 1300;
 export const DeveloperStepsText = {
   button: {
     title: "Developer Portal",
-    text_html: "unused",
+    text_html: "Learn More About Developer Portal", // ...
   },
   header: {
     title: "Developer Advantages:",
