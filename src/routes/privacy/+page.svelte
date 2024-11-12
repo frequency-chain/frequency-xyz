@@ -3,7 +3,7 @@
 </script>
 
 <div class="mx-auto flex-grow justify-center px-4 sm:px-6 lg:px-8">
-  <h3 class="title-75">Privacy Policy</h3>
+  <h3 class="title-70">Privacy Policy</h3>
   <div class="privacy max-lg">
     <p>
       <strong>Last Updated:</strong> September 16, 2024
