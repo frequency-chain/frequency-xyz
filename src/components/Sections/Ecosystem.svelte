@@ -26,8 +26,8 @@
           acquire TikTok US, Frequency fosters a collaborative, decentralizing environment where communities can thrive
           around shared values, driving social impact, creativity, and growth.
         </p>
-        <TicTokTag class="my-5 max-w-[300px] self-center md:self-start lg:hidden" />
-        <div class="self-center md:self-start">
+        <TicTokTag class="my-6 max-w-[300px] self-center md:self-start lg:hidden" />
+        <div class="my-6 self-center md:self-start">
           <Button size="full" class="max-w-[400px]" href="https://thepeoplesbid.com/"
             >Learn About the People's Bid</Button
           >
@@ -37,7 +37,7 @@
     </section>
   </div>
   <section class="freq-container py-10">
-    <Typography tag="h1" class="text-navyLight mb-6 text-center font-title">
+    <Typography tag="h1" class="mb-6 text-center font-title text-navyLight">
       Companies in the Frequency Ecosystem
     </Typography>
     <div class="flex w-full flex-wrap justify-around p-2 md:p-6">
