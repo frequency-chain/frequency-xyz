@@ -2,17 +2,16 @@
   import { Button, Typography } from '@frequency-chain/style-guide';
   import SectionWrapper from './SectionWrapper.svelte';
   import TicTokTag from '../TikTokTag.svelte';
+  import WavesTwo from '$lib/assets/waves-two.svg';
+  import MeWeLogo from '$lib/assets/ecosystem/mewe.svg';
+  import SoarLogo from '$lib/assets/ecosystem/soar.svg';
 </script>
 
 <SectionWrapper id="ecosystem">
   <div class="w-full overflow-hidden">
     <div class="h-[36px] bg-white lg:h-[61px]"></div>
     <div class="relative mb-[-36px] bg-navy lg:mb-[-61px]">
-      <img
-        class="relative top-[-36px] z-10 max-w-none lg:top-[-61px] lg:w-full"
-        alt=""
-        src="src/lib/assets/waves-two.svg"
-      />
+      <img class="relative top-[-36px] z-10 max-w-none lg:top-[-61px] lg:w-full" alt="" src={WavesTwo} />
     </div>
   </div>
   <div class="relative mt-[-100px] bg-navy pb-f64 md:pb-f120">
@@ -38,12 +37,12 @@
     </section>
   </div>
   <section class="freq-container py-10">
-    <Typography tag="h1" class="mb-6 text-center font-title text-navyLight">
+    <Typography tag="h1" class="text-navyLight mb-6 text-center font-title">
       Companies in the Frequency Ecosystem
     </Typography>
     <div class="flex w-full flex-wrap justify-around p-2 md:p-6">
-      <img class="m-2 max-w-[300px] p-2 sm:m-2 md:m-2" alt="MeWe" src="src/lib/assets/ecosystem/mewe.svg" />
-      <img class="m-2 max-w-[300px] p-2 sm:m-2 md:m-2" alt="Soar" src="src/lib/assets/ecosystem/soar.svg" />
+      <img class="m-2 max-w-[300px] p-2 sm:m-2 md:m-2" alt="MeWe" src={MeWeLogo} />
+      <img class="m-2 max-w-[300px] p-2 sm:m-2 md:m-2" alt="Soar" src={SoarLogo} />
     </div>
   </section>
 </SectionWrapper>
