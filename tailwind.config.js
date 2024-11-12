@@ -15,6 +15,9 @@ export default {
         title: ['Newake', 'sans-serif'],
         sans: ['Poppins', 'sans-serif'],
       },
+      fontSize: {
+        f60: '60px',
+      },
       colors: {
         darkIndigo: '#445BC3',
         tealBright: '#00B6AF',
@@ -31,6 +34,9 @@ export default {
       minWidth: {
         page: `${MAX_PAGE_WIDTH}px`,
         full: '100%',
+      },
+      spacing: {
+        f56: '56px',
       },
     },
   },
