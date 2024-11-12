@@ -14,7 +14,6 @@
 
 <div class="sm:hidden lg:block">
   <section class="flex shrink flex-wrap justify-end">
-    `
     <!-- STEP ONE -->
     <div class="flex basis-[500px] pl-0 align-super" id="step-1">
       <CircleOne />
