@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Button, Typography } from '@frequency-chain/style-guide';
   import SectionWrapper from './SectionWrapper.svelte';
-  import TicTokTag from '../TikTokTag.svelte';
+  import TikTokTag from '../TikTokTag.svelte';
   import WavesTwo from '$lib/assets/waves-two.svg';
   import MeWeLogo from '$lib/assets/ecosystem/mewe.svg';
   import SoarLogo from '$lib/assets/ecosystem/soar.svg';
@@ -26,14 +26,14 @@
           acquire TikTok US, Frequency fosters a collaborative, decentralizing environment where communities can thrive
           around shared values, driving social impact, creativity, and growth.
         </p>
-        <TicTokTag class="my-6 max-w-[300px] self-center md:self-start lg:hidden" />
+        <TikTokTag class="my-6 max-w-[300px] self-center md:self-start lg:hidden" />
         <div class="my-6 self-center md:self-start">
           <Button size="full" class="max-w-[400px]" href="https://thepeoplesbid.com/"
             >Learn About the People's Bid</Button
           >
         </div>
       </div>
-      <TicTokTag class="hidden w-full lg:flex lg:w-1/3" />
+      <TikTokTag class="hidden w-full lg:flex lg:w-1/3" />
     </section>
   </div>
   <section class="freq-container py-10">
