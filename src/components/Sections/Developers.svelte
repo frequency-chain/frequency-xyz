@@ -12,15 +12,15 @@
 </script>
 
 <!-- Graphic and Header -->
-<SectionWrapper id="developers" classes="sm:pt-[30px] md:pt-[38px] lg:pt-[34px] freq-container">
+<SectionWrapper id="developers" classes="pt-[30px] md:pt-[38px] lg:pt-[34px] freq-container">
   <section class="flex shrink flex-col lg:flex-row">
     <div class="developer-squiggles md:mr-[32px] lg:mr-f96">
-      <img src={FrequencyDevelopersMobile} alt="abstract developer timeline" class="md:hidden" />
-      <img src={FrequencyDevelopersTablet} alt="abstract developer timeline" class="sm:hidden md:block lg:hidden" />
+      <img src={FrequencyDevelopersMobile} alt="abstract developer timeline" class="block md:hidden" />
+      <img src={FrequencyDevelopersTablet} alt="abstract developer timeline" class="hidden md:block lg:hidden" />
       <img
         src={FrequencyDevelopers}
         alt="abstract developer timeline"
-        class="ml-f16 max-w-[722px] sm:hidden lg:block"
+        class="ml-f16 max-w-[722px] hidden lg:block"
       />
     </div>
     <div class="px-[36px] md:px-[64px] lg:px-[128px]">
@@ -39,7 +39,7 @@
     <Button size="lg" class="h6 p-f16 lg:hidden">
       {DeveloperStepsText.button.title}
     </Button>
-    <Button size="lg" class="mt-[56px] sm:hidden md:hidden lg:block">
+    <Button size="lg" class="mt-[56px] hidden lg:block">
       {DeveloperStepsText.button.text_html}
     </Button>
   </section>

@@ -14,7 +14,7 @@
   const circleWidth = '60';
 </script>
 
-<div class="px-[64px] sm:hidden md:block lg:hidden">
+<div class="px-[64px] hidden md:block lg:hidden">
   <section class="flex shrink">
     `
     <div>
