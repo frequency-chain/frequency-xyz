@@ -53,7 +53,7 @@
   </div>
 
   <!-- min width selected based on description section + 1 open accordion + 3 closed accordions -->
-  <div class="w-full bg-navy sm:px-f32 sm:py-f16">
+  <div class="freq-container w-full bg-navy sm:px-f32 sm:py-f16">
     <div class="flex flex-col gap-f4 lg:min-w-[716px] lg:flex-row vertical-md:flex-row">
       <HAccordion
         sectionNumber="1"
