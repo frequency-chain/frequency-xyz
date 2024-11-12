@@ -38,7 +38,7 @@
     </section>
   </div>
   <section class="freq-container py-10">
-    <Typography tag="h1" class="text-navyLight mb-6 text-center font-title">
+    <Typography tag="h1" class="mb-6 text-center font-title text-navyLight">
       Companies in the Frequency Ecosystem
     </Typography>
     <div class="flex w-full flex-wrap justify-around p-2 md:p-6">
