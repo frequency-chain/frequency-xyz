@@ -4,7 +4,7 @@
   import About from '../components/Sections/About.svelte';
   import Users from '../components/Sections/Users.svelte';
   import Developers from '../components/Sections/Developers.svelte';
-  import Partners from '../components/Sections/Partners.svelte';
+  import Ecosystem from '../components/Sections/Ecosystem.svelte';
   import Contact from '../components/Sections/Contact.svelte';
 </script>
 
@@ -14,6 +14,6 @@
   <About />
   <Users />
   <Developers />
-  <Partners />
+  <Ecosystem />
   <Contact />
 </div>
