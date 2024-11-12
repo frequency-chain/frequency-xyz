@@ -17,7 +17,7 @@
   </div>
   <div class="relative mt-[-100px] bg-navy pb-f64 md:pb-f120">
     <section class="freq-container flex items-center md:px-52">
-      <div class="w-full lg:w-2/3">
+      <div class="flex w-full flex-col lg:w-2/3">
         <Typography tag="h0" class="relative z-10 font-title text-white">
           Growing into a better <br class="hidden md:inline" />Future Together
         </Typography>
@@ -27,15 +27,18 @@
           acquire TikTok US, Frequency fosters a collaborative, decentralizing environment where communities can thrive
           around shared values, driving social impact, creativity, and growth.
         </p>
-        <TicTokTag class="lg:hidden" />
-        <Button size="full" class="max-w-[400px]" href="https://thepeoplesbid.com/">Learn About the People's Bid</Button
-        >
+        <TicTokTag class="my-5 max-w-[300px] self-center md:self-start lg:hidden" />
+        <div class="self-center md:self-start">
+          <Button size="full" class="max-w-[400px]" href="https://thepeoplesbid.com/"
+            >Learn About the People's Bid</Button
+          >
+        </div>
       </div>
       <TicTokTag class="hidden w-full lg:flex lg:w-1/3" />
     </section>
   </div>
   <section class="freq-container py-10">
-    <Typography tag="h1" class="mb-6 text-center font-title text-navyLight">
+    <Typography tag="h1" class="text-navyLight mb-6 text-center font-title">
       Companies in the Frequency Ecosystem
     </Typography>
     <div class="flex w-full flex-wrap justify-around p-2 md:p-6">
