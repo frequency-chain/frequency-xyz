@@ -7,30 +7,32 @@
 
   import { DeveloperStepsText } from '$lib/consts';
 
-  const sectionParagraphClasses="text-[12px] mt-[16px]";
-  const stepTextClasses="";
-  const stepTitleClasses="text-[40px] font-bold text-navy";
-  const stepClasses="flex flex-col";
-  const circleWidth="60";
+  const sectionParagraphClasses = 'text-[12px] mt-[16px]';
+  const stepTextClasses = '';
+  const stepTitleClasses = 'text-[40px] font-bold text-navy';
+  const stepClasses = 'flex flex-col';
+  const circleWidth = '60';
 </script>
-<div class="sm:hidden md:block lg:hidden px-[64px]">
-  <section class="flex shrink">`
+
+<div class="px-[64px] sm:hidden md:block lg:hidden">
+  <section class="flex shrink">
+    `
     <div>
       <!-- STEP ONE -->
-      <div class="{stepClasses}" id="step-1">
-        <CircleOne width={circleWidth}/>
+      <div class={stepClasses} id="step-1">
+        <CircleOne width={circleWidth} />
         <div class={stepTextClasses}>
-          <h3 class="{stepTitleClasses}">{DeveloperStepsText.one.title}</h3>
+          <h3 class={stepTitleClasses}>{DeveloperStepsText.one.title}</h3>
           <SectionParagraph classes={sectionParagraphClasses}>
             {@html DeveloperStepsText.one.text_html}
           </SectionParagraph>
         </div>
       </div>
       <!-- STEP THREE -->
-      <div class="{stepClasses}" id="step-3 mt-[36px]">
+      <div class={stepClasses} id="step-3 mt-[36px]">
         <CircleThree width={circleWidth} />
         <div class={stepTextClasses}>
-          <h3 class="{stepTitleClasses}">{DeveloperStepsText.three.title}</h3>
+          <h3 class={stepTitleClasses}>{DeveloperStepsText.three.title}</h3>
           <SectionParagraph classes={sectionParagraphClasses}>
             {DeveloperStepsText.three.text_html}
           </SectionParagraph>
@@ -38,30 +40,28 @@
       </div>
     </div>
 
-
-  <div class="ml-f12">
-    <!-- STEP TWO -->
-    <div class="{stepClasses} pt-[98px]" id="step-2">
-      <CircleTwo width={circleWidth}/>
-      <div class={stepTextClasses}>
-        <h3 class="{stepTitleClasses}">{DeveloperStepsText.two.title}</h3>
-        <SectionParagraph classes={sectionParagraphClasses}>
-          {DeveloperStepsText.two.text_html}
-        </SectionParagraph>
+    <div class="ml-f12">
+      <!-- STEP TWO -->
+      <div class="{stepClasses} pt-[98px]" id="step-2">
+        <CircleTwo width={circleWidth} />
+        <div class={stepTextClasses}>
+          <h3 class={stepTitleClasses}>{DeveloperStepsText.two.title}</h3>
+          <SectionParagraph classes={sectionParagraphClasses}>
+            {DeveloperStepsText.two.text_html}
+          </SectionParagraph>
+        </div>
+      </div>
+      <!-- STEP FOUR -->
+      <div class="{stepClasses} mt-[94px]" id="step-4">
+        <CircleFour width={circleWidth} />
+        <div class={stepTextClasses}>
+          <h3 class={stepTitleClasses}>{DeveloperStepsText.four.title}</h3>
+          <SectionParagraph classes={sectionParagraphClasses}>
+            {DeveloperStepsText.four.text_html}
+          </SectionParagraph>
+        </div>
       </div>
     </div>
-    <!-- STEP FOUR -->
-    <div class="{stepClasses} mt-[94px]" id="step-4">
-      <CircleFour width={circleWidth} />
-      <div class={stepTextClasses}>
-        <h3 class="{stepTitleClasses}">{DeveloperStepsText.four.title}</h3>
-        <SectionParagraph classes={sectionParagraphClasses}>
-          {DeveloperStepsText.four.text_html}
-        </SectionParagraph>
-      </div>
-    </div>
-  </div>
   </section>
-
 </div>
 <!-- Developer Steps -->

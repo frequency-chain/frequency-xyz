@@ -47,7 +47,6 @@ export default tseslint.config(
       semi: 'warn',
       '@typescript-eslint/ban-ts-comment': 'off',
       'svelte/no-at-html-tags': 'off',
-
     },
   },
   {
