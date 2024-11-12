@@ -51,7 +51,7 @@
 
   <!-- min width selected based on description section + 1 open accordion + 3 closed accordions -->
   <div class="w-full sm:px-f32 sm:py-f16">
-    <div class="grid grid-cols-1 gap-x-f4 gap-y-f48 md:grid-cols-2 lg:flex">
+    <div class="grid grid-cols-1 gap-x-f4 gap-y-f48 md:grid-cols-2 lg:flex lg:h-[615px]">
       <HAccordion
         sectionNumber="1"
         iconSrc={ProviderIcon}
