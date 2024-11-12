@@ -26,7 +26,7 @@
 
 <div
   id="explore_section"
-  class="mt-f96 flex w-full flex-col gap-f12 sm:pt-f20 lg:flex-row lg:gap-0 lg:bg-navy lg:px-f128 lg:py-f96 vertical-lg:min-h-[550-px] vertical-lg:w-[100%] vertical-md:flex-row vertical-md:gap-0"
+  class="freq-container mt-f96 flex w-full flex-col gap-f12 sm:pt-f20 lg:flex-row lg:gap-0 lg:bg-navy lg:px-f128 lg:py-f96 vertical-lg:min-h-[550-px] vertical-lg:w-[100%] vertical-md:flex-row vertical-md:gap-0"
 >
   <div
     id="explore_description"
@@ -53,7 +53,7 @@
   </div>
 
   <!-- min width selected based on description section + 1 open accordion + 3 closed accordions -->
-  <div class="freq-container w-full bg-navy sm:px-f32 sm:py-f16">
+  <div class="w-full bg-navy sm:px-f32 sm:py-f16">
     <div class="flex flex-col gap-f4 lg:min-w-[716px] lg:flex-row vertical-md:flex-row">
       <HAccordion
         sectionNumber="1"
