@@ -17,11 +17,7 @@
     <div class="developer-squiggles md:mr-[32px] lg:mr-f96">
       <img src={FrequencyDevelopersMobile} alt="abstract developer timeline" class="block md:hidden" />
       <img src={FrequencyDevelopersTablet} alt="abstract developer timeline" class="hidden md:block lg:hidden" />
-      <img
-        src={FrequencyDevelopers}
-        alt="abstract developer timeline"
-        class="ml-f16 max-w-[722px] hidden lg:block"
-      />
+      <img src={FrequencyDevelopers} alt="abstract developer timeline" class="ml-f16 hidden max-w-[722px] lg:block" />
     </div>
     <div class="px-[36px] md:px-[64px] lg:px-[128px]">
       <SlideIn class="lg:basis-1/3]">

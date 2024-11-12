@@ -33,7 +33,7 @@ export default {
       },
       spacing: {
         f56: '56px',
-      }
+      },
     },
   },
   safelist: ['after:bg-navy', 'after:bg-cream', 'invalid:border-red'],

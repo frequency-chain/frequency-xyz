@@ -29,28 +29,28 @@
     </div>
     <!-- STEP TWO -->
     <div class="{stepClasses} text-right" id="step-2">
-        <CircleTwo width={circleWidth} classes="ml-auto"/>
-        <h3 class={stepTitleClasses}>{DeveloperStepsText.two.title}</h3>
-        <SectionParagraph classes={sectionParagraphClasses}>
-          {DeveloperStepsText.two.text_html}
-        </SectionParagraph>
+      <CircleTwo width={circleWidth} classes="ml-auto" />
+      <h3 class={stepTitleClasses}>{DeveloperStepsText.two.title}</h3>
+      <SectionParagraph classes={sectionParagraphClasses}>
+        {DeveloperStepsText.two.text_html}
+      </SectionParagraph>
     </div>
 
     <!-- STEP THREE -->
     <div class={stepClasses} id="step-3">
       <CircleThree width={circleWidth} />
-        <h3 class={stepTitleClasses}>{DeveloperStepsText.three.title}</h3>
-        <SectionParagraph classes={sectionParagraphClasses}>
-          {DeveloperStepsText.three.text_html}
-        </SectionParagraph>
+      <h3 class={stepTitleClasses}>{DeveloperStepsText.three.title}</h3>
+      <SectionParagraph classes={sectionParagraphClasses}>
+        {DeveloperStepsText.three.text_html}
+      </SectionParagraph>
     </div>
     <!-- STEP FOUR -->
     <div class="{stepClasses} text-right" id="step-4">
       <CircleFour width={circleWidth} classes="ml-auto" />
-        <h3 class={stepTitleClasses}>{DeveloperStepsText.four.title}</h3>
-        <SectionParagraph classes={sectionParagraphClasses}>
-          {DeveloperStepsText.four.text_html}
-        </SectionParagraph>
+      <h3 class={stepTitleClasses}>{DeveloperStepsText.four.title}</h3>
+      <SectionParagraph classes={sectionParagraphClasses}>
+        {DeveloperStepsText.four.text_html}
+      </SectionParagraph>
     </div>
   </section>
 </div>
