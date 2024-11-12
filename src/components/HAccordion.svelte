@@ -16,6 +16,11 @@
 
   let { isOpen = $bindable(false), sectionNumber, sectionLabel, iconSrc, children, url }: HAccordionProps = $props();
 
+  let isEven: boolean = parseInt(sectionNumber, 10) % 2 === 0;
+  let textAlignClasses = `lg:text-left vertical-md:text-left ${isEven ? 'text-right' : ''}`;
+  let borderClasses = `lg:border-l-[1.5px] lg:pl-f12 lg:border-r-0 lg:pr-3 vertical-md:border-l-[1.5px] vertical-md:pl-f12 vertical-md:border-r-0 vertical-md:pr-3 ${isEven ? 'border-r-[1.5px] pr-f12' : 'border-l-[1.5px] pl-f12'}`;
+  let contentAlignClasses = `lg:justify-normal vertical-md:justify-normal ${isEven ? 'justify-end' : ''}`;
+
   function toggle() {
     if (!isOpen) {
       isOpen = true;
@@ -29,31 +34,39 @@
 <div
   id={`explore_${sectionNumber}`}
   onclick={toggle}
-  class={`w-min-[150px] m:pr-3 flex cursor-pointer flex-col border-l-[1.5px] border-grayBorder border-opacity-25 pl-3 transition-all lg:pr-3 ${isOpen ? 'w-f320' : 'w-[132px]'}`}
+  class="{`lg:w-min-[150px] vertical-md:w-min-[150px] flex cursor-pointer flex-col ${borderClasses} border-grayBorder px-f32 lg:transition-all vertical-md:transition-all ${isOpen ? 'lg:w-f320 vertical-md:w-f320' : 'lg:w-[132px] vertical-md:w-[132px]'}`}}"
 >
-  <span class="-mt-[9px] text-clip text-nowrap font-title text-h3 font-normal text-white"
-    >.{parseInt(sectionNumber, 10).toString().padStart(2, '0')}</span
-  >
+  <div class={`-mt-[9px] text-clip text-nowrap font-title text-h3 font-normal text-white ${textAlignClasses}`}>
+    .{parseInt(sectionNumber, 10).toString().padStart(2, '0')}
+  </div>
   {#if iconSrc}
-    <div id={`explore_${sectionNumber}_icon`} class="pt-[6px]">
+    <div
+      id={`explore_${sectionNumber}_icon`}
+      class={`flex w-full flex-row pt-[6px] lg:justify-normal vertical-md:justify-normal ${contentAlignClasses} `}
+    >
       <img src={iconSrc as string} alt="" class="h-[65px] w-[65px]" />
     </div>
   {/if}
-  <div id={`explore_${sectionNumber}_label`} class="pt-6">
-    <span class="text-clip text-wrap font-title text-h6 font-normal text-white">
-      {@render sectionLabel()}
-    </span>
+  <div
+    id={`explore_${sectionNumber}_label`}
+    class={`text-clip text-wrap pt-6 font-title text-h6 font-normal text-white ${textAlignClasses}`}
+  >
+    {@render sectionLabel()}
   </div>
 
-  <div class={`transition-all ${isOpen ? 'block' : 'hidden'}`}>
+  <div
+    class={`lg:transition-all vertical-md:transition-all ${isOpen ? 'block' : 'block lg:hidden vertical-md:hidden'}`}
+  >
     <div
       id={`explore_${sectionNumber}_content`}
-      class={`lg:max-w-auto m:max-w-[280px] sm max-h-f224 overflow-hidden pb-f12 pt-4 text-white sm:max-w-[515px] sm:pr-f8 lg:max-w-[280px] lg:pl-0`}
+      class={`sm max-h-f224 max-w-[515px] overflow-hidden pb-f12 pl-0 pr-f8 pt-4 text-white md:max-w-full lg:max-w-[280px] vertical-md:max-w-[280px] ${textAlignClasses}`}
     >
       {@render children()}
     </div>
-    <Button id={`explore_${sectionNumber}_button`} size="xs" type="primary" href={url} target="_blank">
-      <span class=" text-xs text-black">Learn</span> <img src={Vector} width="12px" height="12px" alt="" />
-    </Button>
+    <div class={`flex flex-row ${contentAlignClasses}`}>
+      <Button id={`explore_${sectionNumber}_button`} size="xs" type="primary" href={url} target="_blank">
+        <span class=" text-xs text-black">Learn</span> <img src={Vector} width="12px" height="12px" alt="" />
+      </Button>
+    </div>
   </div>
 </div>
