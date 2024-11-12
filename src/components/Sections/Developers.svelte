@@ -1,17 +1,42 @@
 <script lang="ts">
-  import SectionParagraph from '../SectionParagraph.svelte';
+  import { Button } from '@frequency-chain/style-guide';
   import SlideIn from '../SlideIn.svelte';
   import SectionWrapper from './SectionWrapper.svelte';
+  import FrequencyDevelopers from '$lib/assets/frequency-developers.png';
+  import FrequencyDevelopersMobile from '$lib/assets/frequency-developers-mobile.png';
+  import FrequencyDevelopersTablet from '$lib/assets/frequency-developers-tablet.png';
+  import DeveloperStepsMobile from '$components/Sections/DeveloperStepsMobile.svelte';
+  import DeveloperStepsTablet from '$components/Sections/DeveloperStepsTablet.svelte';
+  import DeveloperSteps from '$components/Sections/DeveloperSteps.svelte';
+  import { DeveloperStepsText } from '$lib/consts';
 </script>
 
-<SectionWrapper id="developers" classes="freq-container">
-  <section class="">
-    <SlideIn>
-      <h2 class="title-75">Developer Advantages:</h2>
-    </SlideIn>
-
-    <SectionParagraph classes="">Getting started building on Frequency is simple and easy.</SectionParagraph>
-
-    <a href="/docs"> Developer Portal </a>
+<!-- Graphic and Header -->
+<SectionWrapper id="developers" classes="pt-[30px] md:pt-[38px] lg:pt-[34px] freq-container">
+  <section class="flex shrink flex-col lg:flex-row">
+    <div class="developer-squiggles md:mr-[32px] lg:mr-f96">
+      <img src={FrequencyDevelopersMobile} alt="abstract developer timeline" class="block md:hidden" />
+      <img src={FrequencyDevelopersTablet} alt="abstract developer timeline" class="hidden md:block lg:hidden" />
+      <img src={FrequencyDevelopers} alt="abstract developer timeline" class="ml-f16 hidden max-w-[722px] lg:block" />
+    </div>
+    <div class="px-[36px] md:px-[64px] lg:px-[128px]">
+      <SlideIn class="lg:basis-1/3]">
+        <h2 class="mx-0 w-full text-[52px] font-bold text-teal md:mt-[24px]">{DeveloperStepsText.header.title}</h2>
+        <p class="mt-f24 text-[22px] font-bold">{DeveloperStepsText.header.text_html}</p>
+      </SlideIn>
+    </div>
+  </section>
+  <div class="mt-[22px]">
+    <DeveloperStepsMobile />
+    <DeveloperStepsTablet />
+    <DeveloperSteps />
+  </div>
+  <section class="my-f56 flex justify-center px-[36px]">
+    <Button size="lg" class="h6 p-f16 lg:hidden">
+      {DeveloperStepsText.button.title}
+    </Button>
+    <Button size="lg" class="mt-[56px] hidden lg:block">
+      {DeveloperStepsText.button.text_html}
+    </Button>
   </section>
 </SectionWrapper>
