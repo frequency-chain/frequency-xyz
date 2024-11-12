@@ -15,27 +15,27 @@
 @layer components {
   /* Typeography */
   .title-16 {
-    @apply font-title leading-[1] tracking-wider sm:text-[16px] md:text-[16px] lg:text-[16px];
+    @apply font-title text-[16px] leading-[1] tracking-wider md:text-[16px] lg:text-[16px];
   }
   .title-50 {
-    @apply font-title leading-[1] tracking-wider sm:text-[40px] md:text-[44px] lg:text-[44px];
+    @apply font-title text-[40px] leading-[1] tracking-wider md:text-[44px] lg:text-[44px];
   }
   .title-75 {
-    @apply font-title leading-[1] tracking-wide sm:text-[40px] md:text-[55px] lg:text-[75px];
+    @apply font-title text-[40px] leading-[1] tracking-wide md:text-[55px] lg:text-[75px];
   }
   .title-100 {
-    @apply font-title leading-[1] tracking-wide sm:text-[55px] md:text-[75px] lg:text-[100px];
+    @apply font-title text-[55px] leading-[1] tracking-wide md:text-[75px] lg:text-[100px];
   }
   .subtitle {
-    @apply font-semibold sm:text-lg md:text-lg lg:text-xl;
+    @apply text-lg font-semibold md:text-lg lg:text-xl;
   }
   .body {
-    @apply sm:text-xs md:text-sm lg:text-normal;
+    @apply text-xs md:text-sm lg:text-normal;
   }
 
   /* Layout */
   .freq-container {
-    @apply mx-auto box-border w-full sm:px-[30px] md:px-[40px] lg:max-w-[100vw] lg:px-[80px] xl:max-w-page;
+    @apply mx-auto box-border w-full px-[10px] sm:px-[30px] md:px-[40px] lg:max-w-[100vw] lg:px-[80px] xl:max-w-page;
   }
 
   .paragraph-spacing-right {
