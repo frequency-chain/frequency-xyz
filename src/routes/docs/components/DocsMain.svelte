@@ -1,22 +1,16 @@
 <script lang="ts">
-  import Placeholder from './Placeholder.svelte';
+  import DocsMainImage from './DocsMainImage.svelte';
 </script>
 
-<section class="freq-container mt-40 flex">
-  <div class="hidden lg:block lg:w-1/3">
-    <Placeholder />
+<section class="freq-container flex sm:flex-col lg:min-h-[800px] lg:flex-row">
+  <div class="sm:w-full lg:block lg:w-1/2">
+    <DocsMainImage />
   </div>
-  <div class="flex flex-col gap-6 lg:w-2/3">
-    <h2 class="title-75 paragraph-spacing-right text-navy">Build with Frequency</h2>
-    <p class="title-50 paragraph-spacing-right text-orange">Better with You</p>
-    <p class="body paragraph-spacing-right">
-      Everything here is open source. Our development roadmap is focused on our mission of reclaiming the social graph
-      for the common good and is guided by our principles. Infrastructure for the Next Generation Decentralized Social
-      Internet.
-    </p>
-    <p class="body paragraph-spacing-right">
-      If this is your first visit, the DSNP whitepaper is a good place to start. Where you go after depends on your
-      goals: the navigation panel gives some useful entry points.
+  <div class="flex flex-col gap-6 sm:pt-f32 lg:w-1/2 lg:pt-f224">
+    <h2 class=" title-75 text-navy sm:text-h2">Get Started with Frequency Development</h2>
+    <p class="body text-h5 font-bold text-black sm:text-normal">
+      Frequency offers a variety of open source tools and documentation in the Developers Portal to help you rapidly get
+      applications up and running on Frequency.
     </p>
   </div>
 </section>
