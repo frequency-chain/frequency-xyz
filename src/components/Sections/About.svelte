@@ -10,11 +10,11 @@
     <SectionContent classes="">
       <div class="">
         <SlideIn>
-          <h2 class="title-100">What is Frequency?</h2>
+          <h2 class="title-70 text-navy">What is Frequency?</h2>
         </SlideIn>
       </div>
 
-      <SectionParagraph classes="">
+      <SectionParagraph classes="text-sm">
         Frequency is a blockchain designed to support decentralized social networks to give people control over their
         online presence. With Frequency, users can freely choose and connect on social apps while retaining ownership of
         their data. Built on the Decentralized Social Networking Protocol (DSNP), Frequency offers scalable tools for
