@@ -9,6 +9,7 @@
 
 <SectionWrapper id="about">
   <div class="freq-container flex items-center justify-between sm:flex-col-reverse sm:gap-0 md:flex-row md:gap-f48">
+    <!-- Text content -->
     <SectionContent class="mx-auto sm:pb-f56 sm:pt-0 md:py-f56">
       <SlideIn>
         <h2 class="title-70 pb-f24 text-navy">What is<br /> Frequency?</h2>
@@ -33,8 +34,7 @@
       alt="About"
       class="md: -z-10 h-full overflow-hidden object-cover sm:h-[400px] sm:w-[80%] sm:max-w-[400px] sm:object-bottom md:h-[500px] md:max-h-[700px] md:w-[inherit] md:max-w-[450px] lg:object-[0_-180px]"
     />
-
-    <!-- Bottom border image -->
-    <img src={AboutRoadImg} alt="AboutRoad" class="w-full object-cover sm:h-[185px] md:h-[250px] lg:h-[300px]" />
   </div>
+  <!-- Bottom border image -->
+  <img src={AboutRoadImg} alt="AboutRoad" class="w-full object-cover sm:h-[185px] md:h-[250px] lg:h-[300px]" />
 </SectionWrapper>
