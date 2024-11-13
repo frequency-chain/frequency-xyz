@@ -107,7 +107,7 @@
     </form>
   {:else}
     <div class="px-8 py-12">
-      <h2 class="title-75 text-center">Thank You!</h2>
+      <h2 class="title-70 text-center">Thank You!</h2>
     </div>
   {/if}
 

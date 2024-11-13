@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,900;1,400;1,500');
 @font-face {
   font-family: 'Newake';
   src: url('../style/indieground-newakefont-web/Newake-Font-Regular.eot');
@@ -20,8 +20,8 @@
   .title-50 {
     @apply font-title text-[40px] leading-[1] tracking-wider md:text-[44px] lg:text-[44px];
   }
-  .title-75 {
-    @apply font-title text-[40px] leading-[1] tracking-wide md:text-[55px] lg:text-[75px];
+  .title-70 {
+    @apply font-title text-[40px] leading-[1] tracking-wide md:text-[55px] lg:text-[70px];
   }
   .title-100 {
     @apply font-title text-[55px] leading-[1] tracking-wide md:text-[75px] lg:text-[100px];
