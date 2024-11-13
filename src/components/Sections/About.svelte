@@ -3,16 +3,18 @@
   import SlideIn from '../SlideIn.svelte';
   import SectionParagraph from '../SectionParagraph.svelte';
   import SectionContent from '../SectionContent.svelte';
-  import AboutImg from '$lib/assets/about.svg';
+  import AboutAnimation from '../Animations/About.svelte';
   import AboutRoadImg from '$lib/assets/aboutRoad.png';
 </script>
 
 <SectionWrapper id="about">
-  <div class="freq-container flex items-center justify-between sm:flex-col-reverse sm:gap-0 md:flex-row md:gap-f48">
+  <div
+    class="freq-container flex flex-col-reverse content-center items-center justify-center gap-0 md:flex-row md:items-center md:gap-f48 lg:gap-f24"
+  >
     <!-- Text content -->
-    <SectionContent class="mx-auto sm:pb-f56 sm:pt-0 md:py-f56">
+    <SectionContent class="pb-f56 m-auto pt-0 md:py-f96">
       <SlideIn>
-        <h2 class="title-70 pb-f24 text-primary">What is<br /> Frequency?</h2>
+        <h2 class="title-70 pb-f24 pt-f12 text-primary">What is<br /> Frequency?</h2>
       </SlideIn>
 
       <SectionParagraph class="text-sm md:max-w-[415px] lg:max-w-[415px]">
@@ -29,12 +31,16 @@
     </SectionContent>
 
     <!-- Right aligned image -->
-    <img
-      src={AboutImg}
-      alt="About"
-      class="md: -z-10 h-full overflow-hidden object-cover sm:h-[400px] sm:w-[80%] sm:max-w-[400px] sm:object-bottom md:h-[500px] md:max-h-[700px] md:w-[inherit] md:max-w-[450px] lg:object-[0_-180px]"
-    />
+    <div class="flex h-[200px] max-h-[600px] w-full self-stretch overflow-hidden md:h-auto lg:max-w-[50%]">
+      <div class="flex h-[600px] w-full -translate-y-1/4 md:h-auto md:translate-y-0">
+        <AboutAnimation />
+      </div>
+    </div>
   </div>
   <!-- Bottom border image -->
-  <img src={AboutRoadImg} alt="AboutRoad" class="w-full object-cover sm:h-[185px] md:h-[250px] lg:h-[300px]" />
+  <img
+    src={AboutRoadImg}
+    alt="AboutRoad"
+    class="h-[145px] w-full object-cover sm:h-[185px] md:h-[250px] lg:h-[300px]"
+  />
 </SectionWrapper>
