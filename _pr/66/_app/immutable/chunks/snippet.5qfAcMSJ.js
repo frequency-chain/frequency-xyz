@@ -1,1 +1,0 @@
-import{f,E as i,g as o,n as p,h as c,i as h,j as d}from"./runtime.CdHlhT_4.js";function _(s,e,...t){var r=s,n=p,a;f(()=>{n!==(n=e())&&(a&&(c(a),a=null),a=o(()=>n(r,...t)))},i),h&&(r=d)}export{_ as s};
