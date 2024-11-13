@@ -4,7 +4,7 @@
   import SectionWrapper from './SectionWrapper.svelte';
 </script>
 
-<SectionWrapper id="users" classes="text-white bg-navy">
+<SectionWrapper id="users" class="bg-navy text-white">
   <!-- Text Content -->
   <section class="freq-container">
     <div class="">
@@ -13,7 +13,7 @@
       </SlideIn>
     </div>
     <div>
-      <SectionParagraph classes="">
+      <SectionParagraph class="">
         On most social media platforms, you get a stark choice: accept the platform as is, or leave the platform, your
         friends and your relationships behind. Frequency changes all of this by offering users, control, community, and
         ownership over their online experience.
