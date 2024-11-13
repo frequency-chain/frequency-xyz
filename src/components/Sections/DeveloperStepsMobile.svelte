@@ -22,7 +22,7 @@
       <CircleOne width={circleWidth} />
       <div class="">
         <h3 class={stepTitleClasses}>{DeveloperStepsText.one.title}</h3>
-        <SectionParagraph classes={sectionParagraphClasses}>
+        <SectionParagraph class={sectionParagraphClasses}>
           {@html DeveloperStepsText.one.text_html}
         </SectionParagraph>
       </div>
@@ -31,7 +31,7 @@
     <div class="{stepClasses} text-right" id="step-2">
       <CircleTwo width={circleWidth} classes="ml-auto" />
       <h3 class={stepTitleClasses}>{DeveloperStepsText.two.title}</h3>
-      <SectionParagraph classes={sectionParagraphClasses}>
+      <SectionParagraph class={sectionParagraphClasses}>
         {DeveloperStepsText.two.text_html}
       </SectionParagraph>
     </div>
@@ -40,7 +40,7 @@
     <div class={stepClasses} id="step-3">
       <CircleThree width={circleWidth} />
       <h3 class={stepTitleClasses}>{DeveloperStepsText.three.title}</h3>
-      <SectionParagraph classes={sectionParagraphClasses}>
+      <SectionParagraph class={sectionParagraphClasses}>
         {DeveloperStepsText.three.text_html}
       </SectionParagraph>
     </div>
@@ -48,7 +48,7 @@
     <div class="{stepClasses} text-right" id="step-4">
       <CircleFour width={circleWidth} classes="ml-auto" />
       <h3 class={stepTitleClasses}>{DeveloperStepsText.four.title}</h3>
-      <SectionParagraph classes={sectionParagraphClasses}>
+      <SectionParagraph class={sectionParagraphClasses}>
         {DeveloperStepsText.four.text_html}
       </SectionParagraph>
     </div>

@@ -23,7 +23,7 @@
         <CircleOne width={circleWidth} />
         <div class={stepTextClasses}>
           <h3 class={stepTitleClasses}>{DeveloperStepsText.one.title}</h3>
-          <SectionParagraph classes={sectionParagraphClasses}>
+          <SectionParagraph class={sectionParagraphClasses}>
             {@html DeveloperStepsText.one.text_html}
           </SectionParagraph>
         </div>
@@ -33,7 +33,7 @@
         <CircleThree width={circleWidth} />
         <div class={stepTextClasses}>
           <h3 class={stepTitleClasses}>{DeveloperStepsText.three.title}</h3>
-          <SectionParagraph classes={sectionParagraphClasses}>
+          <SectionParagraph class={sectionParagraphClasses}>
             {DeveloperStepsText.three.text_html}
           </SectionParagraph>
         </div>
@@ -46,7 +46,7 @@
         <CircleTwo width={circleWidth} />
         <div class={stepTextClasses}>
           <h3 class={stepTitleClasses}>{DeveloperStepsText.two.title}</h3>
-          <SectionParagraph classes={sectionParagraphClasses}>
+          <SectionParagraph class={sectionParagraphClasses}>
             {DeveloperStepsText.two.text_html}
           </SectionParagraph>
         </div>
@@ -56,7 +56,7 @@
         <CircleFour width={circleWidth} />
         <div class={stepTextClasses}>
           <h3 class={stepTitleClasses}>{DeveloperStepsText.four.title}</h3>
-          <SectionParagraph classes={sectionParagraphClasses}>
+          <SectionParagraph class={sectionParagraphClasses}>
             {DeveloperStepsText.four.text_html}
           </SectionParagraph>
         </div>
