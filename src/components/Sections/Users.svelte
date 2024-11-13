@@ -9,7 +9,7 @@
   <section class="freq-container">
     <div class="">
       <SlideIn>
-        <h2 class="title-75">User Advantages</h2>
+        <h2 class="title-70">User Advantages</h2>
       </SlideIn>
     </div>
     <div>
