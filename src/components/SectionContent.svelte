@@ -1,7 +1,6 @@
 <script lang="ts">
-  export let classes: string = '';
 </script>
 
-<section class={`${classes}`}>
+<section {...$$restProps}>
   <slot />
 </section>

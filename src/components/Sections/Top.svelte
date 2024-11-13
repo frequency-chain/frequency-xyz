@@ -4,9 +4,9 @@
   import SectionContent from '../SectionContent.svelte';
 </script>
 
-<SectionWrapper classes="">
+<SectionWrapper class="">
   <div class="freq-container">
-    <SectionContent classes="">
+    <SectionContent>
       <div class="">
         <SlideIn>
           <h2 class="title-100 text-navy">Bringing Humanity Internet of People</h2>

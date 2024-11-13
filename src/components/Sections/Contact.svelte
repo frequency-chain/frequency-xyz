@@ -5,9 +5,9 @@
   import GetNotified from '../GetNotified/GetNotified.svelte';
 </script>
 
-<SectionWrapper id="contact" classes="text-white bg-navy">
-  <SectionContent classes="freq-container">
-    <SectionParagraph classes="">Image</SectionParagraph>
+<SectionWrapper id="contact" class="bg-navy text-white">
+  <SectionContent class="freq-container">
+    <SectionParagraph class="">Image</SectionParagraph>
 
     <GetNotified />
   </SectionContent>

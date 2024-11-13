@@ -12,7 +12,7 @@
 </script>
 
 <!-- Graphic and Header -->
-<SectionWrapper id="developers" classes="pt-[30px] md:pt-[38px] lg:pt-[34px] freq-container">
+<SectionWrapper id="developers" class="freq-container overflow-hidden pt-[30px] md:pt-[38px] lg:pt-[34px]">
   <section class="flex shrink flex-col lg:flex-row">
     <div class="developer-squiggles md:mr-[32px] lg:mr-f96">
       <img src={FrequencyDevelopersMobile} alt="abstract developer timeline" class="block md:hidden" />
