@@ -9,7 +9,7 @@
     email: 'entry.626493750',
     developerInterest: 'entry.334295884',
     partnerInterest: 'entry.266517677',
-    comment: 'entry.1047518165'
+    comment: 'entry.1047518165',
   };
 
   const postUrl = 'https://7otsoqfsv4cgqxe6xvc2vyjo6e0sozeg.lambda-url.sa-east-1.on.aws';
