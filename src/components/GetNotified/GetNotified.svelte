@@ -20,7 +20,7 @@
   let isPartnership = false;
   let comment = '';
 
-  const errorText = "Please fill out this field.";
+  const errorText = 'Please fill out this field.';
 
   let formSuccess = false;
   let hasSubmittedFormAtLeastOnce = false;
@@ -66,24 +66,22 @@
       } else {
         throw new Error('Unknown form submission error');
       }
-
     } catch (error) {
       console.error('Error:', error);
       alert('Form submission failed due to network error.');
     }
   };
 
-  const goToTop = async (e: Event) => {
+  const goToTop = async (_e: Event) => {
     formSuccess = false;
     hasSubmittedFormAtLeastOnce = false;
     await goto('/');
     const form = document.getElementsByTagName('form')[0] as HTMLFormElement;
     form.reset();
   };
-
 </script>
 
-<div class="p-[36px] w-full mx-auto md:w-[396px] md:p-0 md:py-[96px]">
+<div class="mx-auto w-full p-[36px] md:w-[396px] md:p-0 md:py-[96px]">
   {#if !formSuccess}
     <h3 class="h3 font-bold">Contact</h3>
     <form on:submit|preventDefault={submit} novalidate class="mt-f24 flex flex-col gap-f24">
@@ -92,9 +90,10 @@
         name="name"
         placeholder="Name"
         type="text"
-        isRequired={true}`
+        isRequired={true}
+        `
         bind:value={name}
-        class="mb-f4 text-black required"
+        class="required mb-f4 text-black"
         error={hasSubmittedFormAtLeastOnce && !name?.length ? errorText : undefined}
       />
       <Input
@@ -104,19 +103,15 @@
         type="text"
         isRequired={true}
         bind:value={email}
-        class="mb-f4 text-black required"
+        class="required mb-f4 text-black"
         error={hasSubmittedFormAtLeastOnce && !email?.length ? errorText : undefined}
       />
-      <div class="flex mb-f4">
+      <div class="mb-f4 flex">
         <label class="inline-flex items-center hover:cursor-pointer">
-          <input
-            type="checkbox"
-            bind:checked={isDeveloper}
-            class="text-white accent-tealBright hover:cursor-pointer"
-          />
+          <input type="checkbox" bind:checked={isDeveloper} class="text-white accent-tealBright hover:cursor-pointer" />
           <span class="ml-2 text-sm font-[300]">Development</span>
         </label>
-        <label class="inline-flex items-center hover:cursor-pointer ml-[56px] leading">
+        <label class="leading ml-[56px] inline-flex items-center hover:cursor-pointer">
           <input
             type="checkbox"
             bind:checked={isPartnership}
@@ -126,23 +121,25 @@
         </label>
       </div>
       <div class="w-full">
-      <Textarea
-        label="Comment"
-        placeholder="Write us a message"
-        bind:value={comment}
-        class="h-[160px] text-black required"
-        isRequired={true}
-        error={hasSubmittedFormAtLeastOnce && !comment?.length ? errorText : undefined}
-      />
+        <Textarea
+          label="Comment"
+          placeholder="Write us a message"
+          bind:value={comment}
+          class="required h-[160px] text-black"
+          isRequired={true}
+          error={hasSubmittedFormAtLeastOnce && !comment?.length ? errorText : undefined}
+        />
       </div>
       <!-- Can't use Style Guide Button b/c onClick won't take async funcs, and also
       it overloads type for styling -->
-      <button type=submit class="rounded-full p-f8 text-center bg-transparent transition-all button button-secondary border-[1px] border-white hover:border-teal hover:text-teal w-full mt-f24">
+      <button
+        type="submit"
+        class="button button-secondary mt-f24 w-full rounded-full border-[1px] border-white bg-transparent p-f8 text-center transition-all hover:border-teal hover:text-teal"
+      >
         Send Message
       </button>
     </form>
   {:else}
-      <ContactThankYou onClick={goToTop}/>
+    <ContactThankYou onClick={goToTop} />
   {/if}
-
 </div>

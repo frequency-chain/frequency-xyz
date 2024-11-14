@@ -1,15 +1,16 @@
 <script lang="ts">
   import ThankYouWaves from '$lib/assets/ThankYouWaves.png';
 
-  let {
-    onClick = async () => {},
-    classes = '',
-  } = $props();
+  let { onClick = async () => {}, classes = '' } = $props();
 </script>
 
-<div class="flex justify-center items-center" onclick={onClick}>
-<img
-  class="block px-auto mx-auto {classes}"
-  width='400'
-  src="{ThankYouWaves}" alt="Frequency waves with 'Thank you!' caption" />
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+<!-- svelte-ignore a11y_no_static_element_interactions -->
+<div class="flex items-center justify-center" onclick={onClick}>
+  <img
+    class="px-auto mx-auto block {classes}"
+    width="400"
+    src={ThankYouWaves}
+    alt="Frequency waves with 'Thank you!' caption"
+  />
 </div>
