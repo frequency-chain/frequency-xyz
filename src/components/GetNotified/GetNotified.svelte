@@ -5,11 +5,11 @@
   import { goto } from '$app/navigation';
 
   const fieldMapping = {
-    name: 'entry.447550433', // ok to remap firstName to name?
+    name: 'entry.464666765',
     email: 'entry.626493750',
     developerInterest: 'entry.334295884',
-    partnerInterest: 'entry.00000000', // TBD?
-    comment: 'entry.00000001', // TBD?
+    partnerInterest: 'entry.266517677',
+    comment: 'entry.1047518165'
   };
 
   const postUrl = 'https://7otsoqfsv4cgqxe6xvc2vyjo6e0sozeg.lambda-url.sa-east-1.on.aws';
@@ -61,7 +61,7 @@
           body: formData.toString(),
         });
       }
-      if (response.ok) {
+      if (response?.ok) {
         formSuccess = true;
       } else {
         throw new Error('Unknown form submission error');
