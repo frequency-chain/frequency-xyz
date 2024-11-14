@@ -17,7 +17,7 @@
   .title-16 {
     @apply font-title text-[16px] leading-[1] tracking-wider md:text-[16px] lg:text-[16px];
   }
-  .title-50 {
+  .title-44 {
     @apply font-title text-[40px] leading-[1] tracking-wider md:text-[44px] lg:text-[44px];
   }
   .title-70 {
