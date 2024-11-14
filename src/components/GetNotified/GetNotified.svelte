@@ -85,7 +85,7 @@
 <div class="mx-auto w-full p-[36px] md:w-[396px] md:p-0 md:py-[96px]">
   {#if !formSuccess}
     <h3 class="h3 font-bold">Contact</h3>
-    <form on:submit|preventDefault={submit} novalidate class="mt-f24 flex flex-col gap-f24">
+    <form on:submit|preventDefault={submit} novalidate class="mt-f24 flex flex-col gap-f24" data-testid="contact-form">
       <Input
         label="Name"
         name="name"
