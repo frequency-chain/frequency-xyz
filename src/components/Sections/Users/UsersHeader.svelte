@@ -2,7 +2,7 @@
   import SlideIn from '$components/SlideIn.svelte';
 </script>
 
-<div>
+<div class="xs:mt-0 md:-mt-f128 lg:mt-0">
   <SlideIn>
     <h2 class="title-70 pb-f24">User<br /> Advantages</h2>
   </SlideIn>

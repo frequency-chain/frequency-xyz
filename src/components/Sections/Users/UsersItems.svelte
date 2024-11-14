@@ -30,7 +30,7 @@
   ];
 </script>
 
-<div class="mx-auto grid w-fit gap-f56 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+<div class="mx-auto grid w-fit gap-f56 xs:grid-cols-1 lg:grid-cols-3">
   {#each userItems as { icon, iconAlt, title, body }}
     <UsersItem {icon} {iconAlt} {title}>
       <div slot="body" bind:innerHTML={body} contenteditable="true" class="flex flex-col gap-f16"></div>
