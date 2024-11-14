@@ -51,7 +51,7 @@
 
     try {
       let response: unknown;
-      if (!dev) {
+      if (dev) {
         response = {
           ok: true,
         };
