@@ -2,7 +2,6 @@
   export let icon = '';
   export let iconAlt = '';
   export let title = '';
-  export let body = '';
 </script>
 
 <div class="max-w-full md:max-w-[500px] lg:max-w-[370px]">
@@ -11,5 +10,7 @@
     <h3 class="title-44">{title}</h3>
   </div>
 
-  <slot name="body" />
+  <div class="text-sm">
+    <slot name="body" />
+  </div>
 </div>
