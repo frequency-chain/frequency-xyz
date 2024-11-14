@@ -45,12 +45,13 @@
     const formData = new URLSearchParams();
     formData.append(fieldMapping.name, name);
     formData.append(fieldMapping.email, email);
+    formData.append(fieldMapping.comment, comment);
     if (isDeveloper) formData.append(fieldMapping.developerInterest, 'Developer');
     if (isPartnership) formData.append(fieldMapping.partnerInterest, 'Partner');
 
     try {
       let response: unknown;
-      if (dev) {
+      if (!dev) {
         response = {
           ok: true,
         };
