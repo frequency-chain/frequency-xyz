@@ -7,8 +7,6 @@
 
 <SectionWrapper id="contact" class="bg-navy text-white">
   <SectionContent class="freq-container">
-    <SectionParagraph class="">Image</SectionParagraph>
-
     <GetNotified />
   </SectionContent>
 </SectionWrapper>
