@@ -9,7 +9,7 @@
     <SectionContent>
       <div class="">
         <SlideIn>
-          <h2 class="title-100 text-navy">Bringing Humanity Internet of People</h2>
+          <h2 class="title-100 text-primary">Bringing Humanity Internet of People</h2>
         </SlideIn>
       </div>
     </SectionContent>
