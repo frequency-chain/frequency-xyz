@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Top from '../components/Sections/Top.svelte';
+  import Top from '../components/Sections/Top/Top.svelte';
   import Mission from '../components/Sections/Mission/Mission.svelte';
   import About from '../components/Sections/About.svelte';
   import Users from '../components/Sections/Users/Users.svelte';
