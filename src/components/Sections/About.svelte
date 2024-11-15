@@ -12,7 +12,7 @@
     <!-- Text content -->
     <SectionContent class="mx-auto sm:pb-f56 sm:pt-0 md:py-f56">
       <SlideIn>
-        <h2 class="title-70 pb-f24 text-navy">What is<br /> Frequency?</h2>
+        <h2 class="title-70 pb-f24 text-primary">What is<br /> Frequency?</h2>
       </SlideIn>
 
       <SectionParagraph class="text-sm md:max-w-[415px] lg:max-w-[415px]">
