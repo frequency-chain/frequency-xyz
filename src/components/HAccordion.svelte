@@ -1,7 +1,7 @@
 <script lang="ts">
   import { createEventDispatcher, type Snippet } from 'svelte';
   import { Button } from '@frequency-chain/style-guide';
-  import Vector from '../lib/assets/Vector.svg';
+  import Arrow from '../lib/assets/arrow-right.svg';
   import { MAX_MOBILE_WIDTH } from '$lib/consts';
 
   const dispatch = createEventDispatcher();
@@ -65,7 +65,7 @@
     </div>
     <div class={`flex flex-row ${contentAlignClasses}`}>
       <Button id={`explore_${sectionNumber}_button`} size="xs" type="primary" href={url} target="_blank">
-        <span class=" text-xs text-black">Learn</span> <img src={Vector} width="12px" height="12px" alt="" />
+        <span class=" text-xs text-black">Learn</span> <img src={Arrow} width="12px" height="12px" alt="" />
       </Button>
     </div>
   </div>
