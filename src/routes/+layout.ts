@@ -1,4 +1,5 @@
 import '../style/app.css';
+import '../style/klaro.css';
 // since there's no server side data here, we can prerender
 export const prerender = true;
 export const ssr = false;
