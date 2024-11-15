@@ -59,18 +59,12 @@ var klaroConfig = {
         description: 'By browsing this website, you are allowing cookies from third-party services.',
         learnMore: 'Learn more',
       },
-      acceptAll: 'Accept All',
-      acceptSelected: 'Accept Selected',
-      privacyPolicy: {
-        name: '',
-        text: '',
-      },
 
       matomo: {
         description: 'Privacy focused site analytics with no cross site tracking',
       },
       purposes: {
-        analytics: 'analytics and improvement of our site',
+        analytics: 'Analytics and improvement of our site',
       },
     },
   },
