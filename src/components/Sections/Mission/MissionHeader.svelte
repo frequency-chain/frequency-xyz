@@ -4,7 +4,7 @@
 
 <div class="pl-f32 lg:pl-f48">
   <SlideIn>
-    <h2 class="title-70 pb-f24 text-navy">Frequency’s Mission</h2>
+    <h2 class="title-70 pb-f24 text-primary">Frequency’s Mission</h2>
   </SlideIn>
   <SlideIn>
     <h5
