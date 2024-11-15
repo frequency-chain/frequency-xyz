@@ -2,7 +2,7 @@
   import SlideIn from '$components/SlideIn.svelte';
 </script>
 
-<div class="pl-f32 lg:pl-f48">
+<div class="sm:pl-f32 lg:pl-f48">
   <SlideIn>
     <h2 class="title-70 pb-f24 text-primary">Frequency’s Mission</h2>
   </SlideIn>
