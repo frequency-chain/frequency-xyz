@@ -14,10 +14,10 @@
 <!-- Graphic and Header -->
 <SectionWrapper id="developers" class="freq-container overflow-hidden pt-[30px] md:pt-[38px] lg:pt-[34px]">
   <section class="flex shrink flex-col lg:flex-row">
-    <div class="developer-squiggles md:mr-[32px] lg:mr-f96">
+    <div class="developer-squiggles">
       <img src={FrequencyDevelopersMobile} alt="abstract developer timeline" class="block md:hidden" />
       <img src={FrequencyDevelopersTablet} alt="abstract developer timeline" class="hidden md:block lg:hidden" />
-      <img src={FrequencyDevelopers} alt="abstract developer timeline" class="ml-f16 hidden max-w-[722px] lg:block" />
+      <img src={FrequencyDevelopers} alt="abstract developer timeline" class="ml-f16 hidden max-w-[700px] lg:block" />
     </div>
     <div class="px-[36px] md:px-[64px] lg:px-[128px]">
       <SlideIn class="lg:basis-1/3]">
