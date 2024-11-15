@@ -34,14 +34,14 @@
 
       <div class="pb-f64 text-sm text-white md:pb-f80">
         Frequency offers simple blockchain integration for your applications&mdash;bridging the gap between your app and
-        the decentralized web. Frequency Gateway offers a suite of tools and services that make it easy to connect your
-        applications to the Frequency blockchain. This allows your development team to focus on building outstanding
-        user experiences without managing the complexity of blockchain interactions. With Gateway you can pick and
-        choose from to build the best applications for your users to:
+        the decentralized web. Frequency Developer Gateway offers a suite of self-hosted tools and services that make it
+        easy to connect your applications to Frequency. This allows your developer team to focus on building outstanding
+        user experiences without managing the complexity of blockchain interactions. With Frequency Developer Gateway,
+        you can pick and choose among the tools and services to build the best applications for your users to:
         <div class="pt-4 font-bold">
           <ul class="list-inside list-disc lg:pl-5">
-            <li>Add decentralized authentication and onboarding workflows</li>
-            <li>Connect your users with their universal social graph</li>
+            <li>Add authentication and onboarding workflows</li>
+            <li>Connect with their universal social graph</li>
             <li>Read, write, and interact with social media content</li>
           </ul>
         </div>
@@ -60,9 +60,9 @@
         url="https://docs.frequency.xyz/Guides/BecomeAProvider.html"
       >
         {#snippet sectionLabel()}Quick Start/<br />Become a Provider{/snippet}
-        In 5 minutes, you can become a provider, set up the Social App Template Example Application that uses Gateway Services.
-        This will give you a quick introduction to a working integration with Gateway Services and a starting place to explore
-        the possibilities.
+        In 5 minutes, you can become a provider and set up the Social App Template Example Application that uses Frequency
+        Developer Gateway Services. This will give you a quick introduction to a working integration with Frequency Developer
+        Gateway Services and a starting place to explore the possibilities.
       </HAccordion>
 
       <HAccordion
@@ -85,10 +85,11 @@
         url="https://docs.frequency.xyz/Guides/SSO.html"
       >
         {#snippet sectionLabel()}Add Single<br class="hidden lg:block" /> Sign-on to<br class="hidden lg:block" /> your App{/snippet}
-        SIWF provides comprehensive documentation and tools to integrate with Frequency Access, an easy-to-use single sign-on
-        identity solution for users on Frequency. SIWF simplifies the authentication process, allowing users to access the
-        entire Frequency ecosystem effortlessly while maintaining control over their personal data.</HAccordion
-      >
+        Sign On With Frequency (SIWF) provides comprehensive documentation and tools to integrate with Frequency Access,
+        an easy-to-use single sign-on identity solution for users on Frequency. SIWF simplifies the authentication process,
+        allowing users to access the entire Frequency ecosystem effortlessly while maintaining control over their personal
+        data.
+      </HAccordion>
 
       <HAccordion
         sectionNumber="4"
@@ -99,8 +100,9 @@
       >
         {#snippet sectionLabel()}Frequency<br class="hidden lg:block" /> Core{/snippet}
         Here you will find detailed information about the building blocks of Frequency including technical overviews, advanced
-        tutorials, API documentation, code samples and more&mdash;everything you need to build your first Frequency application.</HAccordion
-      >
+        tutorials, API documentation, code samples and more–everything you need to build your first application to leverage
+        the power of Frequency.
+      </HAccordion>
     </div>
   </div>
 </div>

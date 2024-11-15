@@ -4,7 +4,7 @@ export const MAX_MOBILE_WIDTH: number = 1300;
 export const DeveloperStepsText = {
   button: {
     title: 'Developer Portal',
-    text_html: 'Learn More About Developer Portal', // ...
+    text_html: 'Learn More About Developer Portal',
   },
   header: {
     title: 'Developer Advantages:',
@@ -16,12 +16,13 @@ export const DeveloperStepsText = {
   },
   two: {
     title: 'Open',
-    text_html: 'Build your app with open-source, decentralized tools that free you from relying on big tech.',
+    text_html:
+      'Build your app with open-source tools designed for a more decentralized environment free from reliance on big tech.',
   },
   three: {
     title: 'Economical',
     text_html:
-      'Add decentralized social to both new and existing applications in a scalable and economical way with batching and Capacity which make blockchain usage predictable and affordable.',
+      'Add decentralized social to both new and existing applications in a scalable and economical way with batching and Capacity making blockchain usage predictable.',
   },
   four: {
     title: 'Proven',
