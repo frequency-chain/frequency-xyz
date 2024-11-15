@@ -5,14 +5,17 @@ test('index page has expected content', async ({ page }) => {
   expect(page.getByText('Build at a higher Frequency')).toBeDefined();
 });
 
-test('index page has a popout', async ({ page }) => {
+test('contact form can be filled out and shows errors', async ({ page }) => {
   await page.goto('/');
-  const popoutButton = page.getByText('Get Notified');
-  expect(popoutButton).toBeDefined();
 
-  await popoutButton.click();
+  const contactLink = page.locator('[href="/#contact"]').first();
+  expect(contactLink).toBeDefined();
 
-  expect(page.getByText("Interested in Frequency's ecosystem?")).toBeDefined();
+  const form = await page.getByTestId('contact-form');
+  expect(form).toBeDefined();
+  await page.getByText(/Send Message/).click();
+
+  expect(page.getByText('Please fill out this field.')).toBeDefined();
 });
 
 test('routes sanity check', async ({ page }) => {

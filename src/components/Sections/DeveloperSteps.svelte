@@ -9,7 +9,7 @@
 
   const sectionParagraphClasses = 'text-sm mt-f8';
   const sectionClasses = 'ml-[30px]';
-  const stepTitleClasses = 'text-[44px] font-bold text-navy';
+  const stepTitleClasses = 'text-h3 font-bold text-navy';
 </script>
 
 <div class="hidden lg:block">
