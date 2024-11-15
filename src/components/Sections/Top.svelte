@@ -44,17 +44,17 @@
   <div class="relative flex h-[300px] w-full self-stretch sm:h-[380px] md:h-[700px] md:w-1/2">
     <HomeAnimation />
     <div
-      class="math absolute left-[20px] top-[27%] sm:left-[25%] md:left-0 md:top-[calc(255px-((100vw-1300px)*0.075))] md:translate-x-1/2 xl:top-[225px]"
+      class="math absolute left-[20px] top-[25%] sm:left-[24%] md:left-[23%] md:top-[calc(250px-((100vw-1300px)*0.075))] xl:top-[220px]"
     >
       <SlideIn>
         <div
-          class="bg-navy px-2 py-3 text-[40px] leading-none text-white sm:text-[50px] md:text-[calc(100vw/23)] xl:text-[75px]"
+          class="bg-navy px-4 py-3 text-[40px] leading-none text-white sm:text-[50px] md:text-[calc(100vw/23)] xl:text-[75px]"
         >
           {#if showMsaCount}
             <div
               in:fade={{ duration: msaCountAnimationMs }}
               out:fade={{ duration: msaCountAnimationMs }}
-              class="absolute left-0 w-full px-2 text-right font-title tracking-wide"
+              class="absolute left-0 w-full px-4 text-right font-title tracking-wide"
             >
               {displayMsaCount}
             </div>
