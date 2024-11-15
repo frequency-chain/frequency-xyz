@@ -11,7 +11,7 @@
     {
       iconAlt: 'Fingerprint',
       icon: Fingerprint,
-      body: `Offering everyone a self-sovereign <span class="font-bold text-teal">digital social idtentity</span> that they may use
+      body: `Offering everyone a self-sovereign <span class="font-bold text-teal">digital social identity</span> that they may use
       to sign in and share data across the applications they choose.`,
     },
     {
