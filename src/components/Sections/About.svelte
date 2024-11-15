@@ -12,7 +12,7 @@
     class="freq-container flex flex-col-reverse content-center items-center justify-center gap-0 md:flex-row md:items-center md:gap-f48 lg:gap-f24"
   >
     <!-- Text content -->
-    <SectionContent class="pb-f56 m-auto pt-0 md:py-f96">
+    <SectionContent class="m-auto pb-f56 pt-0 md:py-f96">
       <SlideIn>
         <h2 class="title-70 pb-f24 pt-f12 text-primary">What is<br /> Frequency?</h2>
       </SlideIn>

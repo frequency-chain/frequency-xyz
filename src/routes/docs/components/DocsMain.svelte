@@ -3,7 +3,7 @@
 </script>
 
 <section class="freq-container flex flex-col lg:flex-row lg:items-center lg:justify-center">
-  <div class="max-h-[500px] w-full self-center sm:flex lg:h-[700px] lg:w-1/2">
+  <div class="flex max-h-[500px] w-full self-center lg:h-[700px] lg:w-1/2">
     <DevPortalAnimation />
   </div>
   <div class="flex flex-col gap-6 lg:w-1/2">
