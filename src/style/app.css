@@ -34,6 +34,9 @@
   }
 
   /* Layout */
+  .freq-container-padding {
+    @apply px-[10px] sm:px-[30px] md:px-[40px] lg:px-[80px];
+  }
   .freq-container {
     @apply mx-auto box-border w-full px-[10px] sm:px-[30px] md:px-[40px] lg:max-w-[100vw] lg:px-[80px] xl:max-w-page;
   }

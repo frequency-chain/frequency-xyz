@@ -20,5 +20,5 @@
 </script>
 
 <div class="sticky top-0 z-50 mb-4 w-full bg-white">
-  <Header highlightMarginTop="-90px" {menuItems} />
+  <Header highlightMarginTop="-90px" innerClass="freq-container-padding" {menuItems} logoLink={base + '/'} />
 </div>
