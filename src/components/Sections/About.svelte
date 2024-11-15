@@ -4,7 +4,7 @@
   import SectionParagraph from '../SectionParagraph.svelte';
   import SectionContent from '../SectionContent.svelte';
   import AboutAnimation from '../Animations/About.svelte';
-  import AboutRoadImg from '$lib/assets/aboutRoad.png';
+  import AboutRoadImg from '$lib/assets/aboutRoad.jpg';
 </script>
 
 <SectionWrapper id="about">
