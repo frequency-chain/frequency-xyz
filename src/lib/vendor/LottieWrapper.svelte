@@ -1,10 +1,13 @@
 <script lang="ts">
-  // FORKED to support Svelte 5 cleanly and have access to the latest @lottiefiles/dotlottie-web
-  // CHANGED STYLES: To support better responsiveness
-  // ORGINAL SOURCE: https://github.com/LottieFiles/dotlottie-web/blob/main/packages/svelte/src/lib/Dotlottie.svelte
-  // MIT LICENSED
+  // FORKED to support:
+  // - Svelte 5 cleanly and have access to the latest @lottiefiles/dotlottie-web
+  // - Styles to support better responsiveness
+  // - WebWorker for performance `DotLottieWorker as DotLottie`, src to full url if needed for the Worker, and workerId.
+  // - playOnVisible: Added support for viewport playing
+  // ORGINAL SOURCE (MIT LICENSED): https://github.com/LottieFiles/dotlottie-web/blob/main/packages/svelte/src/lib/Dotlottie.svelte
   import { onMount } from 'svelte';
-  import { DotLottie, type Config } from '@lottiefiles/dotlottie-web';
+  import { DotLottieWorker as DotLottie, type Config } from '@lottiefiles/dotlottie-web';
+  import viewport from '$lib/util/useViewportAction';
 
   export function setWasmUrl(url: string): void {
     DotLottie.setWasmUrl(url);
@@ -28,6 +31,8 @@
   export let themeId: string = '';
   export let themeData: string = '';
 
+  export let playOnVisible: boolean = false;
+
   export let dotLottieRefCallback: (dotLottie: DotLottie) => void = () => {};
 
   const hoverHandler = (event: MouseEvent) => {
@@ -44,21 +49,25 @@
   let canvas: HTMLCanvasElement;
   let prevSrc: string | undefined = undefined;
   let prevData: Config['data'] = undefined;
+  // Render each different src in a different worker
+  let workerId = 'lottie-' + src.replace('/', '-');
 
   onMount(() => {
     const shouldAutoplay = autoplay && !playOnHover;
     dotLottie = new DotLottie({
       canvas,
-      src,
+      src: src.includes('://') ? src : new URL(src, self.location.href).toString(),
       autoplay: shouldAutoplay,
       loop,
       speed,
       data,
-      renderConfig,
+      renderConfig: playOnVisible ? { freezeOnOffscreen: false, ...renderConfig } : renderConfig,
       segment,
       useFrameInterpolation,
       backgroundColor,
       mode,
+      layout,
+      workerId,
     });
 
     if (dotLottieRefCallback) {
@@ -133,18 +142,19 @@
 
   $: if (dotLottie && src !== prevSrc) {
     dotLottie.load({
-      src,
+      src: src.includes('://') ? src : new URL(src, self.location.href).toString(),
       autoplay,
       loop,
       speed,
       data,
-      renderConfig,
+      renderConfig: playOnVisible ? { freezeOnOffscreen: false, ...renderConfig } : renderConfig,
       segment,
       useFrameInterpolation,
       backgroundColor,
       mode,
       marker,
       layout,
+      workerId,
     });
     prevSrc = src;
   }
@@ -156,13 +166,14 @@
       loop,
       speed,
       data,
-      renderConfig,
+      renderConfig: playOnVisible ? { freezeOnOffscreen: false, ...renderConfig } : renderConfig,
       segment,
       useFrameInterpolation,
       backgroundColor,
       mode,
       marker,
       layout,
+      workerId,
     });
     prevData = data;
   }
@@ -180,21 +191,20 @@
   }
 </script>
 
-<div>
-  <canvas bind:this={canvas}></canvas>
-</div>
-
-<style>
-  div {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-  }
-  canvas {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-  }
-</style>
+{#if playOnVisible}
+  <canvas
+    class={`block h-full w-full ${$$restProps.class}`}
+    bind:this={canvas}
+    use:viewport={{ threshold: 0.3 }}
+    on:enterViewport={() => {
+      dotLottie?.setFrame(0);
+      dotLottie?.play();
+    }}
+    on:exitViewport={() => {
+      dotLottie?.stop();
+    }}
+  >
+  </canvas>
+{:else}
+  <canvas class={$$restProps.class} bind:this={canvas}></canvas>
+{/if}
