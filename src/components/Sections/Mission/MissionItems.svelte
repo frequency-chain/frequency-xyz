@@ -51,7 +51,9 @@
   {#each missionItems as item}
     <MissionItem>
       <span slot="icon"><img src={item.icon} alt={item.iconAlt} /></span>
-      <p slot="body" bind:innerHTML={item.body} contenteditable="true"></p>
+      <p slot="body">
+        {@html item.body}
+      </p>
     </MissionItem>
   {/each}
 </div>
