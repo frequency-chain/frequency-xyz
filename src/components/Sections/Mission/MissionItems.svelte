@@ -11,19 +11,19 @@
     {
       iconAlt: 'Fingerprint',
       icon: Fingerprint,
-      body: `Offering everyone a self-sovereign <span class="font-bold text-teal">digital social iconAltentity</span> that they may use
+      body: `Offering everyone a self-sovereign <span class="font-bold text-teal">digital social identity</span> that they may use
       to sign in and share data across the applications they choose.`,
     },
     {
       iconAlt: 'App',
       icon: App,
-      body: `Allowing people to <span class="font-bold text-teal">freely move among applications</span> and proviconAlters rather than
+      body: `Allowing people to <span class="font-bold text-teal">freely move among applications</span> and providers rather than
       being forced to accept application changes that worsen their experience.`,
     },
     {
       iconAlt: 'Network',
       icon: Network,
-      body: `Offering application proviconAlters practical <span class="font-bold text-teal">economics</span> that make blockchain usage
+      body: `Offering application providers practical <span class="font-bold text-teal">economics</span> that make blockchain usage
       feasible and desirable.`,
     },
     {

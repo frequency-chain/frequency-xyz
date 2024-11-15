@@ -1,5 +1,6 @@
 <script lang="ts">
   import { Button } from '@frequency-chain/style-guide';
+  import { base } from '$app/paths';
   import SlideIn from '../SlideIn.svelte';
   import SectionWrapper from './SectionWrapper.svelte';
   import FrequencyDevelopers from '$lib/assets/frequency-developers.png';
@@ -32,10 +33,10 @@
     <DeveloperSteps />
   </div>
   <section class="my-f56 flex justify-center px-[36px]">
-    <Button size="lg" class="h6 p-f16 lg:hidden">
+    <Button href="{base}/docs" size="lg" class="h6 p-f16 lg:hidden">
       {DeveloperStepsText.button.title}
     </Button>
-    <Button size="lg" class="mt-[56px] hidden lg:block">
+    <Button href="{base}/docs" size="lg" class="mt-[56px] hidden lg:block">
       {DeveloperStepsText.button.text_html}
     </Button>
   </section>
