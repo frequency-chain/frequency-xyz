@@ -8,11 +8,11 @@
   // That's to be able to responsively handle the movement of the animation
 </script>
 
-<SectionWrapper class="freq-container flex flex-col pb-f64 md:flex-row md:items-center md:justify-center md:pb-f96">
-  <div class="relative flex h-[300px] w-full self-stretch sm:h-[380px] md:h-[700px] md:w-1/2">
+<SectionWrapper class="freq-container flex flex-col pb-f64 md:flex-row md:items-center md:justify-center">
+  <div class="mb:h-[500px] relative mb-5 flex h-[300px] w-full self-stretch sm:h-[380px] md:mb-0 md:w-1/2 lg:h-[700px]">
     <HomeAnimation />
     <div
-      class="math absolute left-[20px] top-[25%] sm:left-[24%] md:left-[23%] md:top-[calc(250px-((100vw-1300px)*0.075))] xl:top-[220px]"
+      class="math absolute left-[20px] top-[25%] sm:left-[24%] md:left-[23%] md:top-[calc(85px-((100vw-1300px)*0.075))] lg:top-[calc(250px-((100vw-1300px)*0.075))] xl:top-[220px]"
     >
       <SlideIn>
         <MsaCounter />
