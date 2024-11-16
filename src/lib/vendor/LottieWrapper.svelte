@@ -193,7 +193,7 @@
 
 {#if playOnVisible}
   <canvas
-    class={`block h-full w-full ${$$restProps.class}`}
+    class="block h-full w-full {$$restProps.class}"
     bind:this={canvas}
     use:viewport={{ threshold: 0.3 }}
     on:enterViewport={() => {
