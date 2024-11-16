@@ -7,14 +7,14 @@
 
   import { DeveloperStepsText } from '$lib/consts';
 
-  const sectionParagraphClasses = 'text-[12px] mt-[16px]';
+  const sectionParagraphClasses = 'text-[12px] mt-[16px] min-h-[100px]';
   const stepTextClasses = '';
   const stepTitleClasses = 'text-[40px] font-bold text-primary';
   const stepClasses = 'flex flex-col';
   const circleWidth = '60';
 </script>
 
-<div class="hidden px-[64px] md:block lg:hidden">
+<div class="hidden md:block lg:hidden">
   <section class="flex shrink">
     `
     <div>
@@ -29,7 +29,7 @@
         </div>
       </div>
       <!-- STEP THREE -->
-      <div class={stepClasses} id="step-3 mt-[36px]">
+      <div class={stepClasses} id="step-3">
         <CircleThree width={circleWidth} />
         <div class={stepTextClasses}>
           <h3 class={stepTitleClasses}>{DeveloperStepsText.three.title}</h3>
@@ -40,9 +40,9 @@
       </div>
     </div>
 
-    <div class="ml-f12">
+    <div class="ml-f12 pt-[90px]">
       <!-- STEP TWO -->
-      <div class="{stepClasses} pt-[98px]" id="step-2">
+      <div class={stepClasses} id="step-2">
         <CircleTwo width={circleWidth} />
         <div class={stepTextClasses}>
           <h3 class={stepTitleClasses}>{DeveloperStepsText.two.title}</h3>
@@ -52,7 +52,7 @@
         </div>
       </div>
       <!-- STEP FOUR -->
-      <div class="{stepClasses} mt-[94px]" id="step-4">
+      <div class={stepClasses} id="step-4">
         <CircleFour width={circleWidth} />
         <div class={stepTextClasses}>
           <h3 class={stepTitleClasses}>{DeveloperStepsText.four.title}</h3>
