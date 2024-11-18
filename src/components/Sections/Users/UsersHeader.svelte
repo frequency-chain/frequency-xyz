@@ -3,7 +3,7 @@
   import UserAnimation from '../../Animations/User.svelte';
 </script>
 
-<div class="flex flex-col md:flex-row md:flex-wrap">
+<div class="mx-auto flex max-w-screen-xl flex-col md:flex-row md:flex-wrap">
   <div class="w-full max-w-[700px] md:order-1 md:w-1/2 lg:order-3">
     <UserAnimation class="object-cover" />
   </div>
