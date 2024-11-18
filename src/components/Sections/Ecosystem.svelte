@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Button, Typography } from '@frequency-chain/style-guide';
+  import { Button } from '@frequency-chain/style-guide';
   import SectionWrapper from './SectionWrapper.svelte';
   import TikTokTag from '../TikTokTag.svelte';
   import WavesTwo from '$lib/assets/waves-two.svg';
