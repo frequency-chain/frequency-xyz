@@ -22,7 +22,7 @@
         <h1 class="title-70 relative z-10 font-title text-white">
           Growing into a better <br class="hidden md:inline" />Future Together
         </h1>
-        <p class="my-6 text-white md:pr-20">
+        <p class="body my-6 text-white md:pr-20">
           Frequency is leading a new era of social networking, empowering businesses and apps to help users unlock the
           value of their data and connections. Chosen as the core infrastructure for Project Liberty’s “People’s Bid” to
           acquire TikTok US, Frequency fosters a collaborative, decentralizing environment where communities can thrive

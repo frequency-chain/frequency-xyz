@@ -26,13 +26,13 @@
 
 <div
   id="explore_section"
-  class="freq-container mt-f96 flex w-full flex-col gap-f12 pb-f96 pt-f20 lg:flex-row lg:gap-0 lg:px-f128 lg:py-f96"
+  class="freq-container mt-f96 flex w-full flex-col gap-f12 pb-f96 pt-f20 lg:flex-row lg:gap-0 lg:py-f96"
 >
   <div id="explore_description" class="relative flex w-full flex-row px-f32 text-teal lg:w-1/2 lg:pt-f96">
     <div class="flex flex-col gap-f32">
-      <span class="h1 mt-f8 text-clip text-wrap font-title font-normal">Explore &amp; Build</span>
+      <span class="title-h2 mt-f8 text-clip text-wrap">Explore &amp; Build</span>
 
-      <div class="pb-f64 text-sm text-white md:pb-f80">
+      <div class="body pb-f64 text-white md:pb-f80">
         Frequency offers simple blockchain integration for your applications&mdash;bridging the gap between your app and
         the decentralized web. Frequency Developer Gateway offers a suite of self-hosted tools and services that make it
         easy to connect your applications to Frequency. This allows your developer team to focus on building outstanding
@@ -51,7 +51,7 @@
 
   <!-- min width selected based on description section + 1 open accordion + 3 closed accordions -->
   <div class="w-full sm:px-f32 sm:py-f16">
-    <div class="grid grid-cols-1 gap-x-f4 gap-y-f48 md:grid-cols-2 lg:flex lg:h-[615px]">
+    <div class="grid grid-cols-1 gap-x-f4 gap-y-f48 md:grid-cols-2 lg:flex lg:h-[850px] xl:h-[700px]">
       <HAccordion
         sectionNumber="1"
         iconSrc={ProviderIcon}

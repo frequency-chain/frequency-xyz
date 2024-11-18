@@ -12,7 +12,7 @@
     <span class="absolute left-0 top-f24 w-f160 border-b-2 border-gray3"></span>
   </div>
   <!--    right column-->
-  <div class="relative flex max-w-[calc(100%-48px)] flex-col pl-f24 pt-f48 text-sm">
+  <div class="body relative flex max-w-[calc(100%-48px)] flex-col pl-f24 pt-f48">
     <!--        vertical border-->
     <span class="absolute left-0 top-f12 h-f120 border-l-2 border-gray3"></span>
     <!--        body-->
