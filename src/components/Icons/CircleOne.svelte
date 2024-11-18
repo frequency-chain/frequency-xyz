@@ -1,8 +1,9 @@
 <script>
-  let { width = '112', classes = '' } = $props();
+  let { width = '112' } = $props();
+  import Grow from '../Grow.svelte';
 </script>
 
-<div class={classes}>
+<Grow>
   <svg {width} height="111" viewBox="0 0 112 111" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="55.75" cy="55.5" r="55.5" fill="#18465E" />
     <path
@@ -10,4 +11,4 @@
       fill="white"
     />
   </svg>
-</div>
+</Grow>
