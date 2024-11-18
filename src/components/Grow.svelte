@@ -1,16 +1,17 @@
 <script lang="ts">
   import viewport from '$lib/util/useViewportAction';
 
-  let grow = '';
+  let { class: klass = '', children } = $props();
+  let grow = $state('');
 </script>
 
 <div
-  class={`grow-out transition-all duration-1000 ${grow}`}
+  class="grow-out transition-all duration-1000 {grow} {klass}"
   use:viewport
-  on:enterViewport={() => (grow = 'grow-in')}
-  on:exitViewport={() => (grow = '')}
+  onenterViewport={() => (grow = 'grow-in')}
+  onexitViewport={() => (grow = '')}
 >
-  <slot />
+  {@render children?.()}
 </div>
 
 <style>
