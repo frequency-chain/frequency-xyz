@@ -8,6 +8,6 @@
   src="{base}/animation/developer-dot.lottie"
   autoplay
   playOnVisible
-  layout={{ fit: 'fit-width', align: [0.5, 0.5] }}
+  layout={{ fit: 'fit-width', align: [0.5, 0.4] }}
   renderConfig={{ autoResize: true }}
 />
