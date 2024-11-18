@@ -7,9 +7,7 @@
     <h2 class="title-70 pb-f24 text-primary">Frequency’s Mission</h2>
   </SlideIn>
   <SlideIn>
-    <h5
-      class="pb-f64 text-h6 font-bold sm:max-w-[400px] sm:leading-default lg:max-w-[620px] lg:text-h5 lg:leading-[32px]"
-    >
+    <h5 class="title-h5 pb-f64 sm:max-w-[400px] sm:leading-default lg:max-w-[620px] lg:leading-[32px]">
       Frequency's Mission is to provide the infrastructure to empower people by:
     </h5>
   </SlideIn>

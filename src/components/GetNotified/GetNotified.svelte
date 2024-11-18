@@ -84,7 +84,7 @@
 
 <div class="mx-auto w-full p-[36px] sm:max-w-[396px] md:p-0 md:py-[96px]">
   {#if !formSuccess}
-    <h3 class="h3 font-bold">Contact</h3>
+    <h3 class="title-h3">Contact</h3>
     <form
       on:submit|preventDefault={submit}
       novalidate
@@ -111,18 +111,18 @@
         class="required mb-f4 text-black"
         error={hasSubmittedFormAtLeastOnce && !email?.length ? errorText : undefined}
       />
-      <div class="mb-f4 flex">
+      <div class="mb-f4 mt-f8 flex flex-col gap-f12 sm:flex-row sm:gap-f32">
         <label class="inline-flex items-center hover:cursor-pointer">
           <input type="checkbox" bind:checked={isDeveloper} class="text-white accent-tealBright hover:cursor-pointer" />
-          <span class="ml-2 text-sm font-[300]">Development</span>
+          <span class="ml-2 text-normal">Development</span>
         </label>
-        <label class="leading ml-[56px] inline-flex items-center hover:cursor-pointer">
+        <label class="leading inline-flex items-center hover:cursor-pointer">
           <input
             type="checkbox"
             bind:checked={isPartnership}
             class="form-checkbox text-white accent-tealBright hover:cursor-pointer"
           />
-          <span class="ml-2 text-sm font-[300]">Partnerships</span>
+          <span class="ml-2 text-normal">Partnerships</span>
         </label>
       </div>
       <div class="w-full">

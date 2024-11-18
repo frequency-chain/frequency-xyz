@@ -7,9 +7,9 @@
 
   import { DeveloperStepsText } from '$lib/consts';
 
-  const sectionParagraphClasses = 'text-sm mt-f8';
+  const sectionParagraphClasses = 'body mt-f8';
   const sectionClasses = 'mt-[48px] ml-[30px] mr-[30px]';
-  const stepTitleClasses = 'text-h3 font-bold text-primary leading-0';
+  const stepTitleClasses = 'title-h3 text-primary leading-0';
 </script>
 
 <div class="hidden lg:block">
@@ -26,7 +26,7 @@
         </div>
       </div>
       <!-- STEP TWO -->
-      <div class="flex pt-[36px]" id="step-2">
+      <div class="flex pt-[60px]" id="step-2">
         <CircleTwo />
         <div class={sectionClasses}>
           <h3 class={stepTitleClasses}>{DeveloperStepsText.two.title}</h3>
@@ -49,7 +49,7 @@
         </div>
       </div>
       <!-- STEP FOUR -->
-      <div class="flex pt-[36px]" id="step-4">
+      <div class="flex pt-[60px]" id="step-4">
         <CircleFour />
         <div class={sectionClasses}>
           <h3 class={stepTitleClasses}>{DeveloperStepsText.four.title}</h3>
