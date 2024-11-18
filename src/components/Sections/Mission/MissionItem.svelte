@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<div class="flex max-w-[450px]">
+<div class="mx-auto flex max-w-[550px]">
   <!--    left column-->
   <div class="relative flex w-f48 flex-col">
     <!--        icon-->

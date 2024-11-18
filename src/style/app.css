@@ -32,7 +32,7 @@
   }
 
   .title-h3 {
-    @apply font-title text-[40px] leading-[1] tracking-wider md:text-[40px] lg:text-[44px];
+    @apply font-title text-[30px] leading-[1] tracking-wider sm:text-[36px] md:text-[40px] lg:text-[44px];
   }
 
   .title-h5 {
