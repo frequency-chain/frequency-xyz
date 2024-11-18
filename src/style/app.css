@@ -27,6 +27,10 @@
     @apply font-title text-[55px] leading-[1] tracking-wide md:text-[75px] lg:text-[100px];
   }
 
+  .title-h3 {
+    @apply font-title text-[40px] leading-[1] tracking-wider md:text-[40px] lg:text-[44px];
+  }
+
   .title-h5 {
     @apply font-title text-[18px] leading-[1] tracking-wider sm:text-[20px] md:text-[22px] lg:text-[26px];
   }

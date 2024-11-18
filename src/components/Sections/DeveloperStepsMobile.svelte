@@ -8,7 +8,7 @@
   import { DeveloperStepsText } from '$lib/consts';
 
   const sectionParagraphClasses = 'text-normal mt-f12 leading-[20px]';
-  const stepTitleClasses = 'text-h3 font-title text-primary';
+  const stepTitleClasses = 'title-h3 text-primary';
   const circleWidth = '60';
   const sectionClasses = 'flex flex-col';
   const stepClasses = 'py-[4px] flex flex-col';
