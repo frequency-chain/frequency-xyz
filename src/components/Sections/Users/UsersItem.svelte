@@ -1,4 +1,6 @@
 <script lang="ts">
+  import SlideIn from '../../SlideIn.svelte';
+
   export let icon = '';
   export let iconAlt = '';
   export let title = '';
