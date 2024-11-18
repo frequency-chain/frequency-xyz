@@ -11,7 +11,7 @@
 </script>
 
 <!-- Graphic and Header -->
-<SectionWrapper id="developers" class="pb-f28 pt-[30px] md:pb-f56 md:pt-[38px] lg:pt-[34px]">
+<SectionWrapper id="developers" class="pb-f32 pt-[30px] md:pb-f56 md:pt-[38px] lg:pt-[34px]">
   <section class="mx-auto flex max-w-screen-xl flex-col lg:flex-row">
     <DeveloperAnimation class="mx-auto max-h-[260px] md:max-h-[300px] md:max-w-[800px] lg:max-h-none" />
     <div class="freq-container-padding lg:mt-[36px]">
