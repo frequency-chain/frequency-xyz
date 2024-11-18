@@ -1,10 +1,12 @@
 <script lang="ts">
-  import { Button, Typography } from '@frequency-chain/style-guide';
+  import { Button } from '@frequency-chain/style-guide';
   import SectionWrapper from './SectionWrapper.svelte';
   import TikTokTag from '../TikTokTag.svelte';
   import WavesTwo from '$lib/assets/waves-two.svg';
   import MeWeLogo from '$lib/assets/ecosystem/mewe.svg';
   import SoarLogo from '$lib/assets/ecosystem/soar.svg';
+
+  const logoClasses = 'max-h-[120px] px-3 py-5 w-full sm:w-1/2 lg:w-1/4';
 </script>
 
 <SectionWrapper id="ecosystem">
@@ -17,9 +19,9 @@
   <div class="relative mt-[-100px] bg-navy pb-f64 md:pb-f120">
     <section class="freq-container flex items-center md:px-52">
       <div class="flex w-full flex-col lg:w-2/3">
-        <Typography tag="h0" class="relative z-10 font-title text-white">
+        <h1 class="title-70 relative z-10 font-title text-white">
           Growing into a better <br class="hidden md:inline" />Future Together
-        </Typography>
+        </h1>
         <p class="my-6 text-white md:pr-20">
           Frequency is leading a new era of social networking, empowering businesses and apps to help users unlock the
           value of their data and connections. Chosen as the core infrastructure for Project Liberty’s “People’s Bid” to
@@ -37,12 +39,10 @@
     </section>
   </div>
   <section class="freq-container py-10">
-    <Typography tag="h1" class="h1 mb-6 text-center font-title text-primary">
-      Companies in the Frequency Ecosystem
-    </Typography>
+    <h1 class="title-70 mb-6 text-center font-title text-primary">Companies in the Frequency Ecosystem</h1>
     <div class="flex w-full flex-wrap justify-around p-2 md:p-6">
-      <img class="m-2 max-w-[300px] p-2 sm:m-2 md:m-2" alt="MeWe" src={MeWeLogo} />
-      <img class="m-2 max-w-[300px] p-2 sm:m-2 md:m-2" alt="Soar" src={SoarLogo} />
+      <img class={logoClasses} alt="MeWe" src={MeWeLogo} />
+      <img class={logoClasses} alt="Soar" src={SoarLogo} />
     </div>
   </section>
 </SectionWrapper>
