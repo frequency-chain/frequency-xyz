@@ -1,5 +1,5 @@
 <script>
-  let { width = '112', classes = '' } = $props();
+  let { width = '112' } = $props();
   import Grow from '../Grow.svelte';
 </script>
 

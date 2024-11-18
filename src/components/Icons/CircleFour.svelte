@@ -1,7 +1,7 @@
 <script>
   import Grow from '$components/Grow.svelte';
 
-  let { width = '112', classes = '' } = $props();
+  let { width = '112' } = $props();
 </script>
 
 <Grow>
