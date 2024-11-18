@@ -5,7 +5,7 @@
   import MissionHeader from '$components/Sections/Mission/MissionHeader.svelte';
 </script>
 
-<SectionWrapper id="mission" classes="py-f64">
+<SectionWrapper id="mission">
   <section class="freq-container mb-f64">
     <MissionHeader />
     <MissionItems />
