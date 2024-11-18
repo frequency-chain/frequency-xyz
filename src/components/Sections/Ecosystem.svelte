@@ -4,6 +4,7 @@
   import TikTokTag from '../TikTokTag.svelte';
   import MeWeLogo from '../../lib/assets/Ecosystem/mewe-logo.svg';
   import SoarLogo from '../../lib/assets/Ecosystem/soar-logo.svg';
+  import WeAre8Logo from '../../lib/assets/Ecosystem/weare8.svg';
   import SlideIn from '../SlideIn.svelte';
 </script>
 
@@ -46,6 +47,7 @@
     </SlideIn>
     <div class="flex w-full flex-wrap justify-around p-2 md:p-6">
       <img class="logo" alt="MeWe" src={MeWeLogo} />
+      <img class="logo" alt="WeAre8" src={WeAre8Logo} />
       <img class="logo" alt="Soar" src={SoarLogo} />
     </div>
   </section>
