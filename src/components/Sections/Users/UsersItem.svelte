@@ -10,7 +10,7 @@
     <h3 class="title-h3">{title}</h3>
   </div>
 
-  <div class="text-sm">
+  <div class="body">
     <slot name="body" />
   </div>
 </div>

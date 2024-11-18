@@ -7,7 +7,7 @@
 
   import { DeveloperStepsText } from '$lib/consts';
 
-  const sectionParagraphClasses = 'text-[12px] mt-[16px] min-h-[100px]';
+  const sectionParagraphClasses = 'body mt-[16px] min-h-[100px]';
   const stepTextClasses = '';
   const stepTitleClasses = 'text-[40px] font-title text-primary';
   const stepClasses = 'flex flex-col';

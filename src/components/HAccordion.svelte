@@ -36,7 +36,7 @@
 <div
   id={`explore_${sectionNumber}`}
   onclick={toggle}
-  class={`flex flex-col ${borderClasses} border-grayBorder px-f32 lg:pb-f96 lg:pt-f96 lg:transition-all ${isOpen ? 'lg:w-[316px]' : 'shrink-0 lg:w-[140px] lg:cursor-pointer'}`}
+  class={`flex flex-col ${borderClasses} border-grayBorder px-f32 lg:pb-f96 lg:pt-f96 lg:transition-all ${isOpen ? 'lg:w-[316px] xl:w-[400px]' : 'shrink-0 lg:w-[140px] lg:cursor-pointer'}`}
 >
   <div class={`-mt-[9px] text-clip text-nowrap font-title text-[40px] text-white sm:text-[44px] ${textAlignClasses}`}>
     .{parseInt(sectionNumber, 10).toString().padStart(2, '0')}
@@ -56,13 +56,13 @@
   <div class={`lg:transition-all ${isOpen ? 'block' : 'block lg:hidden'}`}>
     <div
       id={`explore_${sectionNumber}_content`}
-      class={`sm overflow-hidden pb-f12 pl-0 pr-f8 pt-4 text-white md:max-w-full ${textAlignClasses}`}
+      class={`body overflow-hidden pb-f12 pl-0 pr-f8 pt-4 text-white md:max-w-full ${textAlignClasses}`}
     >
       {@render children()}
     </div>
     <div class={`flex flex-row ${contentAlignClasses}`}>
       <Button id={`explore_${sectionNumber}_button`} size="xs" type="primary" href={url} target="_blank">
-        <span class=" text-xs text-black">Learn</span> <img src={Arrow} width="12px" height="12px" alt="" />
+        Learn <img src={Arrow} width="12px" height="12px" alt="" />
       </Button>
     </div>
   </div>
