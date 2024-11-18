@@ -5,6 +5,7 @@
   import WavesTwo from '$lib/assets/waves-two.svg';
   import MeWeLogo from '$lib/assets/ecosystem/mewe.svg';
   import SoarLogo from '$lib/assets/ecosystem/soar.svg';
+  import SlideIn from '../SlideIn.svelte';
 
   const logoClasses = 'max-h-[120px] px-3 py-5 w-full sm:w-1/2 lg:w-1/4';
 </script>
@@ -22,9 +23,11 @@
   <div class="relative mt-[-100px] bg-navy pb-f64 md:pb-f120">
     <section class="freq-container flex items-center md:px-52">
       <div class="flex w-full flex-col gap-f24 lg:w-2/3">
-        <h1 class="title-70 relative z-10 font-title text-white">
-          Growing into a better <br class="hidden md:inline" />Future Together
-        </h1>
+        <SlideIn>
+          <h1 class="title-70 relative z-10 font-title text-white">
+            Growing into a better <br class="hidden md:inline" />Future Together
+          </h1>
+        </SlideIn>
         <p class="body text-white md:mb-f32 md:pr-20">
           Frequency is leading a new era of social networking, empowering businesses and apps to help users unlock the
           value of their data and connections. Chosen as the core infrastructure for Project Liberty’s “People’s Bid” to
@@ -42,7 +45,9 @@
     </section>
   </div>
   <section class="freq-container py-f56">
-    <h1 class="title-70 mb-6 text-center font-title text-primary">Companies in the Frequency Ecosystem</h1>
+    <SlideIn>
+      <h1 class="title-70 mb-6 text-center font-title text-primary">Companies in the Frequency Ecosystem</h1>
+    </SlideIn>
     <div class="flex w-full flex-wrap justify-around p-2 md:p-6">
       <img class={logoClasses} alt="MeWe" src={MeWeLogo} />
       <img class={logoClasses} alt="Soar" src={SoarLogo} />

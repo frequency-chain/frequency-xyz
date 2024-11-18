@@ -5,10 +5,22 @@
 </script>
 
 <div
-  class={slide}
+  class={`slide-out transition-all duration-1000 ${slide}`}
   use:viewport
-  on:enterViewport={() => (slide = 'slide-from-right')}
+  on:enterViewport={() => (slide = 'slide-in')}
   on:exitViewport={() => (slide = '')}
 >
   <slot />
 </div>
+
+<style>
+  .slide-out {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+
+  .slide-in {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+</style>
