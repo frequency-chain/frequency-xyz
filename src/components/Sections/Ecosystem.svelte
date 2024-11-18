@@ -13,7 +13,10 @@
   <div class="w-full overflow-hidden">
     <div class="h-[36px] bg-white lg:h-[61px]"></div>
     <div class="relative mb-[-36px] bg-navy lg:mb-[-61px]">
-      <img class="relative top-[-36px] z-10 max-w-none lg:top-[-61px] lg:w-full" alt="" src={WavesTwo} />
+      <div
+        class="background relative top-[-36px] z-10 h-[240px] min-w-[1000px] max-w-none bg-contain bg-top bg-repeat-x md:h-[260px] lg:top-[-61px] lg:h-[300px] lg:w-full xl:h-[360px]"
+        style="background-image: url('{WavesTwo}')"
+      ></div>
     </div>
   </div>
   <div class="relative mt-[-100px] bg-navy pb-f64 md:pb-f120">
