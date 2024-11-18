@@ -84,7 +84,7 @@
 
 <div class="mx-auto w-full p-[36px] sm:max-w-[396px] md:p-0 md:py-[96px]">
   {#if !formSuccess}
-    <h3 class="h3 font-bold">Contact</h3>
+    <h3 class="h3">Contact</h3>
     <form
       on:submit|preventDefault={submit}
       novalidate

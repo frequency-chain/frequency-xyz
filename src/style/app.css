@@ -26,6 +26,11 @@
   .title-100 {
     @apply font-title text-[55px] leading-[1] tracking-wide md:text-[75px] lg:text-[100px];
   }
+
+  .title-h5 {
+    @apply font-title text-[18px] leading-[1] tracking-wider sm:text-[20px] md:text-[22px] lg:text-[26px];
+  }
+
   .subtitle {
     @apply text-lg font-semibold md:text-lg lg:text-xl;
   }
