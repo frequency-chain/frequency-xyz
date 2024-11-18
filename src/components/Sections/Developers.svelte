@@ -14,7 +14,7 @@
 <SectionWrapper id="developers" class="pt-[30px] md:pt-[38px] lg:pt-[34px]">
   <section class="mx-auto flex max-w-screen-xl flex-col lg:flex-row">
     <DeveloperAnimation class="mx-auto max-h-[260px] md:max-h-[300px] md:max-w-[800px] lg:max-h-none" />
-    <div class="freq-container lg:mt-[36px]">
+    <div class="freq-container-padding lg:mt-[36px]">
       <SlideIn class="lg:basis-1/3]">
         <h2 class="title-70 mx-0 w-full text-teal md:mt-[24px] md:max-w-[400px]">
           {DeveloperStepsText.header.title}

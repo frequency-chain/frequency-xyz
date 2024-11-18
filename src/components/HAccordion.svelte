@@ -36,11 +36,9 @@
 <div
   id={`explore_${sectionNumber}`}
   onclick={toggle}
-  class={`flex flex-col ${borderClasses} border-grayBorder px-f32 lg:pb-f96 lg:pt-f96 lg:transition-all ${isOpen ? 'lg:w-[316px]' : 'shrink-0 lg:w-[132px] lg:cursor-pointer'}`}
+  class={`flex flex-col ${borderClasses} border-grayBorder px-f32 lg:pb-f96 lg:pt-f96 lg:transition-all ${isOpen ? 'lg:w-[316px]' : 'shrink-0 lg:w-[140px] lg:cursor-pointer'}`}
 >
-  <div
-    class={`-mt-[9px] text-clip text-nowrap font-title text-[40px] font-normal text-white sm:text-[44px] ${textAlignClasses}`}
-  >
+  <div class={`-mt-[9px] text-clip text-nowrap font-title text-[40px] text-white sm:text-[44px] ${textAlignClasses}`}>
     .{parseInt(sectionNumber, 10).toString().padStart(2, '0')}
   </div>
   {#if iconSrc}
@@ -51,10 +49,7 @@
       <img src={iconSrc as string} alt="" class="h-[62px] w-[62px] md:h-[65px] md:w-[65px] lg:h-[74px] lg:w-[74px]" />
     </div>
   {/if}
-  <div
-    id={`explore_${sectionNumber}_label`}
-    class={`text-clip text-wrap pt-6 font-title text-h6 font-normal text-white ${textAlignClasses}`}
-  >
+  <div id={`explore_${sectionNumber}_label`} class={`title-h6 text-clip text-wrap pt-6 text-white ${textAlignClasses}`}>
     {@render sectionLabel()}
   </div>
 
