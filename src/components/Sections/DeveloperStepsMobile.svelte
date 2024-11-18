@@ -10,8 +10,8 @@
   const sectionParagraphClasses = 'text-normal mt-f12 leading-[20px]';
   const stepTitleClasses = 'text-h3 font-bold text-primary';
   const circleWidth = '60';
-  const sectionClasses = 'flex flex-col px-[36px]';
-  const stepClasses = 'py-[12px] flex flex-col';
+  const sectionClasses = 'flex flex-col';
+  const stepClasses = 'py-[4px] flex flex-col';
 </script>
 
 <!-- Developer Steps -->
