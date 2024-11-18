@@ -38,7 +38,9 @@
   onclick={toggle}
   class={`flex flex-col ${borderClasses} border-grayBorder px-f32 lg:pb-f96 lg:pt-f96 lg:transition-all ${isOpen ? 'lg:w-[316px]' : 'shrink-0 lg:w-[132px] lg:cursor-pointer'}`}
 >
-  <div class={`-mt-[9px] text-clip text-nowrap font-title text-h3 font-normal text-white ${textAlignClasses}`}>
+  <div
+    class={`-mt-[9px] text-clip text-nowrap font-title text-[40px] font-normal text-white sm:text-[44px] ${textAlignClasses}`}
+  >
     .{parseInt(sectionNumber, 10).toString().padStart(2, '0')}
   </div>
   {#if iconSrc}
@@ -46,7 +48,7 @@
       id={`explore_${sectionNumber}_icon`}
       class={`flex w-full flex-row pt-[6px] lg:justify-normal ${contentAlignClasses} `}
     >
-      <img src={iconSrc as string} alt="" class="h-[65px] w-[65px]" />
+      <img src={iconSrc as string} alt="" class="h-[62px] w-[62px] md:h-[65px] md:w-[65px] lg:h-[74px] lg:w-[74px]" />
     </div>
   {/if}
   <div
