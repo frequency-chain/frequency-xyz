@@ -4,6 +4,7 @@
   import GatewayIcon from '../../../lib/assets/icon-gateway.svg';
   import SsoIcon from '../../../lib/assets/icon-sso.svg';
   import CoreIcon from '../../../lib/assets/icon-core.svg';
+  import SlideIn from '$components/SlideIn.svelte';
 
   let sectionOpenStates: boolean[] = [
     true /* dummy so we don't need to adjust 1-based index */,
@@ -30,8 +31,9 @@
 >
   <div id="explore_description" class="relative flex w-full flex-row px-f32 text-teal lg:w-1/2 lg:pt-f96">
     <div class="flex flex-col gap-f32">
-      <span class="title-h2 mt-f8 text-clip text-wrap">Explore &amp; Build</span>
-
+      <SlideIn>
+        <span class="title-h2 mt-f8 text-clip text-wrap">Explore &amp; Build</span>
+      </SlideIn>
       <div class="body pb-f64 text-white md:pb-f80">
         Frequency offers simple blockchain integration for your applications&mdash;bridging the gap between your app and
         the decentralized web. Frequency Developer Gateway offers a suite of self-hosted tools and services that make it
@@ -51,7 +53,7 @@
 
   <!-- min width selected based on description section + 1 open accordion + 3 closed accordions -->
   <div class="w-full sm:px-f32 sm:py-f16">
-    <div class="grid grid-cols-1 gap-x-f4 gap-y-f48 md:grid-cols-2 lg:flex lg:h-[850px] xl:h-[700px]">
+    <div class="grid grid-cols-1 gap-x-f4 gap-y-f48 overflow-y-hidden md:grid-cols-2 lg:flex lg:h-[850px] xl:h-[700px]">
       <HAccordion
         sectionNumber="1"
         iconSrc={ProviderIcon}
