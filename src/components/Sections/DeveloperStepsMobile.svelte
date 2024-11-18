@@ -29,7 +29,7 @@
     </div>
     <!-- STEP TWO -->
     <div class="{stepClasses} text-right" id="step-2">
-      <CircleTwo width={circleWidth} classes="ml-auto" />
+      <CircleTwo width={circleWidth} class="flex w-full flex-col items-end" />
       <h3 class={stepTitleClasses}>{DeveloperStepsText.two.title}</h3>
       <SectionParagraph class={sectionParagraphClasses}>
         {DeveloperStepsText.two.text_html}
@@ -46,7 +46,7 @@
     </div>
     <!-- STEP FOUR -->
     <div class="{stepClasses} text-right" id="step-4">
-      <CircleFour width={circleWidth} classes="ml-auto" />
+      <CircleFour width={circleWidth} class="flex w-full flex-col items-end" />
       <h3 class={stepTitleClasses}>{DeveloperStepsText.four.title}</h3>
       <SectionParagraph class={sectionParagraphClasses}>
         {DeveloperStepsText.four.text_html}

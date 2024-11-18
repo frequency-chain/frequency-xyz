@@ -2,6 +2,6 @@
   export let id = '';
 </script>
 
-<div {id} class={`scroll-target w-full ${$$restProps.class}`}>
+<div {id} class={`scroll-target w-full ${$$restProps.class || ''}`}>
   <slot />
 </div>

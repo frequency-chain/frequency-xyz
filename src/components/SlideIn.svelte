@@ -1,16 +1,17 @@
 <script lang="ts">
   import viewport from '$lib/util/useViewportAction';
 
-  let slide = '';
+  let { class: klass = '', children } = $props();
+  let slide = $state('');
 </script>
 
 <div
-  class={`slide-out transition-all duration-1000 ${slide}`}
+  class={`slide-out transition-all duration-1000 ${slide} ${klass}`}
   use:viewport
-  on:enterViewport={() => (slide = 'slide-in')}
-  on:exitViewport={() => (slide = '')}
+  onenterViewport={() => (slide = 'slide-in')}
+  onexitViewport={() => (slide = '')}
 >
-  <slot />
+  {@render children?.()}
 </div>
 
 <style>
