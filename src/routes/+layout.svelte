@@ -12,7 +12,7 @@
   <div class="w-full">
     {@render content()}
   </div>
-  <div class="w-full bg-navy px-[5%] lg:px-[20%]">
+  <div class="freq-container-padding w-full bg-navy">
     <Footer type="dark" class="w-full border-grayBorder vertical-lg:w-[100%]" />
   </div>
 {/snippet}
