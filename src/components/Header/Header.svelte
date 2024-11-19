@@ -3,7 +3,7 @@
   import { base } from '$app/paths';
   import { page } from '$app/stores';
 
-  const menuItems = [
+  $: menuItems = [
     { label: 'Mission', href: base + '/#mission', viewportHighlightId: 'mission' },
     { label: 'About', href: base + '/#about', viewportHighlightId: 'about' },
     { label: 'Users', href: base + '/#users', viewportHighlightId: 'users' },
