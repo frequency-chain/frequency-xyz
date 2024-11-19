@@ -61,8 +61,8 @@
       {@render children()}
     </div>
     <div class={`flex flex-row ${contentAlignClasses}`}>
-      <Button id={`explore_${sectionNumber}_button`} size="xs" type="primary" href={url} target="_blank">
-        Learn <img src={Arrow} width="12px" height="12px" alt="" />
+      <Button id={`explore_${sectionNumber}_button`} size="xs" type="primary" href={url}>
+        Learn<img src={Arrow} alt="" class="h-[14px]" />
       </Button>
     </div>
   </div>

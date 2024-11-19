@@ -27,14 +27,14 @@
 
 <div
   id="explore_section"
-  class="freq-container mt-f96 flex w-full flex-col gap-f12 pb-f96 pt-f20 lg:flex-row lg:gap-0 lg:py-f96"
+  class="freq-container flex w-full flex-col gap-f12 pb-f96 pt-f56 lg:flex-row lg:gap-0 lg:py-f96"
 >
-  <div id="explore_description" class="relative flex w-full flex-row px-f32 text-teal lg:w-1/2 lg:pt-f96">
+  <div id="explore_description" class="relative flex w-full flex-row text-teal md:px-f32 lg:w-1/2 lg:pt-f96">
     <div class="flex flex-col gap-f32">
       <SlideIn>
         <span class="title-h2 mt-f8 text-clip text-wrap">Explore &amp; Build</span>
       </SlideIn>
-      <div class="body pb-f64 text-white md:pb-f80">
+      <div class="body pb-f64 text-white xs:pb-f32 md:pb-f80">
         Frequency offers simple blockchain integration for your applications&mdash;bridging the gap between your app and
         the decentralized web. Frequency Developer Gateway offers a suite of self-hosted tools and services that make it
         easy to connect your applications to Frequency. This allows your developer team to focus on building outstanding

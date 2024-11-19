@@ -6,7 +6,7 @@
 </script>
 
 <SectionWrapper id="mission">
-  <section class="freq-container mb-f64">
+  <section class="freq-container pb-f96 pt-f64">
     <MissionHeader />
     <MissionItems />
   </section>

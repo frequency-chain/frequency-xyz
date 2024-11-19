@@ -3,8 +3,10 @@
   import SlideIn from '$components/SlideIn.svelte';
 </script>
 
-<section class="freq-container flex flex-col lg:flex-row lg:items-center lg:justify-center">
-  <div class="flex max-h-[500px] w-full self-center lg:h-[700px] lg:w-1/2">
+<section
+  class="freq-container flex flex-col xs:pb-f56 md:pb-f96 lg:flex-row lg:items-center lg:justify-center lg:pb-f24"
+>
+  <div class="flex h-[100vw] w-full self-center xs:max-h-[500px] lg:h-[700px] lg:w-1/2">
     <DevPortalAnimation />
   </div>
   <div class="flex flex-col gap-6 lg:w-1/2">
