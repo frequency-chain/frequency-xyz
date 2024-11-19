@@ -2,7 +2,6 @@
   import { Input, Textarea } from '@frequency-chain/style-guide';
   import { dev } from '$app/environment';
   import ContactThankYou from '$components/GetNotified/ContactThankYou.svelte';
-  import { goto } from '$app/navigation';
 
   const fieldMapping = {
     name: 'entry.464666765',
