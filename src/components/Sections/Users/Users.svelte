@@ -5,7 +5,7 @@
   import UsersHeader from './UsersHeader.svelte';
 </script>
 
-<SectionWrapper id="users" class="relative bg-navy pb-f128 pt-0 text-white lg:py-f128">
+<SectionWrapper id="users" class="relative bg-navy pb-f96 pt-0 text-white lg:py-f128">
   <SectionContent class="flex flex-col gap-f56">
     <UsersHeader />
     <div class="freq-container">

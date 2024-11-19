@@ -73,12 +73,16 @@
     }
   };
 
-  const goToTop = async (_e: Event) => {
+  const resetForm = async (_e: Event) => {
     formSuccess = false;
     hasSubmittedFormAtLeastOnce = false;
-    await goto('/');
-    const form = document.getElementsByTagName('form')[0] as HTMLFormElement;
-    form.reset();
+    name = '';
+    email = '';
+    isDeveloper = false;
+    isPartnership = false;
+    comment = '';
+    const form = document.getElementById('contact-form') as HTMLFormElement;
+    if (form) form.reset();
   };
 </script>
 
@@ -90,6 +94,7 @@
       novalidate
       class="mx-auto mt-f24 justify-center gap-f24"
       data-testid="contact-form"
+      id="contact-form"
     >
       <Input
         label="Name"
@@ -145,6 +150,6 @@
       </button>
     </form>
   {:else}
-    <ContactThankYou onClick={goToTop} />
+    <ContactThankYou onClick={resetForm} />
   {/if}
 </div>

@@ -20,9 +20,9 @@
       ></div>
     </div>
   </div>
-  <div class="relative mt-[-100px] bg-navy pb-f64 md:pb-f120">
+  <div class="relative mt-[-100px] bg-navy pb-f64 md:pb-f96">
     <section class="freq-container flex items-center md:px-52">
-      <div class="flex w-full flex-col gap-f24 lg:w-2/3">
+      <div class="z-10 flex w-full flex-col gap-f24 lg:w-2/3">
         <SlideIn>
           <h1 class="title-70 relative z-10 font-title text-white">
             Growing into a better <br class="hidden md:inline" />Future Together
