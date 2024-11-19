@@ -75,8 +75,8 @@
         url="https://docs.frequency.xyz/Guides/Gateway.html"
       >
         {#snippet sectionLabel()}Frequency<br class="hidden lg:block" /> Developer<br class="hidden lg:block" /> Gateway{/snippet}
-        is a collection of easy-to-deploy microservices that provide simple REST APIs for interacting with Frequency. Configure
-        and deploy only the components you need.
+        Select among this collection of easy-to-deploy microservices that provide simple REST APIs for interacting with Frequency.
+        Configure and deploy only the components you need.
       </HAccordion>
 
       <HAccordion
