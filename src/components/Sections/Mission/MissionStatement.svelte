@@ -29,7 +29,7 @@
     opacity: 0.33;
   }
   #second {
-    animation: second 10s linear infinite;
+    animation: second 10s linear infinite -0.2s;
   }
   #third {
     animation: third 10s linear infinite;
