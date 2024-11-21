@@ -2,9 +2,9 @@
   import { Button } from '@frequency-chain/style-guide';
   import SectionWrapper from './SectionWrapper.svelte';
   import TikTokTag from '../TikTokTag.svelte';
-  import WavesTwo from '$lib/assets/Ecosystem/waves-two.svg';
-  import MeWeLogo from '$lib/assets/Ecosystem/mewe-logo.svg';
-  import SoarLogo from '$lib/assets/Ecosystem/soar-logo.svg';
+  import WavesTwo from '../../lib/assets/Ecosystem/waves-two.svg';
+  import MeWeLogo from '../../lib/assets/Ecosystem/mewe-logo.svg';
+  import SoarLogo from '../../lib/assets/Ecosystem/soar-logo.svg';
   import SlideIn from '../SlideIn.svelte';
 </script>
 
