@@ -1,9 +1,9 @@
 <script lang="ts">
   import HAccordion from '../../../components/HAccordion.svelte';
-  import ProviderIcon from '$lib/assets/ExploreIcons/icon-provider.svg';
-  import GatewayIcon from '$lib/assets/ExploreIcons/icon-gateway.svg';
-  import SsoIcon from '$lib/assets/ExploreIcons/icon-sso.svg';
-  import CoreIcon from '$lib/assets/ExploreIcons/icon-core.svg';
+  import ProviderIcon from '$lib/assets/Explore/icon-provider.svg';
+  import GatewayIcon from '$lib/assets/Explore/icon-gateway.svg';
+  import SsoIcon from '$lib/assets/Explore/icon-sso.svg';
+  import CoreIcon from '$lib/assets/Explore/icon-core.svg';
   import SlideIn from '$components/SlideIn.svelte';
 
   let sectionOpenStates: boolean[] = [

@@ -1,8 +1,8 @@
 <script lang="ts">
   import UsersItem from './UsersItem.svelte';
-  import Control from '$lib/assets/UsersIcons/Control.svg';
-  import Community from '$lib/assets/UsersIcons/Community.svg';
-  import Ownership from '$lib/assets/UsersIcons/Ownership.svg';
+  import Control from '$lib/assets/Users/Control.svg';
+  import Community from '$lib/assets/Users/Community.svg';
+  import Ownership from '$lib/assets/Users/Ownership.svg';
 
   const userItems = [
     {

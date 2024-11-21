@@ -4,7 +4,7 @@
   import SectionParagraph from '../SectionParagraph.svelte';
   import SectionContent from '../SectionContent.svelte';
   import AboutAnimation from '../Animations/About.svelte';
-  import AboutRoadImg from '$lib/assets/aboutRoad.jpg';
+  import RoadImg from '$lib/assets/About/road.jpg';
 </script>
 
 <SectionWrapper id="about">
@@ -38,9 +38,5 @@
     </div>
   </div>
   <!-- Bottom border image -->
-  <img
-    src={AboutRoadImg}
-    alt="AboutRoad"
-    class="h-[145px] w-full object-cover sm:h-[185px] md:h-[250px] lg:h-[300px]"
-  />
+  <img src={RoadImg} alt="AboutRoad" class="h-[145px] w-full object-cover sm:h-[185px] md:h-[250px] lg:h-[300px]" />
 </SectionWrapper>
