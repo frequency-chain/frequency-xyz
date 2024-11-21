@@ -2,7 +2,6 @@
   import { Button } from '@frequency-chain/style-guide';
   import SectionWrapper from './SectionWrapper.svelte';
   import TikTokTag from '../TikTokTag.svelte';
-  import WavesTwo from '../../lib/assets/Ecosystem/waves-two.svg';
   import MeWeLogo from '../../lib/assets/Ecosystem/mewe-logo.svg';
   import SoarLogo from '../../lib/assets/Ecosystem/soar-logo.svg';
   import SlideIn from '../SlideIn.svelte';
@@ -13,8 +12,7 @@
     <div class="h-[36px] bg-white lg:h-[61px]"></div>
     <div class="relative mb-[-36px] bg-navy lg:mb-[-61px]">
       <div
-        class="background relative top-[-36px] z-10 h-[240px] min-w-[1000px] max-w-none bg-contain bg-top bg-repeat-x md:h-[260px] lg:top-[-61px] lg:h-[300px] lg:w-full xl:h-[360px]"
-        style="background-image: url('{WavesTwo}')"
+        class="waves-bg-img background relative top-[-36px] z-10 h-[240px] min-w-[1000px] max-w-none bg-contain bg-top bg-repeat-x md:h-[260px] lg:top-[-61px] lg:h-[300px] lg:w-full xl:h-[360px]"
       ></div>
     </div>
   </div>
@@ -53,8 +51,12 @@
   </section>
 </SectionWrapper>
 
-<style>
+<style lang="postcss">
   .logo {
     @apply max-h-[120px] w-full px-3 py-5 sm:w-1/2 lg:w-1/4;
+  }
+
+  .waves-bg-img {
+    background-image: url('../../lib/assets/Ecosystem/waves-two.svg?url');
   }
 </style>
