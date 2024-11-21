@@ -3,8 +3,8 @@
   import SectionWrapper from './SectionWrapper.svelte';
   import TikTokTag from '../TikTokTag.svelte';
   import WavesTwo from '$lib/assets/waves-two.svg';
-  import MeWeLogo from '$lib/assets/ecosystem/mewe.svg';
-  import SoarLogo from '$lib/assets/ecosystem/soar.svg';
+  import MeWeLogo from '$lib/assets/EcosystemIcons/mewe.svg';
+  import SoarLogo from '$lib/assets/EcosystemIcons/soar.svg';
   import SlideIn from '../SlideIn.svelte';
 
   const logoClasses = 'max-h-[120px] px-3 py-5 w-full sm:w-1/2 lg:w-1/4';
