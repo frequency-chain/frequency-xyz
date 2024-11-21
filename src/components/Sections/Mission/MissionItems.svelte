@@ -1,11 +1,11 @@
 <script>
   import MissionItem from '$components/Sections/Mission/MissionItem.svelte';
-  import App from '$lib/assets/MissionIcons/App.svg';
-  import Box from '$lib/assets/MissionIcons/Box.svg';
-  import Fingerprint from '$lib/assets/MissionIcons/Fingerprint.svg';
-  import Network from '$lib/assets/MissionIcons/Network.svg';
-  import Universe from '$lib/assets/MissionIcons/Universe.svg';
-  import Users from '$lib/assets/MissionIcons/Users.svg';
+  import App from '$lib/assets/Mission/App.svg';
+  import Box from '$lib/assets/Mission/Box.svg';
+  import Fingerprint from '$lib/assets/Mission/Fingerprint.svg';
+  import Network from '$lib/assets/Mission/Network.svg';
+  import Universe from '$lib/assets/Mission/Universe.svg';
+  import Users from '$lib/assets/Mission/Users.svg';
 
   const missionItems = [
     {

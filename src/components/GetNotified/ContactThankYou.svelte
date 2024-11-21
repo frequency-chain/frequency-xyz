@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ThankYouWaves from '$lib/assets/ThankYouWave.svg';
+  import ThankYouWaves from '$lib/assets/Contact/ThankYouWave.svg';
 
   let { onClick = async () => {} } = $props();
 </script>

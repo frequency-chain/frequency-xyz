@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ThePeoplesBid from '$lib/assets/the-peoples-bid.svg';
+  import ThePeoplesBid from '$lib/assets/Ecosystem/the-peoples-bid.svg';
 </script>
 
 <div class={$$restProps.class}>
