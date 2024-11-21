@@ -3,11 +3,9 @@
   import SectionWrapper from './SectionWrapper.svelte';
   import TikTokTag from '../TikTokTag.svelte';
   import WavesTwo from '$lib/assets/Ecosystem/waves-two.svg';
-  import MeWeLogo from '$lib/assets/Ecosystem/mewe.svg';
-  import SoarLogo from '$lib/assets/Ecosystem/soar.svg';
+  import MeWeLogo from '$lib/assets/Ecosystem/mewe-logo.svg';
+  import SoarLogo from '$lib/assets/Ecosystem/soar-logo.svg';
   import SlideIn from '../SlideIn.svelte';
-
-  const logoClasses = 'max-h-[120px] px-3 py-5 w-full sm:w-1/2 lg:w-1/4';
 </script>
 
 <SectionWrapper id="ecosystem">
@@ -49,8 +47,14 @@
       <h1 class="title-70 mb-6 text-center font-title text-primary">Companies in the Frequency Ecosystem</h1>
     </SlideIn>
     <div class="flex w-full flex-wrap justify-around p-2 md:p-6">
-      <img class={logoClasses} alt="MeWe" src={MeWeLogo} />
-      <img class={logoClasses} alt="Soar" src={SoarLogo} />
+      <img class="logo" alt="MeWe" src={MeWeLogo} />
+      <img class="logo" alt="Soar" src={SoarLogo} />
     </div>
   </section>
 </SectionWrapper>
+
+<style>
+  .logo {
+    @apply max-h-[120px] w-full px-3 py-5 sm:w-1/2 lg:w-1/4;
+  }
+</style>
