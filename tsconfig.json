@@ -10,9 +10,16 @@
     "sourceMap": true,
     "strict": true,
     "moduleResolution": "bundler",
-    "types": ["vitest/globals", "@testing-library/jest-dom"]
+    "types": ["vitest/globals", "@testing-library/jest-dom"],
+    "baseUrl": ".",
+    "paths": {
+      "$components/*": ["src/components/*"],
+      "$lib/*": ["src/lib/*"],
+      "routes/*": ["src/routes/*"]
+    }
   }
-  // Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
+  // Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias,
+  // but we still need to define the paths here or else we will get a "Cannot find module '*.svelte' or its corresponding type declarations" error
   //
   // If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
   // from the referenced tsconfig.json - TypeScript does not merge them in

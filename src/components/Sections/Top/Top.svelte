@@ -33,7 +33,7 @@
   </div>
 </SectionWrapper>
 
-<style>
+<style lang="postcss">
   .top-title {
     @apply font-title leading-[1] tracking-wide text-primary xs:text-[50px] sm:text-[60px] md:text-[75px] lg:text-[90px];
   }
