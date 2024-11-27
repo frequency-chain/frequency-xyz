@@ -50,13 +50,13 @@
   let prevSrc: string | undefined = undefined;
   let prevData: Config['data'] = undefined;
   // Render each different src in a different worker
-  let workerId = 'lottie-' + src.replace('/', '-');
+  let workerId = 'lottie-' + src?.replace('/', '-');
 
   onMount(() => {
     const shouldAutoplay = autoplay && !playOnHover;
     dotLottie = new DotLottie({
       canvas,
-      src: src.includes('://') ? src : new URL(src, self.location.href).toString(),
+      src: src?.includes('://') ? src : new URL(src || '', self.location.href).toString(),
       autoplay: shouldAutoplay,
       loop,
       speed,
@@ -142,7 +142,7 @@
 
   $: if (dotLottie && src !== prevSrc) {
     dotLottie.load({
-      src: src.includes('://') ? src : new URL(src, self.location.href).toString(),
+      src: src?.includes('://') ? src : new URL(src || '', self.location.href).toString(),
       autoplay,
       loop,
       speed,
@@ -155,8 +155,8 @@
       marker,
       layout,
       workerId,
-    });
-    prevSrc = src;
+    } as any);
+    prevSrc = src = data as any;
   }
 
   $: if (dotLottie && data !== prevData) {
@@ -174,20 +174,25 @@
       marker,
       layout,
       workerId,
-    });
-    prevData = data;
+    } as any);
+    prevData = data as any;
   }
 
   $: if (dotLottie && dotLottie.isLoaded && dotLottie.activeAnimationId !== animationId) {
-    dotLottie.loadAnimation(animationId);
+    (dotLottie as any).loadAnimation(animationId);
   }
 
   $: if (dotLottie && dotLottie.isLoaded && dotLottie.activeThemeId !== themeId) {
-    dotLottie.loadTheme(themeId);
+    (dotLottie as any).loadTheme(themeId);
   }
 
   $: if (dotLottie && dotLottie.isLoaded) {
-    dotLottie.loadThemeData(themeData);
+    (dotLottie as any).loadThemeData(themeData);
+  }
+
+  function onEnterCanvas() {
+    dotLottie?.setFrame(0);
+    dotLottie?.play();
   }
 </script>
 
@@ -196,13 +201,8 @@
     class="block h-full w-full {$$restProps.class}"
     bind:this={canvas}
     use:viewport={{ threshold: 0.3 }}
-    on:enterViewport={() => {
-      dotLottie?.setFrame(0);
-      dotLottie?.play();
-    }}
-    on:exitViewport={() => {
-      dotLottie?.stop();
-    }}
+    {...{ onenterViewport: () => onEnterCanvas() } as any}
+    {...{ onexitViewport: () => dotLottie?.stop() } as any}
   >
   </canvas>
 {:else}

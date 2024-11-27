@@ -27,8 +27,9 @@
   // form.checkValidity doesn't work b/c StyleGuide doesn't propagate
   // 'required' into its form inputs.
   const checkValidity = (form: HTMLElement): boolean => {
-    for (let input of form.getElementsByClassName('required')) {
-      if (!input?.value) return false;
+    for (const element of form.getElementsByClassName('required')) {
+      const input = element as HTMLInputElement;
+      if (!input.value) return false;
     }
     return true;
   };
@@ -49,7 +50,7 @@
     if (isPartnership) formData.append(fieldMapping.partnerInterest, 'Partner');
 
     try {
-      let response: unknown;
+      let response: Partial<Response>;
       if (dev) {
         response = {
           ok: true,

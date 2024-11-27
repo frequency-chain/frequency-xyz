@@ -8,8 +8,8 @@
 <div
   class="grow-out transition-all duration-1000 {grow} {klass}"
   use:viewport
-  onenterViewport={() => (grow = 'grow-in')}
-  onexitViewport={() => (grow = '')}
+  {...{ onenterViewport: () => (grow = 'grow-in') } as any}
+  {...{ onexitViewport: () => (grow = '') } as any}
 >
   {@render children?.()}
 </div>

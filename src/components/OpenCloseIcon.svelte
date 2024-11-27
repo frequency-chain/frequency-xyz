@@ -2,12 +2,17 @@
   export let onClick: () => void;
   export let isOpen: boolean;
   export let classes: string = '';
+
+  function handleOnClick(event: Event) {
+    event.preventDefault();
+    onClick();
+  }
 </script>
 
 <button
   aria-label="Open main navigation"
   aria-controls="mobile-navigation"
-  on:click|preventDefault={onClick}
+  onclick={handleOnClick}
   class={`z-50 ${classes}`}
 >
   <svg class="h-[40px] w-[40px]" role="none">

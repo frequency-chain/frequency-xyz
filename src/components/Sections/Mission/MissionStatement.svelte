@@ -13,7 +13,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   .text-slider-container {
     @apply flex flex-col gap-0;
     animation: text-slide 10s linear infinite;
