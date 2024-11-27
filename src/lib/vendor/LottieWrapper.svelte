@@ -189,6 +189,12 @@
   $: if (dotLottie && dotLottie.isLoaded) {
     (dotLottie as any).loadThemeData(themeData);
   }
+
+  function onEnterCanvas() {
+    console.log('here');
+    dotLottie?.setFrame(0);
+    dotLottie?.play();
+  }
 </script>
 
 {#if playOnVisible}
@@ -196,13 +202,8 @@
     class="block h-full w-full {$$restProps.class}"
     bind:this={canvas}
     use:viewport={{ threshold: 0.3 }}
-    onenterViewport={() => {
-      dotLottie?.setFrame(0);
-      dotLottie?.play();
-    }}
-    onexitViewport={() => {
-      dotLottie?.stop();
-    }}
+    {...{ onenterViewport: () => onEnterCanvas() } as any}
+    {...{ onexitViewport: () => dotLottie?.stop() } as any}
   >
   </canvas>
 {:else}

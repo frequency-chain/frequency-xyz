@@ -21,6 +21,11 @@ const config = {
     paths: {
       base: dev ? '' : process.env.BASE_PATH,
     },
+    alias: {
+      $components: 'src/components',
+      $lib: 'src/lib',
+      routes: 'src/routes',
+    },
   },
 };
 

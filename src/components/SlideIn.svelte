@@ -8,8 +8,8 @@
 <div
   class={`slide-out transition-all duration-1000 ${slide} ${klass}`}
   use:viewport
-  onenterViewport={() => (slide = 'slide-in')}
-  onexitViewport={() => (slide = '')}
+  {...{ onenterViewport: () => (slide = 'slide-in') } as any}
+  {...{ onexitViewport: () => (slide = '') } as any}
 >
   {@render children?.()}
 </div>

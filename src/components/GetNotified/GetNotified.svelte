@@ -150,6 +150,6 @@
       </button>
     </form>
   {:else}
-    <ContactThankYou on:click={resetForm} />
+    <ContactThankYou onClick={resetForm} />
   {/if}
 </div>
