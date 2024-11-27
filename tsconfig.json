@@ -12,7 +12,7 @@
     "moduleResolution": "bundler",
     "types": ["svelte", "@sveltejs/kit", "vitest/globals", "@testing-library/jest-dom"]
   },
-  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte", "**/app.d.ts", "**/global.d.ts"]
+  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"]
 
   // Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias,
   // but we still need to define the paths here or else we will get a "Cannot find module '*.svelte' or its corresponding type declarations" error

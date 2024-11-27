@@ -191,7 +191,6 @@
   }
 
   function onEnterCanvas() {
-    console.log('here');
     dotLottie?.setFrame(0);
     dotLottie?.play();
   }
