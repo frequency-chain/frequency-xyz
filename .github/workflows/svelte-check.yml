@@ -2,9 +2,9 @@
 name: Svelte Check
 on:
   push:
-    branches: ['main', 'feat/svelte-app', '108-add-svelte-check-to-github-workflows---frequencyxyz']
+    branches: ['main', 'feat/svelte-app']
   pull_request:
-    branches: ['main', 'feat/svelte-app', '108-add-svelte-check-to-github-workflows---frequencyxyz']
+    branches: ['main', 'feat/svelte-app']
 
 jobs:
   prettier:
