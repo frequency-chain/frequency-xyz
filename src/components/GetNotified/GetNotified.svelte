@@ -97,6 +97,7 @@
       id="contact-form"
     >
       <Input
+        disabled={false}
         label="Name"
         name="name"
         placeholder="Name"
@@ -107,6 +108,7 @@
         error={hasSubmittedFormAtLeastOnce && !name?.length ? errorText : undefined}
       />
       <Input
+        disabled={false}
         label="Email"
         name="email"
         placeholder="Email"
