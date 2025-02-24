@@ -29,10 +29,10 @@
     <DeveloperSteps />
   </div>
   <section class="freq-container-padding flex justify-center">
-    <Button href="{base}/docs" size="lg" class="h6 max-w-[90vw] p-f16 lg:hidden">
+    <Button href="{base}/dev-portal" size="lg" class="h6 max-w-[90vw] p-f16 lg:hidden">
       {DeveloperStepsText.button.title}
     </Button>
-    <Button href="{base}/docs" size="lg" class="hidden lg:block">
+    <Button href="{base}/dev-portal" size="lg" class="hidden lg:block">
       {DeveloperStepsText.button.text_html}
     </Button>
   </section>

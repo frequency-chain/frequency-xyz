@@ -12,9 +12,9 @@
     { label: 'Contact', href: base + '/#contact', viewportHighlightId: 'contact' },
     {
       label: 'Developer Portal',
-      href: base + '/docs',
+      href: base + '/dev-portal',
       isButton: true,
-      isActive: $page.url.pathname === `${base}/docs/`,
+      isActive: $page.url.pathname === `${base}/dev-portal/`,
     },
   ];
 </script>
