@@ -1,9 +1,7 @@
 <script lang="ts">
-  import DocsMain from './components/DocsMain.svelte';
-  import Explore from './components/Explore.svelte';
-</script>
+  import { goto } from '$app/navigation';
+  import { base } from '$app/paths';
 
-<DocsMain />
-<div class="w-full bg-navy">
-  <Explore />
-</div>
+  // Don't use a redirect, as we might eventually use this for other purposes
+  goto(base + '/dev-portal');
+</script>

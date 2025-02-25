@@ -17,6 +17,13 @@ export default defineConfig({
     },
     environment: 'jsdom',
     globals: true,
-    reporters: 'basic',
+    reporters: [
+      [
+        'default',
+        {
+          summary: false,
+        },
+      ],
+    ],
   },
 });
