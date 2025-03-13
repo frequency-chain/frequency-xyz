@@ -12,13 +12,16 @@ Including screenshots helps reviewers know what to expect.
 
 Please delete options that are not relevant.
 
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] Content Change (Required approval in Slack: `#frequency-xyz` and remember that changes along the way trigger
+- [ ] Major Content Change (Required approval in Slack: `#frequency-xyz` and remember that changes along the way trigger
       re-approval.)
-  - [ ] Approved HE (Required for technical wording)
-  - [ ] Approved CM
-  - [ ] Approved UO
-- [ ] New Feature
+  - [ ] Approved Legal
+  - [ ] Approved FNF
+  - [ ] Approved Pull Request Release (varies)
+- [ ] Minor Content Change (Required approval in Slack: `#frequency-xyz` and remember that changes along the way trigger
+      re-approval.)
+  - [ ] Approved Legal
+  - [ ] FNF Notified
+- [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] CI/Dependencies/etc...
 - [ ] Other
 
