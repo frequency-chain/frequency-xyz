@@ -81,7 +81,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: mcr.microsoft.com/playwright:v1.36.2-jammy
+      image: mcr.microsoft.com/playwright:v1.51.0-noble
 
     steps:
       - name: Checkout
