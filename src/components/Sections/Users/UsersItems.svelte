@@ -31,7 +31,7 @@
 </script>
 
 <div class="mx-auto grid w-fit gap-f56 xs:grid-cols-1 lg:grid-cols-3">
-  {#each userItems as { icon, iconAlt, title, body }}
+  {#each userItems as { icon, iconAlt, title, body } (title)}
     <UsersItem {icon} {iconAlt} {title}>
       <div slot="body" class="flex flex-col gap-f16">
         {@html body}

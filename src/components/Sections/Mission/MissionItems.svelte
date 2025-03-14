@@ -48,7 +48,7 @@
 </script>
 
 <div class="grid gap-f64 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-  {#each missionItems as item}
+  {#each missionItems as item (item.iconAlt)}
     <MissionItem>
       <span slot="icon"><img src={item.icon} alt={item.iconAlt} /></span>
       <p slot="body">
