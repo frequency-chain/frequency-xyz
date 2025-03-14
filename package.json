@@ -49,5 +49,8 @@
     "@frequency-chain/style-guide": "^0.1.27",
     "@lottiefiles/dotlottie-web": "^0.41.0",
     "@tsconfig/svelte": "^5.0.4"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.35.0"
   }
 }
