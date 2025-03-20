@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base href="./" />
+    <meta charset="utf-8" />
+    <title>Frequency</title>
+    <link rel="icon" href="./favicon.ico" sizes="any" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <meta property="og:title" content="Frequency" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="Welcome to the People's Internet." />
+    <!-- The og:images must be absolute. The assets are in /static -->
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.frequency.xyz/og-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content="https://www.frequency.xyz/og-square.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image" content="https://www.frequency.xyz/og-thumbnail.png" />
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://www.frequency.xyz/og-twitter.png" />
+
+    <meta name="twitter:site" content="@one_frequency" />
+    <meta property="og:site_name" content="Frequency" />
+    
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BNlOPIpW.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/1271q8AQ.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DDBYWjmy.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CeE9T96y.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Bhaq2t7b.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.BdVSRDUd.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CwM-_ehg.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/OnuO30Rl.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BJCmZ-Tu.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BSRvcwZD.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CWj6FrbW.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Col0zDRq.js">
+
+    <!-- Klaro - make sure the config gets loaded before Klaro -->
+    <script defer type="text/javascript" src="./klaro-config.js"></script>
+    <script defer type="text/javascript" src="./klaro.js"></script>
+    <!-- Matomo -->
+    <script>
+      var _paq = (window._paq = window._paq || []);
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['requireCookieConsent']);
+      _paq.push(['requireConsent']);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+        var u = 'https://dsnp.matomo.cloud/';
+        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+        _paq.push(['setSiteId', '2']);
+        var d = document,
+          g = d.createElement('script'),
+          s = d.getElementsByTagName('script')[0];
+        g.async = true;
+        g.src = 'https://cdn.matomo.cloud/dsnp.matomo.cloud/matomo.js';
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+  </head>
+
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">
+			<script>
+				{
+					__sveltekit_1dkfk7w = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/_pr/117"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.BNlOPIpW.js"),
+						import("./_app/immutable/entry/app.BdVSRDUd.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>
