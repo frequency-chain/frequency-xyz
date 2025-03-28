@@ -100,7 +100,7 @@
         bind:isOpen={sectionOpenStates[4]}
         url="https://docs.frequency.xyz/"
       >
-        {#snippet sectionLabel()}Frequency<br class="hidden lg:block" /> Core{/snippet}
+        {#snippet sectionLabel()}Frequency<br class="hidden lg:block" /> Whitepaper{/snippet}
         Here you will find detailed information about the building blocks of Frequency including technical overviews, advanced
         tutorials, API documentation, code samples and more–everything you need to build your first application to leverage
         the power of Frequency.
