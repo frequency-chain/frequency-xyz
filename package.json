@@ -46,7 +46,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@frequency-chain/style-guide": "^0.1.28",
+    "@frequency-chain/style-guide": "^0.1.30",
     "@lottiefiles/dotlottie-web": "^0.41.0",
     "@tsconfig/svelte": "^5.0.4"
   },
