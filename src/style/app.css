@@ -10,8 +10,6 @@
 
 @import 'tailwindcss';
 
-@config '../../tailwind.config.js';
-
 @layer components {
   /* Typeography */
   .title-16 {
@@ -31,7 +29,7 @@
     @apply font-title text-[50px] leading-[1] tracking-wider md:text-[60px] lg:text-[64px];
   }
 
-  .title-h3 {
+  /* .title-h3 {
     @apply font-title text-[30px] leading-[1] tracking-wider sm:text-[36px] md:text-[40px] lg:text-[44px];
   }
 
@@ -41,7 +39,7 @@
 
   .title-h6 {
     @apply font-title text-[18px] leading-[1] tracking-wider sm:text-[20px] md:text-[22px] lg:text-[22px];
-  }
+  } */
 
   .subtitle {
     @apply text-lg font-semibold md:text-lg lg:text-xl;
@@ -51,20 +49,20 @@
   }
 
   /* Layout */
-  .freq-container-padding {
+  /* .freq-container-padding {
     @apply px-[10px] sm:px-[30px] md:px-[40px] lg:px-[80px];
   }
   .freq-container {
-    @apply xl:max-w-page mx-auto box-border w-full overflow-hidden px-[10px] sm:px-[30px] md:px-[40px] lg:max-w-[100vw] lg:px-[80px];
+    @apply mx-auto box-border w-full overflow-hidden px-[10px] sm:px-[30px] md:px-[40px] lg:max-w-[100vw] lg:px-[80px] xl:max-w-page;
   }
 
   .paragraph-spacing-right {
-    @apply sm:pl-[70px] md:pl-[140px] lg:pr-0 lg:pl-[140px];
+    @apply sm:pl-[70px] md:pl-[140px] lg:pl-[140px] lg:pr-0;
   }
 
   .paragraph-spacing-left {
-    @apply sm:pr-[100px] md:pr-[140px] lg:pr-[140px] lg:pl-0;
-  }
+    @apply sm:pr-[100px] md:pr-[140px] lg:pl-0 lg:pr-[140px];
+  } */
 
   .svg-100 > svg {
     @apply w-full;
@@ -81,7 +79,7 @@
   }
 
   body {
-    @apply text-normal flex flex-col items-center bg-white text-black;
+    @apply flex flex-col items-center bg-white text-normal text-black;
   }
 
   button {
