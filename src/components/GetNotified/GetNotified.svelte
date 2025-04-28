@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { preventDefault } from 'svelte/legacy';
+
   import { Input, Textarea } from '@frequency-chain/style-guide';
   import { dev } from '$app/environment';
   import ContactThankYou from '$components/GetNotified/ContactThankYou.svelte';
@@ -13,16 +15,16 @@
 
   const postUrl = 'https://7otsoqfsv4cgqxe6xvc2vyjo6e0sozeg.lambda-url.sa-east-1.on.aws';
 
-  let name = '';
-  let email = '';
-  let isDeveloper = false;
-  let isPartnership = false;
-  let comment = '';
+  let name = $state('');
+  let email = $state('');
+  let isDeveloper = $state(false);
+  let isPartnership = $state(false);
+  let comment = $state('');
 
   const errorText = 'Please fill out this field.';
 
-  let formSuccess = false;
-  let hasSubmittedFormAtLeastOnce = false;
+  let formSuccess = $state(false);
+  let hasSubmittedFormAtLeastOnce = $state(false);
 
   // form.checkValidity doesn't work b/c StyleGuide doesn't propagate
   // 'required' into its form inputs.
@@ -90,7 +92,7 @@
   {#if !formSuccess}
     <h3 class="title-h3">Contact</h3>
     <form
-      on:submit|preventDefault={submit}
+      onsubmit={preventDefault(submit)}
       novalidate
       class="mx-auto mt-f24 justify-center gap-f24"
       data-testid="contact-form"

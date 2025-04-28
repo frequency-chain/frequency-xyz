@@ -3,13 +3,13 @@
   import { fade } from 'svelte/transition';
   import { getMsaCount } from '$lib/metrics';
 
-  let msaCount = 1_333_820;
+  let msaCount = $state(1_333_820);
   const msaCountAnimationMs = 300;
   let updateIntervalMs = 5000;
-  let showMsaCount = false;
-  $: displayMsaCount = msaCount.toLocaleString();
+  let showMsaCount = $state(false);
+  let displayMsaCount = $derived(msaCount.toLocaleString());
   // Make this as long as possible for the variable width font handling
-  $: widthMsaCount = displayMsaCount.replaceAll(/[0-9]/g, '8');
+  let widthMsaCount = $derived(displayMsaCount.replaceAll(/[0-9]/g, '8'));
 
   async function updateMsaCount(skipAnimation = false) {
     const newMsaCount = await getMsaCount();

@@ -1,7 +1,12 @@
 <script lang="ts">
-  export let icon = '';
-  export let iconAlt = '';
-  export let title = '';
+  interface Props {
+    icon?: string;
+    iconAlt?: string;
+    title?: string;
+    body?: import('svelte').Snippet;
+  }
+
+  let { icon = '', iconAlt = '', title = '', body }: Props = $props();
 </script>
 
 <div class="max-w-full md:max-w-[500px] lg:max-w-[370px]">
@@ -11,6 +16,6 @@
   </div>
 
   <div class="body">
-    <slot name="body" />
+    {@render body?.()}
   </div>
 </div>

@@ -6,13 +6,13 @@
   import CoreIcon from '$lib/assets/Explore/icon-core.svg';
   import SlideIn from '$components/SlideIn.svelte';
 
-  let sectionOpenStates: boolean[] = [
+  let sectionOpenStates: boolean[] = $state([
     true /* dummy so we don't need to adjust 1-based index */,
     true,
     false,
     false,
     false,
-  ];
+  ]);
 
   function handleToggled(event: CustomEvent<{ index: string; isOpen: boolean }>) {
     const { index, isOpen: state } = event.detail;
