@@ -1,10 +1,10 @@
 <script>
   import { run } from 'svelte/legacy';
 
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
 
   run(() => {
-    if ($page.status === 404) {
+    if (page.status === 404) {
       window.location.href = '/';
     }
   });

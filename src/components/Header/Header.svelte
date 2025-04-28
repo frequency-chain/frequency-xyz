@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Header } from '@frequency-chain/style-guide';
   import { base } from '$app/paths';
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
 
   let menuItems = $derived([
     { label: 'Mission', href: base + '/#mission', viewportHighlightId: 'mission' },
@@ -14,7 +14,7 @@
       label: 'Developer Portal',
       href: base + '/dev-portal',
       isButton: true,
-      isActive: $page.url.pathname === `${base}/dev-portal/`,
+      isActive: page.url.pathname === `${base}/dev-portal/`,
     },
   ]);
 </script>
