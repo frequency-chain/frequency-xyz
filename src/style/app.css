@@ -10,7 +10,7 @@
 
 @import 'tailwindcss';
 
-@config '../../tailwind.config.ts';
+@config '../../tailwind.config.js';
 
 @layer components {
   /* Typeography */
