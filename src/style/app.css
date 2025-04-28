@@ -8,7 +8,9 @@
     url('../style/indieground-newakefont-web/Newake-Font-Regular.svg#filename') format('svg');
 }
 
-@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer components {
   /* Typeography */
@@ -29,6 +31,18 @@
     @apply font-title text-[50px] leading-[1] tracking-wider md:text-[60px] lg:text-[64px];
   }
 
+  .title-h3 {
+    @apply text-[30px] leading-[1];
+  }
+
+  .title-h5 {
+    @apply text-[18px] leading-[1];
+  }
+
+  .title-h6 {
+    @apply text-[18px] leading-[1];
+  } */
+
   /* .title-h3 {
     @apply font-title text-[30px] leading-[1] tracking-wider sm:text-[36px] md:text-[40px] lg:text-[44px];
   }
@@ -39,7 +53,7 @@
 
   .title-h6 {
     @apply font-title text-[18px] leading-[1] tracking-wider sm:text-[20px] md:text-[22px] lg:text-[22px];
-  } */
+  }
 
   .subtitle {
     @apply text-lg font-semibold md:text-lg lg:text-xl;
@@ -49,7 +63,7 @@
   }
 
   /* Layout */
-  /* .freq-container-padding {
+  .freq-container-padding {
     @apply px-[10px] sm:px-[30px] md:px-[40px] lg:px-[80px];
   }
   .freq-container {
@@ -62,7 +76,7 @@
 
   .paragraph-spacing-left {
     @apply sm:pr-[100px] md:pr-[140px] lg:pl-0 lg:pr-[140px];
-  } */
+  }
 
   .svg-100 > svg {
     @apply w-full;
