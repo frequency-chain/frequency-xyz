@@ -48,7 +48,10 @@
   "dependencies": {
     "@frequency-chain/style-guide": "^0.1.30",
     "@lottiefiles/dotlottie-web": "^0.41.0",
-    "@tsconfig/svelte": "^5.0.4"
+    "@tsconfig/svelte": "^5.0.4",
+    "@tailwindcss/postcss": "^4.1.4",
+    "bits-ui": "^0.22.0",
+    "svelte-preprocess": "^6.0.3"
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "^4.37.0"
