@@ -11,5 +11,4 @@ export default defineConfig({
       $routes: resolve(__dirname, 'src/routes'),
     },
   },
-  test: { include: ['src/**/*.{test,spec}.{js,ts}'] },
 });

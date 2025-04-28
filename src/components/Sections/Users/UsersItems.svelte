@@ -30,11 +30,11 @@
   ];
 </script>
 
-<div class="mx-auto grid w-fit gap-f56 xs:grid-cols-1 lg:grid-cols-3">
+<div class="gap-f56 xs:grid-cols-1 mx-auto grid w-fit lg:grid-cols-3">
   {#each userItems as { icon, iconAlt, title, body } (title)}
     <UsersItem {icon} {iconAlt} {title}>
       {#snippet body()}
-        <div class="flex flex-col gap-f16">
+        <div class="gap-f16 flex flex-col">
           {@html body}
         </div>
       {/snippet}

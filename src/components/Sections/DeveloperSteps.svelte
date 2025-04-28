@@ -13,7 +13,7 @@
 </script>
 
 <div class="hidden lg:block">
-  <section class="mx-auto flex max-w-screen-lg flex-col">
+  <section class="mx-auto flex max-w-(--breakpoint-lg) flex-col">
     <div class="flex w-full pl-[14%]">
       <!-- STEP ONE -->
       <div class="flex" id="step-1">

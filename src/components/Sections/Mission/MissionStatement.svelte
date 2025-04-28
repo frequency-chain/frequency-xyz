@@ -1,4 +1,4 @@
-<div class="flex items-center justify-center gap-f12 bg-navy text-white md:gap-f24">
+<div class="gap-f12 bg-navy md:gap-f24 flex items-center justify-center text-white">
   <h2 class="title-70 text-[48px] md:text-[70px]">Your:</h2>
 
   <div class="h-[240px] overflow-hidden">
