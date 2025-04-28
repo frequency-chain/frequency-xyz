@@ -8,21 +8,9 @@
     url('../style/indieground-newakefont-web/Newake-Font-Regular.svg#filename') format('svg');
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@theme {
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 320px;
-  --breakpoint-md: 744px;
-  --breakpoint-lg: 1300px;
-  --breakpoint-xl: 1700px;
-  --breakpoint-vertical-lg: (max-height: 700px) and (min-width: 1300px);
-  --breakpoint-vertical-md: (max-height: 700px) and (min-width: 900px);
-  --breakpoint-vertical: (max-height: 700px) or (min-width: 0px);
-  --breakpoint-horizontal: (min-height: 700px) and (min-width: 1300px);
-}
+@config '../../tailwind.config.ts';
 
 @layer components {
   /* Typeography */
@@ -67,15 +55,15 @@
     @apply px-[10px] sm:px-[30px] md:px-[40px] lg:px-[80px];
   }
   .freq-container {
-    @apply mx-auto box-border w-full overflow-hidden px-[10px] sm:px-[30px] md:px-[40px] lg:max-w-[100vw] lg:px-[80px] xl:max-w-page;
+    @apply xl:max-w-page mx-auto box-border w-full overflow-hidden px-[10px] sm:px-[30px] md:px-[40px] lg:max-w-[100vw] lg:px-[80px];
   }
 
   .paragraph-spacing-right {
-    @apply sm:pl-[70px] md:pl-[140px] lg:pl-[140px] lg:pr-0;
+    @apply sm:pl-[70px] md:pl-[140px] lg:pr-0 lg:pl-[140px];
   }
 
   .paragraph-spacing-left {
-    @apply sm:pr-[100px] md:pr-[140px] lg:pl-0 lg:pr-[140px];
+    @apply sm:pr-[100px] md:pr-[140px] lg:pr-[140px] lg:pl-0;
   }
 
   .svg-100 > svg {
@@ -93,7 +81,7 @@
   }
 
   body {
-    @apply flex flex-col items-center bg-white text-normal text-black;
+    @apply text-normal flex flex-col items-center bg-white text-black;
   }
 
   button {

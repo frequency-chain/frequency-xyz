@@ -9,7 +9,6 @@ export default {
   theme: {
     debugScreens: { ignore: ['vertical', 'horizontal'] },
     extend: {
-      fontFamily: { title: ['Newake', 'sans-serif'], sans: ['Poppins', 'sans-serif'] },
       fontSize: { f60: '60px' },
       colors: { darkIndigo: '#445BC3', tealBright: '#00B6AF', grayBorder: '#C8CDD0' },
       width: { page: `${MAX_PAGE_WIDTH}px`, full: '100%' },
