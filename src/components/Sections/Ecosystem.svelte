@@ -6,6 +6,12 @@
   import SoarLogo from '../../lib/assets/Ecosystem/soar-logo.svg';
   import WeAre8Logo from '../../lib/assets/Ecosystem/weare8.svg';
   import SlideIn from '../SlideIn.svelte';
+
+  const logos = [
+    { alt: 'MeWe', src: MeWeLogo },
+    { alt: 'WeAre8', src: WeAre8Logo },
+    { alt: 'Soar', src: SoarLogo },
+  ];
 </script>
 
 <SectionWrapper id="ecosystem">
@@ -46,9 +52,9 @@
       <h1 class="title-70 font-title text-primary mb-6 text-center">Companies in the Frequency Ecosystem</h1>
     </SlideIn>
     <div class="flex w-full flex-wrap justify-around p-2 md:p-6">
-      <img class="max-h-[120px] w-full px-3 py-5 sm:w-1/2 lg:w-1/4" alt="MeWe" src={MeWeLogo} />
-      <img class="max-h-[120px] w-full px-3 py-5 sm:w-1/2 lg:w-1/4" alt="WeAre8" src={WeAre8Logo} />
-      <img class="max-h-[120px] w-full px-3 py-5 sm:w-1/2 lg:w-1/4" alt="Soar" src={SoarLogo} />
+      {#each logos as { alt, src }, index}
+        <img id={`logo-${index}`} class="max-h-[120px] w-full px-3 py-5 sm:w-1/2 lg:w-1/4" {alt} {src} />
+      {/each}
     </div>
   </section>
 </SectionWrapper>
