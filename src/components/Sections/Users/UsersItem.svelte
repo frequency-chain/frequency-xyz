@@ -3,10 +3,10 @@
     icon?: string;
     iconAlt?: string;
     title?: string;
-    body?: import('svelte').Snippet;
+    children: any;
   }
 
-  let { icon = '', iconAlt = '', title = '', body }: Props = $props();
+  let { icon = '', iconAlt = '', title = '', children }: Props = $props();
 </script>
 
 <div class="max-w-full md:max-w-[500px] lg:max-w-[370px]">
@@ -16,6 +16,6 @@
   </div>
 
   <div class="body">
-    {@render body?.()}
+    {@render children()}
   </div>
 </div>

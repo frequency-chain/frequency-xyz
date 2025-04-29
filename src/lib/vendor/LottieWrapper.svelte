@@ -60,6 +60,8 @@
   }: Props = $props();
 
   const hoverHandler = (event: MouseEvent) => {
+    if (!dotLottie) return;
+
     if (!playOnHover || !dotLottie.isLoaded) return;
 
     if (event.type === 'mouseenter') {
@@ -69,14 +71,16 @@
     }
   };
 
-  let dotLottie: DotLottie = $state();
-  let canvas: HTMLCanvasElement = $state();
+  let dotLottie: DotLottie | null = $state(null);
+  let canvas: HTMLCanvasElement | null = $state(null);
   let prevSrc: string | undefined = $state(undefined);
   let prevData: Config['data'] = $state(undefined);
   // Render each different src in a different worker
   let workerId = 'lottie-' + src?.replace('/', '-');
 
   onMount(() => {
+    if (!canvas) return;
+
     const shouldAutoplay = autoplay && !playOnHover;
     dotLottie = new DotLottie({
       canvas,
@@ -102,9 +106,9 @@
     canvas.addEventListener('mouseleave', hoverHandler);
 
     return () => {
-      canvas.removeEventListener('mouseenter', hoverHandler);
-      canvas.removeEventListener('mouseleave', hoverHandler);
-      dotLottie.destroy();
+      canvas?.removeEventListener('mouseenter', hoverHandler);
+      canvas?.removeEventListener('mouseleave', hoverHandler);
+      dotLottie?.destroy();
     };
   });
 

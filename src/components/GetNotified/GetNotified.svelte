@@ -1,9 +1,7 @@
 <script lang="ts">
-  import { preventDefault } from 'svelte/legacy';
-
-  import { Input, Textarea } from '@frequency-chain/style-guide';
   import { dev } from '$app/environment';
   import ContactThankYou from '$components/GetNotified/ContactThankYou.svelte';
+  import { Input, Textarea } from '@frequency-chain/style-guide';
 
   const fieldMapping = {
     name: 'entry.464666765',
@@ -92,7 +90,7 @@
   {#if !formSuccess}
     <h3 class="title-h3">Contact</h3>
     <form
-      onsubmit={preventDefault(submit)}
+      onsubmit={submit}
       novalidate
       class="mt-f24 gap-f24 mx-auto justify-center"
       data-testid="contact-form"

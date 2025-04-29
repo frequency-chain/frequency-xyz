@@ -33,11 +33,9 @@
 <div class="gap-f56 xs:grid-cols-1 mx-auto grid w-fit lg:grid-cols-3">
   {#each userItems as { icon, iconAlt, title, body } (title)}
     <UsersItem {icon} {iconAlt} {title}>
-      {#snippet body()}
-        <div class="gap-f16 flex flex-col">
-          {@html body}
-        </div>
-      {/snippet}
+      <div class="gap-f16 flex flex-col">
+        {@html body}
+      </div>
     </UsersItem>
   {/each}
 </div>

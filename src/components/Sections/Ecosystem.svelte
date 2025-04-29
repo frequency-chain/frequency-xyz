@@ -13,7 +13,7 @@
     <div class="h-[36px] bg-white lg:h-[61px]"></div>
     <div class="bg-navy relative mb-[-36px] lg:mb-[-61px]">
       <div
-        class="waves-bg-img background relative top-[-36px] z-10 h-[240px] max-w-none min-w-[1000px] bg-contain bg-top bg-repeat-x md:h-[260px] lg:top-[-61px] lg:h-[300px] lg:w-full xl:h-[360px]"
+        class="bg-waves-bg background relative top-[-36px] z-10 h-[240px] max-w-none min-w-[1000px] bg-contain bg-top bg-repeat-x md:h-[260px] lg:top-[-61px] lg:h-[300px] lg:w-full xl:h-[360px]"
       ></div>
     </div>
   </div>
@@ -46,19 +46,9 @@
       <h1 class="title-70 font-title text-primary mb-6 text-center">Companies in the Frequency Ecosystem</h1>
     </SlideIn>
     <div class="flex w-full flex-wrap justify-around p-2 md:p-6">
-      <img class="logo" alt="MeWe" src={MeWeLogo} />
-      <img class="logo" alt="WeAre8" src={WeAre8Logo} />
-      <img class="logo" alt="Soar" src={SoarLogo} />
+      <img class="max-h-[120px] w-full px-3 py-5 sm:w-1/2 lg:w-1/4" alt="MeWe" src={MeWeLogo} />
+      <img class="max-h-[120px] w-full px-3 py-5 sm:w-1/2 lg:w-1/4" alt="WeAre8" src={WeAre8Logo} />
+      <img class="max-h-[120px] w-full px-3 py-5 sm:w-1/2 lg:w-1/4" alt="Soar" src={SoarLogo} />
     </div>
   </section>
 </SectionWrapper>
-
-<style lang="postcss">
-  .logo {
-    @apply max-h-[120px] w-full px-3 py-5 sm:w-1/2 lg:w-1/4;
-  }
-
-  .waves-bg-img {
-    background-image: url('../../lib/assets/Ecosystem/waves-two.svg?url');
-  }
-</style>
