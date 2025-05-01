@@ -1,9 +1,7 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import LottieWrapper from '$lib/vendor/LottieWrapper.svelte';
-  interface Props {
-    [key: string]: any;
-  }
+  type Props = Record<string, any>;
 
   let { ...rest }: Props = $props();
 </script>

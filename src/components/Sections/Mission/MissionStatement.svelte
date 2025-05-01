@@ -14,7 +14,7 @@
 
   <div class="h-[240px] overflow-hidden">
     <div class="text-slider-container flex flex-col gap-0">
-      {#each items as item}
+      {#each items as item, index (index)}
         <span id={item.id} class="flex h-[80px] origin-[center_left] items-center text-[48px] font-thin md:text-[70px]">
           {item.label}
         </span>

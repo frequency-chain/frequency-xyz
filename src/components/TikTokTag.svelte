@@ -1,8 +1,6 @@
 <script lang="ts">
   import ThePeoplesBid from '$lib/assets/Ecosystem/the-peoples-bid.svg';
-  interface Props {
-    [key: string]: any;
-  }
+  type Props = Record<string, any>;
 
   let { ...rest }: Props = $props();
 </script>
