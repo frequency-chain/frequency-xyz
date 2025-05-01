@@ -1,6 +1,6 @@
 <script lang="ts">
   import { createEventDispatcher, type Snippet } from 'svelte';
-  import { Button } from '@frequency-chain/style-guide';
+  import { Button, Close } from '@frequency-chain/style-guide';
   import Arrow from '$lib/assets/UIIcons/arrow-right.svg';
   import { MAX_MOBILE_WIDTH } from '$lib/consts';
 

@@ -135,9 +135,9 @@
       <div class="w-full">
         <Textarea
           label="Comment"
+          description="description"
           placeholder="Write us a message"
           bind:value={comment}
-          class="required h-[160px] text-black"
           isRequired={true}
           error={hasSubmittedFormAtLeastOnce && !comment?.length ? errorText : undefined}
         />
