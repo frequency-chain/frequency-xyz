@@ -99,9 +99,7 @@
       <Input
         disabled={false}
         label="Name"
-        name="name"
         placeholder="Name"
-        type="text"
         isRequired={true}
         bind:value={name}
         class="required mb-f4 text-black"
@@ -110,9 +108,7 @@
       <Input
         disabled={false}
         label="Email"
-        name="email"
         placeholder="Email"
-        type="text"
         isRequired={true}
         bind:value={email}
         class="required mb-f4 text-black"
@@ -137,6 +133,7 @@
           label="Comment"
           description="description"
           placeholder="Write us a message"
+          class="required mb-f4 text-black"
           bind:value={comment}
           isRequired={true}
           error={hasSubmittedFormAtLeastOnce && !comment?.length ? errorText : undefined}
