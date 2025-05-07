@@ -3,6 +3,18 @@
 
 @config '../../tailwind.config.js';
 
+@theme {
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 320px;
+  --breakpoint-md: 744px;
+  --breakpoint-lg: 1300px;
+  --breakpoint-xl: 1700px;
+  --breakpoint-vertical-lg: (max-height: 700px) and (min-width: 1300px);
+  --breakpoint-vertical-md: (max-height: 700px) and (min-width: 900px);
+  --breakpoint-vertical: (max-height: 700px) or (min-width: 0px);
+  --breakpoint-horizontal: (min-height: 700px) and (min-width: 1300px);
+}
+
 @font-face {
   font-family: 'Newake';
   src: url('../style/indieground-newakefont-web/Newake-Font-Regular.eot');

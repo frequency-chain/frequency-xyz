@@ -36,7 +36,7 @@
 <div
   id={`explore_${sectionNumber}`}
   onclick={toggle}
-  class={`flex flex-col ${borderClasses} border-grayBorder px-f32 lg:pb-f96 lg:pt-f96 lg:transition-all ${isOpen ? 'lg:w-[316px] xl:w-[400px]' : 'shrink-0 lg:w-[140px] lg:cursor-pointer'}`}
+  class={`flex flex-col ${borderClasses} border-white px-f32 lg:pb-f96 lg:pt-f96 lg:transition-all ${isOpen ? 'lg:w-[316px] xl:w-[400px]' : 'shrink-0 lg:w-[140px] lg:cursor-pointer'}`}
 >
   <div class={`font-title -mt-[9px] text-[40px] text-nowrap text-clip text-white sm:text-[44px] ${textAlignClasses}`}>
     .{parseInt(sectionNumber, 10).toString().padStart(2, '0')}
