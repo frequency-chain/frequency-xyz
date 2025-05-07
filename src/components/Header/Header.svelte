@@ -1,9 +1,9 @@
 <script lang="ts">
   import { Header } from '@frequency-chain/style-guide';
   import { base } from '$app/paths';
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
 
-  $: menuItems = [
+  let menuItems = $derived([
     { label: 'Mission', href: base + '/#mission', viewportHighlightId: 'mission' },
     { label: 'About', href: base + '/#about', viewportHighlightId: 'about' },
     { label: 'Users', href: base + '/#users', viewportHighlightId: 'users' },
@@ -14,9 +14,9 @@
       label: 'Developer Portal',
       href: base + '/dev-portal',
       isButton: true,
-      isActive: $page.url.pathname === `${base}/dev-portal/`,
+      isActive: page.url.pathname === `${base}/dev-portal/`,
     },
-  ];
+  ]);
 </script>
 
 <div class="sticky top-0 z-50 mb-4 w-full bg-white">

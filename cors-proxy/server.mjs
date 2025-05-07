@@ -1,8 +1,8 @@
 import http from 'http';
-import { handler } from './index.mjs';
-import url from 'url';
-import process from 'node:process';
 import { Buffer } from 'node:buffer';
+import process from 'node:process';
+import url from 'url';
+import { handler } from './index.mjs';
 
 const allowedOrigin = process.env.PROXY_ALLOWED_ORIGIN || '*';
 

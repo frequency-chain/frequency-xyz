@@ -3,7 +3,7 @@
   "bracketSpacing": true,
   "endOfLine": "auto",
   "jsxSingleQuote": false,
-  "plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
+  "plugins": ["prettier-plugin-svelte", "prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"],
   "printWidth": 120,
   "proseWrap": "always",
   "quoteProps": "as-needed",
@@ -12,5 +12,6 @@
   "tailwindFunctions": ["clsx", "cva"],
   "tabWidth": 2,
   "trailingComma": "es5",
-  "useTabs": false
+  "useTabs": false,
+  "tailwindConfig": "./tailwind.config.js"
 }
