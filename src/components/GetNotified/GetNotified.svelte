@@ -131,11 +131,11 @@
       <div class="w-full">
         <Textarea
           label="Comment"
-          description="description"
           placeholder="Write us a message"
           class="required mb-f4 text-black"
           bind:value={comment}
           isRequired={true}
+          rows={5}
           error={hasSubmittedFormAtLeastOnce && !comment?.length ? errorText : undefined}
         />
       </div>
