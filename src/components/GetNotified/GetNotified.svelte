@@ -131,12 +131,12 @@
       <div class="w-full">
         <Textarea
           label="Comment"
-          description="description"
           placeholder="Write us a message"
           class="required mb-f4 text-black"
           bind:value={comment}
           isRequired={true}
           error={hasSubmittedFormAtLeastOnce && !comment?.length ? errorText : undefined}
+          rows={5}
         />
       </div>
       <!-- Can't use Style Guide Button b/c onClick won't take async funcs, and also
