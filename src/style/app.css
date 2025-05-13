@@ -1,7 +1,8 @@
-@import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,900;1,400;1,500');
 
-@config '../../tailwind.config.js';
+@import '@frequency-chain/style-guide';
+
+@source '../../node_modules/@frequency-chain/style-guide/**/*.{svelte,js,ts}';
 
 @font-face {
   font-family: 'Newake';
@@ -59,7 +60,7 @@
 }
 
 @utility freq-container {
-  @apply xl:max-w-page mx-auto box-border w-full overflow-hidden px-[10px] sm:px-[30px] md:px-[40px] lg:max-w-[100vw] lg:px-[80px];
+  @apply mx-auto box-border w-full overflow-hidden px-[10px] sm:px-[30px] md:px-[40px] lg:max-w-[100vw] lg:px-[80px] xl:max-w-screen;
 }
 
 @utility paragraph-spacing-right {

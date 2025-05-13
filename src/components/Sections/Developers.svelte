@@ -11,7 +11,7 @@
 </script>
 
 <!-- Graphic and Header -->
-<SectionWrapper id="developers" class="pb-f32 md:pb-f56 pt-[30px] md:pt-[38px] lg:pt-[34px]">
+<SectionWrapper id="developers" class="pb-f32 md:pb-f64 pt-[30px] md:pt-[38px] lg:pt-[34px]">
   <section class="mx-auto flex max-w-(--breakpoint-xl) flex-col lg:flex-row">
     <DeveloperAnimation class="mx-auto max-h-[260px] md:max-h-[300px] md:max-w-[800px] lg:max-h-none" />
     <div class="freq-container-padding lg:mt-[36px]">
@@ -23,7 +23,7 @@
       </SlideIn>
     </div>
   </section>
-  <div class="freq-container mb-f24 md:mb-f56 mt-[22px]">
+  <div class="freq-container mb-f24 md:mb-f64 mt-[22px]">
     <DeveloperStepsMobile />
     <DeveloperStepsTablet />
     <DeveloperSteps />

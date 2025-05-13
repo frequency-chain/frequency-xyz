@@ -6,6 +6,7 @@
   import SoarLogo from '../../lib/assets/Ecosystem/soar-logo.svg';
   import WeAre8Logo from '../../lib/assets/Ecosystem/weare8.svg';
   import SlideIn from '../SlideIn.svelte';
+  import WavesTwo from '../../lib/assets/Ecosystem/waves-two.svg';
 
   const logos = [
     { alt: 'MeWe', src: MeWeLogo },
@@ -19,7 +20,8 @@
     <div class="h-[36px] bg-white lg:h-[61px]"></div>
     <div class="bg-navy relative mb-[-36px] lg:mb-[-61px]">
       <div
-        class="bg-waves-bg background relative top-[-36px] z-10 h-[240px] max-w-none min-w-[1000px] bg-contain bg-top bg-repeat-x md:h-[260px] lg:top-[-61px] lg:h-[300px] lg:w-full xl:h-[360px]"
+        class="background bg-waves-two relative top-[-36px] z-10 h-[240px] max-w-none min-w-[1000px] bg-contain bg-top bg-repeat-x md:h-[260px] lg:top-[-61px] lg:h-[300px] lg:w-full xl:h-[360px]"
+        style={`--waves-two: url("${WavesTwo}");`}
       ></div>
     </div>
   </div>
@@ -47,7 +49,7 @@
       <TikTokTag class="hidden w-full lg:flex lg:w-1/3" />
     </section>
   </div>
-  <section class="freq-container py-f56">
+  <section class="freq-container py-f64">
     <SlideIn>
       <h1 class="title-70 font-title text-primary mb-6 text-center">Companies in the Frequency Ecosystem</h1>
     </SlideIn>
@@ -58,3 +60,9 @@
     </div>
   </section>
 </SectionWrapper>
+
+<style>
+  .bg-waves-two {
+    background-image: var(--waves-two);
+  }
+</style>

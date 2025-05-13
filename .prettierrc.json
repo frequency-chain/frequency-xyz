@@ -12,6 +12,5 @@
   "tailwindFunctions": ["clsx", "cva"],
   "tabWidth": 2,
   "trailingComma": "es5",
-  "useTabs": false,
-  "tailwindConfig": "./tailwind.config.js"
+  "useTabs": false
 }

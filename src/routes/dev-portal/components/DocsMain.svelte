@@ -4,7 +4,7 @@
 </script>
 
 <section
-  class="freq-container xs:pb-f56 md:pb-f96 lg:pb-f24 flex flex-col lg:flex-row lg:items-center lg:justify-center"
+  class="freq-container xs:pb-f64 md:pb-f96 lg:pb-f24 flex flex-col lg:flex-row lg:items-center lg:justify-center"
 >
   <div class="xs:max-h-[500px] flex h-[100vw] w-full self-center lg:h-[700px] lg:w-1/2">
     <DevPortalAnimation />

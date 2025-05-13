@@ -13,7 +13,7 @@
     {@render content()}
   </div>
   <div class="freq-container-padding bg-navy w-full">
-    <Footer type="dark" class="border-grayBorder vertical-lg:w-[100%] w-full" />
+    <Footer type="dark" class="vertical-lg:w-[100%] w-full" />
   </div>
 {/snippet}
 

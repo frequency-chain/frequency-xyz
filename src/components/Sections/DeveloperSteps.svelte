@@ -8,8 +8,8 @@
   import { DeveloperStepsText } from '$lib/consts';
 
   const sectionParagraphClasses = 'body mt-f8';
-  const sectionClasses = 'mt-[48px] ml-[30px] mr-[30px]';
-  const stepTitleClasses = 'title-h3 text-primary leading-0';
+  const sectionClasses = 'mt-f40 mx-f32';
+  const stepTitleClasses = 'title-h3 text-primary';
 </script>
 
 <div class="hidden lg:block">

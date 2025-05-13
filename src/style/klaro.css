@@ -15,7 +15,7 @@ mechanism.
   --font-family: theme('fontFamily.sans');
   --font-size: 14px;
   /* colors */
-  --dark1: theme('colors.navy');
+  --dark1: var(--navy);
   --dark2: theme('colors.gray3');
   --dark3: theme('colors.gray2');
   --light1: theme('colors.white');

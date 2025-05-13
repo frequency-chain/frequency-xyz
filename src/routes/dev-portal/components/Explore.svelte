@@ -27,7 +27,7 @@
 
 <div
   id="explore_section"
-  class="freq-container gap-f12 pb-f96 pt-f56 lg:py-f96 flex w-full flex-col lg:flex-row lg:gap-0"
+  class="freq-container gap-f12 pb-f96 pt-f64 lg:py-f96 flex w-full flex-col lg:flex-row lg:gap-0"
 >
   <div id="explore_description" class="text-teal md:px-f32 lg:pt-f96 relative flex w-full flex-row lg:w-1/2">
     <div class="gap-f32 flex flex-col">

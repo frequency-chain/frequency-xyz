@@ -10,7 +10,7 @@
 
 <SectionWrapper class="freq-container flex flex-col md:flex-row md:items-center md:justify-center">
   <div
-    class="mb:h-[500px] mb-f56 xs:h-[380px] md:-ml-f24 relative flex h-[300px] w-full self-stretch md:mb-0 md:w-1/2 lg:h-[700px]"
+    class="mb:h-[500px] mb-f64 xs:h-[380px] md:-ml-f24 relative flex h-[300px] w-full self-stretch md:mb-0 md:w-1/2 lg:h-[700px]"
   >
     <HomeAnimation />
     <div
