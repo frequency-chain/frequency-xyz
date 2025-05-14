@@ -1,10 +1,13 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import LottieWrapper from '$lib/vendor/LottieWrapper.svelte';
+  type Props = Record<string, any>;
+
+  let { ...rest }: Props = $props();
 </script>
 
 <LottieWrapper
-  class={$$restProps.class}
+  class={rest.class}
   src="{base}/animation/developer-dot.lottie"
   autoplay
   playOnVisible

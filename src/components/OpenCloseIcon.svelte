@@ -1,7 +1,11 @@
 <script lang="ts">
-  export let onClick: () => void;
-  export let isOpen: boolean;
-  export let classes: string = '';
+  interface Props {
+    onClick: () => void;
+    isOpen: boolean;
+    classes?: string;
+  }
+
+  let { onClick, isOpen, classes = '' }: Props = $props();
 
   function handleOnClick(event: Event) {
     event.preventDefault();

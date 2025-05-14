@@ -8,12 +8,12 @@
   import { DeveloperStepsText } from '$lib/consts';
 
   const sectionParagraphClasses = 'body mt-f8';
-  const sectionClasses = 'mt-[48px] ml-[30px] mr-[30px]';
-  const stepTitleClasses = 'title-h3 text-primary leading-0';
+  const sectionClasses = 'mt-f40 mx-f32';
+  const stepTitleClasses = 'title-h3 text-primary';
 </script>
 
 <div class="hidden lg:block">
-  <section class="mx-auto flex max-w-screen-lg flex-col">
+  <section class="mx-auto flex max-w-(--breakpoint-lg) flex-col">
     <div class="flex w-full pl-[14%]">
       <!-- STEP ONE -->
       <div class="flex" id="step-1">

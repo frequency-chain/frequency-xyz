@@ -1,6 +1,6 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import { defineConfig } from 'vitest/config';
 import { resolve } from 'path';
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   plugins: [sveltekit()],
@@ -10,8 +10,5 @@ export default defineConfig({
       $components: resolve(__dirname, 'src/components'),
       $routes: resolve(__dirname, 'src/routes'),
     },
-  },
-  test: {
-    include: ['src/**/*.{test,spec}.{js,ts}'],
   },
 });

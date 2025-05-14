@@ -15,7 +15,7 @@
 </script>
 
 <div class="hidden md:block lg:hidden">
-  <section class="flex shrink">
+  <section class="gap-f32 flex shrink">
     `
     <div>
       <!-- STEP ONE -->

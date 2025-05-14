@@ -1,7 +1,13 @@
 <script lang="ts">
-  export let id = '';
+  interface Props {
+    id?: string;
+    children?: import('svelte').Snippet;
+    [key: string]: any;
+  }
+
+  let { id = '', children, ...rest }: Props = $props();
 </script>
 
-<div {id} class={`scroll-target w-full ${$$restProps.class || ''}`}>
-  <slot />
+<div {id} class={`scroll-target w-full ${rest.class || ''}`}>
+  {@render children?.()}
 </div>

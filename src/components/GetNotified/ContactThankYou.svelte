@@ -1,7 +1,11 @@
 <script lang="ts">
   import ThankYouWaves from '$lib/assets/Contact/ThankYouWave.svg';
 
-  export let onClick: (e: MouseEvent) => void;
+  interface Props {
+    onClick: (e: MouseEvent) => void;
+  }
+
+  let { onClick }: Props = $props();
 </script>
 
 <button class="flex cursor-pointer items-center justify-center" onclick={onClick}>

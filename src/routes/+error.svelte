@@ -1,11 +1,13 @@
 <script>
-  import { page } from '$app/stores';
+  import { run } from 'svelte/legacy';
 
-  $: {
-    if ($page.status === 404) {
+  import { page } from '$app/state';
+
+  run(() => {
+    if (page.status === 404) {
       window.location.href = '/';
     }
-  }
+  });
 </script>
 
 <div class="freq-container mt-[150px]">

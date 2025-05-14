@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { Input, Textarea } from '@frequency-chain/style-guide';
   import { dev } from '$app/environment';
   import ContactThankYou from '$components/GetNotified/ContactThankYou.svelte';
+  import { Input, Textarea } from '@frequency-chain/style-guide';
 
   const fieldMapping = {
     name: 'entry.464666765',
@@ -13,16 +13,16 @@
 
   const postUrl = 'https://7otsoqfsv4cgqxe6xvc2vyjo6e0sozeg.lambda-url.sa-east-1.on.aws';
 
-  let name = '';
-  let email = '';
-  let isDeveloper = false;
-  let isPartnership = false;
-  let comment = '';
+  let name = $state('');
+  let email = $state('');
+  let isDeveloper = $state(false);
+  let isPartnership = $state(false);
+  let comment = $state('');
 
   const errorText = 'Please fill out this field.';
 
-  let formSuccess = false;
-  let hasSubmittedFormAtLeastOnce = false;
+  let formSuccess = $state(false);
+  let hasSubmittedFormAtLeastOnce = $state(false);
 
   // form.checkValidity doesn't work b/c StyleGuide doesn't propagate
   // 'required' into its form inputs.
@@ -90,18 +90,16 @@
   {#if !formSuccess}
     <h3 class="title-h3">Contact</h3>
     <form
-      on:submit|preventDefault={submit}
+      onsubmit={submit}
       novalidate
-      class="mx-auto mt-f24 justify-center gap-f24"
+      class="mt-f24 gap-f24 mx-auto justify-center"
       data-testid="contact-form"
       id="contact-form"
     >
       <Input
         disabled={false}
         label="Name"
-        name="name"
         placeholder="Name"
-        type="text"
         isRequired={true}
         bind:value={name}
         class="required mb-f4 text-black"
@@ -110,35 +108,34 @@
       <Input
         disabled={false}
         label="Email"
-        name="email"
         placeholder="Email"
-        type="text"
         isRequired={true}
         bind:value={email}
         class="required mb-f4 text-black"
         error={hasSubmittedFormAtLeastOnce && !email?.length ? errorText : undefined}
       />
-      <div class="mb-f4 mt-f8 flex flex-col gap-f12 sm:flex-row sm:gap-f32">
+      <div class="mb-f4 mt-f8 gap-f12 sm:gap-f32 flex flex-col sm:flex-row">
         <label class="inline-flex items-center hover:cursor-pointer">
-          <input type="checkbox" bind:checked={isDeveloper} class="text-white accent-tealBright hover:cursor-pointer" />
-          <span class="ml-2 text-normal">Development</span>
+          <input type="checkbox" bind:checked={isDeveloper} class="accent-tealBright text-white hover:cursor-pointer" />
+          <span class="text-normal ml-2">Development</span>
         </label>
         <label class="leading inline-flex items-center hover:cursor-pointer">
           <input
             type="checkbox"
             bind:checked={isPartnership}
-            class="form-checkbox text-white accent-tealBright hover:cursor-pointer"
+            class="form-checkbox accent-tealBright text-white hover:cursor-pointer"
           />
-          <span class="ml-2 text-normal">Partnerships</span>
+          <span class="text-normal ml-2">Partnerships</span>
         </label>
       </div>
       <div class="w-full">
         <Textarea
           label="Comment"
           placeholder="Write us a message"
+          class="required mb-f4 text-black"
           bind:value={comment}
-          class="required h-[160px] text-black"
           isRequired={true}
+          rows={5}
           error={hasSubmittedFormAtLeastOnce && !comment?.length ? errorText : undefined}
         />
       </div>
@@ -146,7 +143,7 @@
       it overloads type for styling -->
       <button
         type="submit"
-        class="button button-secondary mt-f24 w-full rounded-full border-[1px] border-white bg-transparent p-f8 text-center transition-all hover:border-teal hover:text-teal"
+        class="button button-secondary mt-f24 p-f8 hover:border-teal hover:text-teal w-full rounded-full border-[1px] border-white bg-transparent text-center transition-all"
       >
         Send Message
       </button>

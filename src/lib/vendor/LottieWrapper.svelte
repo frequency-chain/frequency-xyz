@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { run } from 'svelte/legacy';
+
   // FORKED to support:
   // - Svelte 5 cleanly and have access to the latest @lottiefiles/dotlottie-web
   // - Styles to support better responsiveness
@@ -13,29 +15,53 @@
     DotLottie.setWasmUrl(url);
   }
 
-  export let autoplay: Config['autoplay'] = false;
-  export let backgroundColor: Config['backgroundColor'] = undefined;
-  export let data: Config['data'] = undefined;
-  export let loop: Config['loop'] = false;
-  export let mode: Config['mode'] = 'forward';
-  export let renderConfig: Config['renderConfig'] = undefined;
-  export let segment: Config['segment'] = undefined;
-  export let speed: Config['speed'] = 1;
-  export let src: Config['src'] = undefined;
-  export let useFrameInterpolation: Config['useFrameInterpolation'] = true;
-  export let marker: Config['marker'] = undefined;
-  export let layout: Config['layout'] = undefined;
+  interface Props {
+    autoplay?: Config['autoplay'];
+    backgroundColor?: Config['backgroundColor'];
+    data?: Config['data'];
+    loop?: Config['loop'];
+    mode?: Config['mode'];
+    renderConfig?: Config['renderConfig'];
+    segment?: Config['segment'];
+    speed?: Config['speed'];
+    src?: Config['src'];
+    useFrameInterpolation?: Config['useFrameInterpolation'];
+    marker?: Config['marker'];
+    layout?: Config['layout'];
+    playOnHover?: boolean;
+    animationId?: string;
+    themeId?: string;
+    themeData?: string;
+    playOnVisible?: boolean;
+    dotLottieRefCallback?: (dotLottie: DotLottie) => void;
+    [key: string]: any;
+  }
 
-  export let playOnHover: boolean = false;
-  export let animationId: string = '';
-  export let themeId: string = '';
-  export let themeData: string = '';
-
-  export let playOnVisible: boolean = false;
-
-  export let dotLottieRefCallback: (dotLottie: DotLottie) => void = () => {};
+  let {
+    autoplay = false,
+    backgroundColor = undefined,
+    data = undefined,
+    loop = false,
+    mode = 'forward',
+    renderConfig = undefined,
+    segment = undefined,
+    speed = 1,
+    src = $bindable(undefined),
+    useFrameInterpolation = true,
+    marker = undefined,
+    layout = undefined,
+    playOnHover = false,
+    animationId = '',
+    themeId = '',
+    themeData = '',
+    playOnVisible = false,
+    dotLottieRefCallback = () => {},
+    ...rest
+  }: Props = $props();
 
   const hoverHandler = (event: MouseEvent) => {
+    if (!dotLottie) return;
+
     if (!playOnHover || !dotLottie.isLoaded) return;
 
     if (event.type === 'mouseenter') {
@@ -45,14 +71,16 @@
     }
   };
 
-  let dotLottie: DotLottie;
-  let canvas: HTMLCanvasElement;
-  let prevSrc: string | undefined = undefined;
-  let prevData: Config['data'] = undefined;
+  let dotLottie: DotLottie | null = $state(null);
+  let canvas: HTMLCanvasElement | null = $state(null);
+  let prevSrc: string | undefined = $state(undefined);
+  let prevData: Config['data'] = $state(undefined);
   // Render each different src in a different worker
   let workerId = 'lottie-' + src?.replace('/', '-');
 
   onMount(() => {
+    if (!canvas) return;
+
     const shouldAutoplay = autoplay && !playOnHover;
     dotLottie = new DotLottie({
       canvas,
@@ -78,37 +106,37 @@
     canvas.addEventListener('mouseleave', hoverHandler);
 
     return () => {
-      canvas.removeEventListener('mouseenter', hoverHandler);
-      canvas.removeEventListener('mouseleave', hoverHandler);
-      dotLottie.destroy();
+      canvas?.removeEventListener('mouseenter', hoverHandler);
+      canvas?.removeEventListener('mouseleave', hoverHandler);
+      dotLottie?.destroy();
     };
   });
 
-  $: {
+  run(() => {
     if (dotLottie && typeof layout === 'object') {
       dotLottie.setLayout(layout);
     }
-  }
+  });
 
-  $: {
+  run(() => {
     if (dotLottie && typeof marker === 'string') {
       dotLottie.setMarker(marker);
     }
-  }
+  });
 
-  $: {
+  run(() => {
     if (dotLottie && dotLottie.isLoaded && typeof speed == 'number') {
       dotLottie.setSpeed(speed);
     }
-  }
+  });
 
-  $: {
+  run(() => {
     if (dotLottie && dotLottie.isLoaded && typeof useFrameInterpolation == 'boolean') {
       dotLottie.setUseFrameInterpolation(useFrameInterpolation);
     }
-  }
+  });
 
-  $: {
+  run(() => {
     if (
       dotLottie &&
       dotLottie.isLoaded &&
@@ -120,75 +148,85 @@
       let [start, end] = segment;
       dotLottie.setSegment(start, end);
     }
-  }
+  });
 
-  $: {
+  run(() => {
     if (dotLottie && dotLottie.isLoaded && typeof loop == 'boolean') {
       dotLottie.setLoop(loop);
     }
-  }
+  });
 
-  $: {
+  run(() => {
     if (dotLottie) {
       dotLottie.setBackgroundColor(backgroundColor || '');
     }
-  }
+  });
 
-  $: {
+  run(() => {
     if (dotLottie && dotLottie.isLoaded && typeof mode == 'string') {
       dotLottie.setMode(mode);
     }
-  }
+  });
 
-  $: if (dotLottie && src !== prevSrc) {
-    dotLottie.load({
-      src: src?.includes('://') ? src : new URL(src || '', self.location.href).toString(),
-      autoplay,
-      loop,
-      speed,
-      data,
-      renderConfig: playOnVisible ? { freezeOnOffscreen: false, ...renderConfig } : renderConfig,
-      segment,
-      useFrameInterpolation,
-      backgroundColor,
-      mode,
-      marker,
-      layout,
-      workerId,
-    } as any);
-    prevSrc = src = data as any;
-  }
+  run(() => {
+    if (dotLottie && src !== prevSrc) {
+      dotLottie.load({
+        src: src?.includes('://') ? src : new URL(src || '', self.location.href).toString(),
+        autoplay,
+        loop,
+        speed,
+        data,
+        renderConfig: playOnVisible ? { freezeOnOffscreen: false, ...renderConfig } : renderConfig,
+        segment,
+        useFrameInterpolation,
+        backgroundColor,
+        mode,
+        marker,
+        layout,
+        workerId,
+      } as any);
+      prevSrc = src = data as any;
+    }
+  });
 
-  $: if (dotLottie && data !== prevData) {
-    dotLottie.load({
-      src,
-      autoplay,
-      loop,
-      speed,
-      data,
-      renderConfig: playOnVisible ? { freezeOnOffscreen: false, ...renderConfig } : renderConfig,
-      segment,
-      useFrameInterpolation,
-      backgroundColor,
-      mode,
-      marker,
-      layout,
-      workerId,
-    } as any);
-    prevData = data as any;
-  }
+  run(() => {
+    if (dotLottie && data !== prevData) {
+      dotLottie.load({
+        src,
+        autoplay,
+        loop,
+        speed,
+        data,
+        renderConfig: playOnVisible ? { freezeOnOffscreen: false, ...renderConfig } : renderConfig,
+        segment,
+        useFrameInterpolation,
+        backgroundColor,
+        mode,
+        marker,
+        layout,
+        workerId,
+      } as any);
+      prevData = data as any;
+    }
+  });
 
-  $: if (dotLottie && dotLottie.isLoaded && dotLottie.activeAnimationId !== animationId) {
-    (dotLottie as any).loadAnimation(animationId);
-  }
+  run(() => {
+    if (dotLottie && dotLottie.isLoaded && dotLottie.activeAnimationId !== animationId) {
+      (dotLottie as any).loadAnimation(animationId);
+    }
+  });
 
-  $: if (dotLottie && dotLottie.isLoaded && dotLottie.activeThemeId !== themeId) {
-    (dotLottie as any).loadTheme(themeId);
-  }
+  run(() => {
+    if (dotLottie && dotLottie.isLoaded && dotLottie.activeThemeId !== themeId) {
+      (dotLottie as any).loadTheme(themeId);
+    }
+  });
 
-  $: if (dotLottie && dotLottie.isLoaded) {
-    (dotLottie as any).loadThemeData(themeData);
-  }
+  run(() => {
+    if (dotLottie && dotLottie.isLoaded) {
+      (dotLottie as any).loadThemeData(themeData);
+    }
+  });
 
   function onEnterCanvas() {
     dotLottie?.setFrame(0);
@@ -198,7 +236,7 @@
 
 {#if playOnVisible}
   <canvas
-    class="block h-full w-full {$$restProps.class}"
+    class="block h-full w-full {rest.class}"
     bind:this={canvas}
     use:viewport={{ threshold: 0.3 }}
     {...{ onenterViewport: () => onEnterCanvas() } as any}
@@ -206,5 +244,5 @@
   >
   </canvas>
 {:else}
-  <canvas class={$$restProps.class} bind:this={canvas}></canvas>
+  <canvas class={rest.class} bind:this={canvas}></canvas>
 {/if}

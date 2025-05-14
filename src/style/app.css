@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,900;1,400;1,500');
+
+@import '@frequency-chain/style-guide';
+
+@source '../../node_modules/@frequency-chain/style-guide/**/*.{svelte,js,ts}';
+
 @font-face {
   font-family: 'Newake';
   src: url('../style/indieground-newakefont-web/Newake-Font-Regular.eot');
@@ -8,71 +13,66 @@
     url('../style/indieground-newakefont-web/Newake-Font-Regular.svg#filename') format('svg');
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Typeography */
+@utility title-16 {
+  @apply font-title text-[16px] leading-none tracking-wider md:text-[16px] lg:text-[16px];
+}
 
-@layer components {
-  /* Typeography */
-  .title-16 {
-    @apply font-title text-[16px] leading-[1] tracking-wider md:text-[16px] lg:text-[16px];
-  }
-  .title-44 {
-    @apply font-title text-[40px] leading-[1] tracking-wider md:text-[40px] lg:text-[44px];
-  }
-  .title-70 {
-    @apply font-title text-[40px] leading-[1] tracking-wide md:text-[55px] lg:text-[70px];
-  }
-  .title-100 {
-    @apply font-title text-[55px] leading-[1] tracking-wide md:text-[75px] lg:text-[100px];
-  }
+@utility title-44 {
+  @apply font-title text-[40px] leading-none tracking-wider md:text-[40px] lg:text-[44px];
+}
 
-  .title-h2 {
-    @apply font-title text-[50px] leading-[1] tracking-wider md:text-[60px] lg:text-[64px];
-  }
+@utility title-70 {
+  @apply font-title text-[40px] leading-none tracking-wide md:text-[55px] lg:text-[70px];
+}
 
-  .title-h3 {
-    @apply font-title text-[30px] leading-[1] tracking-wider sm:text-[36px] md:text-[40px] lg:text-[44px];
-  }
+@utility title-100 {
+  @apply font-title text-[55px] leading-none tracking-wide md:text-[75px] lg:text-[100px];
+}
 
-  .title-h5 {
-    @apply font-title text-[18px] leading-[1] tracking-wider sm:text-[20px] md:text-[22px] lg:text-[26px];
-  }
+@utility title-h2 {
+  @apply font-title text-[50px] leading-none tracking-wider md:text-[60px] lg:text-[64px];
+}
 
-  .title-h6 {
-    @apply font-title text-[18px] leading-[1] tracking-wider sm:text-[20px] md:text-[22px] lg:text-[22px];
-  }
+@utility title-h3 {
+  @apply font-title text-[30px] leading-[1] tracking-wider sm:text-[36px] md:text-[40px] lg:text-[44px];
+}
 
-  .subtitle {
-    @apply text-lg font-semibold md:text-lg lg:text-xl;
-  }
-  .body {
-    @apply text-normal md:text-md;
-  }
+@utility title-h5 {
+  @apply font-title text-[18px] leading-[1] tracking-wider sm:text-[20px] md:text-[22px] lg:text-[26px];
+}
 
-  /* Layout */
-  .freq-container-padding {
-    @apply px-[10px] sm:px-[30px] md:px-[40px] lg:px-[80px];
-  }
-  .freq-container {
-    @apply mx-auto box-border w-full overflow-hidden px-[10px] sm:px-[30px] md:px-[40px] lg:max-w-[100vw] lg:px-[80px] xl:max-w-page;
-  }
+@utility title-h6 {
+  @apply font-title text-[18px] leading-[1] tracking-wider sm:text-[20px] md:text-[22px] lg:text-[22px];
+}
 
-  .paragraph-spacing-right {
-    @apply sm:pl-[70px] md:pl-[140px] lg:pl-[140px] lg:pr-0;
-  }
+@utility subtitle {
+  @apply text-lg font-semibold md:text-lg lg:text-xl;
+}
 
-  .paragraph-spacing-left {
-    @apply sm:pr-[100px] md:pr-[140px] lg:pl-0 lg:pr-[140px];
-  }
+@utility body {
+  @apply text-normal md:text-md;
+}
 
-  .svg-100 > svg {
-    @apply w-full;
-  }
+/* Layout */
+@utility freq-container-padding {
+  @apply px-[10px] sm:px-[30px] md:px-[40px] lg:px-[80px];
+}
 
-  .scroll-target {
-    scroll-margin-top: 85px;
-  }
+@utility freq-container {
+  @apply mx-auto box-border w-full overflow-hidden px-[10px] sm:px-[30px] md:px-[40px] lg:max-w-[100vw] lg:px-[80px] xl:max-w-screen;
+}
+
+@utility paragraph-spacing-right {
+  @apply sm:pl-[70px] md:pl-[140px] lg:pr-0 lg:pl-[140px];
+}
+
+@utility paragraph-spacing-left {
+  @apply sm:pr-[100px] md:pr-[140px] lg:pr-[140px] lg:pl-0;
+}
+
+@utility scroll-target {
+  scroll-margin-top: 85px;
 }
 
 @layer base {
@@ -81,7 +81,7 @@
   }
 
   body {
-    @apply flex flex-col items-center bg-white text-normal text-black;
+    @apply text-normal flex flex-col items-center bg-white text-black;
   }
 
   button {
@@ -89,6 +89,6 @@
   }
 
   ::placeholder {
-    @apply text-gray2 !important;
+    @apply text-gray2!;
   }
 }

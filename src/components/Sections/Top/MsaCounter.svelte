@@ -3,13 +3,13 @@
   import { fade } from 'svelte/transition';
   import { getMsaCount } from '$lib/metrics';
 
-  let msaCount = 1_333_820;
+  let msaCount = $state(1_333_820);
   const msaCountAnimationMs = 300;
   let updateIntervalMs = 5000;
-  let showMsaCount = false;
-  $: displayMsaCount = msaCount.toLocaleString();
+  let showMsaCount = $state(false);
+  let displayMsaCount = $derived(msaCount.toLocaleString());
   // Make this as long as possible for the variable width font handling
-  $: widthMsaCount = displayMsaCount.replaceAll(/[0-9]/g, '8');
+  let widthMsaCount = $derived(displayMsaCount.replaceAll(/[0-9]/g, '8'));
 
   async function updateMsaCount(skipAnimation = false) {
     const newMsaCount = await getMsaCount();
@@ -45,12 +45,12 @@
     <div
       in:fade={{ duration: msaCountAnimationMs }}
       out:fade={{ duration: msaCountAnimationMs }}
-      class="absolute left-0 w-full px-4 text-right font-title tracking-wide"
+      class="font-title absolute left-0 w-full px-4 text-right tracking-wide"
     >
       {displayMsaCount}
     </div>
   {/if}
-  <div class="invisible font-title tracking-wide">
+  <div class="font-title invisible tracking-wide">
     {widthMsaCount}
   </div>
   <div class="text-right text-[12px] font-semibold uppercase md:text-[0.25em]">New User Activations</div>

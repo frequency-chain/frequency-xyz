@@ -9,10 +9,10 @@
 
 <SectionWrapper id="about">
   <div
-    class="freq-container flex flex-col-reverse content-center items-center justify-center gap-0 md:flex-row md:items-center md:gap-f48 lg:gap-f24"
+    class="freq-container md:gap-f48 lg:gap-f24 flex flex-col-reverse content-center items-center justify-center gap-0 md:flex-row md:items-center"
   >
     <!-- Text content -->
-    <SectionContent class="m-auto pb-f56 pt-0 md:py-f96">
+    <SectionContent class="pb-f64 md:py-f96 m-auto pt-0">
       <SlideIn>
         <h2 class="title-70 pb-f24 pt-f12 text-primary">What is<br /> Frequency?</h2>
       </SlideIn>
@@ -24,7 +24,7 @@
           href="https://dsnp.org/"
           target="_blank"
           rel="noreferrer"
-          class="underline transition-colors hover:text-teal">DSNP</a
+          class="hover:text-teal underline transition-colors">DSNP</a
         >), Frequency offers scalable tools for message discovery, flexible storage for social and identity data, and a
         unique cost-sharing model that allows apps to deliver smooth, secure experiences that put users in charge.
       </SectionParagraph>

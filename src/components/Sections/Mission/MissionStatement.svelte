@@ -1,26 +1,31 @@
-<div class="flex items-center justify-center gap-f12 bg-navy text-white md:gap-f24">
+<script lang="ts">
+  const items = [
+    { id: 'first', label: 'Content' },
+    { id: 'second', label: 'Followers' },
+    { id: 'third', label: 'Network' },
+    { id: 'fourth', label: 'Content' },
+    { id: 'fifth', label: 'Followers' },
+    { id: 'sixth', label: 'Network' },
+  ];
+</script>
+
+<div class="gap-f12 bg-navy md:gap-f24 flex items-center justify-center text-white">
   <h2 class="title-70 text-[48px] md:text-[70px]">Your:</h2>
 
   <div class="h-[240px] overflow-hidden">
-    <div class="text-slider-container">
-      <span class="slider-item" id="first">Content</span>
-      <span class="slider-item" id="second">Followers</span>
-      <span class="slider-item" id="third">Network</span>
-      <span class="slider-item" id="fourth">Content</span>
-      <span class="slider-item" id="fifth">Followers</span>
-      <span class="slider-item" id="sixth">Network</span>
+    <div class="text-slider-container flex flex-col gap-0">
+      {#each items as item, index (index)}
+        <span id={item.id} class="flex h-[80px] origin-[center_left] items-center text-[48px] font-thin md:text-[70px]">
+          {item.label}
+        </span>
+      {/each}
     </div>
   </div>
 </div>
 
-<style lang="postcss">
+<style>
   .text-slider-container {
-    @apply flex flex-col gap-0;
     animation: text-slide 10s linear infinite;
-  }
-
-  .slider-item {
-    @apply flex h-[80px] origin-[center_left] items-center text-[48px] font-thin md:text-[70px];
   }
 
   /*Text Slider Items bold and scale animations*/
