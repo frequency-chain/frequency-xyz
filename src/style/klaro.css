@@ -10,23 +10,24 @@ mechanism.
 /* Border styles */
 /* Cookie notice positioning */
 
+/* Color vars are from tailwind theming */
 :root {
   /* Font Families */
-  --font-family: theme('fontFamily.sans');
+  --font-family: var(--font-sans);
   --font-size: 14px;
   /* colors */
-  --dark1: var(--navy);
-  --dark2: theme('colors.gray3');
-  --dark3: theme('colors.gray2');
-  --light1: theme('colors.white');
-  --light2: theme('colors.teal');
+  --dark1: var(--color-navy);
+  --dark2: var(--color-gray3);
+  --dark3: var(--color-gray2);
+  --light1: var(--color-white);
+  --light2: var(--color-teal);
   /* Button color */
-  --button-text-color: theme('colors.black');
-  --green1: theme('colors.teal');
-  --green2: theme('colors.tealDark');
-  --green3: theme('colors.tealBright');
-  --blue1: theme('colors.tealDark');
-  --blue2: theme('colors.tealBright');
+  --button-text-color: var(--color-black);
+  --green1: var(--color-teal);
+  --green2: var(--color-teal-dark);
+  --green3: var(--color-bright-blue);
+  --blue1: var(--color-teal-dark);
+  --blue2: var(--color-bright-blue);
 }
 /* White */
 /* Differently shaded colors */
