@@ -4,7 +4,7 @@
   import GetNotified from '../GetNotified/GetNotified.svelte';
 </script>
 
-<SectionWrapper id="contact" class="bg-navy text-white">
+<SectionWrapper id="contact" class="bg-black text-white">
   <SectionContent class="freq-container">
     <GetNotified />
   </SectionContent>

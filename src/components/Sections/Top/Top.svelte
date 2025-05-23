@@ -23,11 +23,11 @@
   </div>
   <div class="xs:max-w-[400px] mx-auto w-auto md:w-1/2 md:max-w-[400px] md:pl-0 lg:w-full lg:max-w-[500px]">
     <SlideIn
-      class="md:-ml-f16 font-title text-primary xs:text-[50px] leading-none tracking-wide sm:text-[60px] md:text-[75px] lg:text-[90px]"
+      class="md:-ml-f16 font-title font-bold text-black xs:text-[50px] leading-none tracking-wide sm:text-[60px] md:text-[75px] lg:text-[90px]"
     >
       <div class="pl-f24 xs:text-left">Welcome</div>
       <div class="gap-f16 flex flex-wrap items-center">
-        <div class="text-teal xs:text-normal whitespace-nowrap italic sm:text-lg lg:text-[32px]">to the</div>
+        <div class="text-primary xs:text-normal whitespace-nowrap italic sm:text-lg lg:text-[32px]">to the</div>
         <div class="xs:text-left">People's</div>
       </div>
       <div class="pl-f48">Internet</div>

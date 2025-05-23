@@ -16,7 +16,7 @@
     <DeveloperAnimation class="mx-auto max-h-[260px] md:max-h-[300px] md:max-w-[800px] lg:max-h-none" />
     <div class="freq-container-padding lg:mt-[36px]">
       <SlideIn class="lg:basis-1/3]">
-        <h2 class="title-70 text-teal mx-0 w-full md:mt-[24px] md:max-w-[400px]">
+        <h2 class="title-70 text-primary mx-0 w-full md:mt-[24px] md:max-w-[400px]">
           {DeveloperStepsText.header.title}
         </h2>
         <p class="title-h5 mt-f24">{DeveloperStepsText.header.text_html}</p>

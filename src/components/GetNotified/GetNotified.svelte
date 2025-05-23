@@ -1,7 +1,7 @@
 <script lang="ts">
   import { dev } from '$app/environment';
   import ContactThankYou from '$components/GetNotified/ContactThankYou.svelte';
-  import { Input, Textarea } from '@frequency-chain/style-guide';
+  import { Button, Input, Textarea } from '@frequency-chain/style-guide';
 
   const fieldMapping = {
     name: 'entry.464666765',
@@ -141,12 +141,9 @@
       </div>
       <!-- Can't use Style Guide Button b/c onClick won't take async funcs, and also
       it overloads type for styling -->
-      <button
-        type="submit"
-        class="button button-secondary mt-f24 p-f8 hover:border-teal hover:text-teal w-full rounded-full border-[1px] border-white bg-transparent text-center transition-all"
-      >
+      <Button intent="outlined-light" size="lg" class="mt-f24">
         Send Message
-      </button>
+      </Button>
     </form>
   {:else}
     <ContactThankYou onClick={resetForm} />

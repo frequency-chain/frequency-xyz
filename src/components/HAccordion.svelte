@@ -1,7 +1,6 @@
 <script lang="ts">
   import { createEventDispatcher, type Snippet } from 'svelte';
-  import { Button } from '@frequency-chain/style-guide';
-  import Arrow from '$lib/assets/UIIcons/arrow-right.svg';
+  import { Button, Assets } from '@frequency-chain/style-guide';
   import { MAX_MOBILE_WIDTH } from '$lib/consts';
 
   const dispatch = createEventDispatcher();
@@ -38,7 +37,7 @@
   onclick={toggle}
   class={`flex flex-col ${borderClasses} border-grayBorder px-f32 lg:pb-f96 lg:pt-f96 lg:transition-all ${isOpen ? 'lg:w-[316px] xl:w-[400px]' : 'shrink-0 lg:w-[140px] lg:cursor-pointer'}`}
 >
-  <div class={`font-title -mt-[9px] text-[40px] text-nowrap text-clip text-white sm:text-[44px] ${textAlignClasses}`}>
+  <div class={`font-title font-bold -mt-[9px] text-[40px] text-nowrap text-clip text-white sm:text-[44px] ${textAlignClasses}`}>
     .{parseInt(sectionNumber, 10).toString().padStart(2, '0')}
   </div>
   {#if iconSrc}
@@ -61,8 +60,9 @@
       {@render children()}
     </div>
     <div class={`flex flex-row ${contentAlignClasses}`}>
-      <Button id={`explore_${sectionNumber}_button`} size="xs" href={url}>
-        Learn<img src={Arrow} alt="" class="h-[14px]" />
+      <Button intent="filled-light" id={`explore_${sectionNumber}_button`} size="sm" href={url}>
+        Learn
+        <Assets.Arrow class="rotate-180 h-f16 w-auto" />
       </Button>
     </div>
   </div>
