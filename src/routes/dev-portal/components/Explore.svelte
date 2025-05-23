@@ -29,10 +29,10 @@
   id="explore_section"
   class="freq-container gap-f12 pb-f96 pt-f64 lg:py-f96 flex w-full flex-col lg:flex-row lg:gap-0"
 >
-  <div id="explore_description" class="text-teal md:px-f32 lg:pt-f96 relative flex w-full flex-row lg:w-1/2">
+  <div id="explore_description" class="text-primary md:px-f32 lg:pt-f96 relative flex w-full flex-row lg:w-1/2">
     <div class="gap-f32 flex flex-col">
       <SlideIn>
-        <span class="title-h2 mt-f8 text-wrap text-clip">Explore &amp; Build</span>
+        <h2 class="title-70 mt-f8 text-wrap text-clip text-white">Explore &amp; Build</h2>
       </SlideIn>
       <div class="body pb-f64 xs:pb-f32 md:pb-f80 text-white">
         Frequency offers simple blockchain integration for your applications&mdash;bridging the gap between your app and

@@ -12,8 +12,8 @@
   <div class="w-full">
     {@render content()}
   </div>
-  <div class="freq-container-padding bg-navy w-full">
-    <Footer type="dark" class="vertical-lg:w-[100%] w-full" />
+  <div class="freq-container-padding bg-navy w-full pt-f48">
+    <Footer intent="light" class="vertical-lg:w-[100%] w-full" />
   </div>
 {/snippet}
 

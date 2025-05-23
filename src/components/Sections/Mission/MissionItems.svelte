@@ -11,37 +11,37 @@
     {
       iconAlt: 'Fingerprint',
       icon: Fingerprint,
-      body: `Offering everyone a self-sovereign <span class="font-bold text-teal">digital social identity</span> that they may use
+      body: `Offering everyone a self-sovereign <span class="font-bold text-primary">digital social identity</span> that they may use
       to sign in and share data across the applications they choose.`,
     },
     {
       iconAlt: 'App',
       icon: App,
-      body: `Allowing people to <span class="font-bold text-teal">freely move among applications</span> and providers rather than
+      body: `Allowing people to <span class="font-bold text-primary">freely move among applications</span> and providers rather than
       being forced to accept application changes that worsen their experience.`,
     },
     {
       iconAlt: 'Network',
       icon: Network,
-      body: `Offering application providers practical <span class="font-bold text-teal">economics</span> that make blockchain usage
+      body: `Offering application providers practical <span class="font-bold text-primary">economics</span> that make blockchain usage
       feasible and desirable.`,
     },
     {
       iconAlt: 'Users',
       icon: Users,
-      body: `Securely storing each <span class="font-bold text-teal">person's relationships</span> (social graph) so they are not
+      body: `Securely storing each <span class="font-bold text-primary">person's relationships</span> (social graph) so they are not
       controlled by any application or company, and can only be accessed with user permission.`,
     },
     {
       iconAlt: 'Box',
       icon: Box,
-      body: `Creating an <span class="font-bold text-teal">interoperable</span> social media public commons where everyone can participate
+      body: `Creating an <span class="font-bold text-primary">interoperable</span> social media public commons where everyone can participate
       in the conversation.`,
     },
     {
       iconAlt: 'Universe',
       icon: Universe,
-      body: `Creating a shared and <span class="font-bold text-teal">decentralized</span> economy where everyone can participate
+      body: `Creating a shared and <span class="font-bold text-primary">decentralized</span> economy where everyone can participate
       in the shared value they have created on the internet.`,
     },
   ];

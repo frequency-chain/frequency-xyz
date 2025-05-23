@@ -9,7 +9,7 @@
   ];
 </script>
 
-<div class="gap-f12 bg-navy md:gap-f24 flex items-center justify-center text-white">
+<div class="gap-f12 bg-black md:gap-f24 flex items-center justify-center text-white">
   <h2 class="title-70 text-[48px] md:text-[70px]">Your:</h2>
 
   <div class="h-[240px] overflow-hidden">
