@@ -16,18 +16,18 @@ mechanism.
   --font-family: var(--font-sans);
   --font-size: 14px;
   /* colors */
-  --dark1: var(--color-navy);
+  --dark1: var(--color-black);
   --dark2: var(--color-gray3);
   --dark3: var(--color-gray2);
   --light1: var(--color-white);
-  --light2: var(--color-teal);
+  --light2: var(--color-purple25);
   /* Button color */
   --button-text-color: var(--color-black);
-  --green1: var(--color-teal);
-  --green2: var(--color-teal-dark);
-  --green3: var(--color-bright-blue);
-  --blue1: var(--color-teal-dark);
-  --blue2: var(--color-bright-blue);
+  --green1: var(--color-purple25);
+  --green2: var(--color-purple50);
+  --green3: var(--color-purple25);
+  --blue1: var(--color-purple50);
+  --blue2: var(--color-purple25);
 }
 /* White */
 /* Differently shaded colors */
