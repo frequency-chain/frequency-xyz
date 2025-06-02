@@ -12,7 +12,8 @@ export const DeveloperStepsText = {
   },
   one: {
     title: 'Easy',
-    text_html: 'Set up a templated example application with Frequency Gateway in <b>mere minutes.</b>',
+    text_html:
+      'Set up a templated example application with Frequency Gateway in <b class="text-primary">mere minutes.</b>',
   },
   two: {
     title: 'Open',

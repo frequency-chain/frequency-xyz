@@ -4,6 +4,6 @@
 </script>
 
 <DocsMain />
-<div class="bg-black w-full">
+<div class="w-full bg-black">
   <Explore />
 </div>

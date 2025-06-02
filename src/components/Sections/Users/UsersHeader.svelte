@@ -18,7 +18,7 @@
         <h2 class="title-70 pb-f24">User<br /> Advantages</h2>
       </SlideIn>
     </div>
-    <p class="title-h5 leading-default max-w-[900px] lg:leading-[32px]">
+    <p class="title-h5 max-w-[900px]">
       On most social media platforms, you get a stark choice: accept the platform as is, or leave the platform, your
       friends and your relationships behind. Frequency changes all of this by offering users control, community, and
       ownership over their online experience.

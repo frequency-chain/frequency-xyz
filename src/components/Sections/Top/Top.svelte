@@ -23,7 +23,7 @@
   </div>
   <div class="xs:max-w-[400px] mx-auto w-auto md:w-1/2 md:max-w-[400px] md:pl-0 lg:w-full lg:max-w-[500px]">
     <SlideIn
-      class="md:-ml-f16 font-title font-bold text-black xs:text-[50px] leading-none tracking-wide sm:text-[60px] md:text-[75px] lg:text-[90px]"
+      class="md:-ml-f16 font-title xs:text-[50px] leading-none font-bold tracking-wide text-black sm:text-[60px] md:text-[75px] lg:text-[90px]"
     >
       <div class="pl-f24 xs:text-left">Welcome</div>
       <div class="gap-f16 flex flex-wrap items-center">

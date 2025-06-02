@@ -45,12 +45,12 @@
     <div
       in:fade={{ duration: msaCountAnimationMs }}
       out:fade={{ duration: msaCountAnimationMs }}
-      class="font-title font-bold absolute left-0 w-full px-4 text-right tracking-wide"
+      class="font-title absolute left-0 w-full px-4 text-right font-bold tracking-wide"
     >
       {displayMsaCount}
     </div>
   {/if}
-  <div class="font-title font-bold invisible tracking-wide">
+  <div class="font-title invisible font-bold tracking-wide">
     {widthMsaCount}
   </div>
   <div class="text-right text-[12px] font-semibold uppercase md:text-[0.25em]">New User Activations</div>

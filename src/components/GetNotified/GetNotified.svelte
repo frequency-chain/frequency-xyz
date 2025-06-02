@@ -1,7 +1,7 @@
 <script lang="ts">
   import { dev } from '$app/environment';
   import ContactThankYou from '$components/GetNotified/ContactThankYou.svelte';
-  import { Button, Input, Textarea } from '@frequency-chain/style-guide';
+  import { Button, Input, Textarea, Checkbox } from '@frequency-chain/style-guide';
 
   const fieldMapping = {
     name: 'entry.464666765',
@@ -115,18 +115,8 @@
         error={hasSubmittedFormAtLeastOnce && !email?.length ? errorText : undefined}
       />
       <div class="mb-f4 mt-f8 gap-f12 sm:gap-f32 flex flex-col sm:flex-row">
-        <label class="inline-flex items-center hover:cursor-pointer">
-          <input type="checkbox" bind:checked={isDeveloper} class="accent-tealBright text-white hover:cursor-pointer" />
-          <span class="text-normal ml-2">Development</span>
-        </label>
-        <label class="leading inline-flex items-center hover:cursor-pointer">
-          <input
-            type="checkbox"
-            bind:checked={isPartnership}
-            class="form-checkbox accent-tealBright text-white hover:cursor-pointer"
-          />
-          <span class="text-normal ml-2">Partnerships</span>
-        </label>
+        <Checkbox intent="light" label="Development" bind:checked={isDeveloper} />
+        <Checkbox intent="light" label="Partnerships" bind:checked={isPartnership} />
       </div>
       <div class="w-full">
         <Textarea
@@ -141,9 +131,7 @@
       </div>
       <!-- Can't use Style Guide Button b/c onClick won't take async funcs, and also
       it overloads type for styling -->
-      <Button intent="outlined-light" size="lg" class="mt-f24">
-        Send Message
-      </Button>
+      <Button intent="outlined-light" size="lg" class="mt-f24">Send Message</Button>
     </form>
   {:else}
     <ContactThankYou onClick={resetForm} />

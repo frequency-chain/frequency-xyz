@@ -9,7 +9,7 @@
   <div class="xs:max-h-[500px] flex h-[100vw] w-full self-center lg:h-[700px] lg:w-1/2">
     <DevPortalAnimation />
   </div>
-  <div class="flex flex-col gap-6 lg:w-1/2">
+  <div class="flex max-w-[930px] flex-col gap-6 lg:w-1/2">
     <SlideIn>
       <h1 class="title-70 text-primary">Get Started with Frequency Development</h1>
     </SlideIn>

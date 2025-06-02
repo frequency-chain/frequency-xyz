@@ -12,7 +12,7 @@
   <div class="w-full">
     {@render content()}
   </div>
-  <div class="freq-container-padding bg-navy w-full pt-f48">
+  <div class="freq-container-padding bg-navy pt-f48 w-full">
     <Footer intent="light" class="vertical-lg:w-[100%] w-full" />
   </div>
 {/snippet}

@@ -15,35 +15,35 @@
 
 /* Typeography */
 @utility title-16 {
-  @apply font-title font-bold text-[16px] leading-none tracking-wider md:text-[16px] lg:text-[16px];
+  @apply font-title text-[16px] leading-none font-bold tracking-wider md:text-[16px] lg:text-[16px];
 }
 
 @utility title-44 {
-  @apply font-title font-bold text-[40px] leading-none tracking-wider md:text-[40px] lg:text-[44px];
+  @apply font-title text-[40px] leading-none font-bold tracking-wider md:text-[40px] lg:text-[44px];
 }
 
 @utility title-70 {
-  @apply font-title font-bold text-[40px] leading-none tracking-wide md:text-[55px] lg:text-[70px];
+  @apply font-title text-[40px] leading-none font-bold tracking-wide md:text-[55px] lg:text-[70px];
 }
 
 @utility title-100 {
-  @apply font-title font-bold text-[55px] leading-none tracking-wide md:text-[75px] lg:text-[100px];
+  @apply font-title text-[55px] leading-none font-bold tracking-wide md:text-[75px] lg:text-[100px];
 }
 
 @utility title-h2 {
-  @apply font-title font-bold text-[50px] leading-none tracking-wider md:text-[60px] lg:text-[64px];
+  @apply font-title text-[50px] leading-none font-bold tracking-wider md:text-[60px] lg:text-[64px];
 }
 
 @utility title-h3 {
-  @apply font-title font-bold text-[30px] leading-[1] tracking-wider sm:text-[36px] md:text-[40px] lg:text-[44px];
+  @apply font-title text-[30px] leading-[1] font-bold tracking-wider sm:text-[36px] md:text-[40px] lg:text-[44px];
 }
 
 @utility title-h5 {
-  @apply font-title font-bold text-[18px] leading-[1] tracking-wider sm:text-[20px] md:text-[22px] lg:text-[26px];
+  @apply font-title text-[18px] leading-[1.4] font-bold tracking-wider sm:text-[20px] md:text-[22px] lg:text-[26px];
 }
 
 @utility title-h6 {
-  @apply font-title font-bold text-[18px] leading-[1] tracking-wider sm:text-[20px] md:text-[22px] lg:text-[22px];
+  @apply font-title text-[18px] leading-[1] font-bold tracking-wider sm:text-[20px] md:text-[22px] lg:text-[22px];
 }
 
 @utility subtitle {
