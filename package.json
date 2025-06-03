@@ -45,7 +45,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@frequency-chain/style-guide": "^0.2.4",
+    "@frequency-chain/style-guide": "^0.3.0",
     "@lottiefiles/dotlottie-web": "^0.41.0",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/postcss": "^4.1.4",
@@ -54,6 +54,7 @@
     "svelte-preprocess": "^6.0.3"
   },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "^4.37.0"
+    "@rollup/rollup-linux-x64-gnu": "^4.37.0",
+    "lightningcss-linux-x64-gnu": "1.30.1"
   }
 }
