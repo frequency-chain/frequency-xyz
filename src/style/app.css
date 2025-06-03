@@ -4,15 +4,6 @@
 
 @source '../../node_modules/@frequency-chain/style-guide/**/*.{svelte,js,ts}';
 
-@font-face {
-  font-family: 'Newake';
-  src: url('../style/indieground-newakefont-web/Newake-Font-Regular.eot');
-  src:
-    url('../style/indieground-newakefont-web/Newake-Font-Regular.woff') format('woff'),
-    url('../style/indieground-newakefont-web/Newake-Font-Regular.otf') format('opentype'),
-    url('../style/indieground-newakefont-web/Newake-Font-Regular.svg#filename') format('svg');
-}
-
 /* Typeography */
 @utility title-16 {
   @apply font-title text-[16px] leading-none font-bold tracking-wider md:text-[16px] lg:text-[16px];
