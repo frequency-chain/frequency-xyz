@@ -1,1 +1,0 @@
-import"../chunks/CWj6FrbW.js";import{c as e,n as i,r as n}from"../chunks/Cb5nd3UC.js";import{t as p,a as s}from"../chunks/BTDTGnxW.js";import{s as m}from"../chunks/CO1CSo9g.js";var c=p('<div class="freq-container"><!></div>');function h(r,a){var o=c(),t=e(o);m(t,()=>a.children??i),n(o),s(r,o)}export{h as component};
