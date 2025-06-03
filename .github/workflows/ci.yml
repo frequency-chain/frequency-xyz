@@ -20,7 +20,7 @@ jobs:
 
       - name: Install Dependencies
         # If this fails, run 'npm run fix-package-lock' and commit the result
-        run: npm ci
+        run: npm i
 
       - name: Lint
         run: npm run lint
@@ -40,7 +40,7 @@ jobs:
 
       - name: Install Dependencies
         # If this fails, run 'npm run fix-package-lock' and commit the result
-        run: npm ci
+        run: npm i
 
       - name: Build
         env:
@@ -69,7 +69,7 @@ jobs:
 
       - name: Install Dependencies
         # If this fails, run 'npm run fix-package-lock' and commit the result
-        run: npm ci
+        run: npm i
 
       - name: Build
         run: npm run build
@@ -95,7 +95,7 @@ jobs:
 
       - name: Install Dependencies
         # If this fails, run 'npm run fix-package-lock' and commit the result
-        run: npm ci
+        run: npm i
 
       - name: Install Playwright Browsers
         run: npx playwright install chromium # does not need "--with-deps" because we are using the official image

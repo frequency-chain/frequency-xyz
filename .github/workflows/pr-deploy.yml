@@ -35,7 +35,7 @@ jobs:
 
       - name: Install dependencies
         # If this fails, run 'npm run fix-package-lock' and commit the result
-        run: npm ci
+        run: npm i
 
       - name: Build
         env:
