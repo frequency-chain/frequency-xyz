@@ -24,7 +24,7 @@
           href="https://dsnp.org/"
           target="_blank"
           rel="noreferrer"
-          class="hover:text-teal underline transition-colors">DSNP</a
+          class="hover:text-primary underline transition-colors">DSNP</a
         >), Frequency offers scalable tools for message discovery, flexible storage for social and identity data, and a
         unique cost-sharing model that allows apps to deliver smooth, secure experiences that put users in charge.
       </SectionParagraph>

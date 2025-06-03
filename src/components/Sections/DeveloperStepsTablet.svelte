@@ -9,7 +9,7 @@
 
   const sectionParagraphClasses = 'body mt-[16px] min-h-[100px]';
   const stepTextClasses = '';
-  const stepTitleClasses = 'text-[40px] font-title text-primary';
+  const stepTitleClasses = 'text-[40px] font-title font-bold text-primary';
   const stepClasses = 'flex flex-col';
   const circleWidth = '60';
 </script>

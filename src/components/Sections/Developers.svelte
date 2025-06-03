@@ -16,23 +16,25 @@
     <DeveloperAnimation class="mx-auto max-h-[260px] md:max-h-[300px] md:max-w-[800px] lg:max-h-none" />
     <div class="freq-container-padding lg:mt-[36px]">
       <SlideIn class="lg:basis-1/3]">
-        <h2 class="title-70 text-teal mx-0 w-full md:mt-[24px] md:max-w-[400px]">
+        <h2 class="title-70 text-primary mx-0 w-full md:mt-[24px] md:max-w-[400px]">
           {DeveloperStepsText.header.title}
         </h2>
         <p class="title-h5 mt-f24">{DeveloperStepsText.header.text_html}</p>
       </SlideIn>
     </div>
   </section>
+
   <div class="freq-container mb-f24 md:mb-f64 mt-[22px]">
     <DeveloperStepsMobile />
     <DeveloperStepsTablet />
     <DeveloperSteps />
   </div>
-  <section class="freq-container-padding flex justify-center">
-    <Button href="{base}/dev-portal" size="lg" class="h6 p-f16 max-w-[90vw] lg:hidden">
+
+  <section class="freq-container-padding">
+    <Button href="{base}/dev-portal" size="full" class="my-f32 mx-auto block max-w-[388px] lg:hidden">
       {DeveloperStepsText.button.title}
     </Button>
-    <Button href="{base}/dev-portal" size="lg" class="hidden lg:block">
+    <Button href="{base}/dev-portal" size="lg" class="my-f32 mx-auto hidden max-w-[388px] lg:block">
       {DeveloperStepsText.button.text_html}
     </Button>
   </section>

@@ -39,18 +39,18 @@
 </script>
 
 <div
-  class="bg-navy px-4 py-3 text-[40px] leading-none text-white sm:text-[50px] md:text-[calc(100vw/23)] xl:text-[75px]"
+  class="bg-black px-4 py-3 text-[40px] leading-none text-white sm:text-[50px] md:text-[calc(100vw/23)] xl:text-[75px]"
 >
   {#if showMsaCount}
     <div
       in:fade={{ duration: msaCountAnimationMs }}
       out:fade={{ duration: msaCountAnimationMs }}
-      class="font-title absolute left-0 w-full px-4 text-right tracking-wide"
+      class="font-title absolute left-0 w-full px-4 text-right font-bold tracking-wide"
     >
       {displayMsaCount}
     </div>
   {/if}
-  <div class="font-title invisible tracking-wide">
+  <div class="font-title invisible font-bold tracking-wide">
     {widthMsaCount}
   </div>
   <div class="text-right text-[12px] font-semibold uppercase md:text-[0.25em]">New User Activations</div>

@@ -15,12 +15,12 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
 
       - name: Install Dependencies
         # If this fails, run 'npm run fix-package-lock' and commit the result
-        run: npm ci
+        run: npm i
 
       - name: Lint
         run: npm run lint
@@ -35,12 +35,12 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
 
       - name: Install Dependencies
         # If this fails, run 'npm run fix-package-lock' and commit the result
-        run: npm ci
+        run: npm i
 
       - name: Build
         env:
@@ -64,12 +64,12 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
 
       - name: Install Dependencies
         # If this fails, run 'npm run fix-package-lock' and commit the result
-        run: npm ci
+        run: npm i
 
       - name: Build
         run: npm run build
@@ -90,12 +90,12 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
 
       - name: Install Dependencies
         # If this fails, run 'npm run fix-package-lock' and commit the result
-        run: npm ci
+        run: npm i
 
       - name: Install Playwright Browsers
         run: npx playwright install chromium # does not need "--with-deps" because we are using the official image

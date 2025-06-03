@@ -1,7 +1,7 @@
 <script lang="ts">
   import { dev } from '$app/environment';
   import ContactThankYou from '$components/GetNotified/ContactThankYou.svelte';
-  import { Input, Textarea } from '@frequency-chain/style-guide';
+  import { Button, Input, Textarea, Checkbox } from '@frequency-chain/style-guide';
 
   const fieldMapping = {
     name: 'entry.464666765',
@@ -114,19 +114,9 @@
         class="required mb-f4 text-black"
         error={hasSubmittedFormAtLeastOnce && !email?.length ? errorText : undefined}
       />
-      <div class="mb-f4 mt-f8 gap-f12 sm:gap-f32 flex flex-col sm:flex-row">
-        <label class="inline-flex items-center hover:cursor-pointer">
-          <input type="checkbox" bind:checked={isDeveloper} class="accent-tealBright text-white hover:cursor-pointer" />
-          <span class="text-normal ml-2">Development</span>
-        </label>
-        <label class="leading inline-flex items-center hover:cursor-pointer">
-          <input
-            type="checkbox"
-            bind:checked={isPartnership}
-            class="form-checkbox accent-tealBright text-white hover:cursor-pointer"
-          />
-          <span class="text-normal ml-2">Partnerships</span>
-        </label>
+      <div class="mb-f4 mt-f8 gap-f12 xs:gap-f16 md:gap-f32 xs:flex-col flex md:flex-row">
+        <Checkbox intent="light" label="Development" bind:checked={isDeveloper} />
+        <Checkbox intent="light" label="Partnerships" bind:checked={isPartnership} />
       </div>
       <div class="w-full">
         <Textarea
@@ -141,12 +131,7 @@
       </div>
       <!-- Can't use Style Guide Button b/c onClick won't take async funcs, and also
       it overloads type for styling -->
-      <button
-        type="submit"
-        class="button button-secondary mt-f24 p-f8 hover:border-teal hover:text-teal w-full rounded-full border-[1px] border-white bg-transparent text-center transition-all"
-      >
-        Send Message
-      </button>
+      <Button intent="outlined-light" size="full" class="mt-f24">Send Message</Button>
     </form>
   {:else}
     <ContactThankYou onClick={resetForm} />
