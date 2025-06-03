@@ -114,7 +114,7 @@
         class="required mb-f4 text-black"
         error={hasSubmittedFormAtLeastOnce && !email?.length ? errorText : undefined}
       />
-      <div class="mb-f4 mt-f8 gap-f12 sm:gap-f32 flex flex-col sm:flex-row">
+      <div class="mb-f4 mt-f8 gap-f12 xs:gap-f16 md:gap-f32 xs:flex-col flex md:flex-row">
         <Checkbox intent="light" label="Development" bind:checked={isDeveloper} />
         <Checkbox intent="light" label="Partnerships" bind:checked={isPartnership} />
       </div>
@@ -131,7 +131,7 @@
       </div>
       <!-- Can't use Style Guide Button b/c onClick won't take async funcs, and also
       it overloads type for styling -->
-      <Button intent="outlined-light" size="lg" class="mt-f24">Send Message</Button>
+      <Button intent="outlined-light" size="full" class="mt-f24">Send Message</Button>
     </form>
   {:else}
     <ContactThankYou onClick={resetForm} />

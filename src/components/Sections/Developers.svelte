@@ -23,16 +23,18 @@
       </SlideIn>
     </div>
   </section>
+
   <div class="freq-container mb-f24 md:mb-f64 mt-[22px]">
     <DeveloperStepsMobile />
     <DeveloperStepsTablet />
     <DeveloperSteps />
   </div>
-  <section class="freq-container-padding flex justify-center">
-    <Button href="{base}/dev-portal" size="lg" class="h6 p-f16 max-w-[90vw] lg:hidden">
+
+  <section class="freq-container-padding">
+    <Button href="{base}/dev-portal" size="full" class="my-f32 mx-auto block max-w-[388px] lg:hidden">
       {DeveloperStepsText.button.title}
     </Button>
-    <Button href="{base}/dev-portal" size="lg" class="hidden lg:block">
+    <Button href="{base}/dev-portal" size="lg" class="my-f32 mx-auto hidden max-w-[388px] lg:block">
       {DeveloperStepsText.button.text_html}
     </Button>
   </section>

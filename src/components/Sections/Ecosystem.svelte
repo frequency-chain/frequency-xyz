@@ -40,11 +40,14 @@
           around shared values, driving social impact, creativity, and growth.
         </p>
         <TikTokTag class="my-6 max-w-[300px] self-center md:self-start lg:hidden" />
-        <div class="self-center md:self-start">
-          <Button intent="outlined-light" size="lg" href="https://thepeoplesbid.com/">
-            Learn About the People's Bid
-          </Button>
-        </div>
+        <Button
+          intent="outlined-light"
+          size="full"
+          href="https://thepeoplesbid.com/"
+          class="w-full max-w-[388px] self-center md:self-start"
+        >
+          Learn About the People's Bid
+        </Button>
       </div>
       <TikTokTag class="hidden w-full lg:flex lg:w-1/3" />
     </section>

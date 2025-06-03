@@ -23,14 +23,14 @@
   </div>
   <div class="xs:max-w-[400px] mx-auto w-auto md:w-1/2 md:max-w-[400px] md:pl-0 lg:w-full lg:max-w-[500px]">
     <SlideIn
-      class="md:-ml-f16 font-title xs:text-[50px] leading-none font-bold tracking-wide text-black sm:text-[60px] md:text-[75px] lg:text-[90px]"
+      class="md:-ml-f16 font-title xs:text-[50px] xl:-ml-f192 leading-none font-bold tracking-wide text-black sm:text-[52px] md:text-[60px] lg:text-[90px] xl:text-[120px]"
     >
-      <div class="pl-f24 xs:text-left">Welcome</div>
-      <div class="gap-f16 flex flex-wrap items-center">
-        <div class="text-primary xs:text-normal whitespace-nowrap italic sm:text-lg lg:text-[32px]">to the</div>
-        <div class="xs:text-left">People's</div>
+      <div class="xs:text-left pl-f40 lg:pl-[80px]">Welcome</div>
+      <div class="gap-f16 flex items-center">
+        <div class="text-primary xs:text-normal whitespace-nowrap italic sm:text-lg lg:text-[38px]">to the</div>
+        <div class="xs:text-left lg:pl-f32 pl-0">People's</div>
       </div>
-      <div class="pl-f48">Internet</div>
+      <div class="xs:text-left pl-f40 lg:pl-[80px]">Internet</div>
     </SlideIn>
   </div>
 </SectionWrapper>
