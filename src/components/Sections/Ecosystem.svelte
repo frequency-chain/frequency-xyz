@@ -2,17 +2,8 @@
   import { Button } from '@frequency-chain/style-guide';
   import SectionWrapper from './SectionWrapper.svelte';
   import TikTokTag from '../TikTokTag.svelte';
-  import MeWeLogo from '../../lib/assets/Ecosystem/mewe-logo.svg';
-  import SoarLogo from '../../lib/assets/Ecosystem/soar-logo.svg';
-  import WeAre8Logo from '../../lib/assets/Ecosystem/weare8.svg';
   import SlideIn from '../SlideIn.svelte';
   import WavesTwo from '../../lib/assets/Ecosystem/waves-two.svg';
-
-  const logos = [
-    { alt: 'MeWe', src: MeWeLogo },
-    { alt: 'WeAre8', src: WeAre8Logo },
-    { alt: 'Soar', src: SoarLogo },
-  ];
 </script>
 
 <SectionWrapper id="ecosystem">
@@ -52,16 +43,6 @@
       <TikTokTag class="hidden w-full lg:flex lg:w-1/3" />
     </section>
   </div>
-  <section class="freq-container py-f64">
-    <SlideIn>
-      <h1 class="title-70 font-title text-primary mb-6 text-center font-bold">Companies in the Frequency Ecosystem</h1>
-    </SlideIn>
-    <div class="flex w-full flex-wrap justify-around p-2 md:p-6">
-      {#each logos as { alt, src }, index (index)}
-        <img id={`logo-${index}`} class="max-h-[120px] w-full px-3 py-5 sm:w-1/2 lg:w-1/4" {alt} {src} />
-      {/each}
-    </div>
-  </section>
 </SectionWrapper>
 
 <style>
