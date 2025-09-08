@@ -2,17 +2,8 @@
   import { Button } from '@frequency-chain/style-guide';
   import SectionWrapper from './SectionWrapper.svelte';
   import TikTokTag from '../TikTokTag.svelte';
-  import MeWeLogo from '../../lib/assets/Ecosystem/mewe-logo.svg';
-  import SoarLogo from '../../lib/assets/Ecosystem/soar-logo.svg';
-  import WeAre8Logo from '../../lib/assets/Ecosystem/weare8.svg';
   import SlideIn from '../SlideIn.svelte';
   import WavesTwo from '../../lib/assets/Ecosystem/waves-two.svg';
-
-  const logos = [
-    { alt: 'MeWe', src: MeWeLogo },
-    { alt: 'WeAre8', src: WeAre8Logo },
-    { alt: 'Soar', src: SoarLogo },
-  ];
 </script>
 
 <SectionWrapper id="ecosystem">
