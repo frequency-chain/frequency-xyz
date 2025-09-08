@@ -52,16 +52,6 @@
       <TikTokTag class="hidden w-full lg:flex lg:w-1/3" />
     </section>
   </div>
-  <section class="freq-container py-f64">
-    <SlideIn>
-      <h1 class="title-70 font-title text-primary mb-6 text-center font-bold">Companies in the Frequency Ecosystem</h1>
-    </SlideIn>
-    <div class="flex w-full flex-wrap justify-around p-2 md:p-6">
-      {#each logos as { alt, src }, index (index)}
-        <img id={`logo-${index}`} class="max-h-[120px] w-full px-3 py-5 sm:w-1/2 lg:w-1/4" {alt} {src} />
-      {/each}
-    </div>
-  </section>
 </SectionWrapper>
 
 <style>
