@@ -39,15 +39,13 @@
       clearTimeout(showStatic);
       clearInterval(intervalId);
     };
-
-    // TODO AT Protocol Content Feed Users + New User Activations
   });
 </script>
 
 <div
   class="-mt-[1px] bg-black px-4 py-3 text-[40px] leading-none text-white sm:text-[50px] md:text-[calc(100vw/23)] xl:text-[75px]"
 >
-  <div class="text-right text-[12px] font-semibold uppercase md:text-[0.25em]">New User Activations</div>
+  <div class="text-right text-[12px] font-semibold uppercase md:text-[0.25em]">User Data Secured For</div>
   <div class="font-title invisible font-bold tracking-wide">
     {widthMsaCount}
   </div>
