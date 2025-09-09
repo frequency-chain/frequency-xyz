@@ -2,7 +2,7 @@
   import SectionWrapper from './../SectionWrapper.svelte';
   import SlideIn from '../../SlideIn.svelte';
   import HomeAnimation from '../../Animations/Home.svelte';
-  import MsaCounter from './MsaCounter.svelte';
+  import SecuredUsersCounter from './SecuredUsersCounter.svelte';
 
   // top-[calc(255px-((100vw-1300px)*0.075))] !?!?!?!
   // That's to be able to responsively handle the movement of the animation
@@ -17,7 +17,7 @@
       class="math xs:left-[18%] absolute top-[25%] left-[20px] md:top-[calc(85px-((100vw-1300px)*0.075))] md:left-[23%] lg:top-[calc(250px-((100vw-1300px)*0.075))] xl:top-[220px]"
     >
       <SlideIn>
-        <MsaCounter />
+        <SecuredUsersCounter />
       </SlideIn>
     </div>
   </div>
