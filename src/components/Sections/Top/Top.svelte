@@ -2,7 +2,7 @@
   import SectionWrapper from './../SectionWrapper.svelte';
   import SlideIn from '../../SlideIn.svelte';
   import HomeAnimation from '../../Animations/Home.svelte';
-  import SecuredUsersCounter from './SecuredUsersCounter.svelte';
+  import SecuredUsersCounter from './MsaCounter.svelte';
 
   // top-[calc(255px-((100vw-1300px)*0.075))] !?!?!?!
   // That's to be able to responsively handle the movement of the animation
