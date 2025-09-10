@@ -27,3 +27,17 @@ export async function getMsaCount() {
   const response = await (await fetch(providerUriList[0], options)).json();
   return hexToBigEndian(response.result);
 }
+
+export async function getTotUsersCount() {
+  const defaultValue = 11298183;
+
+  try {
+    const response = await fetch('https://portal.atproto.projectliberty.io/stats/totusers');
+    if (!response.ok) throw '';
+    const totusers = await response.json();
+    const n = Number(totusers) || defaultValue;
+    return n;
+  } catch {
+    return defaultValue;
+  }
+}
