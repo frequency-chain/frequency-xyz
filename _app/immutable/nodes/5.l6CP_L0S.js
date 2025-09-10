@@ -1,0 +1,1 @@
+import"../chunks/CWj6FrbW.js";import"../chunks/Dta7esKD.js";import{p,a as r}from"../chunks/CtNB6L2V.js";import{i as a}from"../chunks/DdWVzH7s.js";import{g as t}from"../chunks/Dqor7ff1.js";import{b as m}from"../chunks/B2IJD_nG.js";function b(i,o){p(o,!1),t(m+"/dev-portal"),a(),r()}export{b as component};
