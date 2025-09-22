@@ -1,10 +1,10 @@
 <script lang="ts">
   import SectionWrapper from './SectionWrapper.svelte';
-  import WavesTwo from '../../lib/assets/Ecosystem/waves-two.svg';
+  import WavesTwo from '../../lib/assets/Contact/waves-two.svg';
   import GetNotified from '$components/GetNotified/GetNotified.svelte';
 </script>
 
-<SectionWrapper id="ecosystem">
+<SectionWrapper id="contact">
   <div class="w-full overflow-hidden">
     <div class="h-[36px] bg-white lg:h-[61px]"></div>
     <div class="bg-darkPurple relative mb-[-36px] lg:mb-[-61px]">
