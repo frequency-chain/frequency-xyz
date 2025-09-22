@@ -35,6 +35,7 @@
   };
 
   const submit = async (e: SubmitEvent) => {
+    e.preventDefault();
     const form = e.target as HTMLFormElement;
 
     //Only start showing invalids if the form is invalid at least once
@@ -86,7 +87,7 @@
   };
 </script>
 
-<div class="mx-auto w-full p-[36px] sm:max-w-[396px] md:p-0 md:py-[96px]">
+<div class="mx-auto w-full p-[36px] text-white sm:max-w-[396px] md:p-0 md:py-[96px]">
   {#if !formSuccess}
     <h3 class="title-h3">Contact</h3>
     <form
@@ -129,8 +130,6 @@
           error={hasSubmittedFormAtLeastOnce && !comment?.length ? errorText : undefined}
         />
       </div>
-      <!-- Can't use Style Guide Button b/c onClick won't take async funcs, and also
-      it overloads type for styling -->
       <Button intent="outlined-light" size="full" class="mt-f24">Send Message</Button>
     </form>
   {:else}

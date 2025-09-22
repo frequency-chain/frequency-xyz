@@ -4,8 +4,7 @@
   import About from '../components/Sections/About.svelte';
   import Users from '../components/Sections/Users/Users.svelte';
   import Developers from '../components/Sections/Developers.svelte';
-  import Ecosystem from '../components/Sections/Ecosystem.svelte';
-  import Contact from '../components/Sections/Contact.svelte';
+  import Contact from '$components/Sections/Contact.svelte';
 </script>
 
 <div class="flex w-full flex-col items-center">
@@ -14,6 +13,5 @@
   <About />
   <Users />
   <Developers />
-  <Ecosystem />
   <Contact />
 </div>

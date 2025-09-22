@@ -18,15 +18,17 @@
       </SlideIn>
 
       <SectionParagraph class="body md:max-w-[415px] lg:max-w-[415px]">
-        Frequency is a blockchain designed to support decentralized social networks to give people control over their
-        online presence. With Frequency, users can freely choose and connect on social apps while retaining ownership of
-        their data. Built on the Decentralized Social Networking Protocol (<a
+        Frequency is a decentralized open-source digital infrastructure layer that provides the backbone for an internet
+        where people, not platforms, control their own data and relationships. It enables the creation of self-sovereign
+        digital identities, public social graphs, and decentralized context sharing-free from the walled gardens of
+        centralized platforms. Built on the Decentralized Social Networking Protocol (<a
           href="https://dsnp.org/"
           target="_blank"
           rel="noreferrer"
           class="hover:text-primary underline transition-colors">DSNP</a
-        >), Frequency offers scalable tools for message discovery, flexible storage for social and identity data, and a
-        unique cost-sharing model that allows apps to deliver smooth, secure experiences that put users in charge.
+        >), Frequency offers transparency and consent at its core. Our infrastructure enables builders to create
+        products that empower people to carry their data across platforms without surrendering control over their
+        information to a single company, product or model.
       </SectionParagraph>
     </SectionContent>
 
