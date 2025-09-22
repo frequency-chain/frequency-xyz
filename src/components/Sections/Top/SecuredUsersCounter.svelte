@@ -48,7 +48,9 @@
 <div
   class="-mt-[1px] bg-black px-4 py-3 text-[40px] leading-none text-white sm:text-[50px] md:text-[calc(100vw/23)] xl:text-[75px]"
 >
-  <div class="text-right text-[12px] font-semibold uppercase md:text-[0.25em]">User Data Secured For</div>
+  <div class="xs:text-left text-[12px] font-semibold uppercase md:text-right md:text-[0.25em]">
+    User Data Secured For
+  </div>
   <div class="font-title invisible font-bold tracking-wide">
     {widthSecuredUsersCount}
   </div>
@@ -56,7 +58,7 @@
     <div
       in:fade={{ duration: animationMs }}
       out:fade={{ duration: animationMs }}
-      class="font-title absolute top-[28px] left-0 w-full px-4 text-right font-bold tracking-wide"
+      class="font-title xs:text-left absolute top-[28px] left-0 w-full px-4 font-bold md:text-right md:tracking-wide"
     >
       {displaySecuredUsersCount}
     </div>

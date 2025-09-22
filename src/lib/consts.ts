@@ -12,22 +12,20 @@ export const DeveloperStepsText = {
   },
   one: {
     title: 'Easy',
-    text_html:
-      'Set up a templated example application with Frequency Gateway in <b class="text-primary">mere minutes.</b>',
+    text_html: 'Set up a templated example application with Frequency Gateway in minutes',
   },
   two: {
     title: 'Open',
     text_html:
-      'Build your app with open-source tools designed for a more decentralized environment free from reliance on big tech.',
+      'Build your app with open-source tools designed for a decentralized environment beyond the walled gardens of Big Tech.',
   },
   three: {
     title: 'Economical',
     text_html:
-      'Add decentralized social to both new and existing applications in a scalable and economical way with batching and Capacity making blockchain usage predictable.',
+      'Add decentralized technology to both new and existing applications in a scalable and cost-effective way, with batching and capacity making blockchain usage predictable.',
   },
   four: {
     title: 'Proven',
-    text_html:
-      'Access and engage a healthy and growing community of over 1 million users out of the gate as well as a community that has grown to rely on Frequency as proven and tested core infrastructure for their businesses.',
+    text_html: 'Access and engage a growing community that already protects data for over 13 million people.',
   },
 };

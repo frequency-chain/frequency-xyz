@@ -19,9 +19,8 @@
       </SlideIn>
     </div>
     <p class="title-h5 max-w-[900px]">
-      On most social media platforms, you get a stark choice: accept the platform as is, or leave the platform, your
-      friends and your relationships behind. Frequency changes all of this by offering users control, community, and
-      ownership over their online experience.
+      Frequency provides the alternative to a broken digital paradigm. It gives people control, community, and ownership
+      over their data and online experience.
     </p>
   </div>
 </div>

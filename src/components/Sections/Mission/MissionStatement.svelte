@@ -1,21 +1,24 @@
 <script lang="ts">
   const items = [
-    { id: 'first', label: 'Content' },
-    { id: 'second', label: 'Followers' },
-    { id: 'third', label: 'Network' },
-    { id: 'fourth', label: 'Content' },
-    { id: 'fifth', label: 'Followers' },
-    { id: 'sixth', label: 'Network' },
+    { id: 'first', label: 'Portable' },
+    { id: 'second', label: 'Personalized' },
+    { id: 'third', label: 'Private' },
+    { id: 'fourth', label: 'Portable' },
+    { id: 'fifth', label: 'Personalized' },
+    { id: 'sixth', label: 'Private' },
   ];
 </script>
 
 <div class="gap-f12 md:gap-f24 flex items-center justify-center bg-black text-white">
-  <h2 class="title-70 text-[48px] md:text-[70px]">Your:</h2>
+  <h2 class="title-70 xs:w-[27vw] text-right text-[24px] md:w-auto md:text-[50px] lg:text-[70px]">Making Data:</h2>
 
   <div class="h-[240px] overflow-hidden">
     <div class="text-slider-container flex flex-col gap-0">
       {#each items as item, index (index)}
-        <span id={item.id} class="flex h-[80px] origin-[center_left] items-center text-[48px] font-thin md:text-[70px]">
+        <span
+          id={item.id}
+          class="flex h-[80px] origin-[center_left] items-center text-[38px] font-thin md:text-[50px] lg:text-[70px]"
+        >
           {item.label}
         </span>
       {/each}
